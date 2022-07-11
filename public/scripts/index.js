@@ -1,12 +1,6 @@
-function parallax(element, distance, speed) {
-    let item = document.getElementById(element)
-    item.style.transform = `translateY(${distance * speed}px)`
-}
-
-
 document.addEventListener("scroll", (e) => {
 
-    parallax(document.getElementById("header-parallax"), window.scrollY, 1)
+    document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
 
     if (window.scrollY > 0) {
         document.getElementById("nav-index").style.backgroundColor = "white"
