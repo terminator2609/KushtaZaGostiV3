@@ -1,0 +1,344 @@
+@font-face {
+    font-family: The Seasons;
+    src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
+}
+
+
+nav {
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid #3D4141;
+    width: 100%;
+    height: 100px;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url(../image/background-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+nav ul li {
+    color: #DCDFDE;
+}
+
+nav ul li a {
+    color: #DCDFDE;
+    font-family: The Seasons;
+}
+
+nav ul li:nth-of-type(1) {
+    font-size: 35px;
+}
+
+
+nav ul li:nth-of-type(2) img {
+    width: 140px;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+}
+
+nav ul li:nth-of-type(2) img.logo-nav-2 {
+    display: none;
+}
+
+
+nav ul li:nth-of-type(3) {
+    font-size: 25px;
+}
+
+header p {
+    font-family: Forum;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+
+/* ------------concept-------------------- */
+
+.concept {
+    display: flex;
+    align-items: flex-end;
+}
+
+.concept article:nth-of-type(1) h1 {
+    font-family: Forum;
+    color: #545454;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+
+.concept article:nth-of-type(1) p {
+    font-family: "Cormorant Garamond";
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    line-height: 1.2;
+    color: #797979;
+}
+
+.concept article:nth-of-type(2) {
+    height: 100vh;
+    background-image: url(../image/home-page-photo2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    scroll-behavior: smooth;
+    width: 1390px;
+}
+
+.concept article:nth-of-type(2) h1 {
+    position: absolute;
+    transform: rotate(270deg);
+    font-family: 'The Seasons';
+    color: #E8E8E8;
+    opacity: 0.7;
+    font-size: 54px;
+    right: 35%;
+    top: 16%;
+}
+
+/* ----------------------catalogues-------------------------------------- */
+
+.catalogues {
+    margin-top: 50px;
+}
+
+.catalogues ul {
+    position: relative;
+}
+
+.catalogues ul li:nth-of-type(1) img {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    width: 128px;
+}
+
+.catalogues ul li:nth-of-type(2) a:nth-of-type(1) img {
+    position: absolute;
+    left: 3px;
+    width: 110px;
+    bottom: -337px;
+}
+
+.catalogues ul li:nth-of-type(2) a:nth-of-type(2) img {
+    position: absolute;
+    left: 112px;
+    width: 94px;
+    bottom: -314px;
+}
+
+.catalogues ul li:nth-of-type(2) a:nth-of-type(3) img {
+    position: absolute;
+    left: 205px;
+    width: 111px;
+    bottom: -231px;
+}
+
+.catalogues ul li:nth-of-type(3) a:nth-of-type(1) img {
+    position: absolute;
+    left: 17px;
+    width: 91px;
+    bottom: -466px;
+}
+
+.catalogues ul li:nth-of-type(3) a:nth-of-type(2) img {
+    position: absolute;
+    left: 113px;
+    width: 91px;
+    bottom: -444px;
+}
+
+
+.catalogues ul li:nth-of-type(3) a:nth-of-type(3) img {
+    position: absolute;
+    left: 213px;
+    width: 94px;
+    bottom: -364px;
+}
+
+
+.catalogues ul li:nth-of-type(4) a:nth-of-type(1) img {
+    position: absolute;
+    left: 113px;
+    width: 91px;
+    bottom: -574px;
+}
+
+.catalogues ul li:nth-of-type(4) a:nth-of-type(2) img {
+    position: absolute;
+    left: 213px;
+    width: 91px;
+    bottom: -494px;
+}
+
+.catalogues ul li:nth-of-type(4) a:nth-of-type(3) {
+    position: absolute;
+    left: 14px;
+    width: 100px;
+    bottom: -500px;
+    font-size: 16px;
+    color: black;
+    font-family: Forum;
+}
+
+.catalogues ul li:nth-of-type(5) a:nth-of-type(1) img {
+    position: absolute;
+    left: 211px;
+    width: 85px;
+    bottom: -620px;
+}
+
+.catalogues img {
+    width: 40%;
+}
+
+
+/* -----------------------------------------about-us---------------------------------------------------- */
+
+
+
+.about-us {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 730px;
+
+}
+.about-us article:nth-of-type(1) h1 {
+    font-family: Forum;
+    color: #545454;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+
+.about-us article:nth-of-type(1) p {
+    font-family: "Cormorant Garamond";
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    line-height: 1.2;
+    color: #797979;
+}
+
+.about-us article:nth-of-type(1) p a {
+    color: black;
+}
+
+.about-us article:nth-of-type(2) {
+    background-image: url(../image/home-page-photo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    scroll-behavior: smooth;
+    width: 1390px;
+}
+
+.about-us article:nth-of-type(2) h1 {
+    position: absolute;
+    transform: rotate(270deg) translateX(-50%);
+    font-family: 'The Seasons';
+    color: #E8E8E8;
+    opacity: 0.7;
+    font-size: 4em;
+    top: 0%;
+    right: 50%;
+}
+
+
+/* ----------------------------footer-------------------------------------- */
+
+footer {
+    margin-top: 50px;
+    height: 60vh;
+    background-image: url(../image/background-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Forum;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer article:nth-of-type(1) {
+    margin-top: 30px;
+}
+
+footer article:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+footer article:nth-of-type(2) li:nth-of-type(1) {
+    padding-bottom: 22px;
+}
+
+
+footer article:nth-of-type(2) a {
+    color: white;
+    font-size: 30px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 5px 7px 5px 6px;
+}
+
+
+footer article:nth-of-type(2) li:nth-of-type(1) a {
+    color: white;
+    font-size: 30px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+}
+
+
+
+footer article:nth-of-type(3) {
+    border-top: 1px solid #3D4141;
+}
+
+footer article:nth-of-type(3) p {
+   font-size: 16px;
+   margin-top: 5px;
+}
+
+
