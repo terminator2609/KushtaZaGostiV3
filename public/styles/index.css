@@ -13,14 +13,13 @@ nav {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../image/background-photo.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
-    scroll-behavior: smooth;
 }
 
 
