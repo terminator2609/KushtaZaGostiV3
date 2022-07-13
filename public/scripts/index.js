@@ -1,3 +1,15 @@
+let guestSection = document.getElementsByClassName("guest-section")[0]
+let hostSection = document.getElementsByClassName("host-section")[0]
+let roleList = document.getElementsByClassName("role-list")[0]
+let closeMenuButton = document.getElementsByClassName("close-menu-button")[0]
+let navMenuIcon = document.getElementsByClassName("nav-menu-icon")[0]
+let navMenu = document.getElementsByClassName("nav-menu-phone")[0]
+
+navMenu.style.display = "none"
+
+guestSection.style.display = "none"
+hostSection.style.display = "none"
+
 document.addEventListener("scroll", (e) => {
 
     document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
@@ -31,5 +43,81 @@ document.addEventListener("scroll", (e) => {
     } else if (window.innerHeight >= 890) {
         document.getElementById("customHeight").style.height = "60vh"
     }
+
+    // if(window.innerHeight)
 })
+
+let roleButton = document.getElementById("role-button")
+let roleText = document.getElementById("role-text")
+
+roleButton.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    if (roleButton.textContent === "Гост") {
+        roleButton.textContent = "Домакин"
+        roleText.textContent = "Гост"
+        roleButton.style.border = "2px solid black"
+        roleButton.style.color = "black"
+        roleButton.style.backgroundColor = "white"
+        hostSection.style.display = "none"
+        guestSection.style.display = "none"
+    } else {
+        roleButton.textContent = "Гост"
+        roleText.textContent = "Домакин"
+        roleButton.style.border = "2px solid white"
+        roleButton.style.color = "white"
+        roleButton.style.background = "none"
+        hostSection.style.display = "none"
+        guestSection.style.display = "none"
+    }
+})
+
+roleText.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    if (roleText.textContent === "Домакин" && hostSection.style.display === "none") {
+        hostSection.style.display = "block"
+        guestSection.style.display = "none"
+        roleList.style.marginLeft = "10px"
+        roleText.style.fontSize = "40px"
+        roleText.style.color = "white"
+    } else if (roleText.textContent === "Домакин" && hostSection.style.display === "block") {
+        hostSection.style.display = "none"
+        guestSection.style.display = "none"
+        roleList.style.marginLeft = "0px"
+        roleText.style.fontSize = ""
+        roleText.style.color = ""
+    } else if (roleText.textContent === "Гост" && guestSection.style.display === "none") {
+        hostSection.style.display = "none"
+        guestSection.style.display = "block"
+        roleList.style.marginLeft = "10px"
+        roleText.style.fontSize = "40px"
+        roleText.style.color = "white"
+    } else {
+        hostSection.style.display = "none"
+        guestSection.style.display = "none"
+        roleList.style.marginLeft = "0px"
+        roleText.style.fontSize = ""
+        roleText.style.color = ""
+    }
+
+    if (hostSection.style.display === "block" || guestSection.style.display === "block" && window.innerHeight < 850) {
+        navMenu.style.overflow = "scroll"
+    }
+})
+
+closeMenuButton.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    navMenu.style.display = "none"
+
+})
+
+navMenuIcon.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    navMenu.style.display = "flex"
+})
+
+
 
