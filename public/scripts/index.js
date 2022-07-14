@@ -56,7 +56,7 @@ roleButton.addEventListener("click", (e) => {
     if (roleButton.textContent === "Гост") {
         roleButton.textContent = "Домакин"
         roleText.textContent = "Гост"
-        roleButton.style.border = "2px solid black"
+        roleButton.style.border = "2px solid #545454"
         roleButton.style.color = "black"
         roleButton.style.backgroundColor = "white"
         hostSection.style.display = "none"
