@@ -62,7 +62,7 @@ header article:nth-of-type(2) form>div {
 
 header article:nth-of-type(2) form label {
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Forum;
     color: #535351;
 }
