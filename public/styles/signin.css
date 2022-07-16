@@ -184,6 +184,7 @@ span {
     fill: #DCDFDE;
 }
 
+
 /* ---------------------------------------main---------------------------------------------  */
 
 main {
@@ -234,6 +235,13 @@ main article:nth-of-type(2) div label {
     font-size: 16px;
 }
 
+main article:nth-of-type(2) a {
+    color: #A8A8A7;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-left: 50%;
+}
+
 main article:nth-of-type(2) div input {
     border: none;
     background: none;
@@ -257,6 +265,9 @@ main article:nth-of-type(2) div:nth-of-type(5) label {
 
 main article:nth-of-type(3) {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 main article:nth-of-type(3) button {
@@ -271,6 +282,13 @@ main article:nth-of-type(3) button a {
     font-family: Forum;
     font-size: 18px;
 }
+
+main article:nth-of-type(3) > a {
+    color: #A8A8A7;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
 
 /* --------------------------------------------------------------------footer------------------------------------------ */
 
