@@ -12,7 +12,11 @@ hostSection.style.display = "none"
 
 document.addEventListener("scroll", (e) => {
 
-    document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
+    if(document.getElementById("header-parallax")) {
+       document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px" 
+    }
+
+    
 
     if (window.scrollY > 0) {
         document.getElementById("nav-index").style.backgroundColor = "white"
@@ -46,6 +50,8 @@ document.addEventListener("scroll", (e) => {
 
     // if(window.innerHeight)
 })
+
+
 
 let roleButton = document.getElementById("role-button")
 let roleText = document.getElementById("role-text")
