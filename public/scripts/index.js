@@ -12,6 +12,7 @@ hostSection.style.display = "none"
 
 document.addEventListener("scroll", (e) => {
 
+
     if(document.getElementById("header-parallax")) {
        document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px" 
     }
@@ -34,21 +35,23 @@ document.addEventListener("scroll", (e) => {
         document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
     }
 
-    if (window.innerHeight < 620) {
+    if (window.innerHeight < 620 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "100vh"
     }
 
-    if (window.innerHeight >= 620 && window.innerHeight < 700) {
+    if (window.innerHeight >= 620 && window.innerHeight < 700 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "90vh"
-    } else if (window.innerHeight >= 700 && window.innerHeight < 800) {
+    } else if (window.innerHeight >= 700 && window.innerHeight < 800 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "82vh"
-    } else if (window.innerHeight >= 800 && window.innerHeight < 890) {
+    } else if (window.innerHeight >= 800 && window.innerHeight < 890 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "70vh"
-    } else if (window.innerHeight >= 890) {
+    } else if (window.innerHeight >= 890 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "60vh"
     }
 
     // if(window.innerHeight)
+
+    document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
 })
 
 
