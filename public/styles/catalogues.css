@@ -222,13 +222,13 @@ header div h2 {
 }
 
 header div h3 {
-   position: absolute;
-   left: 92%;
-   top: 5%;
-   transform: translateX(-92%);
-   font-family: "Cormorant Garamond" ;
-   color: white;
-   
+    position: absolute;
+    left: 92%;
+    top: 5%;
+    transform: translateX(-92%);
+    font-family: "Cormorant Garamond";
+    color: white;
+
 }
 
 header div h3:nth-of-type(2) {
@@ -263,7 +263,7 @@ main {
 /* ---------------------------------------------------------------class.exclusive-------------------------------------------------- */
 .exclusive {
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 50%;
 }
 
 .exclusive article:nth-of-type(1) h1 {
@@ -312,7 +312,7 @@ main {
     position: absolute;
     left: 80%;
     top: 0%;
-} 
+}
 
 .exclusive img:nth-of-type(3) {
     position: absolute;
@@ -327,6 +327,72 @@ main {
     width: 50%;
 }
 
+/* ---------------------------------------------------------------class.catalogues-list-page-------------------------------------------------- */
+
+.catalogues-list-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* margin-bottom: 140px; */
+}
+
+
+.catalogues-list-page article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.catalogues-list-page article a:nth-of-type(1) img {
+    margin-left: 5px;
+}
+
+.catalogues-list-page article a:nth-of-type(2) img {
+    position: absolute;
+    left: 49%;
+    transform: translateX(-49%);
+    bottom: 25%;
+    width: 30%;
+}
+
+.catalogues-list-page article a:nth-of-type(3) img {
+    margin-right: 0px;
+}
+
+.catalogues-list-page a {
+    width: 100%;
+}
+
+.catalogues-list-page a img {
+    width: 90%;
+}
+
+.catalogues-list-page article:nth-of-type(15) {
+    width: 100%;
+}
+
+.catalogues-list-page article:nth-of-type(15) a img {
+    position: absolute;
+    width: 30%;
+    left: 33%;
+    top: -40px;
+}
+
+.catalogues-list-page article:last-of-type {
+    margin-top: 30%;
+    font-size: 25px;
+    margin-bottom: 15%;
+}
+
+.catalogues-list-page article:last-of-type a {
+    color: #8A8A88;
+    margin-top: 10px;
+}
 
 
 /* --------------------------------------------------------------------footer------------------------------------------ */
