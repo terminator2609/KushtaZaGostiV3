@@ -1,0 +1,508 @@
+@font-face {
+    font-family: The Seasons;
+    src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+}
+
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+nav>ul>li {
+    color: #545454;
+}
+
+nav>ul>li>a {
+    color: #545454;
+    font-family: The Seasons;
+    font-size: 22px;
+}
+
+nav>ul>li:nth-of-type(1) {
+    font-size: 35px;
+}
+
+
+nav>ul>li:nth-of-type(2) img {
+    width: 140px;
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    transform: translateX(-50%);
+}
+
+nav>ul>li:nth-of-type(2) img.logo-nav-1 {
+    display: none;
+}
+
+nav>ul>li:nth-of-type(2) img.logo-nav-2 {
+    display: flex;
+}
+
+
+nav>ul>li:nth-of-type(3) {
+    font-size: 25px;
+}
+
+.line {
+    border-bottom: 1px solid #3D4141;
+    position: absolute;
+    width: 90%;
+    bottom: 0%;
+    left: 5%;
+    right: 5%;
+}
+
+.nav-menu-phone {
+    background-color: #545454;
+    width: 85%;
+    font-family: Forum;
+    z-index: 101;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu-phone article:nth-of-type(1) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 15px;
+    /* border-bottom: 1px solid white; */
+}
+
+.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(1) {
+    margin-left: 15px;
+    font-size: 45px;
+    margin-top: 5px;
+}
+
+
+.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(3) {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+
+.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(2) img {
+    width: 35%;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%) translateY(-25%);
+}
+
+.line-menu {
+    border-bottom: 1px solid white;
+    margin-top: 34px;
+    margin-left: 20px;
+}
+
+.nav-menu-phone article:nth-of-type(2) {
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+.nav-menu-phone article:nth-of-type(2) button {
+    background: none;
+    width: 170px;
+    height: 40px;
+    border: 2px solid white;
+    font-family: 'Forum';
+    font-size: 25px;
+    color: white;
+    -webkit-box-shadow: -2px 7px 8px -3px rgba(0, 0, 0, 0.68);
+    box-shadow: -2px 7px 8px -3px rgba(0, 0, 0, 0.68);
+}
+
+.nav-menu-phone article:nth-of-type(3) {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+
+.nav-menu-phone article:nth-of-type(3)>ul li {
+    line-height: 1.5;
+}
+
+.nav-menu-phone article:nth-of-type(3)>ul li a, span {
+    color: #C3C3C3;
+    font-family: Forum;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+.nav-menu-phone article:nth-of-type(3) ul li:nth-of-type(4) div ul li {
+    line-height: 1;
+}
+
+.nav-menu-phone article:nth-of-type(3) ul li:nth-of-type(4) div ul li a {
+    font-size: 18px;
+}
+
+.nav-menu-phone article:nth-of-type(4) {
+    align-self: flex-end;
+    margin-top: 40px;
+}
+
+
+.nav-menu-phone article:nth-of-type(4) button {
+    background: none;
+    border: 2px solid white;
+    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    margin-right: 20px;
+    padding: 5px 15px 5px 15px;
+}
+
+
+.nav-menu-phone article:nth-of-type(4) button a {
+    font-family: 'Forum';
+    font-size: 22px;
+    color: white;
+}
+
+.close-menu-button {
+    fill: #DCDFDE;
+}
+
+
+/* ---------------------------------header-----------------------------------*/
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header div {
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    font-family: Forum;
+    color: #535351;
+    align-self: flex-start;
+    position: absolute;
+    transform: rotate(270deg) translateX(15%);
+    left: -15%;
+    top: 50%;
+    font-size: 15px;
+}
+
+header h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 70px;
+    color: #535351;
+    width: 100%;
+}
+
+header h2:nth-of-type(2) {
+    font-size: 60px;
+}
+
+header h3 {
+    font-family: "The Seasons";
+    text-align: center;
+    font-size: 61px;
+    color: #535351;
+    text-shadow: 0px 11px 2px rgba(83,83,81,0.38);
+}
+
+header p {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    padding-top: 20px;
+    width: 80%;
+}
+
+
+/* ------------------------------------------------main------------------------------------------------------------------------- */
+
+/*-------------------------------------------------section.general-info---------------------------------------------------------------------------------*/
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.general-info article:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.general-info article:nth-of-type(1) div:nth-of-type(1) h1 {
+    font-family: Forum;
+    font-size: 22px;
+    /* align-self: flex-end; */
+    text-align: right;
+    color: #535351;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.general-info article:nth-of-type(1) div:nth-of-type(1) p {
+    font-family: "Cormorant Garamond";
+    color: #A1A19F;
+    text-align: right;
+    width: 160px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+
+.general-info article:nth-of-type(1) div:nth-of-type(2) {
+    width: 100%;
+    background-image: url(../image/aboutUS-image-1.jpg);
+    height: 20vh;
+}
+
+
+.general-info article:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.general-info article:nth-of-type(2) div:nth-of-type(1) h1 {
+    font-family: Forum;
+    font-size: 22px;
+    /* align-self: flex-end; */
+    text-align: left;
+    color: #535351;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.general-info article:nth-of-type(2) div:nth-of-type(1) p {
+    font-family: "Cormorant Garamond";
+    color: #A1A19F;
+    text-align: left;
+    width: 160px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+
+.general-info article:nth-of-type(2) div:nth-of-type(2) {
+    width: 100%;
+    background-image: url(../image/aboutUs-image-2.jpg);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.general-info article:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+.general-info article:nth-of-type(3) div:nth-of-type(1) h1 {
+    font-family: Forum;
+    font-size: 22px;
+    /* align-self: flex-end; */
+    text-align: right;
+    color: #535351;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.general-info article:nth-of-type(3) div:nth-of-type(1) p {
+    font-family: "Cormorant Garamond";
+    color: #A1A19F;
+    text-align: right;
+    width: 250px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+
+.general-info article:nth-of-type(3) div:nth-of-type(2) {
+    width: 100%;
+    background-image: url(../image/aboutUs-image-3.jpg);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*-------------------------------------------------section.the-100---------------------------------------------------------------------------------*/
+
+.the-100 {
+    height: 130vh;
+    background-color: #535351;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.the-100 article:nth-of-type(1) {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    position: relative;
+}
+
+.the-100 article:nth-of-type(1) div h1 {
+    font-family: Forum;
+    color: #ffffff;
+    transform: rotate(270deg) translateX(10%);
+    left: -10%;
+    position: absolute;
+    top: 20%;
+    font-size: 14px;
+}
+
+.the-100 article:nth-of-type(1) div h2 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.the-100 article:nth-of-type(1) div h3 {
+    text-align: center;
+    font-family: "The Seasons";
+    color: #ffffff;
+    font-size: 64px;
+    text-shadow: 0px 10px 0px rgb(255 255 255 / 55%);
+}
+
+.the-100 img {
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.the-100 article:nth-of-type(2) {
+    display: flex;
+    align-items: flex-end;
+}
+
+.the-100 article:nth-of-type(2) div p {
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: 'Forum';
+    margin-left: 10px;
+    width: 95%;
+}
+
+.the-100 article:nth-of-type(2) div button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background: none;
+    border: 2px solid #B1B1B1;
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+}
+
+.the-100 article:nth-of-type(2) div button a {
+    color: #B1B1B1;
+    font-family: Forum;
+    font-size: 14px;
+}
+
+/* ----------------------------footer-------------------------------------- */
+
+footer {
+    margin-top: 50px;
+    height: 60vh;
+    background-image: url(../image/background-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Forum;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer article:nth-of-type(1) {
+    margin-top: 170px;
+}
+
+footer article:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+footer article:nth-of-type(2) li:nth-of-type(1) {
+    padding-bottom: 22px;
+}
+
+
+footer article:nth-of-type(2) a {
+    color: white;
+    font-size: 20px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 5px 7px 5px 6px;
+}
+
+
+footer article:nth-of-type(2) li:nth-of-type(1) a {
+    color: white;
+    font-size: 20px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+}
+
+
+
+footer article:nth-of-type(3) {
+    border-top: 1px solid #3D4141;
+}
+
+footer article:nth-of-type(3) p {
+    font-size: 14px;
+    margin-top: 5px;
+}

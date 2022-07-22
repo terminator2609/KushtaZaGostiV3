@@ -13,27 +13,45 @@ hostSection.style.display = "none"
 document.addEventListener("scroll", (e) => {
 
 
-    if(document.getElementById("header-parallax")) {
-       document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px" 
+    if (document.getElementById("header-parallax")) {
+        document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
     }
 
-    
-
-    if (window.scrollY > 0) {
-        document.getElementById("nav-index").style.backgroundColor = "white"
-        document.getElementById("nav-index").style.transition = "0.8s"
-        document.getElementsByClassName("fa-solid")[0].style.color = "#6F6F6F"
-        document.getElementsByClassName("translateEN")[0].style.color = "#6F6F6F"
-        document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
-        document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-        document.getElementsByClassName("logo-nav-2")[0].style.top = "-30px"
+    if (window.location.href === "file:///C:/Users/rados/OneDrive/Desktop/kushtizagostiV3/aboutUs.html" || window.location.href === "https://verdant-bavarois-547c16.netlify.app/aboutUs.html") {
+        if (window.scrollY > 0) {
+            document.getElementById("nav-index").style.backgroundColor = "#545451"
+            document.getElementById("nav-index").style.transition = "0.8s"
+            document.getElementsByClassName("fa-solid")[0].style.color = "#ffffff"
+            document.getElementsByClassName("translateEN")[0].style.color = "#ffffff"
+            document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
+            document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+            document.getElementsByClassName("logo-nav-2")[0].style.top = "-30px"
+        } else {
+            document.getElementById("nav-index").style.background = "none"
+            document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
+            document.getElementsByClassName("translateEN")[0].style.color = "#545454"
+            document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
+            document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
+        }
     } else {
-        document.getElementById("nav-index").style.background = "none"
-        document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
-        document.getElementsByClassName("translateEN")[0].style.color = "#DCDFDE"
-        document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-        document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+        if (window.scrollY > 0) {
+            document.getElementById("nav-index").style.backgroundColor = "white"
+            document.getElementById("nav-index").style.transition = "0.8s"
+            document.getElementsByClassName("fa-solid")[0].style.color = "#6F6F6F"
+            document.getElementsByClassName("translateEN")[0].style.color = "#6F6F6F"
+            document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
+            document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
+            document.getElementsByClassName("logo-nav-2")[0].style.top = "-30px"
+        } else {
+            document.getElementById("nav-index").style.background = "none"
+            document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
+            document.getElementsByClassName("translateEN")[0].style.color = "#DCDFDE"
+            document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
+            document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+        }
     }
+
+
 
     if (window.innerHeight < 620 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "100vh"
@@ -49,9 +67,11 @@ document.addEventListener("scroll", (e) => {
         document.getElementById("customHeight").style.height = "60vh"
     }
 
-    // if(window.innerHeight)
+    if (document.getElementById("h4-header")) {
+        document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
+    }
 
-    document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
+
 })
 
 
@@ -119,6 +139,7 @@ closeMenuButton.addEventListener("click", (e) => {
     e.preventDefault()
 
     navMenu.style.display = "none"
+
 
 })
 
