@@ -209,10 +209,10 @@ header h1 {
     color: #535351;
     align-self: flex-start;
     position: absolute;
-    transform: rotate(270deg) translateX(15%);
-    left: -15%;
+    transform: rotate(270deg) translateX(10%);
+    left: -10%;
     top: 50%;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 header h2 {
@@ -328,8 +328,6 @@ header p {
 .general-info article:nth-of-type(3) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
 }
 
 
@@ -348,10 +346,12 @@ header p {
     font-family: "Cormorant Garamond";
     color: #A1A19F;
     text-align: right;
-    width: 250px;
-    padding-right: 20px;
+    width: 40%;
+    padding-right: 5px;
     padding-bottom: 30px;
+    padding-left: 54%;
 }
+
 
 
 .general-info article:nth-of-type(3) div:nth-of-type(2) {
@@ -385,10 +385,10 @@ header p {
     font-family: Forum;
     color: #ffffff;
     transform: rotate(270deg) translateX(10%);
-    left: -10%;
+    left: -5%;
     position: absolute;
-    top: 20%;
-    font-size: 14px;
+    top: 15%;
+    font-size: 10px;
 }
 
 .the-100 article:nth-of-type(1) div h2 {
@@ -403,7 +403,7 @@ header p {
     font-family: "The Seasons";
     color: #ffffff;
     font-size: 64px;
-    text-shadow: 0px 10px 0px rgb(255 255 255 / 55%);
+    text-shadow: 0px 10px 2px rgb(255 255 255 / 55%);
 }
 
 .the-100 img {

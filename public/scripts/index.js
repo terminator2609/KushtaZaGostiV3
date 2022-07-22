@@ -17,7 +17,7 @@ document.addEventListener("scroll", (e) => {
         document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
     }
 
-    if (window.location.href === "file:///C:/Users/rados/OneDrive/Desktop/kushtizagostiV3/aboutUs.html" || window.location.href === "https://verdant-bavarois-547c16.netlify.app/aboutUs.html") {
+    if (window.location.href === "file:///C:/Users/rados/OneDrive/Desktop/kushtizagostiV3/aboutUs.html" || window.location.href === "https://verdant-bavarois-547c16.netlify.app/aboutus") {
         if (window.scrollY > 0) {
             document.getElementById("nav-index").style.backgroundColor = "#545451"
             document.getElementById("nav-index").style.transition = "0.8s"
