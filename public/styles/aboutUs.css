@@ -237,7 +237,7 @@ header h3 {
 
 header p {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Montserrat';
     padding-top: 20px;
     width: 80%;
@@ -283,7 +283,7 @@ header p {
 .general-info article:nth-of-type(1) div:nth-of-type(2) {
     width: 100%;
     background-image: url(../image/aboutUS-image-1.jpg);
-    height: 20vh;
+    height: 25vh;
 }
 
 
