@@ -241,14 +241,24 @@ header i {
 
 /* ------------------------------------------------------------------main----------------------------------------------------------------------- */
 
-/* -----------------------------------------------------------------table-------------------------------------------- */
+main div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-table {
-    margin-left: 10px;
+main div p:nth-of-type(1) {
+    border-right: 1px solid black;
+    padding-right: 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+
+main div p:nth-of-type(2) {
+    border-right: 1px solid black;
+    padding-right: 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
 }
 
 
-table td {
-    border-bottom: 1px solid #545454;
-    width: 100%;
-}
