@@ -209,10 +209,10 @@ header h1 {
     color: #535351;
     align-self: flex-start;
     position: absolute;
-    transform: rotate(270deg) translateX(10%);
+    transform: rotate(270deg) translateX(17%);
     left: -15%;
     top: 50%;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 header h2 {
