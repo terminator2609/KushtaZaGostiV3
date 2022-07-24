@@ -208,6 +208,7 @@ main {
     font-size: 25px;
     color: #ffffff;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .title h2 {
@@ -216,6 +217,7 @@ main {
     color: #ffffff;
     text-align: center;
     text-shadow: 0px 5px 2px rgb(255 255 255 / 55%);
+    text-transform: uppercase;
 }
 
 .my-object {
@@ -226,8 +228,8 @@ main {
 }
 
 .my-object article:nth-of-type(1) {
-    margin-left: 40%;
-    transform: translateX(-40%);
+    margin-left: 30%;
+    transform: translateX(-30%);
     position: relative;
 }
 
@@ -249,18 +251,17 @@ main {
     position: absolute;
     /* right: -60%; */
     left: 85%;
-    top: -40%;
+    top: -45%;
 }
 
 .my-object button a {
     font-family: Forum;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
 }
 
-
 .my-object img {
-    width: 133%;
+    width: 120%;
 }
 
 .my-object article:nth-of-type(2) p {
