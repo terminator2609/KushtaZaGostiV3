@@ -210,9 +210,9 @@ header h1 {
     align-self: flex-start;
     position: absolute;
     transform: rotate(270deg) translateX(10%);
-    left: -10%;
+    left: -15%;
     top: 50%;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 header h2 {
@@ -237,10 +237,10 @@ header h3 {
 
 header p {
     text-align: center;
-    font-size: 10px;
+    font-size: 8px;
     font-family: 'Montserrat';
     padding-top: 20px;
-    width: 80%;
+    width: 70%;
 }
 
 
