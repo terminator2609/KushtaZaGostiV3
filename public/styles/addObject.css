@@ -189,3 +189,112 @@ span {
 .close-menu-button {
     fill: #DCDFDE;
 }
+
+
+/* ----------------------------------------------------------------------------header------------------------------------------------------ */
+
+header {
+    font-family: Forum;
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0px 7px 2px rgb(255 255 255 / 55%);
+}
+
+/* -----------------------------------------------------------------------------main-------------------------------------------------------------- */
+
+
+/* ---------------------------------------------section.general-info-villa------------------------------------------------- */
+
+
+main {
+    margin-top: 40%;
+}
+
+.general-info-villa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.general-info-villa article:nth-of-type(1) {
+    margin-top: 40px;
+    align-self: flex-start;
+    justify-self: flex-start;
+    position: relative;
+}
+
+.general-info-villa article:nth-of-type(1) i {
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.general-info-villa article:nth-of-type(1) div {
+    font-family: Forum;
+    color: #B1B1B1;
+    background-color: #717273;
+    border: 2px solid #5f6368;
+    position: absolute;
+    left: 50%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.general-info-villa article:nth-of-type(2) {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.general-info-villa article:nth-of-type(2) form>div .line-form {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ABABAA;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.general-info-villa article:nth-of-type(2) form div label {
+    color: #ffffff;
+    font-family: Forum;
+    font-size: 17px;
+}
+
+.general-info-villa article:nth-of-type(2) a {
+    color: #A8A8A7;
+    font-family: Montserrat;
+    font-size: 13px;
+    margin-left: 50%;
+}
+
+.general-info-villa article:nth-of-type(2) form div input {
+    border: none;
+    background: none;
+    color: #A8A8A7;
+    font-family: Montserrat;
+}
+
+.general-info-villa article:nth-of-type(2) form div input:focus {
+  outline: none !important;
+  border: none;
+  background: none;
+}
+
+.general-info-villa article:nth-of-type(3) {
+    margin-top: 30px;
+}
+
+.general-info-villa article:nth-of-type(3) button {
+    background: none;
+    border: 2px solid #ffffff;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.5);
+     color: #A8A8A7;
+    font-family: Forum;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+

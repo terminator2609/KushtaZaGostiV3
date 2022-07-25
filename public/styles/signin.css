@@ -222,14 +222,14 @@ main article:nth-of-type(2) {
     margin-left: 10px;
 }
 
-main article:nth-of-type(2)>div .line-form {
+main article:nth-of-type(2) form>div .line-form {
     margin-bottom: 20px;
     border-bottom: 1px solid #ABABAA;
     margin-top: 20px;
     width: 300px;
 }
 
-main article:nth-of-type(2) div label {
+main article:nth-of-type(2) form div label {
     color: #A8A8A7;
     font-family: Montserrat;
     font-size: 16px;
@@ -242,24 +242,24 @@ main article:nth-of-type(2) a {
     margin-left: 50%;
 }
 
-main article:nth-of-type(2) div input {
+main article:nth-of-type(2) form div input {
     border: none;
     background: none;
     color: white;
 }
 
-main article:nth-of-type(2) div input:focus {
+main article:nth-of-type(2) form div input:focus {
   outline: none !important;
   border: none;
   background: none;
 }
 
-main article:nth-of-type(2) div:nth-of-type(4) input {
+main article:nth-of-type(2) form div:nth-of-type(4) input {
     width: 125px;
     
 }
 
-main article:nth-of-type(2) div:nth-of-type(5) label {
+main article:nth-of-type(2) form div:nth-of-type(5) label {
     font-size: 11px;
 }
 

@@ -4,6 +4,13 @@ let roleList = document.getElementsByClassName("role-list")[0]
 let closeMenuButton = document.getElementsByClassName("close-menu-button")[0]
 let navMenuIcon = document.getElementsByClassName("nav-menu-icon")[0]
 let navMenu = document.getElementsByClassName("nav-menu-phone")[0]
+let questionButton = document.getElementsByClassName("fa-circle-question")
+let definitionDiv = document.getElementsByClassName("definition")
+
+
+for (let i = 0; i < definitionDiv.length; i++) {
+    definitionDiv[i].style.display = "none"
+}
 
 navMenu.style.display = "none"
 
@@ -148,6 +155,22 @@ navMenuIcon.addEventListener("click", (e) => {
 
     navMenu.style.display = "flex"
 })
+
+for (let i = 0; i < questionButton.length; i++) {
+
+
+    questionButton[i].addEventListener("click", (e) => {
+        e.preventDefault()
+
+        console.log("clicked")
+
+        if(definitionDiv[i].style.display === "none") {
+            definitionDiv[i].style.display = "flex"
+        } else {
+            definitionDiv[i].style.display = "none"
+        }
+    })
+}
 
 
 
