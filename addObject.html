@@ -137,70 +137,512 @@
     </nav>
 
     <header>
-        <h1>НЕКА ПРИКЛЮЧЕНИЕТО ЗАПОЧНЕ</h1>
+        <h1 id="addObject-title">НЕКА ПРИКЛЮЧЕНИЕТО ЗАПОЧНЕ</h1>
     </header>
 
     <main>
-        <section class="general-info-villa">
+        <section class="general-info-villa section-add">
+
+            <article class="flags-article">
+                <div>
+                    <i class="fa-solid fa-circle-question"></i>
+                    <div class="definition">
+                        <p>Това са Вашите основни данни, които са от голямо значение за Вашите потенциални гости, преди
+                            те
+                            директно да кореспондират с Вас
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./public/image/bulgaria.png" alt="bulgaria flag">
+                    <img src="./public/image/united-kingdom.png" alt="united-kingdom flag">
+                </div>
+
+            </article>
+
+            <article>
+                <form action="#">
+                    <div>
+                        <label for="name">име на обекта</label>
+                        <input type="text" name="name" id="name">
+                        <div class="line-form"></div>
+                    </div>
+                    <div>
+                        <label for="location">населено място</label>
+                        <input type="text" name="location" id="location">
+                        <div class="line-form"></div>
+                    </div>
+                    <div>
+                        <label for="street">улица</label>
+                        <input type="text" name="street" id="street">
+                        <div class="line-form"></div>
+                    </div>
+                    <div>
+                        <label for="number">номер</label>
+                        <input type="text" name="number" id="number">
+                        <div class="line-form"></div>
+                    </div>
+                    <div>
+                        <label for="area">област</label>
+                        <input type="text" name="area" id="area">
+                        <div class="line-form"></div>
+                    </div>
+                    <div>
+                        <label for="owner">горд собственик</label>
+                        <input type="text" name="owner" id="owner">
+                        <div class="line-form"></div>
+                    </div>
+                    <div>
+                        <label for="phone">телефон за връзка</label>
+                        <input type="text" name="phone" id="phone">
+                        <div class="line-form"></div>
+                </form>
+                </div>
+            </article>
+
+            <article>
+                <button class="next-step">
+                    Следваща стъпка
+                </button>
+            </article>
+        </section>
+
+        <section class="review-villa section-add">
+
+            <article class="flags-article">
+                <div>
+                    <i class="fa-solid fa-circle-question"></i>
+                    <div class="definition">
+                        <p>
+                            За изчерпателно ревю на Вашата неповторима къща за гости е добре то да включва:
+                            местоположението, замисъла, информация за стаите, общите помещения, удобствата и атмосферата
+                            на
+                            Вашето място за настаняване
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./public/image/bulgaria.png" alt="bulgaria flag">
+                    <img src="./public/image/united-kingdom.png" alt="united-kingdom flag">
+                </div>
+
+            </article>
+
+            <article>
+                <form action="#">
+                    <div>
+                        <label for="review">вашето описание</label>
+                        <textarea name="review" id="review" cols="10" rows="1"></textarea>
+                        <div class="line-form"></div>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <button class="next-step">
+                    Следваща стъпка
+                </button>
+            </article>
+        </section>
+
+        <section class="add-photos section-add">
 
             <article>
                 <i class="fa-solid fa-circle-question"></i>
                 <div class="definition">
-                    <p>Това са Вашите основни данни, които са от голямо значение за Вашите потенциални гости, преди те
-                        директно да кореспондират с Вас
+                    <p>
+                        Галерията е най-важната част от портфолиото на Вашата обява, защото именно тя визуализира
+                        неповторимата Ви къща за гости пред погледа на потенциалните Ви гости
                     </p>
                 </div>
             </article>
 
             <article>
-                    <form action="#">
-                        <div>
-                            <label for="name">име на обекта</label>
-                            <input type="text" name="name" id="name">
-                            <div class="line-form"></div>
-                        </div>
-                        <div>
-                            <label for="location">населено място</label>
-                            <input type="text" name="location" id="location">
-                            <div class="line-form"></div>
-                        </div>
-                        <div>
-                            <label for="street">улица</label>
-                            <input type="text" name="street" id="street">
-                            <div class="line-form"></div>
-                        </div>
-                        <div>
-                            <label for="number">номер</label>
-                            <input type="text" name="number" id="number">
-                            <div class="line-form"></div>
-                        </div>
-                        <div>
-                            <label for="area">област</label>
-                            <input type="text" name="area" id="area">
-                            <div class="line-form"></div>
-                        </div>
-                        <div>
-                            <label for="owner">горд собственик</label>
-                            <input type="text" name="owner" id="owner">
-                            <div class="line-form"></div>
-                        </div>
-                        <div>
-                            <label for="phone">телефон за връзка</label>
-                            <input type="text" name="phone" id="phone">
-                            <div class="line-form"></div>
-                    </form>
-                </div>
+                <form action="#">
+                    <div>
+                        <label for="generalPhoto">Изберете Вашата главна снимка</label>
+                        <input type="file" id="generalPhoto" name="generalPhoto">
+                    </div>
+
+                    <div>
+                        <label for="reviewPhoto">
+                            <p>Изберете снимка, която да бъде комплимент към ревюто</p>
+                        </label>
+                        <input type="file" id="reviewPhoto" name="reviewPhoto">
+                    </div>
+
+                    <div>
+                        <label for="otherPhoto">
+                            <p>Селектирайте до 20 снимки, които да формират Вашата галерия</p>
+                        </label>
+                        <input type="file" id="otherPhoto" name="otherPhoto">
+                    </div>
+                </form>
             </article>
 
             <article>
-                <button class="next-step general-info-button">
+                <button class="next-step">
                     Следваща стъпка
                 </button>
             </article>
         </section>
+
+        <section class="price-info-villa section-add">
+
+            <article>
+                <i class="fa-solid fa-circle-question"></i>
+                <div class="definition">
+                    <p>Във вашето портфолио важна част заема цената за наем на една нощувка, а при интерес за по-дълъг
+                        престой от страна на гостите- директната комуникация с Вас- домакините, би Ви позволила
+                        отправянето на специално предложение
+                        Важно е да актуализирате цената по Ваша лична преценка за удобство на Вашите потенциални гости
+                    </p>
+                </div>
+
+
+            </article>
+
+            <article>
+                <form action="#">
+                    <div>
+                        <input type="text" name="price" id="price" placeholder="Каква е Вашата цена за една нощувка">
+                    </div>
+                    <div>
+
+                        <select name="currency" id="currency">
+                            <option value="select">Изберете валута</option>
+                            <option value="bgn">Лев</option>
+                            <option value="euro">Евро</option>
+                            <option value="dollar">Долар</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="typeForRent" id="typeForRent">
+                            <option value="select">Как отдавате Вашата къща за гости</option>
+                            <option value="room">На стая</option>
+                            <option value="fullHouse">Целият имот</option>
+                            <option value="roomAndFullHouse">На стая/целия имот</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" name="capacity" id="capacity" placeholder="Какъв е Вашият капацитет">
+                    </div>
+                    <div>
+                        <input type="number" name="numberOfRoom" id="numberOfRoom" placeholder="Брой стаи">
+                    </div>
+                </form>
+                </div>
+            </article>
+
+            <article>
+                <button class="next-step">
+                    Следваща стъпка
+                </button>
+            </article>
+        </section>
+
+
+        <section class="social-media-info-villa section-add">
+
+            <article>
+                <i class="fa-solid fa-circle-question"></i>
+                <div class="definition">
+                    <p>Ако фигурирате в някоя от следните социални мрежи или разполгате с уебсайт просто поставете линк
+                        за по-голямо удобство на Вашите потенциални гости
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <form action="#">
+                    <div>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <input type="text" name="facebookLink" id="facebookLink">
+
+
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                        <input type="text" name="instagramLink" id="instagramLink">
+
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-chrome"> </i>
+                        <input type="text" name="webLink" id="webLink">
+
+
+                    </div>
+                </form>
+                </div>
+            </article>
+
+            <article>
+                <button class="next-step">
+                    Следваща стъпка
+                </button>
+            </article>
+        </section>
+
+        <section class="catalogues-select-villa section-add">
+
+            <article class="three-div-elements">
+                <div>
+                    <i class="fa-solid fa-circle-question"></i>
+                    <div class="definition">
+                        <p>Отбележете каталозите, в които искате да фигурирате, като е важно да избирате внимателно, за
+                            да
+                            сте сигурни, че Вашата къща за гости отговаря на посочената концепцията от каталога
+                        </p>
+                    </div>
+                </div>
+
+                <div id="selectAllCatalogues">
+                    Избери всички
+                </div>
+
+                <div id="removeAllSelection">
+                    Махни всичко маркирано
+                </div>
+
+            </article>
+
+            <article>
+                <form action="#">
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/sea.jpg" alt="sea">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/mountain.jpg" alt="mountain">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/familiarization.jpg"
+                            alt="familiarization">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/restaurant.jpg" alt="restaurant">
+                    </div>
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/offer.jpg" alt="offer">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/family with children.jpg"
+                            alt="family with children">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/team building.jpg"
+                            alt="team building">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/house with pets.jpg" alt="pets">
+                    </div>
+
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/agro.jpg" alt="agro">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/wine.jpg" alt="wine">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/sofia.jpg" alt="sofia">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/plovdiv.jpg" alt="plovdiv">
+                    </div>
+
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/varna.jpg" alt="varna">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/burgas.jpg" alt="burgas">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/shumen.jpg" alt="shumen">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/veliko turnovo.jpg"
+                            alt="veliko turnovo">
+                    </div>
+
+
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/gabrovo.jpg" alt="gabrovo">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/dobrich.jpg" alt="dobrich">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/silistra.jpg" alt="silistra">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/ruse.jpg" alt="ruse">
+                    </div>
+
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/smolqn.jpg" alt="smolqn">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/sliven.jpg" alt="sliven">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/stara zagora.jpg"
+                            alt="stara zagora">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/haskovo.jpg" alt="haskovo">
+                    </div>
+
+
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/vidin.jpg" alt="vidin">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/pernik.jpg" alt="pernik">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/kustendil.jpg"
+                            alt="kustendil.jpg">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/jambol.jpg" alt="jambol">
+                    </div>
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/kurdjali.jpg" alt="kurdjali">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/pleven.jpg" alt="pleven">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/turgovishte.jpg"
+                            alt="turgovishte">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/razgrad.jpg" alt="razgrad">
+                    </div>
+
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/montana.jpg" alt="montana">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/lovech.jpg" alt="lovech">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/vraca.jpg" alt="vraca">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/pazardjik.jpg" alt="pazardjik">
+                    </div>
+
+
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/blagoevgrad.jpg"
+                            alt="blagoevgrad">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/rila.jpg" alt="rila">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/pirin.jpg" alt="pirin">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/rodopi.jpg" alt="rodopi">
+                    </div>
+
+                    <div>
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/stara planina.jpg"
+                            alt="stara planina">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/strandja.jpg" alt="strandja">
+                        <img class="cataloguesSelectPhoto" src="./public/image/catalog/village.jpg" alt="village">
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <button class="next-step">
+                    Следваща стъпка
+                </button>
+            </article>
+        </section>
+
+        <section class="calender section-add">
+
+            <article>
+                <div>
+                    <h1 id="current-month">АВГУСТ</h1>
+                    <h2 id="current-number-month">008</h2>
+                    <h3 id="current-date">01.08.2022</h3>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-question"></i>
+                    <div class="definition">
+                        <p>По този начин би изглеждал Вашият индивидуален резервационен календар, който ще послужи както
+                            за Ваше, така и за удобството на Вашите потенциални гости да проследят наличността на
+                            свободни дати, като Вие ще имате възможността да контролирате функциите му от специалното
+                            меню ДОМАКИН в графа КАЛЕНДАР
+                        </p>
+                    </div>
+                </div>
+
+            </article>
+
+            <article>
+                <div>
+                    <h4 class="day">П</h4>
+                    <h4 class="day">В</h4>
+                    <h4 class="day">С</h4>
+                    <h4 class="day">Ч</h4>
+                    <h4 class="day">П</h4>
+                    <h4 class="day">С</h4>
+                    <h4 class="day">Н</h4>
+                </div>
+
+                <div class="calender-line"></div>
+
+                <div>
+                    <p class="date-number">01</p>
+                    <p class="date-number">02</p>
+                    <p class="date-number">03</p>
+                    <p class="date-number">04</p>
+                    <p class="date-number">05</p>
+                    <p class="date-number">06</p>
+                    <p class="date-number">07</p>
+                </div>
+
+                <div class="calender-line"></div>
+
+                <div>
+                    <p class="date-number">08</p>
+                    <p class="date-number">09</p>
+                    <p class="date-number">10</p>
+                    <p class="date-number">11</p>
+                    <p class="date-number">12</p>
+                    <p class="date-number">13</p>
+                    <p class="date-number">14</p>
+                </div>
+
+                <div class="calender-line"></div>
+
+                <div>
+                    <p class="date-number">15</p>
+                    <p class="date-number">16</p>
+                    <p class="date-number">17</p>
+                    <p class="date-number">18</p>
+                    <p class="date-number">19</p>
+                    <p class="date-number">20</p>
+                    <p class="date-number">21</p>
+                </div>
+
+                <div class="calender-line"></div>
+
+                <div>
+                    <p class="date-number">22</p>
+                    <p class="date-number">23</p>
+                    <p class="date-number">24</p>
+                    <p class="date-number">25</p>
+                    <p class="date-number">26</p>
+                    <p class="date-number">27</p>
+                    <p class="date-number">28</p>
+                </div>
+
+                <div class="calender-line"></div>
+
+                <div>
+                    <p class="date-number">29</p>
+                    <p class="date-number">30</p>
+                    <p class="date-number">31</p>
+                    <p class="date-number">01</p>
+                    <p class="date-number">02</p>
+                    <p class="date-number">03</p>
+                    <p class="date-number">04</p>
+                </div>
+
+                <div class="calender-line"></div>
+
+                <div>
+                    <p class="date-number">05</p>
+                    <p class="date-number">06</p>
+                    <p class="date-number">07</p>
+                    <p class="date-number">08</p>
+                    <p class="date-number">09</p>
+                    <p class="date-number">10</p>
+                    <p class="date-number">11</p>
+                </div>
+
+                <div class="calender-line"></div>
+
+                <div>
+                </div>
+
+            </article>
+
+            <article>
+                <i class="fa-solid fa-arrow-left-long calender-left-button"></i>
+                <i class="fa-solid fa-arrow-right-long calender-right-button"></i>
+            </article>
+
+            <article>
+                <button>
+                    <a href="./index.html">Публикувайте Вашата вила</a>
+                </button>
+            </article>
+
+        </section>
+
     </main>
 
-    <!-- <footer>
+    <footer>
         <article>
             <ul>
                 <li>+0876728018</li>
@@ -227,7 +669,8 @@
         <article>
             <p>© kushtizagosti.com 2022 | all rights reserved</p>
         </article>
-    </footer>  -->
+    </footer>
+
 </body>
 
 <script src="./public/scripts/index.js"></script>

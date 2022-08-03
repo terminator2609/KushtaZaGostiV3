@@ -209,6 +209,7 @@ header {
 
 main {
     margin-top: 40%;
+    margin-bottom: 60%;
 }
 
 .general-info-villa {
@@ -219,19 +220,34 @@ main {
     height: 50vh;
 }
 
-.general-info-villa article:nth-of-type(1) {
+main section article:nth-of-type(1) {
     margin-top: 40px;
     align-self: flex-start;
     justify-self: flex-start;
     position: relative;
 }
 
-.general-info-villa article:nth-of-type(1) i {
-    margin-left: 10px;
-    color: #fbbc04;
+main section article.flags-article:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.general-info-villa article:nth-of-type(1) div {
+main section article:nth-of-type(1)>div:nth-of-type(1) {
+    position: relative;
+}
+
+main section article:nth-of-type(1) i {
+    color: #fbbc04;
+    margin-left: 20px;
+}
+
+main section article.flags-article:nth-of-type(1) i {
+    margin-left: 0px;
+}
+
+main section article:nth-of-type(1) div.definition {
     font-family: Forum;
     color: #B1B1B1;
     background-color: #717273;
@@ -242,21 +258,32 @@ main {
     padding: 10px;
 }
 
-.general-info-villa article:nth-of-type(2) {
+main section article.flags-article:nth-of-type(1)>div:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    gap: 5px;
+}
+
+main section article.flags-article:nth-of-type(1)>div:last-of-type img {
+    width: 6%;
+}
+
+main section article:nth-of-type(2) {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
 
-.general-info-villa article:nth-of-type(2) form>div .line-form {
+main section article:nth-of-type(2) form>div .line-form {
     margin-bottom: 20px;
     border-bottom: 1px solid #ABABAA;
     margin-top: 20px;
     width: 300px;
 }
 
-.general-info-villa article:nth-of-type(2) form div label {
+main section article:nth-of-type(2) form div label {
     color: #ffffff;
     font-family: Forum;
     font-size: 17px;
@@ -277,24 +304,430 @@ main {
 }
 
 .general-info-villa article:nth-of-type(2) form div input:focus {
-  outline: none !important;
-  border: none;
-  background: none;
+    outline: none !important;
+    border: none;
+    background: none;
 }
 
-.general-info-villa article:nth-of-type(3) {
+main section article:nth-of-type(3) {
     margin-top: 30px;
 }
 
-.general-info-villa article:nth-of-type(3) button {
+main section article:nth-of-type(3) button {
     background: none;
     border: 2px solid #ffffff;
     padding: 10px 20px 10px 20px;
-    box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.5);
-     color: #A8A8A7;
+    box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    color: #A8A8A7;
     font-family: Forum;
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
 }
 
+.review-villa,
+.add-photos,
+.price-info-villa,
+.social-media-info-villa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.review-villa article:nth-of-type(2) form div textarea {
+    border: none;
+    background: none;
+    color: #A8A8A7;
+    font-family: Montserrat;
+}
+
+.review-villa article:nth-of-type(2) form div textarea:focus {
+    outline: none !important;
+    border: none;
+    background: none;
+}
+
+.add-photos {
+    height: 20vh;
+}
+
+.add-photos article:nth-of-type(1) {
+    margin-top: 150px;
+}
+
+.add-photos article:nth-of-type(2) form div {
+    margin-bottom: 20px;
+}
+
+.add-photos article:nth-of-type(2) form div label {
+    background: none;
+    border: 2px solid #ffffff;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.add-photos article:nth-of-type(2) form div input {
+    display: none;
+}
+
+.add-photos article:nth-of-type(2) form div:nth-of-type(2) label {
+    background: none;
+    border: none;
+    padding: none;
+    box-shadow: none;
+}
+
+.add-photos article:nth-of-type(2) form div:nth-of-type(2) p {
+    border: 2px solid #ffffff;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    width: 186px;
+}
+
+
+.add-photos article:nth-of-type(2) form div:nth-of-type(3) label {
+    background: none;
+    border: none;
+    padding: none;
+    box-shadow: none;
+}
+
+.add-photos article:nth-of-type(2) form div:nth-of-type(3) p {
+    border: 2px solid #ffffff;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    width: 186px;
+}
+
+.price-info-villa {
+    height: 50vh;
+}
+
+.price-info-villa article:nth-of-type(1) div.definition p {
+    width: 150px;
+}
+
+.price-info-villa article:nth-of-type(2) form div input,
+select {
+    background: none;
+    border: 2px solid #ffffff;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.price-info-villa article:nth-of-type(2) form div input::placeholder {
+    color: #A8A8A7;
+    width: 300px;
+}
+
+.price-info-villa article:nth-of-type(2) form div input#price {
+    padding-right: 85px;
+}
+
+.price-info-villa article:nth-of-type(2) form div select#currency {
+    padding-right: 118px;
+}
+
+.price-info-villa article:nth-of-type(2) form div select#typeForRent {
+    padding-right: 12px;
+}
+
+
+.price-info-villa article:nth-of-type(2) form div input#capacity,
+input#numberOfRoom {
+    padding-right: 87px;
+}
+
+.social-media-info-villa {
+    height: 30vh;
+}
+
+.social-media-info-villa article:nth-of-type(2) form div {
+    background: none;
+    border: 2px solid #ffffff;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.social-media-info-villa article:nth-of-type(2) form div input {
+    border: none;
+    background: none;
+    color: #A8A8A7;
+    font-family: Montserrat;
+}
+
+.social-media-info-villa article:nth-of-type(2) form div input:focus {
+    outline: none !important;
+    border: none;
+    background: none;
+}
+
+.social-media-info-villa article:nth-of-type(2) i {
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.social-media-info-villa article:nth-of-type(2) div:nth-of-type(1) i {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.catalogues-select-villa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+
+.catalogues-select-villa article:nth-of-type(2) form div img {
+    width: 20%;
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+}
+
+main section article.three-div-elements:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section article.three-div-elements:nth-of-type(1) div:nth-of-type(2) {
+    width: 0%;
+    font-family: 'Forum';
+    color: #ffffff;
+}
+
+main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
+    width: 30%;
+    font-family: 'Forum';
+    color: #ffffff;
+}
+
+
+.catalogues-select-villa article:nth-of-type(2) form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.selectedCatalogues {
+    border: 3px solid #A8A8A7;
+}
+
+
+.catalogues-select-villa article:nth-of-type(1) div.definition p {
+    width: 110px;
+}
+
+.calender {
+    align-items: center;
+    position: relative;
+}
+
+.calender article:nth-of-type(1) {
+    color: #ffffff;
+    font-family: Forum;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.calender article:nth-of-type(1) div {
+    display: flex;
+    flex-direction: column;
+}
+
+.calender article:nth-of-type(1) div h1 {
+    align-self: center;
+    font-size: 24px;
+}
+
+.calender article:nth-of-type(1) div h2 {
+    align-self: flex-end;
+    font-size: 16px;
+}
+
+.calender article:nth-of-type(1) div h3 {
+    align-self: center;
+    font-size: 18px;
+}
+
+.calender article:nth-of-type(1) i {
+    color: #fbbc04;
+    margin-left: 0px;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.calender article:nth-of-type(1) div.definition {
+    left: 10%;
+    top: 100%;
+}
+
+.calender article:nth-of-type(1) div.definition p {
+    width: 165px;
+}
+
+.calender article:nth-of-type(2) {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 60%;
+    color: #ffffff;
+    font-family: Forum;
+    border-left: 1px solid #ABABAA;
+    margin-bottom: 30px;
+}
+
+.calender article:nth-of-type(2)>div {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    width: 100%;
+    margin-top: 5px;
+}
+
+.calender article:nth-of-type(2) div.calender-line {
+    border-bottom: 1px solid #ABABAA;
+    width: 105%;
+}
+
+.calender article:nth-of-type(2) div:nth-of-type(1) h4 {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.calender article:nth-of-type(2) div:nth-of-type(n + 1) p {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.calender article:nth-of-type(2) div:last-of-type {
+    padding-top: 20px;
+}
+
+.calender article:nth-of-type(3) {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+} 
+
+.calender article:nth-of-type(3) i {
+    position: absolute;
+    left: 10%;
+    font-size: 22px;
+    color: #ffffff;
+    top: 100%;
+}
+
+.calender article:nth-of-type(3) i:nth-of-type(2) {
+    left: 85%;
+}
+
+.calender article:nth-of-type(4) {
+    align-self: flex-end;
+}
+
+.calender article:nth-of-type(4) button {
+    position: absolute;
+    left: 20%;
+    top: 98%;
+    background: none;
+    width: 62%;
+    height: 40px;
+    border: 2px solid white;
+    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+}
+
+.calender article:nth-of-type(4) button a {
+    font-family: 'Forum';
+    font-size: 15px;
+    color: white
+}
+/* ----------------------------footer-------------------------------------- */
+
+footer {
+    margin-top: 50px;
+    height: 60vh;
+    background-image: url(../image/background-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Forum;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer article:nth-of-type(1) {
+    margin-top: 170px;
+}
+
+footer article:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+footer article:nth-of-type(2) li:nth-of-type(1) {
+    padding-bottom: 22px;
+}
+
+
+footer article:nth-of-type(2) a {
+    color: white;
+    font-size: 20px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 5px 7px 5px 6px;
+}
+
+
+footer article:nth-of-type(2) li:nth-of-type(1) a {
+    color: white;
+    font-size: 20px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+}
+
+
+
+footer article:nth-of-type(3) {
+    border-top: 1px solid #3D4141;
+}
+
+footer article:nth-of-type(3) p {
+    font-size: 14px;
+    margin-top: 5px;
+}
