@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: The Seasons;
     src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
@@ -18,9 +25,15 @@ nav {
 
 
 nav>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
     padding-top: 25px;
     padding-left: 15px;
@@ -48,7 +61,9 @@ nav>ul>li:nth-of-type(2) img {
     position: absolute;
     left: 50%;
     top: -50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 nav>ul>li:nth-of-type(2) img.logo-nav-2 {
@@ -79,15 +94,29 @@ nav>ul>li:nth-of-type(3) {
     left: 0%;
     top: 0%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .nav-menu-phone article:nth-of-type(1) ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     margin-top: 15px;
     /* border-bottom: 1px solid white; */
@@ -111,7 +140,9 @@ nav>ul>li:nth-of-type(3) {
     position: absolute;
     left: 50%;
     top: 0%;
-    transform: translateX(-50%) translateY(-25%);
+    -webkit-transform: translateX(-50%) translateY(-25%);
+        -ms-transform: translateX(-50%) translateY(-25%);
+            transform: translateX(-50%) translateY(-25%);
 }
 
 .line-menu {
@@ -121,7 +152,9 @@ nav>ul>li:nth-of-type(3) {
 }
 
 .nav-menu-phone article:nth-of-type(2) {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin-top: 20px;
 }
 
@@ -166,7 +199,8 @@ span {
 }
 
 .nav-menu-phone article:nth-of-type(4) {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     margin-top: 40px;
 }
 
@@ -212,26 +246,27 @@ main {
     margin-bottom: 60%;
 }
 
-.general-info-villa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-}
 
 main section article:nth-of-type(1) {
-    margin-top: 40px;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     justify-self: flex-start;
     position: relative;
 }
 
 main section article.flags-article:nth-of-type(1) {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 main section article:nth-of-type(1)>div:nth-of-type(1) {
@@ -259,9 +294,14 @@ main section article:nth-of-type(1) div.definition {
 }
 
 main section article.flags-article:nth-of-type(1)>div:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     gap: 5px;
 }
 
@@ -270,9 +310,13 @@ main section article.flags-article:nth-of-type(1)>div:last-of-type img {
 }
 
 main section article:nth-of-type(2) {
-    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 10px;
 }
 
@@ -287,6 +331,23 @@ main section article:nth-of-type(2) form div label {
     color: #ffffff;
     font-family: Forum;
     font-size: 17px;
+}
+
+.general-info-villa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60vh;
 }
 
 .general-info-villa article:nth-of-type(2) a {
@@ -311,28 +372,47 @@ main section article:nth-of-type(2) form div label {
 
 main section article:nth-of-type(3) {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 main section article:nth-of-type(3) button {
     background: none;
     border: 2px solid #ffffff;
     padding: 10px 20px 10px 20px;
-    box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     color: #A8A8A7;
     font-family: Forum;
     font-size: 18px;
-    margin-bottom: 60px;
-
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
 }
 
 .review-villa,
 .add-photos,
 .price-info-villa,
 .social-media-info-villa {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 10vh;
+}
+
+.review-villa {
+    height: 25vh;
 }
 
 .review-villa article:nth-of-type(2) form div textarea {
@@ -349,27 +429,28 @@ main section article:nth-of-type(3) button {
 }
 
 .add-photos {
-    height: 20vh;
+    height: 50vh;
+    gap: 40px;
 }
 
-.add-photos article:nth-of-type(1) {
-    margin-top: 150px;
-}
-
-.add-photos article:nth-of-type(2) form div {
-    margin-bottom: 20px;
+.add-photos article:nth-of-type(2) {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 20px;
 }
 
 .add-photos article:nth-of-type(2) form div label {
     background: none;
     border: 2px solid #ffffff;
-    padding: 10px 20px 10px 20px;
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    padding: 10px 35px 10px 30px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     color: #A8A8A7;
     font-family: Forum;
     font-size: 14px;
     margin-bottom: 30px;
 }
+
 
 .add-photos article:nth-of-type(2) form div input {
     display: none;
@@ -379,37 +460,49 @@ main section article:nth-of-type(3) button {
     background: none;
     border: none;
     padding: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .add-photos article:nth-of-type(2) form div:nth-of-type(2) p {
     border: 2px solid #ffffff;
-    padding: 10px 20px 10px 20px;
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    padding: 10px 35px 10px 30px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     width: 186px;
+    margin-top: 30px;
 }
-
 
 .add-photos article:nth-of-type(2) form div:nth-of-type(3) label {
     background: none;
     border: none;
     padding: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .add-photos article:nth-of-type(2) form div:nth-of-type(3) p {
     border: 2px solid #ffffff;
-    padding: 10px 20px 10px 20px;
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    padding: 10px 35px 10px 30px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     width: 186px;
 }
 
 .price-info-villa {
-    height: 50vh;
+    height: 70vh;
+    gap: 30px;
 }
+
 
 .price-info-villa article:nth-of-type(1) div.definition p {
     width: 150px;
+}
+
+.price-info-villa article:nth-of-type(2) {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 20px;
 }
 
 .price-info-villa article:nth-of-type(2) form div input,
@@ -417,11 +510,32 @@ select {
     background: none;
     border: 2px solid #ffffff;
     padding: 10px 20px 10px 20px;
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     color: #A8A8A7;
     font-family: Forum;
     font-size: 14px;
     margin-bottom: 30px;
+}
+
+.price-info-villa article:nth-of-type(2) form div input::-webkit-input-placeholder {
+    color: #A8A8A7;
+    width: 300px;
+}
+
+.price-info-villa article:nth-of-type(2) form div input::-moz-placeholder {
+    color: #A8A8A7;
+    width: 300px;
+}
+
+.price-info-villa article:nth-of-type(2) form div input:-ms-input-placeholder {
+    color: #A8A8A7;
+    width: 300px;
+}
+
+.price-info-villa article:nth-of-type(2) form div input::-ms-input-placeholder {
+    color: #A8A8A7;
+    width: 300px;
 }
 
 .price-info-villa article:nth-of-type(2) form div input::placeholder {
@@ -448,14 +562,22 @@ input#numberOfRoom {
 }
 
 .social-media-info-villa {
-    height: 30vh;
+    height: 55vh;
+    gap: 30px;
+}
+
+.social-media-info-villa article:nth-of-type(2) {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 20px;
 }
 
 .social-media-info-villa article:nth-of-type(2) form div {
     background: none;
     border: 2px solid #ffffff;
     padding: 10px 20px 10px 20px;
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     color: #A8A8A7;
     font-family: Forum;
     font-size: 14px;
@@ -489,26 +611,42 @@ input#numberOfRoom {
 }
 
 .catalogues-select-villa {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 0%;
 }
 
 .catalogues-select-villa article:nth-of-type(2) form div img {
     width: 20%;
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+            box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
 }
 
 main section article.three-div-elements:nth-of-type(1) {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 main section article.three-div-elements:nth-of-type(1) div:nth-of-type(2) {
-    width: 0%;
+    width: 35%;
     font-family: 'Forum';
     color: #ffffff;
 }
@@ -521,9 +659,15 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 
 
 .catalogues-select-villa article:nth-of-type(2) form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 10px;
     margin-bottom: 15px;
 }
@@ -538,42 +682,61 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 }
 
 .calender {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 }
 
 .calender article:nth-of-type(1) {
     color: #ffffff;
     font-family: Forum;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 30%;
 }
 
 .calender article:nth-of-type(1) div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .calender article:nth-of-type(1) div h1 {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-size: 24px;
 }
 
 .calender article:nth-of-type(1) div h2 {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     font-size: 16px;
 }
 
 .calender article:nth-of-type(1) div h3 {
-    align-self: center;
-    font-size: 18px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 14px;
 }
 
 .calender article:nth-of-type(1) i {
     color: #fbbc04;
     margin-left: 0px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin-top: 5px;
 }
 
@@ -587,9 +750,14 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 }
 
 .calender article:nth-of-type(2) {
-    margin-top: 40px;
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 10px;
     width: 60%;
     color: #ffffff;
@@ -599,8 +767,12 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 }
 
 .calender article:nth-of-type(2)>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     /* align-items: flex-start; */
     width: 100%;
     margin-top: 5px;
@@ -627,9 +799,14 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 }
 
 .calender article:nth-of-type(3) {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 } 
 
 .calender article:nth-of-type(3) i {
@@ -637,7 +814,7 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     left: 10%;
     font-size: 22px;
     color: #ffffff;
-    top: 100%;
+    top: 90%;
 }
 
 .calender article:nth-of-type(3) i:nth-of-type(2) {
@@ -645,13 +822,14 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 }
 
 .calender article:nth-of-type(4) {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 .calender article:nth-of-type(4) button {
     position: absolute;
     left: 20%;
-    top: 98%;
+    top: 96%;
     background: none;
     width: 62%;
     height: 40px;
@@ -663,8 +841,16 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 .calender article:nth-of-type(4) button a {
     font-family: 'Forum';
     font-size: 15px;
-    color: white
+    color: #A8A8A7;
 }
+
+.calender article:nth-of-type(4) button:nth-of-type(2) {
+    top: 108%;
+    font-family: 'Forum';
+    font-size: 15px;
+    color: #A8A8A7;
+}
+
 /* ----------------------------footer-------------------------------------- */
 
 footer {
@@ -677,10 +863,19 @@ footer {
     color: white;
     font-family: Forum;
     font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 footer article:nth-of-type(1) {
@@ -688,7 +883,8 @@ footer article:nth-of-type(1) {
 }
 
 footer article:nth-of-type(2) {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 footer article:nth-of-type(2) li:nth-of-type(1) {

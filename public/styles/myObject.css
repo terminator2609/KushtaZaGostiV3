@@ -250,7 +250,7 @@ main {
 .my-object button {
     position: absolute;
     /* right: -60%; */
-    left: 85%;
+    left: 92%;
     top: -80%;
 }
 
@@ -261,7 +261,7 @@ main {
 }
 
 .my-object img {
-    width: 120%;
+    width: 126%;
 }
 
 .my-object article:nth-of-type(2) p {

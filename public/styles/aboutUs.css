@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: The Seasons;
     src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
@@ -12,9 +19,15 @@ nav {
 
 
 nav>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
     padding-top: 25px;
     padding-left: 15px;
@@ -42,7 +55,9 @@ nav>ul>li:nth-of-type(2) img {
     position: absolute;
     left: 50%;
     top: -40%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 nav>ul>li:nth-of-type(2) img.logo-nav-1 {
@@ -50,6 +65,8 @@ nav>ul>li:nth-of-type(2) img.logo-nav-1 {
 }
 
 nav>ul>li:nth-of-type(2) img.logo-nav-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -76,15 +93,29 @@ nav>ul>li:nth-of-type(3) {
     left: 0%;
     top: 0%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .nav-menu-phone article:nth-of-type(1) ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     margin-top: 15px;
     /* border-bottom: 1px solid white; */
@@ -108,7 +139,9 @@ nav>ul>li:nth-of-type(3) {
     position: absolute;
     left: 50%;
     top: 0%;
-    transform: translateX(-50%) translateY(-25%);
+    -webkit-transform: translateX(-50%) translateY(-25%);
+        -ms-transform: translateX(-50%) translateY(-25%);
+            transform: translateX(-50%) translateY(-25%);
 }
 
 .line-menu {
@@ -118,7 +151,9 @@ nav>ul>li:nth-of-type(3) {
 }
 
 .nav-menu-phone article:nth-of-type(2) {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin-top: 20px;
 }
 
@@ -162,7 +197,8 @@ nav>ul>li:nth-of-type(3) {
 }
 
 .nav-menu-phone article:nth-of-type(4) {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     margin-top: 40px;
 }
 
@@ -192,10 +228,19 @@ nav>ul>li:nth-of-type(3) {
 
 header {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -207,32 +252,35 @@ header div {
 header h1 {
     font-family: Forum;
     color: #535351;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     position: absolute;
-    transform: rotate(270deg) translateX(17%);
+    -webkit-transform: rotate(270deg) translateX(17%);
+        -ms-transform: rotate(270deg) translateX(17%);
+            transform: rotate(270deg) translateX(17%);
     left: -15%;
-    top: 50%;
-    font-size: 15px;
+    top: 59%;
+    font-size: 16px;
 }
 
 header h2 {
     text-align: center;
     font-family: Montserrat;
-    font-size: 70px;
+    font-size: 64px;
     color: #535351;
     width: 100%;
 }
 
 header h2:nth-of-type(2) {
-    font-size: 60px;
+    font-size: 55px;
 }
 
 header h3 {
     font-family: "The Seasons";
     text-align: center;
-    font-size: 61px;
+    font-size: 50px;
     color: #535351;
-    text-shadow: 0px 11px 2px rgba(83,83,81,0.38);
+    text-shadow: 0px 11px 2px rgb(83 83 81 / 38%);
 }
 
 header p {
@@ -249,15 +297,29 @@ header p {
 /*-------------------------------------------------section.general-info---------------------------------------------------------------------------------*/
 
 .general-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .general-info article:nth-of-type(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .general-info article:nth-of-type(1) div:nth-of-type(1) h1 {
@@ -290,10 +352,19 @@ header p {
 }
 
 .general-info article:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 
@@ -328,8 +399,13 @@ header p {
 
 
 .general-info article:nth-of-type(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 
@@ -370,10 +446,19 @@ header p {
 .the-100 {
     height: 130vh;
     background-color: #535351;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .the-100 article:nth-of-type(1) {
@@ -386,7 +471,9 @@ header p {
 .the-100 article:nth-of-type(1) div h1 {
     font-family: Forum;
     color: #ffffff;
-    transform: rotate(270deg) translateX(10%);
+    -webkit-transform: rotate(270deg) translateX(10%);
+        -ms-transform: rotate(270deg) translateX(10%);
+            transform: rotate(270deg) translateX(10%);
     left: -5%;
     position: absolute;
     top: 15%;
@@ -411,13 +498,19 @@ header p {
 .the-100 img {
     width: 50%;
     margin-left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     margin-top: 20px;
 }
 
 .the-100 article:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .the-100 article:nth-of-type(2) div p {
@@ -433,7 +526,8 @@ header p {
     margin-bottom: 5px;
     background: none;
     border: 2px solid #B1B1B1;
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+            box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
 }
 
 .the-100 article:nth-of-type(2) div button a {
@@ -454,10 +548,19 @@ footer {
     color: white;
     font-family: Forum;
     font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 footer article:nth-of-type(1) {
@@ -465,7 +568,8 @@ footer article:nth-of-type(1) {
 }
 
 footer article:nth-of-type(2) {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 footer article:nth-of-type(2) li:nth-of-type(1) {

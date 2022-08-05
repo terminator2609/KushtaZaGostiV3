@@ -12,12 +12,12 @@ let addObjectSections = document.getElementsByClassName("section-add")
 let addObjectTitle = document.getElementById("addObject-title")
 let reviewTextArea = document.getElementById("review")
 let cataloguesSelectPhoto = document.getElementsByClassName("cataloguesSelectPhoto")
-let allSelectCommand = document.getElementById("selectAllCatalogues")
 let removeAllSelectionCommand = document.getElementById("removeAllSelection")
 let currentMonth = document.getElementById("current-month")
 let currentNumberMonth = document.getElementById("current-number-month")
 let currentDate = document.getElementById("current-date")
 let dateNumber = document.getElementsByClassName("date-number")
+let backButtons = document.getElementsByClassName("back-step")
 
 
 for (let i = 0; i < definitionDiv.length; i++) {
@@ -202,10 +202,22 @@ for (let i = 0; i < nextButtons.length; i++) {
         }
 
     })
+}
 
+for (let i = 0; i < backButtons.length; i++) {
 
+    backButtons[i].addEventListener("click", (e) => {
+        e.preventDefault()
 
+        addObjectTitle.textContent = headerArray[i]
+        addObjectSections[i + 1].style.display = "none"
+        addObjectSections[i].style.display = "flex"
 
+        if (document.getElementsByClassName("social-media-info-villa")[0].style.display === "flex") {
+            document.getElementsByTagName("main")[0].style.marginTop = "40%"
+        }
+
+    })
 }
 
 reviewTextArea.addEventListener("click", (e) => {
@@ -217,11 +229,6 @@ reviewTextArea.addEventListener("click", (e) => {
 
 for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
 
-    allSelectCommand.addEventListener("click", (e) => {
-        e.preventDefault()
-
-        cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto selectedCatalogues"
-    })
 
     removeAllSelectionCommand.addEventListener("click", (e) => {
         e.preventDefault()
@@ -242,6 +249,8 @@ for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
 
 }
 
+let counter = 1
+
 calender()
 
 function calender() {
@@ -250,110 +259,110 @@ function calender() {
 
     let dateObject = new Date()
 
-    let currentMonthContent = dateObject.getMonth()
-    let currentDateContent = dateObject.getDate()
-    let currentFullYearContent = dateObject.getFullYear()
-
     currentMonth.textContent = month[dateObject.getMonth()]
     currentNumberMonth.textContent = `00${dateObject.getMonth() + 1}`
     currentDate.textContent = `0${dateObject.getDate()}.0${dateObject.getMonth() + 1}.${dateObject.getFullYear()}`
 
-    for (let i = 0; i < dateNumber.length; i++) {
+    function calenderLoop() {
 
-        if (i === 0) {
-            dateObject.setDate(1)
-        }
+        for (let i = 0; i < dateNumber.length; i++) {
 
-        if (dateObject.getDay() > 1 || dateObject.getDay() === 0 && i === 0) {
-
-            if (dateObject.getDay() === 0) {
-                // dateObject.setMonth(dateObject.getMonth() - 1)
-
-                if (dateObject.getMonth() - 1 % 2 === 0 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === -1) {
-                    for (let b = 0; b < 6; b++) {
-                        dateNumber[i].textContent = 26 + b
-                        i++
-                    }
-                } else if (dateObject.getMonth() - 1 === 1) {
-
-                    if (dateObject.getFullYear() % 4 === 0) {
-                        for (let b = 0; b < 6; b++) {
-                            dateNumber[i].textContent = 24 + b
-                            i++
-                        }
-                    } else {
-                        for (let b = 0; b < 6; b++) {
-                            dateNumber[i].textContent = 23 + b
-                            i++
-                        }
-                    }
-
-                } else {
-                    for (let b = 0; b < 6; b++) {
-                        dateNumber[i].textContent = 25 + b
-                        i++
-                    }
-                }
-            } else {
-
-                if (dateObject.getMonth() - 1 % 2 === 0 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === -1) {
-
-                    let latestDay = 31 - dateObject.getDay()
-
-                    for (let b = 1; b < dateObject.getDay(); b++) {
-                        dateNumber[i].textContent = latestDay + b
-                        i++
-                    }
-                } else if (dateObject.getMonth() - 1 === 1) {
-
-                    if (dateObject.getFullYear() % 4 === 0) {
-
-                        let latestDay = 29 - dateObject.getDay()
-
-                        for (let b = 1; b < dateObject.getDay(); b++) {
-                            dateNumber[i].textContent = latestDay + b
-                            i++
-                        }
-                    } else {
-
-                        let latestDay = 28 - dateObject.getDay()
-
-                        for (let b = 1; b < dateObject.getDay(); b++) {
-                            dateNumber[i].textContent = latestDay + b
-                            i++
-                        }
-                    }
-
-                } else {
-
-                    let latestDay = 30 - dateObject.getDay()
-
-                    for (let b = 1; b < dateObject.getDay(); b++) {
-                        dateNumber[i].textContent = latestDay + b
-                        i++
-                    }
-                }
+            if (i === 0) {
+                dateObject.setDate(1)
             }
 
-        } else {
+            if (dateObject.getDay() > 1 && i === 0 || dateObject.getDay() === 0 && i === 0) {
 
-            if (dateObject.getMonth() % 2 === 0 || dateObject.getMonth() === 7 || dateObject.getMonth() === 11) {
-                for (let b = 1; b <= 31; b++) {
+                if (dateObject.getDay() === 0) {
+                    // dateObject.setMonth(dateObject.getMonth() - 1)
 
-                    if (b < 10) {
-                        dateNumber[i].textContent = `0${b}`
+                    if (dateObject.getMonth() - 1 === 0 || dateObject.getMonth() - 1 === 2 || dateObject.getMonth() - 1 === 4 || dateObject.getMonth() - 1 === 6 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === 9 || dateObject.getMonth() - 1 === -1 || dateObject.getMonth() - 1 === 11) {
+                        for (let b = 0; b < 6; b++) {
+                            dateNumber[i].textContent = 26 + b
+                            i++
+                        }
+
+                        i--
+                    } else if (dateObject.getMonth() - 1 === 1) {
+
+                        if (dateObject.getFullYear() % 4 === 0) {
+                            for (let b = 0; b < 6; b++) {
+                                dateNumber[i].textContent = 24 + b
+                                i++
+                            }
+
+                            i--
+                        } else {
+                            for (let b = 0; b < 6; b++) {
+                                dateNumber[i].textContent = 23 + b
+                                i++
+                            }
+
+                            i--
+                        }
+
                     } else {
-                        dateNumber[i].textContent = b
-                    }
+                        for (let b = 0; b < 6; b++) {
+                            dateNumber[i].textContent = 25 + b
+                            i++
+                        }
 
-                    i++
+                        i--
+                    }
+                } else {
+
+                    if (dateObject.getMonth() - 1 === 0 || dateObject.getMonth() - 1 === 2 || dateObject.getMonth() - 1 === 4 || dateObject.getMonth() - 1 === 6 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === 9 || dateObject.getMonth() - 1 === -1 || dateObject.getMonth() - 1 === 11) {
+
+                        let latestDay = 32 - dateObject.getDay()
+
+                        for (let b = 1; b < dateObject.getDay(); b++) {
+                            dateNumber[i].textContent = latestDay + b
+                            i++
+                        }
+
+                        i--
+
+                    } else if (dateObject.getMonth() - 1 === 1) {
+
+                        if (dateObject.getFullYear() % 4 === 0) {
+
+                            let latestDay = 30 - dateObject.getDay()
+
+                            for (let b = 1; b < dateObject.getDay(); b++) {
+                                dateNumber[i].textContent = latestDay + b
+                                i++
+                            }
+
+                            i--
+                        } else {
+
+                            let latestDay = 29 - dateObject.getDay()
+
+                            for (let b = 1; b < dateObject.getDay(); b++) {
+                                dateNumber[i].textContent = latestDay + b
+                                i++
+                            }
+
+                            i--
+                        }
+
+                    } else {
+
+                        let latestDay = 31 - dateObject.getDay()
+
+                        for (let b = 1; b < dateObject.getDay(); b++) {
+                            dateNumber[i].textContent = latestDay + b
+                            i++
+                        }
+
+                        i--
+                    }
                 }
 
-                if (i >= 31 && i <= 41) {
+            } else {
 
-                    let firstNumbersNewMonth = 42 - i
-
-                    for (let b = 1; b <= firstNumbersNewMonth; b++) {
+                if (dateObject.getMonth() === 0 || dateObject.getMonth() === 2 || dateObject.getMonth() === 4 || dateObject.getMonth() === 6 || dateObject.getMonth() === 7 || dateObject.getMonth() === 9 || dateObject.getMonth() === -1 || dateObject.getMonth() === 11) {
+                    for (let b = 1; b <= 31; b++) {
 
                         if (b < 10) {
                             dateNumber[i].textContent = `0${b}`
@@ -363,24 +372,12 @@ function calender() {
 
                         i++
                     }
-                }
 
-            } else if (dateObject.getMonth() - 1 === 1) {
+                    if (i >= 31 && i <= 41) {
 
-                if (dateObject.getFullYear() % 4 === 0) {
-                    for (let b = 1; b <= 29; b++) {
+                        let firstNumbersNewMonth = 42 - i
 
-                        if (b < 10) {
-                            dateNumber[i].textContent = `0${b}`
-                        } else {
-                            dateNumber[i].textContent = b
-                        }
-
-                        i++
-                    }
-
-                    if (i >= 29 && i <= 41) {
-                        for (let b = 1; b <= 42 - i; b++) {
+                        for (let b = 1; b <= firstNumbersNewMonth; b++) {
 
                             if (b < 10) {
                                 dateNumber[i].textContent = `0${b}`
@@ -392,8 +389,67 @@ function calender() {
                         }
                     }
 
+                } else if (dateObject.getMonth() === 1) {
+
+                    if (dateObject.getFullYear() % 4 === 0) {
+                        for (let b = 1; b <= 29; b++) {
+
+                            if (b < 10) {
+                                dateNumber[i].textContent = `0${b}`
+                            } else {
+                                dateNumber[i].textContent = b
+                            }
+
+                            i++
+                        }
+
+                        if (i >= 29 && i <= 41) {
+
+                            let firstNumbersNewMonth = 42 - i
+
+                            for (let b = 1; b <= firstNumbersNewMonth; b++) {
+
+                                if (b < 10) {
+                                    dateNumber[i].textContent = `0${b}`
+                                } else {
+                                    dateNumber[i].textContent = b
+                                }
+
+                                i++
+                            }
+                        }
+
+                    } else {
+                        for (let b = 1; b <= 28; b++) {
+
+                            if (b < 10) {
+                                dateNumber[i].textContent = `0${b}`
+                            } else {
+                                dateNumber[i].textContent = b
+                            }
+
+                            i++
+                        }
+
+                        if (i >= 28 && i <= 41) {
+
+                            let firstNumbersNewMonth = 42 - i
+
+                            for (let b = 1; b <= firstNumbersNewMonth; b++) {
+
+                                if (b < 10) {
+                                    dateNumber[i].textContent = `0${b}`
+                                } else {
+                                    dateNumber[i].textContent = b
+                                }
+
+                                i++
+                            }
+                        }
+                    }
+
                 } else {
-                    for (let b = 1; b <= 28; b++) {
+                    for (let b = 1; b <= 30; b++) {
 
                         if (b < 10) {
                             dateNumber[i].textContent = `0${b}`
@@ -404,8 +460,11 @@ function calender() {
                         i++
                     }
 
-                    if (i >= 28 && i <= 41) {
-                        for (let b = 1; b <= 42 - i; b++) {
+                    if (i >= 30 && i <= 41) {
+
+                        let firstNumbersNewMonth = 42 - i
+
+                        for (let b = 1; b <= firstNumbersNewMonth; b++) {
 
                             if (b < 10) {
                                 dateNumber[i].textContent = `0${b}`
@@ -418,38 +477,34 @@ function calender() {
                     }
                 }
 
-            } else {
-                for (let b = 1; b <= 30; b++) {
-
-                    if (b < 10) {
-                        dateNumber[i].textContent = `0${b}`
-                    } else {
-                        dateNumber[i].textContent = b
-                    }
-
-                    i++
-                }
-
-                if (i >= 30 && i <= 41) {
-                    for (let b = 1; b <= 42 - i; b++) {
-
-                        if (b < 10) {
-                            dateNumber[i].textContent = `0${b}`
-                        } else {
-                            dateNumber[i].textContent = b
-                        }
-
-                        i++
-                    }
-                }
             }
 
+
         }
-
-
     }
 
-    
+    calenderLoop()
+
+
+    let leftCalenderButton = document.getElementsByClassName("calender-left-button")
+    let rightCalenderButton = document.getElementsByClassName("calender-right-button")
+
+    leftCalenderButton[0].addEventListener("click", (e) => {
+        e.preventDefault()
+
+        dateObject.setMonth(dateObject.getMonth() - counter)
+
+        calenderLoop()
+
+    })
+
+    rightCalenderButton[0].addEventListener("click", (e) => {
+        e.preventDefault()
+
+        dateObject.setMonth(dateObject.getMonth() + counter)
+
+        calenderLoop()
+    })
 
 }
 
