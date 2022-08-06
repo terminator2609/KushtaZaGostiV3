@@ -18,6 +18,7 @@ let currentNumberMonth = document.getElementById("current-number-month")
 let currentDate = document.getElementById("current-date")
 let dateNumber = document.getElementsByClassName("date-number")
 let backButtons = document.getElementsByClassName("back-step")
+let navACatalogues = document.getElementById("nav-catalogues")
 
 
 for (let i = 0; i < definitionDiv.length; i++) {
@@ -89,6 +90,7 @@ document.addEventListener("scroll", (e) => {
     } else if (window.innerHeight >= 890 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "60vh"
     }
+    
 
     if (document.getElementById("h4-header")) {
         document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`

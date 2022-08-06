@@ -449,28 +449,16 @@ main {
     width: 90%;
 }
 
-.catalogues-list-page article:nth-of-type(15) {
-    width: 100%;
-}
-
-.catalogues-list-page article:nth-of-type(15) a img {
-    position: absolute;
-    width: 30%;
-    left: 33%;
-    top: -40px;
-}
-
 .catalogues-list-page article:last-of-type {
-    margin-top: 30%;
+    margin-top: 0%;
     font-size: 25px;
     margin-bottom: 15%;
 }
 
 .catalogues-list-page article:last-of-type a {
     color: #8A8A88;
-    margin-top: 10px;
+    margin-top: 0px;
 }
-
 
 /* --------------------------------------------------------------------footer------------------------------------------ */
 
