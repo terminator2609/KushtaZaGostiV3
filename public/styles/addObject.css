@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: The Seasons;
     src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
@@ -435,58 +442,56 @@ main section article:nth-of-type(3) button {
 
 .add-photos article:nth-of-type(2) {
     -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     margin-left: 20px;
+    width: 90%;
+}
+
+.add-photos article:nth-of-type(2) form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 70px;
 }
 
 .add-photos article:nth-of-type(2) form div label {
     background: none;
     border: 2px solid #ffffff;
-    padding: 10px 35px 10px 30px;
     -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     color: #A8A8A7;
     font-family: Forum;
     font-size: 14px;
     margin-bottom: 30px;
 }
 
-
-.add-photos article:nth-of-type(2) form div input {
-    display: none;
+.add-photos article:nth-of-type(2) form div:nth-of-type(1) label {
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
 }
 
 .add-photos article:nth-of-type(2) form div:nth-of-type(2) label {
-    background: none;
-    border: none;
-    padding: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-
-.add-photos article:nth-of-type(2) form div:nth-of-type(2) p {
-    border: 2px solid #ffffff;
-    padding: 10px 35px 10px 30px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    width: 186px;
-    margin-top: 30px;
+    padding-right: 28.5%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
 }
 
 .add-photos article:nth-of-type(2) form div:nth-of-type(3) label {
-    background: none;
-    border: none;
-    padding: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    padding-right: 18.2%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
 }
 
-.add-photos article:nth-of-type(2) form div:nth-of-type(3) p {
-    border: 2px solid #ffffff;
-    padding: 10px 35px 10px 30px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    width: 186px;
+.add-photos article:nth-of-type(2) form div input {
+    display: none;
 }
 
 .price-info-villa {
@@ -503,63 +508,74 @@ main section article:nth-of-type(3) button {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-left: 20px;
+    width: 80%;
 }
 
-.price-info-villa article:nth-of-type(2) form div input,
-select {
+.price-info-villa article:nth-of-type(2) form div input, select {
     background: none;
     border: 2px solid #ffffff;
-    padding: 10px 20px 10px 20px;
     -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     color: #A8A8A7;
     font-family: Forum;
     font-size: 14px;
     margin-bottom: 30px;
+    width: 100.5%;
+    height: 34px;
 }
 
 .price-info-villa article:nth-of-type(2) form div input::-webkit-input-placeholder {
     color: #A8A8A7;
-    width: 300px;
+    width: 100%;
+    padding-left: 10px;
 }
 
 .price-info-villa article:nth-of-type(2) form div input::-moz-placeholder {
     color: #A8A8A7;
-    width: 300px;
+    width: 100%;
+    padding-left: 10px;
 }
 
 .price-info-villa article:nth-of-type(2) form div input:-ms-input-placeholder {
     color: #A8A8A7;
-    width: 300px;
+    width: 100%;
+    padding-left: 10px;
 }
 
 .price-info-villa article:nth-of-type(2) form div input::-ms-input-placeholder {
     color: #A8A8A7;
-    width: 300px;
+    width: 100%;
+    padding-left: 10px;
 }
 
 .price-info-villa article:nth-of-type(2) form div input::placeholder {
     color: #A8A8A7;
-    width: 300px;
-}
-
-.price-info-villa article:nth-of-type(2) form div input#price {
-    padding-right: 85px;
+    width: 100%;
+    padding-left: 10px;
 }
 
 .price-info-villa article:nth-of-type(2) form div select#currency {
-    padding-right: 118px;
+   width: 103%;
+   height: 42px;
 }
 
 .price-info-villa article:nth-of-type(2) form div select#typeForRent {
-    padding-right: 12px;
+    width: 103%;
+    height: 42px;
 }
 
-
-.price-info-villa article:nth-of-type(2) form div input#capacity,
-input#numberOfRoom {
-    padding-right: 87px;
+.price-info-villa article:nth-of-type(2) form div input:focus {
+    outline: none !important;
 }
+
+.price-info-villa article:nth-of-type(2) form div select:focus {
+    outline: none !important;
+}
+
+.price-info-villa article:nth-of-type(2) form div select option {
+    padding-left: 10px;
+}
+
 
 .social-media-info-villa {
     height: 55vh;
@@ -773,7 +789,6 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    /* align-items: flex-start; */
     width: 100%;
     margin-top: 5px;
 }
