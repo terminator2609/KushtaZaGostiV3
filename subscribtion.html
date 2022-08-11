@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/styles/reset.css">
-    <link rel="stylesheet" href="./public/styles/signup.css">
+    <link rel="stylesheet" href="./public/styles/subscibtion.css">
     <link rel="apple-touch-icon" sizes="57x57" href="./public/image/favicon.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./public/image/favicon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./public/image/favicon.png">
@@ -28,9 +28,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/20abf9ecf5.js" crossorigin="anonymous"></script>
 
     <title>Kushtizagosti</title>
@@ -102,7 +102,7 @@
                                             <a href="./addObject.html">Добави обект</a>
                                         </li>
                                         <li>
-                                            <a href="#"><a href="./subscribtion.html">Абонаментен план</a></a>
+                                            <a href="./subscribtion.html">Абонаментен план</a>
                                         </li>
 
                                         <li>
@@ -134,48 +134,241 @@
         <div class="line"></div>
     </nav>
 
+    <header>
+        <h1 id="subscription-page-title">МОЯТ</h1>
+        <h2 id="subscription-page-title2">АБОНАМЕНТЕН ПЛАН</h2>
+    </header>
+
     <main>
-        <article>
-            <h1>Здравейте.</h1>
-            <h1>Създайте своя акаунт</h1>
-        </article>
+        <section class="no-subscription-plan">
+            <article>
+                <div>
+                    <button>
+                        <a href="#">ТЕСТВАЙ 7 ДНИ БЕЗПЛАТНО</a>
+                    </button>
+                </div>
 
-        <article>
-            <form action="#">
                 <div>
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email">
-                    <div class="line-form"></div>
+                    <p>Нямате активен абонаментен план</p>
                 </div>
-                <div>
-                    <label for="password">Парола</label>
-                    <input type="password" name="password" id="password">
-                    <div class="line-form"></div>
-                </div>
-                <div>
-                    <label for="twoName">Две имена</label>
-                    <input type="text" name="twoName" id="twoName">
-                    <div class="line-form"></div>
-                </div>
-                <div>
-                    <label for="phoneNumber">Телефонен номер</label>
-                    <input type="number" name="phoneNumber" id="phoneNumber">
-                    <div class="line-form"></div>
-                </div>
-                <div>
-                    <input type="checkbox" name="allowAll" id="allowAll">
-                    <label for="allowAll">Съгласен/на с общите условия на платформата</label>
+            </article>
 
+            <article>
+                <p>Абонаментният план дава нови перспективи на Вашата уникална къща за гсоти на достъпни цени</p>
+            </article>
+            <article>
+                <button class="active-subscription-plan">
+                    Активирай абонаментен план
+                </button>
+            </article>
+        </section>
+
+        <section class="subscription-plan">
+            <article>
+                <div>
+                    <h3>Домакин Pro</h3>
+                    <p>237 дни</p>
+                    <p>11 оставащи оферти</p>
+                    <p>09 оставащи реклами</p>
                 </div>
-            </form>
+                <div>
+                    <h3>Фотосесия xl+</h3>
+                    <p>4 години</p>
+                    <p>4 фотосесии</p>
+                    <p>4 клипа</p>
+                </div>
+            </article>
 
-        </article>
+            <article>
+                <p>Баджът
+                <blockquote>Exclusive</blockquote> е подсказката, че обектът Ви е бил рекламиран. Така той
+                излиза в челните позиции.
+                Следете статуса на Вашите реклами и оферти от специалното меню ДОМАКИН</p>
+            </article>
 
-        <article>
-            <button>
-                <a href="#">Регистрация</a>
-            </button>
-        </article>
+            <article>
+                <div>
+                    <a href="#">Фактури и плащания</a>
+                    <a href="#">Прекрати абонаментен план</a>
+                </div>
+
+                <div>
+                    <button>
+                        <a href="./index.html">Назад</a>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <section class="subscribtion-plan-list-1 section-plans-next">
+            <article>
+
+                <div>
+                    <h1>ИЗБЕРЕТЕ ПЛАН, КОЙТО Е НАЙ-ПОДХОДЯЩ</h1>
+                    <h2>ЗА ВАШИЯ БИЗНЕС</h2>
+                </div>
+
+                <div>
+                    <button>
+                        <a href="#">ТЕСТВАЙ 7 ДНИ БЕЗПЛАТНО</a>
+                    </button>
+                </div>
+
+            </article>
+
+            <article>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div>
+                                <div>
+                                    <h3>3 месеца</h3>
+                                    <p>90 дни</p>
+                                </div>
+                                <div>
+                                    <p>1 абонамент = 1 засадено дърво</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>Преди всички без абонамент</li>
+                                        <li>1 оферта</li>
+                                        <li>3 реклами </li>
+                                        <li>Подаръчна кутия</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>82 BGN</p>
+                                    <p>с ддс</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <a href="#">Купи</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div>
+                                    <h3>6 месеца</h3>
+                                    <p>180 дни</p>
+                                </div>
+                                <div>
+                                    <p>1 абонамент = 1 засадено дърво</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>Преди всички без абонамент</li>
+                                        <li>2 оферта</li>
+                                        <li>6 реклами </li>
+                                        <li>Подаръчна кутия</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>128 BGN</p>
+                                    <p>с ддс</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <a href="#">Купи</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div>
+                                    <h3>домакин на годината</h3>
+                                    <p>360 дни</p>
+                                </div>
+                                <div>
+                                    <p>1 абонамент = 1 засадено дърво</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>Преди всички без абонамент</li>
+                                        <li>6 оферта</li>
+                                        <li>12 реклами </li>
+                                        <li>Подаръчна кутия</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>182 BGN</p>
+                                    <p>с ддс</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <a href="#">Купи</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div>
+                                    <h3>vip домакин</h3>
+                                    <p>360 дни</p>
+                                </div>
+                                <div>
+                                    <p>1 абонамент = 1 засадено дърво</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>Преди всички без абонамент</li>
+                                        <li>8 оферта</li>
+                                        <li>24 реклами </li>
+                                        <li>Подаръчна кутия</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>282 BGN</p>
+                                    <p>с ддс</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <a href="#">Купи</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div>
+                                    <h3>домакин pro</h3>
+                                    <p>360 дни</p>
+                                </div>
+                                <div>
+                                    <p>1 абонамент = 1 засадено дърво</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>Преди всички без абонамент</li>
+                                        <li>12 оферта</li>
+                                        <li>24 реклами </li>
+                                        <li>Подаръчна кутия</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>382 BGN</p>
+                                    <p>с ддс</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <a href="#">Купи</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+
+                    </div>
+            </article>
+
+        </section>
     </main>
 
     <footer>
@@ -281,6 +474,23 @@
 
 </body>
 
-<script src="./public/scripts/index.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".swiper", {
+        loop: true,
+    });
+
+
+
+</script>
+
+<script src="./public/scripts/subscription.js"></script>
+
+
+
 
 </html>

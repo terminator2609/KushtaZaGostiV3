@@ -4,35 +4,36 @@ let roleList = document.getElementsByClassName("role-list")[0]
 let closeMenuButton = document.getElementsByClassName("close-menu-button")[0]
 let navMenuIcon = document.getElementsByClassName("nav-menu-icon")[0]
 let navMenu = document.getElementsByClassName("nav-menu-phone")[0]
-let questionButton = document.getElementsByClassName("fa-circle-question")
-let definitionDiv = document.getElementsByClassName("definition")
-let headerArray = ["НЕКА ПРИКЛЮЧЕНИЕТО ЗАПОЧНЕ", "ВАШЕТО УНИКАЛНО РЕВЮ", "ДА ПОРАБОТИМ И ВЪРХУ МЕДИЯТА", "ВАШАТА ЦЕНА", "СОЦИАЛНИ МРЕЖИ", "НАЙ-ИНТЕРЕСНАТА ЧАСТ", ""]
-let nextButtons = document.getElementsByClassName("next-step")
-let addObjectSections = document.getElementsByClassName("section-add")
-let addObjectTitle = document.getElementById("addObject-title")
-let reviewTextArea = document.getElementById("review")
-let cataloguesSelectPhoto = document.getElementsByClassName("cataloguesSelectPhoto")
-let removeAllSelectionCommand = document.getElementById("removeAllSelection")
-let currentMonth = document.getElementById("current-month")
-let currentNumberMonth = document.getElementById("current-number-month")
-let currentDate = document.getElementById("current-date")
-let dateNumber = document.getElementsByClassName("date-number")
-let backButtons = document.getElementsByClassName("back-step")
-let navACatalogues = document.getElementById("nav-catalogues")
+// let questionButton = document.getElementsByClassName("fa-circle-question")
+// let definitionDiv = document.getElementsByClassName("definition")
+// let headerArray = ["НЕКА ПРИКЛЮЧЕНИЕТО ЗАПОЧНЕ", "ВАШЕТО УНИКАЛНО РЕВЮ", "ДА ПОРАБОТИМ И ВЪРХУ МЕДИЯТА", "ВАШАТА ЦЕНА", "СОЦИАЛНИ МРЕЖИ", "НАЙ-ИНТЕРЕСНАТА ЧАСТ", ""]
+// let nextButtons = document.getElementsByClassName("next-step")
+// let addObjectSections = document.getElementsByClassName("section-add")
+// let addObjectTitle = document.getElementById("addObject-title")
+// let reviewTextArea = document.getElementById("review")
+// let cataloguesSelectPhoto = document.getElementsByClassName("cataloguesSelectPhoto")
+// let removeAllSelectionCommand = document.getElementById("removeAllSelection")
+// let currentMonth = document.getElementById("current-month")
+// let currentNumberMonth = document.getElementById("current-number-month")
+// let currentDate = document.getElementById("current-date")
+// let dateNumber = document.getElementsByClassName("date-number")
+// let backButtons = document.getElementsByClassName("back-step")
+// let navACatalogues = document.getElementById("nav-catalogues")
+// let subscribtionPlan = document.getElementsByClassName("subscription-plan")
+// let subscribtionTextArray = ["МОЯТ", "АБОНАМЕНТЕН ПЛАН", "ИЗБЕРЕТЕ ПЛАН, КОЙТО Е НАЙ-ПОДХОДЯЩ", "ЗА ВАШИЯ БИЗНЕС"]
+// let subscriptionPlanNext = document.getElementsByClassName("section-plans-next")
+// let activeSubscriptionButton = document.getElementsByClassName("active-subscription-plan")
 
-
-for (let i = 0; i < definitionDiv.length; i++) {
-    definitionDiv[i].style.display = "none"
-}
-
-for (let i = 1; i < addObjectSections.length; i++) {
-    addObjectSections[i].style.display = "none"
-}
 
 navMenu.style.display = "none"
 
 guestSection.style.display = "none"
 hostSection.style.display = "none"
+// subscribtionPlan[0].style.display = "none"
+
+// for (let i = 0; i < subscriptionPlanNext.length; i++) {
+//     subscriptionPlanNext[i].style.display = "none"
+// }
 
 document.addEventListener("scroll", (e) => {
 
@@ -41,23 +42,23 @@ document.addEventListener("scroll", (e) => {
         document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
     }
 
-    if (window.location.href === "file:///C:/Users/rados/OneDrive/Desktop/kushtizagostiV3/aboutUs.html" || window.location.href === "https://verdant-bavarois-547c16.netlify.app/aboutus") {
-        if (window.scrollY > 0) {
-            document.getElementById("nav-index").style.backgroundColor = "#545451"
-            document.getElementById("nav-index").style.transition = "0.8s"
-            document.getElementsByClassName("fa-solid")[0].style.color = "#ffffff"
-            document.getElementsByClassName("translateEN")[0].style.color = "#ffffff"
-            document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-            document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-            document.getElementsByClassName("logo-nav-2")[0].style.top = "-30px"
-        } else {
-            document.getElementById("nav-index").style.background = "none"
-            document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
-            document.getElementsByClassName("translateEN")[0].style.color = "#545454"
-            document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
-            document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-        }
-    } else {
+   
+    //     if (window.scrollY > 0) {
+    //         document.getElementById("nav-index").style.backgroundColor = "#545451"
+    //         document.getElementById("nav-index").style.transition = "0.8s"
+    //         document.getElementsByClassName("fa-solid")[0].style.color = "#ffffff"
+    //         document.getElementsByClassName("translateEN")[0].style.color = "#ffffff"
+    //         document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
+    //         document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+    //         document.getElementsByClassName("logo-nav-2")[0].style.top = "-30px"
+    //     } else {
+    //         document.getElementById("nav-index").style.background = "none"
+    //         document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
+    //         document.getElementsByClassName("translateEN")[0].style.color = "#545454"
+    //         document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
+    //         document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
+    //     }
+    // } else {
         if (window.scrollY > 0) {
             document.getElementById("nav-index").style.backgroundColor = "white"
             document.getElementById("nav-index").style.transition = "0.8s"
@@ -73,7 +74,6 @@ document.addEventListener("scroll", (e) => {
             document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
             document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
         }
-    }
 
 
 
@@ -90,11 +90,11 @@ document.addEventListener("scroll", (e) => {
     } else if (window.innerHeight >= 890 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "60vh"
     }
-    
 
-    if (document.getElementById("h4-header")) {
-        document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
-    }
+
+    // if (document.getElementById("h4-header")) {
+    //     document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
+    // }
 
 
 })
@@ -174,341 +174,28 @@ navMenuIcon.addEventListener("click", (e) => {
     navMenu.style.display = "flex"
 })
 
-for (let i = 0; i < questionButton.length; i++) {
 
+// activeSubscriptionButton[0].addEventListener("click", (e) => {
+//     e.preventDefault()
 
-    questionButton[i].addEventListener("click", (e) => {
-        e.preventDefault()
+//     console.log("click")
 
+//     for (let i = 0; i < subscriptionPlanNext.length; i++) {
+//         subscriptionPlanNext[i].style.display = "flex"
+//     }
 
-        if (definitionDiv[i].style.display === "none") {
-            definitionDiv[i].style.display = "flex"
-        } else {
-            definitionDiv[i].style.display = "none"
-        }
-    })
-}
+//     if (document.getElementById("subscription-page-title").textContent === "МОЯТ" && document.getElementById("subscription-page-title2").textContent === "АБОНАМЕНТЕН ПЛАН") {
+//         document.getElementById("subscription-page-title").textContent = "ИЗБЕРЕТЕ ПЛАН, КОЙТО Е НАЙ-ПОДХОДЯЩ"
+//         document.getElementById("subscription-page-title2").textContent = "ЗА ВАШИЯ БИЗНЕС"
+//     } else {
+//         document.getElementById("subscription-page-title").textContent = "МОЯТ"
+//         document.getElementById("subscription-page-title2").textContent = "АБОНАМЕНТЕН ПЛАН"
+//     }
 
-for (let i = 0; i < nextButtons.length; i++) {
+//     document.getElementsByClassName("no-subscription-plan")[0].style.display = "none"
 
 
-    nextButtons[i].addEventListener("click", (e) => {
-        e.preventDefault()
-
-        addObjectTitle.textContent = headerArray[i + 1]
-        addObjectSections[i].style.display = "none"
-        addObjectSections[i + 1].style.display = "flex"
-
-        if (document.getElementsByClassName("catalogues-select-villa")[0].style.display === "flex") {
-            document.getElementsByTagName("main")[0].style.marginTop = "0%"
-        }
-
-    })
-}
-
-for (let i = 0; i < backButtons.length; i++) {
-
-    backButtons[i].addEventListener("click", (e) => {
-        e.preventDefault()
-
-        addObjectTitle.textContent = headerArray[i]
-        addObjectSections[i + 1].style.display = "none"
-        addObjectSections[i].style.display = "flex"
-
-        if (document.getElementsByClassName("social-media-info-villa")[0].style.display === "flex") {
-            document.getElementsByTagName("main")[0].style.marginTop = "40%"
-        }
-
-    })
-}
-
-reviewTextArea.addEventListener("click", (e) => {
-    e.preventDefault()
-
-    reviewTextArea.cols = 40
-    reviewTextArea.rows = 5
-})
-
-for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
-
-
-    removeAllSelectionCommand.addEventListener("click", (e) => {
-        e.preventDefault()
-
-        cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto"
-    })
-
-    cataloguesSelectPhoto[i].addEventListener("click", (e) => {
-        e.preventDefault()
-
-        if (cataloguesSelectPhoto[i].className === "cataloguesSelectPhoto selectedCatalogues") {
-            cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto"
-        } else {
-            cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto selectedCatalogues"
-        }
-    })
-
-
-}
-
-let counter = 1
-
-calender()
-
-function calender() {
-
-    let month = ["Януари", "Февруари", "Март", "Април", "Май", "Юни", "Юли", "Август", "Септември", "Октомври", "Ноември", "Декември"]
-
-    let dateObject = new Date()
-
-    currentMonth.textContent = month[dateObject.getMonth()]
-    currentNumberMonth.textContent = `00${dateObject.getMonth() + 1}`
-    currentDate.textContent = `0${dateObject.getDate()}.0${dateObject.getMonth() + 1}.${dateObject.getFullYear()}`
-
-    function calenderLoop() {
-
-        for (let i = 0; i < dateNumber.length; i++) {
-
-            if (i === 0) {
-                dateObject.setDate(1)
-            }
-
-            if (dateObject.getDay() > 1 && i === 0 || dateObject.getDay() === 0 && i === 0) {
-
-                if (dateObject.getDay() === 0) {
-                    // dateObject.setMonth(dateObject.getMonth() - 1)
-
-                    if (dateObject.getMonth() - 1 === 0 || dateObject.getMonth() - 1 === 2 || dateObject.getMonth() - 1 === 4 || dateObject.getMonth() - 1 === 6 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === 9 || dateObject.getMonth() - 1 === -1 || dateObject.getMonth() - 1 === 11) {
-                        for (let b = 0; b < 6; b++) {
-                            dateNumber[i].textContent = 26 + b
-                            i++
-                        }
-
-                        i--
-                    } else if (dateObject.getMonth() - 1 === 1) {
-
-                        if (dateObject.getFullYear() % 4 === 0) {
-                            for (let b = 0; b < 6; b++) {
-                                dateNumber[i].textContent = 24 + b
-                                i++
-                            }
-
-                            i--
-                        } else {
-                            for (let b = 0; b < 6; b++) {
-                                dateNumber[i].textContent = 23 + b
-                                i++
-                            }
-
-                            i--
-                        }
-
-                    } else {
-                        for (let b = 0; b < 6; b++) {
-                            dateNumber[i].textContent = 25 + b
-                            i++
-                        }
-
-                        i--
-                    }
-                } else {
-
-                    if (dateObject.getMonth() - 1 === 0 || dateObject.getMonth() - 1 === 2 || dateObject.getMonth() - 1 === 4 || dateObject.getMonth() - 1 === 6 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === 9 || dateObject.getMonth() - 1 === -1 || dateObject.getMonth() - 1 === 11) {
-
-                        let latestDay = 32 - dateObject.getDay()
-
-                        for (let b = 1; b < dateObject.getDay(); b++) {
-                            dateNumber[i].textContent = latestDay + b
-                            i++
-                        }
-
-                        i--
-
-                    } else if (dateObject.getMonth() - 1 === 1) {
-
-                        if (dateObject.getFullYear() % 4 === 0) {
-
-                            let latestDay = 30 - dateObject.getDay()
-
-                            for (let b = 1; b < dateObject.getDay(); b++) {
-                                dateNumber[i].textContent = latestDay + b
-                                i++
-                            }
-
-                            i--
-                        } else {
-
-                            let latestDay = 29 - dateObject.getDay()
-
-                            for (let b = 1; b < dateObject.getDay(); b++) {
-                                dateNumber[i].textContent = latestDay + b
-                                i++
-                            }
-
-                            i--
-                        }
-
-                    } else {
-
-                        let latestDay = 31 - dateObject.getDay()
-
-                        for (let b = 1; b < dateObject.getDay(); b++) {
-                            dateNumber[i].textContent = latestDay + b
-                            i++
-                        }
-
-                        i--
-                    }
-                }
-
-            } else {
-
-                if (dateObject.getMonth() === 0 || dateObject.getMonth() === 2 || dateObject.getMonth() === 4 || dateObject.getMonth() === 6 || dateObject.getMonth() === 7 || dateObject.getMonth() === 9 || dateObject.getMonth() === -1 || dateObject.getMonth() === 11) {
-                    for (let b = 1; b <= 31; b++) {
-
-                        if (b < 10) {
-                            dateNumber[i].textContent = `0${b}`
-                        } else {
-                            dateNumber[i].textContent = b
-                        }
-
-                        i++
-                    }
-
-                    if (i >= 31 && i <= 41) {
-
-                        let firstNumbersNewMonth = 42 - i
-
-                        for (let b = 1; b <= firstNumbersNewMonth; b++) {
-
-                            if (b < 10) {
-                                dateNumber[i].textContent = `0${b}`
-                            } else {
-                                dateNumber[i].textContent = b
-                            }
-
-                            i++
-                        }
-                    }
-
-                } else if (dateObject.getMonth() === 1) {
-
-                    if (dateObject.getFullYear() % 4 === 0) {
-                        for (let b = 1; b <= 29; b++) {
-
-                            if (b < 10) {
-                                dateNumber[i].textContent = `0${b}`
-                            } else {
-                                dateNumber[i].textContent = b
-                            }
-
-                            i++
-                        }
-
-                        if (i >= 29 && i <= 41) {
-
-                            let firstNumbersNewMonth = 42 - i
-
-                            for (let b = 1; b <= firstNumbersNewMonth; b++) {
-
-                                if (b < 10) {
-                                    dateNumber[i].textContent = `0${b}`
-                                } else {
-                                    dateNumber[i].textContent = b
-                                }
-
-                                i++
-                            }
-                        }
-
-                    } else {
-                        for (let b = 1; b <= 28; b++) {
-
-                            if (b < 10) {
-                                dateNumber[i].textContent = `0${b}`
-                            } else {
-                                dateNumber[i].textContent = b
-                            }
-
-                            i++
-                        }
-
-                        if (i >= 28 && i <= 41) {
-
-                            let firstNumbersNewMonth = 42 - i
-
-                            for (let b = 1; b <= firstNumbersNewMonth; b++) {
-
-                                if (b < 10) {
-                                    dateNumber[i].textContent = `0${b}`
-                                } else {
-                                    dateNumber[i].textContent = b
-                                }
-
-                                i++
-                            }
-                        }
-                    }
-
-                } else {
-                    for (let b = 1; b <= 30; b++) {
-
-                        if (b < 10) {
-                            dateNumber[i].textContent = `0${b}`
-                        } else {
-                            dateNumber[i].textContent = b
-                        }
-
-                        i++
-                    }
-
-                    if (i >= 30 && i <= 41) {
-
-                        let firstNumbersNewMonth = 42 - i
-
-                        for (let b = 1; b <= firstNumbersNewMonth; b++) {
-
-                            if (b < 10) {
-                                dateNumber[i].textContent = `0${b}`
-                            } else {
-                                dateNumber[i].textContent = b
-                            }
-
-                            i++
-                        }
-                    }
-                }
-
-            }
-
-
-        }
-    }
-
-    calenderLoop()
-
-
-    let leftCalenderButton = document.getElementsByClassName("calender-left-button")
-    let rightCalenderButton = document.getElementsByClassName("calender-right-button")
-
-    leftCalenderButton[0].addEventListener("click", (e) => {
-        e.preventDefault()
-
-        dateObject.setMonth(dateObject.getMonth() - counter)
-
-        calenderLoop()
-
-    })
-
-    rightCalenderButton[0].addEventListener("click", (e) => {
-        e.preventDefault()
-
-        dateObject.setMonth(dateObject.getMonth() + counter)
-
-        calenderLoop()
-    })
-
-}
+// })
 
 
 
