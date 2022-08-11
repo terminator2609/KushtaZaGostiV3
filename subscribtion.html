@@ -365,8 +365,11 @@
                         <!-- If we need navigation buttons -->
 
                     </div>
+
                 </div>
+
                 <div class="swiper-pagination"></div>
+
             </article>
 
         </section>
@@ -480,7 +483,6 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".swiper", {
@@ -489,6 +491,19 @@
             dynamicBullets: true,
         },
     });
+
+</script>
+
+<script>
+
+    document.getElementsByClassName("swiper-pagination")[0].style.bottom = "-5%"
+    let test = document.getElementsByClassName("swiper-pagination-bullet")
+
+    console.log(test.length)
+
+    for(let i = 0; i < test.length; i++) {
+        test[i].style.backgroundColor = "#545454"
+    }
 
 </script>
 
