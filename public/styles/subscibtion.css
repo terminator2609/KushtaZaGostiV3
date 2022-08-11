@@ -232,7 +232,7 @@ header h1 {
 header h2 {
     font-family: Forum;
     font-size: 33px;
-    text-shadow: 0px 5px 0px rgba(84, 84, 84, 0.5);
+    text-shadow: 0px 10px 0px rgba(84, 84, 84, 0.5);
     color: #545454;
 }
 
