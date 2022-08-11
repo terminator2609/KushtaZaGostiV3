@@ -361,14 +361,19 @@
                             </div>
                         </div>
                         <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
 
                         <!-- If we need navigation buttons -->
 
                     </div>
+                    
+                    <div class="swiper-pagination"></div>
+
+
             </article>
 
         </section>
+
+
     </main>
 
     <footer>
@@ -481,10 +486,11 @@
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".swiper", {
-        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
     });
-
-
 
 </script>
 
