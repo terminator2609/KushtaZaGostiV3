@@ -8,6 +8,8 @@ let navACatalogues = document.getElementById("nav-catalogues")
 let subscribtionPlan = document.getElementsByClassName("subscription-plan")
 let subscriptionPlanNext = document.getElementsByClassName("section-plans-next")
 let activeSubscriptionButton = document.getElementsByClassName("active-subscription-plan")
+let definitionDiv = document.getElementsByClassName("definition")
+let questionButton = document.getElementsByClassName("fa-circle-question")
 
 
 navMenu.style.display = "none"
@@ -20,6 +22,11 @@ for (let i = 0; i < subscriptionPlanNext.length; i++) {
     subscriptionPlanNext[i].style.display = "none"
 }
 
+for (let i = 0; i < definitionDiv.length; i++) {
+    definitionDiv[i].style.display = "none"
+}
+
+
 document.addEventListener("scroll", (e) => {
 
 
@@ -30,7 +37,7 @@ document.addEventListener("scroll", (e) => {
         document.getElementsByClassName("translateEN")[0].style.color = "#ffffff"
         document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
         document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-        document.getElementsByClassName("logo-nav-2")[0].style.top = "-30px"
+        document.getElementsByClassName("logo-nav-2")[0].style.top = "-60%"
     } else {
         document.getElementById("nav-index").style.background = "none"
         document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
@@ -136,6 +143,21 @@ activeSubscriptionButton[0].addEventListener("click", (e) => {
 
 
 })
+
+for (let i = 0; i < questionButton.length; i++) {
+
+
+    questionButton[i].addEventListener("click", (e) => {
+        e.preventDefault()
+
+
+        if (definitionDiv[i].style.display === "none") {
+            definitionDiv[i].style.display = "flex"
+        } else {
+            definitionDiv[i].style.display = "none"
+        }
+    })
+}
 
 
     

@@ -4,36 +4,13 @@ let roleList = document.getElementsByClassName("role-list")[0]
 let closeMenuButton = document.getElementsByClassName("close-menu-button")[0]
 let navMenuIcon = document.getElementsByClassName("nav-menu-icon")[0]
 let navMenu = document.getElementsByClassName("nav-menu-phone")[0]
-// let questionButton = document.getElementsByClassName("fa-circle-question")
-// let definitionDiv = document.getElementsByClassName("definition")
-// let headerArray = ["НЕКА ПРИКЛЮЧЕНИЕТО ЗАПОЧНЕ", "ВАШЕТО УНИКАЛНО РЕВЮ", "ДА ПОРАБОТИМ И ВЪРХУ МЕДИЯТА", "ВАШАТА ЦЕНА", "СОЦИАЛНИ МРЕЖИ", "НАЙ-ИНТЕРЕСНАТА ЧАСТ", ""]
-// let nextButtons = document.getElementsByClassName("next-step")
-// let addObjectSections = document.getElementsByClassName("section-add")
-// let addObjectTitle = document.getElementById("addObject-title")
-// let reviewTextArea = document.getElementById("review")
-// let cataloguesSelectPhoto = document.getElementsByClassName("cataloguesSelectPhoto")
-// let removeAllSelectionCommand = document.getElementById("removeAllSelection")
-// let currentMonth = document.getElementById("current-month")
-// let currentNumberMonth = document.getElementById("current-number-month")
-// let currentDate = document.getElementById("current-date")
-// let dateNumber = document.getElementsByClassName("date-number")
-// let backButtons = document.getElementsByClassName("back-step")
-// let navACatalogues = document.getElementById("nav-catalogues")
-// let subscribtionPlan = document.getElementsByClassName("subscription-plan")
-// let subscribtionTextArray = ["МОЯТ", "АБОНАМЕНТЕН ПЛАН", "ИЗБЕРЕТЕ ПЛАН, КОЙТО Е НАЙ-ПОДХОДЯЩ", "ЗА ВАШИЯ БИЗНЕС"]
-// let subscriptionPlanNext = document.getElementsByClassName("section-plans-next")
-// let activeSubscriptionButton = document.getElementsByClassName("active-subscription-plan")
+
 
 
 navMenu.style.display = "none"
 
 guestSection.style.display = "none"
 hostSection.style.display = "none"
-// subscribtionPlan[0].style.display = "none"
-
-// for (let i = 0; i < subscriptionPlanNext.length; i++) {
-//     subscriptionPlanNext[i].style.display = "none"
-// }
 
 document.addEventListener("scroll", (e) => {
 
@@ -42,23 +19,6 @@ document.addEventListener("scroll", (e) => {
         document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
     }
 
-   
-    //     if (window.scrollY > 0) {
-    //         document.getElementById("nav-index").style.backgroundColor = "#545451"
-    //         document.getElementById("nav-index").style.transition = "0.8s"
-    //         document.getElementsByClassName("fa-solid")[0].style.color = "#ffffff"
-    //         document.getElementsByClassName("translateEN")[0].style.color = "#ffffff"
-    //         document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-    //         document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-    //         document.getElementsByClassName("logo-nav-2")[0].style.top = "-30px"
-    //     } else {
-    //         document.getElementById("nav-index").style.background = "none"
-    //         document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
-    //         document.getElementsByClassName("translateEN")[0].style.color = "#545454"
-    //         document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
-    //         document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-    //     }
-    // } else {
         if (window.scrollY > 0) {
             document.getElementById("nav-index").style.backgroundColor = "white"
             document.getElementById("nav-index").style.transition = "0.8s"
@@ -66,7 +26,7 @@ document.addEventListener("scroll", (e) => {
             document.getElementsByClassName("translateEN")[0].style.color = "#6F6F6F"
             document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
             document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-            document.getElementsByClassName("logo-nav-2")[0].style.top = "-30px"
+            document.getElementsByClassName("logo-nav-2")[0].style.top = "-60%"
         } else {
             document.getElementById("nav-index").style.background = "none"
             document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
@@ -90,12 +50,6 @@ document.addEventListener("scroll", (e) => {
     } else if (window.innerHeight >= 890 && document.getElementById("customHeight")) {
         document.getElementById("customHeight").style.height = "60vh"
     }
-
-
-    // if (document.getElementById("h4-header")) {
-    //     document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
-    // }
-
 
 })
 
@@ -173,29 +127,6 @@ navMenuIcon.addEventListener("click", (e) => {
 
     navMenu.style.display = "flex"
 })
-
-
-// activeSubscriptionButton[0].addEventListener("click", (e) => {
-//     e.preventDefault()
-
-//     console.log("click")
-
-//     for (let i = 0; i < subscriptionPlanNext.length; i++) {
-//         subscriptionPlanNext[i].style.display = "flex"
-//     }
-
-//     if (document.getElementById("subscription-page-title").textContent === "МОЯТ" && document.getElementById("subscription-page-title2").textContent === "АБОНАМЕНТЕН ПЛАН") {
-//         document.getElementById("subscription-page-title").textContent = "ИЗБЕРЕТЕ ПЛАН, КОЙТО Е НАЙ-ПОДХОДЯЩ"
-//         document.getElementById("subscription-page-title2").textContent = "ЗА ВАШИЯ БИЗНЕС"
-//     } else {
-//         document.getElementById("subscription-page-title").textContent = "МОЯТ"
-//         document.getElementById("subscription-page-title2").textContent = "АБОНАМЕНТЕН ПЛАН"
-//     }
-
-//     document.getElementsByClassName("no-subscription-plan")[0].style.display = "none"
-
-
-// })
 
 
 
