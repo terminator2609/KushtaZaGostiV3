@@ -245,24 +245,154 @@ header i {
 
 /* ------------------------------------------------------------------main----------------------------------------------------------------------- */
 
-main div {
+main {
     display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+main article {
+    display: flex;
+    gap: 5%;
+    border-bottom: 1px solid #545454;
+    margin-left: 10px;
+}
+
+main article p {
+    font-family: Montserrat;
+    color: #535351;
+    font-size: 13px;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+main article p:nth-of-type(1), main article p:nth-of-type(2) {
+    border-right: 1px solid #545454;
+    padding-right: 5px;
+}
+
+main article p:nth-of-type(3) {
+    padding-left: 0%;
+}
+
+/* ----------------------------footer-------------------------------------- */
+
+footer {
+    margin-top: 50px;
+    height: 82vh;
+    background-color: #535351;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Forum;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    justify-content: space-around;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
-main div p:nth-of-type(1) {
-    border-right: 1px solid black;
-    padding-right: 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 30px;
+
+
+footer article:nth-of-type(1),
+footer article:nth-of-type(2) {
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
-main div p:nth-of-type(2) {
-    border-right: 1px solid black;
-    padding-right: 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 30px;
+footer article:nth-of-type(1) h1,
+footer article:nth-of-type(2) h1 {
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+footer article:nth-of-type(1) ul,
+footer article:nth-of-type(2) ul {
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+footer article:nth-of-type(1) ul li a,
+footer article:nth-of-type(2) ul li {
+    color: #fbbc04;
+    font-size: 16px;
+}
+
+footer article:nth-of-type(1) ul li a {
+    text-transform: uppercase;
+}
+
+footer article:nth-of-type(3) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+footer article:nth-of-type(3) li:nth-of-type(1) {
+    padding-bottom: 22px;
+}
+
+
+footer article:nth-of-type(3) a {
+    color: white;
+    font-size: 20px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 6px 7px 4px 7px;
+}
+
+footer article:nth-of-type(3) li:nth-of-type(1) a {
+    color: white;
+    font-size: 20px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 6px 10px 5px 10px;
+}
+
+
+footer article:nth-of-type(4) {
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+footer article:nth-of-type(4) ul {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+
+footer article:nth-of-type(4) div:nth-of-type(2) {
+    width: 97%;
+    border-bottom: 1px solid #ffffff;
+}
+
+footer article:nth-of-type(4) div:nth-of-type(3) {
+    display: flex;
+    font-size: 12px;
+    gap: 85px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
