@@ -5,13 +5,10 @@
 * Browsers: last 4 version
 */
 
+
 @font-face {
     font-family: The Seasons;
     src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
-}
-
-body {
-    background-color: #535351;
 }
 
 nav {
@@ -223,171 +220,10 @@ span {
     fill: #DCDFDE;
 }
 
-/* ------------------------------------------------------------------header--------------------------------------------  */
-
-header {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    position: relative;
-}
-
-header h1 {
-    font-family: "Cormorant Garamond";
-    color: white;
-    font-size: 22px;
-    text-shadow: 0px 5px 2px rgba(255, 255, 255, 0.55);
-    text-align: center;
-    margin-top: 50px;
-}
-
-header div {
-    margin-top: 50px;
-    position: relative;
-}
-
-header div h2 {
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: "The Seasons";
-    color: white;
-}
-
-header div h3 {
-    position: absolute;
-    left: 92%;
-    top: 5%;
-    -webkit-transform: translateX(-92%);
-        -ms-transform: translateX(-92%);
-            transform: translateX(-92%);
-    font-family: "Cormorant Garamond";
-    color: white;
-
-}
-
-header div h3:nth-of-type(2) {
-    top: 10%;
-}
-
-
-header img {
-    width: 50%;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-}
-
-header h4 {
-    position: absolute;
-    color: white;
-    font-family: Forum;
-    /* font-size: 200px; */
-    overflow: hidden;
-    bottom: 5%;
-    width: 100%;
-    opacity: 0.5;
-}
-
-
-/* ----------------------------------------------------------------------------main------------------------------------------------------------------------ */
+/* ---------------------------------------main---------------------------------------------  */
 
 main {
-    margin-top: 50px;
-}
-
-/* ---------------------------------------------------------------class.exclusive-------------------------------------------------- */
-.exclusive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 50%;
-}
-
-.exclusive article:nth-of-type(1) h1 {
-    padding-left: 5px;
-    font-family: "The Seasons";
-    color: #8A8A88;
-    opacity: 0.8;
-    font-size: 45px;
-}
-
-.exclusive article:nth-of-type(1) p {
-    font-family: "Cormorant Garamond";
-    color: white;
-    padding-left: 10px;
-    font-size: 15px;
-    width: 70px;
-    margin-top: 25px;
-}
-
-.exclusive article:nth-of-type(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    /* padding-right: 145px; */
-    width: 100%;
-    margin-right: 70px;
-    position: relative;
-    width: 100%;
-}
-
-.exclusive article:nth-of-type(2) h1 {
-    font-family: "The Seasons";
-    color: #8A8A88;
-    opacity: 0.8;
-    font-size: 33px;
-    -webkit-transform: rotate(270deg);
-        -ms-transform: rotate(270deg);
-            transform: rotate(270deg);
-    padding-bottom: 180px;
-}
-
-.exclusive img:nth-of-type(1) {
-    position: absolute;
-    width: 75%;
-    top: 0%;
-}
-
-.exclusive img:nth-of-type(2) {
-    position: absolute;
-    left: 80%;
-    top: 0%;
-}
-
-.exclusive img:nth-of-type(3) {
-    position: absolute;
-    /* right: 0%; */
-    width: 65%;
-    top: 50%;
-    left: 55%;
-}
-
-
-.exclusive img {
-    width: 50%;
-}
-
-/* ---------------------------------------------------------------class.catalogues-list-page-------------------------------------------------- */
-
-.catalogues-list-page {
+    height: 130vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -401,72 +237,118 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 15px;
-    /* margin-bottom: 140px; */
 }
 
-.catalogues-list-page h1 {
-    margin-bottom: 10%;
-    font-family: 'Montserrat';
-    color: rgb(255, 255, 255, 0.5);
+main article:nth-of-type(1) {
+    color: white;
+    text-align: center;
     text-transform: uppercase;
+    line-height: 1.5;
+    margin-top: 60px;
+}
+
+main article:nth-of-type(1) h1:nth-of-type(1) {
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #535351;
+}
+
+main article:nth-of-type(1) h1:nth-of-type(2) {
+    font-family: Forum;
+    font-size: 35px;
+    color: #545454;
+    text-shadow: -5px 9px 3px rgb(84 84 84 / 50%);
+}
+
+main article:nth-of-type(2) form {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+}
+
+main article:nth-of-type(2) form>div:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+
+main article:nth-of-type(2) form>div:nth-of-type(1) label i {
+    font-size: 25px;
+    background-color: #535351;
+    padding: 17px;
+    border-radius: 30px;
+}
+
+main article:nth-of-type(2) form>div input#photo {
+    display: none;
+}
+
+main article:nth-of-type(2) form>div input#email {
+    width: 240px;
+}
+
+main article:nth-of-type(2) form>div input#password {
+    width: 228px;
+}
+
+main article:nth-of-type(2) form>div input#address {
+    width: 235px;
+}
+
+main article:nth-of-type(2) form>div .line-form {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ABABAA;
+    margin-top: 20px;
+    width: 300px;
+}
+
+main article:nth-of-type(2) form div label {
+    color: #A8A8A7;
+    font-family: Montserrat;
     font-size: 16px;
 }
 
-
-.catalogues-list-page article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    position: relative;
-
+main article:nth-of-type(2) form div input {
+    border: none;
+    background: none;
+    color: #545454;
 }
 
-.catalogues-list-page article a:nth-of-type(1) img {
-    margin-left: 5px;
+main article:nth-of-type(2) form div input:focus {
+  outline: none !important;
+  border: none;
+  background: none;
 }
 
-.catalogues-list-page article a:nth-of-type(2) img {
-    position: absolute;
-    left: 49%;
-    -webkit-transform: translateX(-49%);
-        -ms-transform: translateX(-49%);
-            transform: translateX(-49%);
-    bottom: 25%;
-    width: 30%;
+main article:nth-of-type(2) form div:nth-of-type(4) input {
+    width: 200px;
+    
 }
 
-.catalogues-list-page article a:nth-of-type(3) img {
-    margin-right: 0px;
+main article:nth-of-type(2) form div:nth-of-type(5) label {
+    font-size: 14px;
 }
 
-.catalogues-list-page a {
-    width: 100%;
+main article:nth-of-type(3) {
+    margin-top: 30px;
 }
 
-.catalogues-list-page a img {
-    width: 90%;
+main article:nth-of-type(3) button {
+    background: none;
+    border: 2px solid rgba(84, 84, 84, 0.5);
+    padding: 10px 20px 10px 20px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.5);
 }
 
-.catalogues-list-page article:last-of-type {
-    margin-top: 0%;
-    font-size: 25px;
-    margin-bottom: 15%;
-}
-
-.catalogues-list-page article:last-of-type a {
-    color: #8A8A88;
-    margin-top: 0px;
+main article:nth-of-type(3) button a {
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 18px;
 }
 
 /* ----------------------------footer-------------------------------------- */
