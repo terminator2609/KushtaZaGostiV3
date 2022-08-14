@@ -37,11 +37,11 @@ nav>ul {
 }
 
 nav>ul>li {
-    color: #DCDFDE;
+    color: #545454;
 }
 
 nav>ul>li>a {
-    color: #DCDFDE;
+    color: #545454;
     font-family: The Seasons;
     font-size: 22px;
 }
@@ -61,8 +61,14 @@ nav>ul>li:nth-of-type(2) img {
     transform: translateX(-50%);
 }
 
-nav>ul>li:nth-of-type(2) img.logo-nav-2 {
+nav>ul>li:nth-of-type(2) img.logo-nav-1 {
     display: none;
+}
+
+nav>ul>li:nth-of-type(2) img.logo-nav-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 
@@ -78,7 +84,6 @@ nav>ul>li:nth-of-type(3) {
     left: 5%;
     right: 5%;
 }
-
 
 .nav-menu-phone {
     background-color: #545454;
@@ -177,8 +182,7 @@ nav>ul>li:nth-of-type(3) {
     line-height: 1.5;
 }
 
-.nav-menu-phone article:nth-of-type(3)>ul li a,
-span {
+.nav-menu-phone article:nth-of-type(3)>ul li a, span {
     color: #C3C3C3;
     font-family: Forum;
     font-size: 30px;
@@ -209,6 +213,7 @@ span {
     margin-right: 20px;
     padding: 5px 15px 5px 15px;
 }
+
 
 .nav-menu-phone article:nth-of-type(4) button a {
     font-family: 'Forum';
