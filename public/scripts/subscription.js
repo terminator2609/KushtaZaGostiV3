@@ -55,7 +55,7 @@ let roleButton = document.getElementById("role-button")
 let roleText = document.getElementById("role-text")
 
 roleButton.addEventListener("click", (e) => {
-    e.preventDefault()
+
 
     if (roleButton.textContent === "Гост") {
         roleButton.textContent = "Домакин"
@@ -65,6 +65,9 @@ roleButton.addEventListener("click", (e) => {
         roleButton.style.backgroundColor = "white"
         hostSection.style.display = "none"
         guestSection.style.display = "none"
+        roleList.style.marginLeft = "0px"
+        roleText.style.fontSize = ""
+        roleText.style.color = ""
     } else {
         roleButton.textContent = "Гост"
         roleText.textContent = "Домакин"
@@ -73,6 +76,10 @@ roleButton.addEventListener("click", (e) => {
         roleButton.style.background = "none"
         hostSection.style.display = "none"
         guestSection.style.display = "none"
+        roleText.style.fontSize = ""
+        roleList.style.marginLeft = "0px"
+        roleText.style.fontSize = ""
+        roleText.style.color = ""
     }
 })
 

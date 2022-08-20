@@ -1,37 +1,26 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-body {
-    background-color: #535351;
-}
-
 @font-face {
     font-family: The Seasons;
     src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
 }
 
+body {
+    background-color: #535351;
+}
+
 nav {
-    position: fixed;
-    z-index: 100;
+    position: sticky;
+    z-index: 1000;
     width: 100%;
     height: 100px;
+    top: 0%;
+    margin-bottom: 10%;
 }
 
 
 nav>ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     padding-top: 25px;
     padding-left: 15px;
@@ -92,29 +81,15 @@ nav>ul>li:nth-of-type(3) {
     left: 0%;
     top: 0%;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 }
 
 .nav-menu-phone article:nth-of-type(1) ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     margin-top: 15px;
     /* border-bottom: 1px solid white; */
@@ -152,9 +127,7 @@ nav>ul>li:nth-of-type(3) {
 }
 
 .nav-menu-phone article:nth-of-type(2) {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     margin-top: 20px;
 }
 
@@ -199,8 +172,7 @@ span {
 }
 
 .nav-menu-phone article:nth-of-type(4) {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
     margin-top: 40px;
 }
 
@@ -224,108 +196,108 @@ span {
     fill: #DCDFDE;
 }
 
-/* ---------------------------------------main---------------------------------------------  */
+
+
+/* ------------------------------------------------------------------------------------------main--------------------------------------------------------------  */
 
 main {
-    height: 120vh;
-    background-color: #535351;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 50px;
 }
 
-main article:nth-of-type(1) {
-    color: white;
+.title h1 {
+    font-family: Montserrat;
+    font-size: 25px;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    line-height: 1.5;
-    margin-top: 60px;
 }
 
-main article:nth-of-type(1) h1:nth-of-type(1) {
-    font-family: Montserrat;
-    font-size: 20px;
-}
-
-main article:nth-of-type(1) h1:nth-of-type(2) {
+.title h2 {
     font-family: Forum;
-    font-size: 22px;
-    text-shadow: 0px 5px 2px rgba(255, 255, 255, 0.55);
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 5px 2px rgb(255 255 255 / 55%);
+    text-transform: uppercase;
 }
 
-main article:nth-of-type(2) form {
-    margin-top: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.my-object {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 10px;
-}
-
-main article:nth-of-type(2) form>div .line-form {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ABABAA;
+    flex-direction: row;
     margin-top: 20px;
-    width: 300px;
+    position: relative;
 }
 
-main article:nth-of-type(2) form div label {
-    color: #A8A8A7;
-    font-family: Montserrat;
-    font-size: 16px;
+.my-object article:nth-of-type(1) {
+    margin-left: 30%;
+    transform: translateX(-30%);
+    position: relative;
 }
 
-main article:nth-of-type(2) form div input {
-    border: none;
-    background: none;
-    color: white;
+.my-object article:nth-of-type(2) {
+    margin-right: 10px;
 }
 
-main article:nth-of-type(2) form div input:focus {
-  outline: none !important;
-  border: none;
-  background: none;
-}
-
-main article:nth-of-type(2) form div:nth-of-type(4) input {
-    width: 125px;
-    
-}
-
-main article:nth-of-type(2) form div:nth-of-type(6) label {
-    font-size: 11px;
-}
-
-main article:nth-of-type(3) {
-    margin-top: 30px;
-}
-
-main article:nth-of-type(3) button {
-    background: none;
-    border: 2px solid #ffffff;
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.5);
-            box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.5);
-}
-
-main article:nth-of-type(3) button a {
-    color: #A8A8A7;
-    font-family: Forum;
+.my-object h3 {
+    font-family: 'Forum';
     font-size: 18px;
+    color: #ffffff;
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    right: 60%;
 }
+
+
+.my-object article:nth-of-type(1) div:nth-of-type(1) {
+    position: relative;
+}
+
+.my-object article:nth-of-type(1) div:nth-of-type(2) {
+    position: absolute;
+    width: 70%;
+    left: 40%;
+    top: 92%;
+    font-family: 'Forum';
+    color: #535351;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.my-object article:nth-of-type(1) div:nth-of-type(2) p {
+    padding: 3px 0px 0px 5px;
+    color: #535151;
+}
+
+.my-object article:nth-of-type(1) div:nth-of-type(2) p:nth-of-type(1) {
+    border-bottom: 1px solid #545454;
+    width: 80%;
+    padding-bottom: 2px;
+}
+
+.my-object button a {
+    font-family: Forum;
+    color: black;
+    font-size: 12px;
+}
+
+.my-object img {
+    width: 115%;
+}
+
+.my-object article:nth-of-type(2) p {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+
+
 
 /* ----------------------------footer-------------------------------------- */
 
