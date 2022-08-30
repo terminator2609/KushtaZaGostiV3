@@ -1,0 +1,1191 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+    font-family: The Seasons;
+    src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
+}
+
+body {
+    overflow-x: hidden
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+}
+
+nav>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+nav>ul>li {
+    color: #545454;
+}
+
+nav>ul>li>a {
+    color: #545454;
+    font-family: The Seasons;
+    font-size: 22px;
+}
+
+nav>ul>li:nth-of-type(1) {
+    font-size: 35px;
+}
+
+
+nav>ul>li:nth-of-type(2) img {
+    width: 190px;
+    position: absolute;
+    left: 50%;
+    top: -60%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+nav>ul>li:nth-of-type(2) img.logo-nav-1 {
+    display: none;
+}
+
+nav>ul>li:nth-of-type(2) img.logo-nav-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+nav>ul>li:nth-of-type(3) {
+    font-size: 25px;
+}
+
+.line {
+    border-bottom: 1px solid #3D4141;
+    position: absolute;
+    width: 90%;
+    bottom: 0%;
+    left: 5%;
+    right: 5%;
+}
+
+.nav-menu-phone {
+    background-color: #545454;
+    width: 85%;
+    font-family: Forum;
+    z-index: 101;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.nav-menu-phone article:nth-of-type(1) ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin-top: 15px;
+    /* border-bottom: 1px solid white; */
+}
+
+.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(1) {
+    margin-left: 15px;
+    font-size: 45px;
+    margin-top: 5px;
+}
+
+
+.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(3) {
+    margin-right: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+
+.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(2) img {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    -webkit-transform: translateX(-50%) translateY(-25%);
+    -ms-transform: translateX(-50%) translateY(-25%);
+    transform: translateX(-50%) translateY(-25%);
+    z-index: -1;
+}
+
+.line-menu {
+    border-bottom: 1px solid white;
+    margin-top: 34px;
+    margin-left: 20px;
+}
+
+.nav-menu-phone article:nth-of-type(2) {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+.nav-menu-phone article:nth-of-type(2) button {
+    background: none;
+    width: 170px;
+    height: 40px;
+    border: 2px solid white;
+    font-family: 'Forum';
+    font-size: 25px;
+    color: white;
+    -webkit-box-shadow: -2px 7px 8px -3px rgba(0, 0, 0, 0.68);
+    box-shadow: -2px 7px 8px -3px rgba(0, 0, 0, 0.68);
+}
+
+.nav-menu-phone article:nth-of-type(3) {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+
+.nav-menu-phone article:nth-of-type(3)>ul li {
+    line-height: 1.5;
+}
+
+.nav-menu-phone article:nth-of-type(3)>ul li a,
+span {
+    color: #C3C3C3;
+    font-family: Forum;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+.nav-menu-phone article:nth-of-type(3) ul li:nth-of-type(4) div ul li {
+    line-height: 1;
+}
+
+.nav-menu-phone article:nth-of-type(3) ul li:nth-of-type(4) div ul li a {
+    font-size: 18px;
+}
+
+.nav-menu-phone article:nth-of-type(4) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-top: 40px;
+}
+
+
+.nav-menu-phone article:nth-of-type(4) button {
+    background: none;
+    border: 2px solid white;
+    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    margin-right: 20px;
+    padding: 5px 15px 5px 15px;
+}
+
+
+.nav-menu-phone article:nth-of-type(4) button a {
+    font-family: 'Forum';
+    font-size: 22px;
+    color: white;
+}
+
+.close-menu-button {
+    fill: #DCDFDE;
+}
+
+/* ----------------------------------------------------------------------------header------------------------------------------------------ */
+
+header {
+    text-align: center;
+    padding-top: 40%;
+}
+
+header h1 {
+    font-family: Montserrat;
+    font-size: 30px;
+    color: #535351;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-family: Forum;
+    font-size: 33px;
+    text-shadow: 2px 7px 4px rgba(84, 84, 84, 0.7);
+    color: #545454;
+    text-transform: uppercase;
+}
+
+/* -----------------------------------------------------------------------------main-------------------------------------------------------------- */
+
+
+/* ---------------------------------------------section.general-info-villa------------------------------------------------- */
+
+
+.categories {
+    margin-top: 20%;
+    margin-left: 20px;
+    margin-bottom: 20%;
+}
+
+.categories ul {
+    line-height: 2;
+}
+
+.categories ul li a {
+    font-family: Forum;
+    font-size: 16px;
+    color: rgb(83, 83, 81, 0.7);
+    text-transform: uppercase;
+}
+
+
+main section article:nth-of-type(1) {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    justify-self: flex-start;
+    position: relative;
+}
+
+main section article.flags-article:nth-of-type(1) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+main section article:nth-of-type(1)>div:nth-of-type(1) {
+    position: relative;
+}
+
+main section article.flags-article:nth-of-type(1)>div:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    gap: 5px;
+}
+
+main section article.flags-article:nth-of-type(1)>div:last-of-type img {
+    width: 6%;
+}
+
+main section article:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+main section article:nth-of-type(2) form>div .line-form {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ABABAA;
+    margin-top: 20px;
+    width: 300px;
+}
+
+main section article:nth-of-type(2) form div label {
+    color: #535351;
+    font-family: Forum;
+    font-size: 16px;
+}
+
+.general-info-villa {
+    margin-top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 60vh;
+    margin-bottom: 60%;
+}
+
+.general-info-villa article:nth-of-type(2) a {
+    color: #A8A8A7;
+    font-family: Montserrat;
+    font-size: 13px;
+    margin-left: 50%;
+}
+
+.general-info-villa article:nth-of-type(2) form div input {
+    border: none;
+    background: none;
+    color: #A8A8A7;
+    font-family: Montserrat;
+    width: 60%;
+}
+
+.general-info-villa article:nth-of-type(2) form div input:focus {
+    outline: none !important;
+    border: none;
+    background: none;
+}
+
+main section article:nth-of-type(3) {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+main section article:nth-of-type(3) button {
+    background: none;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    padding: 10px 20px 10px 20px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
+}
+
+main section article:nth-of-type(3) button a {
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 18px;
+}
+
+.review-villa,
+.add-photos,
+.price-info-villa,
+.social-media-info-villa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.review-villa {
+    height: 30vh;
+    margin-top: 30%;
+    margin-bottom: 40%;
+}
+
+.review-villa article:nth-of-type(2) form div textarea {
+    border: none;
+    background: none;
+    color: #A8A8A7;
+    font-family: Montserrat;
+}
+
+.review-villa article:nth-of-type(2) form div textarea:focus {
+    outline: none !important;
+    border: none;
+    background: none;
+}
+
+.add-photos {
+    height: 50vh;
+    gap: 50px;
+    margin-top: 20%;
+}
+
+.add-photos article:nth-of-type(1) {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin-left: 20px;
+    width: 90%;
+}
+
+.add-photos article:nth-of-type(1) form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.add-photos article:nth-of-type(1) form div label {
+    background: none;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.add-photos article:nth-of-type(1) form div:nth-of-type(1) label {
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.add-photos article:nth-of-type(1) form div:nth-of-type(2) label {
+    padding-right: 26.5%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.add-photos article:nth-of-type(1) form div:nth-of-type(3) label {
+    padding-right: 18.2%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.add-photos article:nth-of-type(1) form div input {
+    display: none;
+}
+
+.add-photos article:nth-of-type(2) button,
+.price-info-villa article:nth-of-type(2) button,
+.social-media-info-villa article:nth-of-type(2) button {
+    background: none;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    padding: 10px 20px 10px 20px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
+}
+
+.add-photos article:nth-of-type(2) button a,
+.price-info-villa article:nth-of-type(2) button a,
+.social-media-info-villa article:nth-of-type(2) button a {
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 18px;
+}
+
+.price-info-villa {
+    height: 70vh;
+    gap: 30px;
+    margin-top: 15%;
+}
+
+
+.price-info-villa article:nth-of-type(1) {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.price-info-villa article:nth-of-type(1) form div input,
+select {
+    background: none;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 100.5%;
+    height: 34px;
+}
+
+.price-info-villa article:nth-of-type(1) form div input::-webkit-input-placeholder {
+    color: #A8A8A7;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.price-info-villa article:nth-of-type(1) form div input::-moz-placeholder {
+    color: #A8A8A7;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.price-info-villa article:nth-of-type(1) form div input:-ms-input-placeholder {
+    color: #A8A8A7;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.price-info-villa article:nth-of-type(1) form div input::-ms-input-placeholder {
+    color: #A8A8A7;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.price-info-villa article:nth-of-type(1) form div input::placeholder {
+    color: #A8A8A7;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.price-info-villa article:nth-of-type(1) form div select#currency {
+    width: 103%;
+    height: 42px;
+}
+
+.price-info-villa article:nth-of-type(1) form div select#typeForRent {
+    width: 103%;
+    height: 42px;
+}
+
+.price-info-villa article:nth-of-type(1) form div input:focus {
+    outline: none !important;
+}
+
+.price-info-villa article:nth-of-type(1) form div select:focus {
+    outline: none !important;
+}
+
+.price-info-villa article:nth-of-type(1) form div select option {
+    padding-left: 10px;
+}
+
+
+.social-media-info-villa {
+    height: 55vh;
+    gap: 30px;
+    margin-top: 15%;
+}
+
+.social-media-info-villa article:nth-of-type(1) {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.social-media-info-villa article:nth-of-type(1) form div {
+    background: none;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    padding: 10px 20px 10px 20px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.social-media-info-villa article:nth-of-type(1) form div input {
+    border: none;
+    background: none;
+    color: #A8A8A7;
+    font-family: Montserrat;
+}
+
+.social-media-info-villa article:nth-of-type(1) form div input:focus {
+    outline: none !important;
+    border: none;
+    background: none;
+}
+
+.social-media-info-villa article:nth-of-type(1) i {
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.social-media-info-villa article:nth-of-type(1) div:nth-of-type(1) i {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.catalogues-select-villa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.catalogues-select-villa article:nth-of-type(1) form div img {
+    width: 20%;
+    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+}
+
+main section article.three-div-elements:nth-of-type(1) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main section article.three-div-elements:nth-of-type(1) div:nth-of-type(2) {
+    width: 35%;
+    font-family: 'Forum';
+    color: #ffffff;
+}
+
+main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
+    width: 30%;
+    font-family: 'Forum';
+    color: #ffffff;
+}
+
+
+.catalogues-select-villa article:nth-of-type(1) form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.catalogues-select-villa article:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalogues-select-villa article:nth-of-type(2) button {
+    background: none;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    padding: 10px 20px 10px 20px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 18px;
+}
+
+.selectedCatalogues {
+    border: 3px solid #A8A8A7;
+}
+
+
+.calender {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.calender article:nth-of-type(1) {
+    color: #ffffff;
+    font-family: Forum;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30%;
+}
+
+.calender article:nth-of-type(1) div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.calender article:nth-of-type(1) div h1 {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    font-size: 24px;
+}
+
+.calender article:nth-of-type(1) div h2 {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    font-size: 16px;
+}
+
+.calender article:nth-of-type(1) div h3 {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    font-size: 14px;
+}
+
+.calender article:nth-of-type(2) {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 60%;
+    color: #ffffff;
+    font-family: Forum;
+    border-left: 1px solid #ABABAA;
+    margin-bottom: 30px;
+}
+
+.calender article:nth-of-type(2)>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.calender article:nth-of-type(2) div.calender-line {
+    border-bottom: 1px solid #ABABAA;
+    width: 105%;
+}
+
+.calender article:nth-of-type(2) div:nth-of-type(1) h4 {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.calender article:nth-of-type(2) div:nth-of-type(n + 1) p {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.calender article:nth-of-type(2) div:last-of-type {
+    padding-top: 20px;
+}
+
+.calender article:nth-of-type(3) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.calender article:nth-of-type(3) i {
+    position: absolute;
+    left: 10%;
+    font-size: 22px;
+    color: #ffffff;
+    top: 90%;
+}
+
+.calender article:nth-of-type(3) i:nth-of-type(2) {
+    left: 85%;
+}
+
+.calender article:nth-of-type(4) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+.calender article:nth-of-type(4) button {
+    position: absolute;
+    left: 20%;
+    top: 96%;
+    background: none;
+    width: 62%;
+    height: 40px;
+    border: 2px solid white;
+    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+}
+
+.calender article:nth-of-type(4) button a {
+    font-family: 'Forum';
+    font-size: 15px;
+    color: #A8A8A7;
+}
+
+.calender article:nth-of-type(4) button:nth-of-type(2) {
+    top: 108%;
+    font-family: 'Forum';
+    font-size: 15px;
+    color: #A8A8A7;
+}
+
+.add-ads {
+    margin-top: 20%;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.add-ads article:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.add-ads article:nth-of-type(1)>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.add-ads article:nth-of-type(1)>div:nth-of-type(1) p {
+    font-size: 25px;
+    font-family: 'The Seasons';
+    color: #fbbc04;
+}
+
+.add-ads article:nth-of-type(1)>div:nth-of-type(1) i {
+    font-size: 18px;
+    color: #737271;
+}
+
+.add-ads article:nth-of-type(1)>div:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Forum';
+    color: #545454;
+    opacity: 0.8;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.add-ads article:nth-of-type(1)>div:nth-of-type(2) div {
+    display: flex;
+    gap: 2px;
+}
+
+.add-ads article:nth-of-type(2) {
+    align-self: flex-end;
+    width: 51%;
+    margin-right: 10px;
+    color: #545454;
+    opacity: 0.8;
+    font-family: 'Forum';
+    font-size: 15px;
+}
+
+.add-ads article:nth-of-type(3) button {
+    background: none;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    padding: 10px 20px 10px 20px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    margin-bottom: 20px;
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 18px;
+}
+
+.add-offer {
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: space-evenly;
+}
+
+.add-offer article:nth-of-type(1) {
+    width: 100%;
+}
+
+.add-offer article:nth-of-type(1) div:nth-of-type(1) {
+    margin-left: 10px;
+    font-family: 'Forum';
+    color: #545454;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 100%;
+    background-color: #545454;
+    padding-bottom: 15px;
+}
+
+.swiper-slide img {
+    width: 80%;
+    margin-top: 10%;
+}
+
+.swiper-slide>div {
+    position: relative;
+}
+
+.swiper-slide>div div:nth-of-type(1) {
+    position: relative;
+}
+
+.swiper-slide div h3 {
+    color: #ffffff;
+    font-family: Forum;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: absolute;
+    bottom: 70%;
+    right: 90%;
+    transform: translateX(40%);
+}
+
+.swiper-slide>div div:nth-of-type(1) p {
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.swiper-slide>div div:nth-of-type(2) {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    font-family: 'Montserrat';
+    padding: 5px;
+    line-height: 1.2;
+    color: #535351;
+}
+
+.swiper-slide>div div:nth-of-type(2) p:nth-of-type(1) {
+    font-size: 10px;
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.swiper-slide>div div:nth-of-type(2) p:nth-of-type(2) {
+    font-size: 14px;
+}
+
+.swiper-pagination {
+    bottom: -10%;
+}
+
+.add-offer article:nth-of-type(1)>p {
+    font-family: 'Forum';
+    position: absolute;
+    left: 72%;
+    color: rgb(84,84,84, 0.7);
+}
+
+.add-offer article:nth-of-type(2) button {
+    background: none;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    padding: 10px 20px 10px 20px;
+    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    color: #A8A8A7;
+    font-family: Forum;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+
+
+/* ----------------------------footer-------------------------------------- */
+
+footer {
+    margin-top: 50px;
+    height: 82vh;
+    background-color: #535351;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Forum;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+
+footer article:nth-of-type(1),
+footer article:nth-of-type(2) {
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+footer article:nth-of-type(1) h1,
+footer article:nth-of-type(2) h1 {
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+footer article:nth-of-type(1) ul,
+footer article:nth-of-type(2) ul {
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+footer article:nth-of-type(1) ul li a,
+footer article:nth-of-type(2) ul li {
+    color: #fbbc04;
+    font-size: 16px;
+}
+
+footer article:nth-of-type(1) ul li a {
+    text-transform: uppercase;
+}
+
+footer article:nth-of-type(3) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+footer article:nth-of-type(3) li:nth-of-type(1) {
+    padding-bottom: 22px;
+}
+
+
+footer article:nth-of-type(3) a {
+    color: white;
+    font-size: 20px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 6px 7px 4px 7px;
+}
+
+footer article:nth-of-type(3) li:nth-of-type(1) a {
+    color: white;
+    font-size: 20px;
+    border-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+    border: 1px solid white;
+    padding: 6px 10px 5px 10px;
+}
+
+
+footer article:nth-of-type(4) {
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+footer article:nth-of-type(4) ul {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+
+footer article:nth-of-type(4) div:nth-of-type(2) {
+    width: 97%;
+    border-bottom: 1px solid #ffffff;
+}
+
+footer article:nth-of-type(4) div:nth-of-type(3) {
+    display: flex;
+    font-size: 12px;
+    gap: 85px;
+    align-items: center;
+    justify-content: space-between;
+}

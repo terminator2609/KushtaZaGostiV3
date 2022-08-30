@@ -227,8 +227,8 @@ function calender() {
     let dateObject = new Date()
 
     currentMonth.textContent = month[dateObject.getMonth()]
-    currentNumberMonth.textContent = `00${dateObject.getMonth() + 1}`
-    currentDate.textContent = `0${dateObject.getDate()}.0${dateObject.getMonth() + 1}.${dateObject.getFullYear()}`
+    currentNumberMonth.textContent = dateObject.getMonth() + 1 < 10 ? `00${dateObject.getMonth() + 1}` : `0${dateObject.getMonth() + 1}`
+    currentDate.textContent = `${dateObject.getDate() < 10 ? `0${dateObject.getDate()}` : dateObject.getDate()}.${dateObject.getMonth() + 1 < 10 ? `0${dateObject.getMonth() + 1}` : dateObject.getMonth() + 1}.${dateObject.getFullYear()}`
 
     function calenderLoop() {
 
