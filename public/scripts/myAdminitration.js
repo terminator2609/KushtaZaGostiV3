@@ -712,7 +712,6 @@ function calender() {
 
 }
 
-
 let renewButton = document.getElementsByClassName("renew-button")[0]
 
 renewButton.addEventListener("click", (e) => {
@@ -722,6 +721,28 @@ renewButton.addEventListener("click", (e) => {
     document.getElementsByClassName("days-counter")[0].textContent = "07"
     document.getElementsByClassName("ads-counter")[0].textContent = "10"
 })
+
+
+let addOfferPage = document.getElementsByClassName("add-offer-page")[0]
+let addOfferButton = document.getElementsByClassName("add-offer-button")[0]
+let allOffer = document.getElementsByClassName("all-offer")[0]
+
+addOfferPage.style.display = "none"
+
+addOfferButton.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    if (addOfferButton.textContent === "Добави оферта") {
+        allOffer.style.display = "none"
+        addOfferPage.style.display = "flex"
+        addOfferButton.textContent = "Публикувай"
+    } else {
+        allOffer.style.display = "block"
+        addOfferPage.style.display = "none"
+        addOfferButton.textContent = "Добави оферта"
+    }
+})
+
 
 
 
