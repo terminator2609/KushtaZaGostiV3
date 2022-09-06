@@ -733,13 +733,13 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .calender article:nth-of-type(1) div h2 {
     -ms-flex-item-align: end;
         align-self: flex-end;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .calender article:nth-of-type(1) div h3 {

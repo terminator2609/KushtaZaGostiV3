@@ -548,7 +548,7 @@ main section article:nth-of-type(3) button a {
 }
 
 .price-info-villa article:nth-of-type(1) form div input,
-select {
+.price-info-villa article:nth-of-type(1) form div select {
     background: none;
     border: 2px solid rgb(83, 83, 81, 0.5);
     -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
@@ -786,13 +786,13 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .calender article:nth-of-type(1) div h2 {
     -ms-flex-item-align: end;
     align-self: flex-end;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .calender article:nth-of-type(1) div h3 {
@@ -1054,7 +1054,7 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     font-family: 'Forum';
     position: absolute;
     left: 72%;
-    color: rgb(84,84,84, 0.7);
+    color: rgb(84, 84, 84, 0.7);
 }
 
 .add-offer article:nth-of-type(3) button {
@@ -1068,6 +1068,154 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     font-size: 18px;
     margin-top: 25px;
 }
+
+.add-offer-page>div:nth-of-type(1) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.add-offer-page>div:nth-of-type(1) div:nth-of-type(1) {
+    position: relative;
+}
+
+.add-offer-page>div:nth-of-type(1) div:nth-of-type(1) i {
+    color: #fbbc04;
+}
+
+.add-offer-page>div:nth-of-type(1) div.definition {
+    font-family: Forum;
+    color: #B1B1B1;
+    background-color: #717273;
+    border: 2px solid #5f6368;
+    position: absolute;
+    left: 50%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.add-offer-page>div:nth-of-type(1) div.definition p {
+    width: 120px;
+}
+
+.add-offer-page>div:nth-of-type(1) div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.add-offer-page>div:nth-of-type(1) div:nth-of-type(2) img {
+    width: 6%;
+}
+
+
+.add-offer-page>div:nth-of-type(2) form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.add-offer-page>div:nth-of-type(2) form div input#title {
+    border: none;
+    background: none;
+    width: 100%;
+    border-bottom: 1px solid #545454;
+    font-family: 'Forum';
+    font-size: 18px;
+    outline: none;
+    color: #545454;
+}
+
+.add-offer-page>div:nth-of-type(2) form div input#standardPrice,
+.add-offer-page>div:nth-of-type(2) form div input#offerPrice,
+.add-offer-page>div:nth-of-type(2) form div select {
+    width: 100%;
+    padding: 8px 2px;
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
+    color: #A8A8A7;
+}
+
+.add-offer-page>div:nth-of-type(2) form div select {
+    width: 103%;
+}
+
+.add-offer-page>div:nth-of-type(2) form div input#offerPrice::placeholder {
+    font-size: 12px;
+    font-family: Forum;
+    color: #A8A8A7
+}
+
+.add-offer-page>div:nth-of-type(2) form div input#standardPrice::placeholder {
+    font-size: 13px;
+    font-family: Forum;
+    color: #A8A8A7
+}
+
+.visits {
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.visits article:nth-of-type(1) {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.visits article:nth-of-type(1) i {
+    color: rgb(83, 83, 81, 0.6);
+    font-size: 18px;
+}
+
+.visits article:nth-of-type(1) p {
+    color: #545454;
+    font-family: Forum;
+    font-size: 20px;
+}
+
+.visits article:nth-of-type(2) {
+    margin-top: 10%;
+    display: block;
+}
+
+.visits article:nth-of-type(2) div:nth-of-type(1) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-right: 1px solid rgb(83, 83, 81, 0.5);
+    align-items: flex-start;
+    width: 10%;
+    font-family: Montserrat;
+    color: #545454;
+    font-size: 12px;
+}
+
+.visits article:nth-of-type(2) div:nth-of-type(2) ul {
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: 10px;
+} 
+
+.visits article:nth-of-type(2) div:nth-of-type(2) ul li {
+    padding-left: 5px;
+}
+
+
+
+
+
 
 
 
