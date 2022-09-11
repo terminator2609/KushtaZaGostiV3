@@ -404,16 +404,39 @@ main {
             justify-content: center;
     gap: 15px;
     /* margin-bottom: 140px; */
+    position: relative;
 }
 
 .catalogues-list-page h1 {
-    margin-bottom: 10%;
+    margin-bottom: -45%;
     font-family: 'Montserrat';
     color: rgb(255, 255, 255, 0.5);
     text-transform: uppercase;
     font-size: 16px;
 }
 
+.catalogues-list-page button {
+    background-color: #737271;
+    padding-top: 54%;
+    padding-left: 50%;
+    padding-right: 5%;
+    border: none;
+    position: sticky;
+    top: 89%;
+    z-index: 90;
+    opacity: 0.7;
+    border-radius: 68%;
+}
+
+.catalogues-list-page button a {
+    position: absolute;
+    right: 0%;
+    bottom: 70%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'THE SEASONS';
+    font-size: 25px;
+}
 
 .catalogues-list-page article {
     display: -webkit-box;
@@ -433,11 +456,11 @@ main {
 
 }
 
-.catalogues-list-page article a:nth-of-type(1) img {
+.catalogues-list-page article img:nth-of-type(1) {
     margin-left: 5px;
 }
 
-.catalogues-list-page article a:nth-of-type(2) img {
+.catalogues-list-page article img:nth-of-type(2) {
     position: absolute;
     left: 49%;
     -webkit-transform: translateX(-49%);
@@ -447,16 +470,16 @@ main {
     width: 30%;
 }
 
-.catalogues-list-page article a:nth-of-type(3) img {
-    margin-right: 0px;
+.catalogues-list-page article img:nth-of-type(3) {
+    margin-right: 10px;
 }
 
 .catalogues-list-page a {
     width: 100%;
 }
 
-.catalogues-list-page a img {
-    width: 90%;
+.catalogues-list-page img {
+    width: 30%;
 }
 
 .catalogues-list-page article:last-of-type {
@@ -469,6 +492,11 @@ main {
     color: #8A8A88;
     margin-top: 0px;
 }
+
+.selectedCatalogues {
+    border: 2px solid #A8A8A7;
+}
+
 
 /* ----------------------------footer-------------------------------------- */
 

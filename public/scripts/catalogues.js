@@ -4,12 +4,18 @@ let roleList = document.getElementsByClassName("role-list")[0]
 let closeMenuButton = document.getElementsByClassName("close-menu-button")[0]
 let navMenuIcon = document.getElementsByClassName("nav-menu-icon")[0]
 let navMenu = document.getElementsByClassName("nav-menu-phone")[0]
+let cataloguesSelectPhoto = document.getElementsByClassName("cataloguesSelectPhoto")
 
 
 navMenu.style.display = "none"
 
 guestSection.style.display = "none"
 hostSection.style.display = "none"
+
+
+if (document.getElementById("h4-header")) {
+    document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
+}
 
 
 document.addEventListener("scroll", (e) => {
@@ -30,13 +36,6 @@ document.addEventListener("scroll", (e) => {
         document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
         document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
     }
-
-
-
-    if (document.getElementById("h4-header")) {
-        document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
-    }
-
 
 })
 
@@ -121,6 +120,39 @@ navMenuIcon.addEventListener("click", (e) => {
 
     navMenu.style.display = "flex"
 })
+
+let nextAllObjectButton = document.getElementsByClassName("next-all-object")[0]
+let selectTitle = document.getElementsByClassName("select-title")[0]
+let counterSelected = 0
+nextAllObjectButton.style.display = "none"
+selectTitle.style.marginBottom = "15%"
+
+for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
+
+
+    cataloguesSelectPhoto[i].addEventListener("click", (e) => {
+        e.preventDefault()
+
+        if (cataloguesSelectPhoto[i].className === "cataloguesSelectPhoto selectedCatalogues") {
+            cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto"
+            counterSelected--
+        } else {
+            cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto selectedCatalogues"
+            counterSelected++
+        }
+
+        if (counterSelected > 0) {
+            nextAllObjectButton.style.display = "block"
+            selectTitle.style.marginBottom = "-45%"
+        } else {
+            nextAllObjectButton.style.display = "none"
+            selectTitle.style.marginBottom = "15%"
+        }
+
+    })
+}
+
+
 
 
 
