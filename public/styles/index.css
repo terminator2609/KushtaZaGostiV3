@@ -312,98 +312,84 @@ span {
     margin-top: 50px;
 }
 
-.catalogues ul {
-    position: relative;
+.catalogues button {
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    background: none;
+    padding: 10px 35px;
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
 }
 
-.catalogues ul li:nth-of-type(1) img {
-    position: absolute;
-    left: 40%;
-    -webkit-transform: translateX(-40%);
-    -ms-transform: translateX(-40%);
-    transform: translateX(-40%);
-    width: 128px;
+.catalogues button a {
+    color: rgb(83, 83, 81, 0.6);
+    font-family: Forum;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.catalogues ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.catalogues ul li a:nth-of-type(1) img {
+    width: 28%;
 }
 
 .catalogues ul li:nth-of-type(2) a:nth-of-type(1) img {
-    position: absolute;
-    left: 3px;
-    width: 110px;
-    bottom: -337px;
+    padding-bottom: 20%;
 }
 
-.catalogues ul li:nth-of-type(2) a:nth-of-type(2) img {
-    position: absolute;
-    left: 112px;
-    width: 94px;
-    bottom: -314px;
+.catalogues ul li a:nth-of-type(2) img {
+    width: 40%;
+}
+
+.catalogues ul li a:nth-of-type(3) img {
+    width: 26%;
 }
 
 .catalogues ul li:nth-of-type(2) a:nth-of-type(3) img {
-    position: absolute;
-    left: 205px;
-    width: 111px;
-    bottom: -231px;
+    padding-bottom: 20%;
+}
+
+.catalogues ul li:nth-of-type(2) a:nth-of-type(1) img {
+    padding-bottom: 20%;
+}
+
+.catalogues ul li:nth-of-type(3) {
+    position: relative;
 }
 
 .catalogues ul li:nth-of-type(3) a:nth-of-type(1) img {
     position: absolute;
-    left: 17px;
-    width: 91px;
-    bottom: -466px;
+    bottom: 70%;
 }
 
 .catalogues ul li:nth-of-type(3) a:nth-of-type(2) img {
-    position: absolute;
-    left: 113px;
-    width: 91px;
-    bottom: -444px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
-
 
 .catalogues ul li:nth-of-type(3) a:nth-of-type(3) img {
     position: absolute;
-    left: 213px;
-    width: 94px;
-    bottom: -364px;
+    bottom: 70%;
+    left: 70%;
 }
 
-
-.catalogues ul li:nth-of-type(4) a:nth-of-type(1) img {
-    position: absolute;
-    left: 113px;
-    width: 91px;
-    bottom: -574px;
+.catalogues ul li:nth-of-type(4) {
+    padding-top: 10px;
 }
 
-.catalogues ul li:nth-of-type(4) a:nth-of-type(2) img {
-    position: absolute;
-    left: 213px;
-    width: 91px;
-    bottom: -494px;
+.catalogues ul li:nth-of-type(4) a {
+    font-family: Montserrat;
+    color: #545454;
+    text-transform: uppercase;
 }
-
-.catalogues ul li:nth-of-type(4) a:nth-of-type(3) {
-    position: absolute;
-    left: 14px;
-    width: 100px;
-    bottom: -500px;
-    font-size: 16px;
-    color: black;
-    font-family: Forum;
-}
-
-.catalogues ul li:nth-of-type(5) a:nth-of-type(1) img {
-    position: absolute;
-    left: 211px;
-    width: 85px;
-    bottom: -620px;
-}
-
-.catalogues img {
-    width: 40%;
-}
-
 
 /* -----------------------------------------about-us---------------------------------------------------- */
 
@@ -416,7 +402,7 @@ span {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    margin-top: 730px;
+    margin-top: 20%;
     gap: 15px;
 }
 

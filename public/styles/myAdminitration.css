@@ -752,14 +752,13 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 }
 
 
-.calender {
+.calender article:nth-of-type(1) {
+    display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     position: relative;
 }
 
-.calender article:nth-of-type(1) {
+.calender article:nth-of-type(1)>div:nth-of-type(1) {
     color: #ffffff;
     font-family: Forum;
     display: -webkit-box;
@@ -772,7 +771,7 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     width: 30%;
 }
 
-.calender article:nth-of-type(1) div {
+.calender article:nth-of-type(1)>div:nth-of-type(1) div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -782,27 +781,27 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     flex-direction: column;
 }
 
-.calender article:nth-of-type(1) div h1 {
+.calender article:nth-of-type(1)>div:nth-of-type(1) div h1 {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
     font-size: 20px;
 }
 
-.calender article:nth-of-type(1) div h2 {
+.calender article:nth-of-type(1)>div:nth-of-type(1) div h2 {
     -ms-flex-item-align: end;
     align-self: flex-end;
     font-size: 14px;
 }
 
-.calender article:nth-of-type(1) div h3 {
+.calender article:nth-of-type(1)>div:nth-of-type(1) div h3 {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
     font-size: 14px;
 }
 
-.calender article:nth-of-type(2) {
+.calender article:nth-of-type(1)>div:nth-of-type(2) {
     margin-top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -819,7 +818,7 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     margin-bottom: 30px;
 }
 
-.calender article:nth-of-type(2)>div {
+.calender article:nth-of-type(1)>div:nth-of-type(2)>div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -830,27 +829,27 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     margin-top: 5px;
 }
 
-.calender article:nth-of-type(2) div.calender-line {
+.calender article:nth-of-type(1)>div:nth-of-type(2) div.calender-line {
     border-bottom: 1px solid #ABABAA;
     width: 105%;
 }
 
-.calender article:nth-of-type(2) div:nth-of-type(1) h4 {
+.calender article:nth-of-type(1)>div:nth-of-type(2) div:nth-of-type(1) h4 {
     padding-bottom: 10px;
     padding-left: 10px;
 }
 
-.calender article:nth-of-type(2) div:nth-of-type(n + 1) p {
+.calender article:nth-of-type(1)>div:nth-of-type(2) div:nth-of-type(n + 1) p {
     padding-top: 5px;
     padding-bottom: 30px;
     padding-left: 10px;
 }
 
-.calender article:nth-of-type(2) div:last-of-type {
+.calender article:nth-of-type(1)>div:nth-of-type(2) div:last-of-type {
     padding-top: 20px;
 }
 
-.calender article:nth-of-type(3) {
+.calender article:nth-of-type(1)>div:nth-of-type(3) {
     -ms-flex-item-align: end;
     align-self: flex-end;
     display: -webkit-box;
@@ -861,27 +860,27 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     align-items: center;
 }
 
-.calender article:nth-of-type(3) i {
+.calender article:nth-of-type(1)>div:nth-of-type(3) i {
     position: absolute;
     left: 10%;
     font-size: 22px;
     color: #ffffff;
-    top: 90%;
+    top: 95%;
 }
 
-.calender article:nth-of-type(3) i:nth-of-type(2) {
+.calender article:nth-of-type(1)>div:nth-of-type(3) i:nth-of-type(2) {
     left: 85%;
 }
 
-.calender article:nth-of-type(4) {
+.calender article:nth-of-type(1)>div:nth-of-type(4) {
     -ms-flex-item-align: end;
     align-self: flex-end;
 }
 
-.calender article:nth-of-type(4) button {
+.calender article:nth-of-type(1)>div:nth-of-type(4) button {
     position: absolute;
     left: 20%;
-    top: 96%;
+    top: 100%;
     background: none;
     width: 62%;
     height: 40px;
@@ -890,17 +889,82 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
     box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
 }
 
-.calender article:nth-of-type(4) button a {
+.calender article:nth-of-type(1)>div:nth-of-type(4) button a {
     font-family: 'Forum';
     font-size: 15px;
     color: #A8A8A7;
 }
 
-.calender article:nth-of-type(4) button:nth-of-type(2) {
+.calender article:nth-of-type(1)>div:nth-of-type(4) button:nth-of-type(2) {
     top: 108%;
     font-family: 'Forum';
     font-size: 15px;
     color: #A8A8A7;
+}
+
+.calender-administration {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 10%;
+}
+
+.calender-administration>div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.calender-administration>div:nth-of-type(1)>div {
+    display: flex;
+    gap: 10px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #545454;
+}
+
+.calender-administration>div:nth-of-type(1)>div div:nth-of-type(1) p:nth-of-type(1) {
+    border-bottom: 1px solid rgb(83, 83, 81, 0.5);
+    padding-bottom: 5px;
+}
+
+.calender-administration>div:nth-of-type(1)>div div:nth-of-type(3) p:nth-of-type(1) {
+    border-bottom: 1px solid rgb(83, 83, 81, 0.5);
+    padding-bottom: 5px;
+}
+
+.calender-administration>div:nth-of-type(1)>div p:nth-of-type(2) {
+    text-align: center;
+    border-bottom: 1px solid rgb(83, 83, 81, 0.5);
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: rgb(83, 83, 83, 0.4);
+}
+
+.calender-administration>div:nth-of-type(1) h1 {
+    font-family: 'Forum';
+    color: rgb(83, 83, 81, 0.7);
+    text-transform: uppercase;
+    font-size: 18px;
+    transform: rotate(270deg);
+}
+
+.calender-administration>div:nth-of-type(2),
+.calender-administration>div:nth-of-type(3) {
+    align-self: center;
+}
+
+.calender-administration>div:nth-of-type(n + 1) button {
+    border: 2px solid rgb(83, 83, 81, 0.5);
+    background: none;
+    color: rgb(83, 83, 81, 0.6);
+    padding: 10px 20px;
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    font-family: Forum;
+    font-size: 16px;
+}
+
+.calender-administration>div:nth-of-type(3) button {
+    text-transform: uppercase;
 }
 
 .add-ads {
@@ -1140,7 +1204,7 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 .add-offer-page>div:nth-of-type(2) form div input#offerPrice,
 .add-offer-page>div:nth-of-type(2) form div select {
     width: 100%;
-    padding: 8px 2px;
+    padding: 16px 2px;
     border: 2px solid rgb(83, 83, 81, 0.5);
     box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
     color: #A8A8A7;
@@ -1181,42 +1245,38 @@ main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
 
 .visits article:nth-of-type(1) p {
     color: #545454;
-    font-family: Forum;
-    font-size: 20px;
+    font-family: Montserrat;
+    font-size: 22px;
 }
 
 .visits article:nth-of-type(2) {
     margin-top: 10%;
-    display: block;
-}
-
-.visits article:nth-of-type(2) div:nth-of-type(1) ul {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    border-right: 1px solid rgb(83, 83, 81, 0.5);
-    align-items: flex-start;
-    width: 10%;
-    font-family: Montserrat;
-    color: #545454;
-    font-size: 12px;
+    gap: 25px;
 }
 
-.visits article:nth-of-type(2) div:nth-of-type(2) ul {
+.visits article:nth-of-type(2) div {
     display: flex;
-    font-family: 'Montserrat';
-    font-size: 10px;
-} 
-
-.visits article:nth-of-type(2) div:nth-of-type(2) ul li {
-    padding-left: 5px;
+    gap: 25px;
+    align-items: center;
 }
 
+.visits article:nth-of-type(2) div h1 {
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: bold;
+    color: #545454;
+    transform: rotate(270deg);
+    border-bottom: 1px solid rgb(83, 83, 81, 0.4);
+    padding-bottom: 5px;
+}
 
-
-
-
-
+.visits article:nth-of-type(2) div p {
+    font-family: 'Montserrat';
+    color: rgb(83, 83, 81, 0.5);
+    font-size: 18px;
+}
 
 
 /* ----------------------------footer-------------------------------------- */

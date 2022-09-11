@@ -23,11 +23,11 @@ nav>ul {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     position: relative;
     padding-top: 25px;
     padding-left: 15px;
@@ -98,8 +98,8 @@ nav>ul>li:nth-of-type(3) {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .nav-menu-phone article:nth-of-type(1) ul {
@@ -108,14 +108,14 @@ nav>ul>li:nth-of-type(3) {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
     margin-top: 15px;
     /* border-bottom: 1px solid white; */
@@ -154,8 +154,8 @@ nav>ul>li:nth-of-type(3) {
 
 .nav-menu-phone article:nth-of-type(2) {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     margin-top: 20px;
 }
 
@@ -182,7 +182,8 @@ nav>ul>li:nth-of-type(3) {
     line-height: 1.5;
 }
 
-.nav-menu-phone article:nth-of-type(3)>ul li a, span {
+.nav-menu-phone article:nth-of-type(3)>ul li a,
+span {
     color: #C3C3C3;
     font-family: Forum;
     font-size: 30px;
@@ -200,7 +201,7 @@ nav>ul>li:nth-of-type(3) {
 
 .nav-menu-phone article:nth-of-type(4) {
     -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
     margin-top: 40px;
 }
 
@@ -235,14 +236,14 @@ header {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -255,11 +256,11 @@ header h1 {
     font-family: Forum;
     color: #535351;
     -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     position: absolute;
     -webkit-transform: rotate(270deg) translateX(17%);
-        -ms-transform: rotate(270deg) translateX(17%);
-            transform: rotate(270deg) translateX(17%);
+    -ms-transform: rotate(270deg) translateX(17%);
+    transform: rotate(270deg) translateX(17%);
     left: -15%;
     top: 59%;
     font-size: 16px;
@@ -304,8 +305,8 @@ header p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .general-info article:nth-of-type(1) {
@@ -314,14 +315,14 @@ header p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 .general-info article:nth-of-type(1) div:nth-of-type(1) h1 {
@@ -359,14 +360,14 @@ header p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 
 
@@ -406,8 +407,8 @@ header p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 
@@ -446,21 +447,22 @@ header p {
 /*-------------------------------------------------section.the-100---------------------------------------------------------------------------------*/
 
 .the-100 {
-    height: 130vh;
+    /* height: 130vh; */
     background-color: #535351;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 45vh;
 }
 
 .the-100 article:nth-of-type(1) {
@@ -474,11 +476,11 @@ header p {
     font-family: Forum;
     color: #ffffff;
     -webkit-transform: rotate(270deg) translateX(10%);
-        -ms-transform: rotate(270deg) translateX(10%);
-            transform: rotate(270deg) translateX(10%);
-    left: -5%;
+    -ms-transform: rotate(270deg) translateX(10%);
+    transform: rotate(270deg) translateX(10%);
+    left: -20%;
     position: absolute;
-    top: 15%;
+    top: 27%;
     font-size: 10px;
 }
 
@@ -497,13 +499,31 @@ header p {
     text-shadow: 0px 10px 2px rgb(255 255 255 / 55%);
 }
 
+.the-100 article:nth-of-type(1) div:nth-of-type(3) {
+    padding-top: 50px;
+}
+
+.the-100 article:nth-of-type(1) div h4 {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.the-100 article:nth-of-type(1) div p {
+    text-align: center;
+    font-family: 'Forum';
+    color: #ffffff;
+}
+
 .the-100 img {
     width: 50%;
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     margin-top: 20px;
+    display: none;
 }
 
 .the-100 article:nth-of-type(2) {
@@ -511,8 +531,9 @@ header p {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: none;
 }
 
 .the-100 article:nth-of-type(2) div p {
@@ -529,7 +550,7 @@ header p {
     background: none;
     border: 2px solid #B1B1B1;
     -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-            box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
 }
 
 .the-100 article:nth-of-type(2) div button a {

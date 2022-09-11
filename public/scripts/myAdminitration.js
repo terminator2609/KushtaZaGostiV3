@@ -22,6 +22,10 @@ let currentMonth = document.getElementById("current-month")
 let currentNumberMonth = document.getElementById("current-number-month")
 let currentDate = document.getElementById("current-date")
 let isCalender = false
+let calenderAdministration = document.getElementsByClassName("calender-administration")[0]
+let calenderReview = document.getElementsByClassName("calender-review")[0]
+let saveBookingButton = document.getElementsByClassName("save-booking")[0]
+calenderAdministration.style.display = "none"
 
 let addObjectTitle1Array = ["Моите", "Моето", "Моята", "Моята", "Моите", "Моите", "", "Моите", "Моите", "Моите"]
 let addObjectTitle2Array = ["Основни данни", "Ревю", "Медия", "Цена", "Социални мрежи", "Каталози", "", "Оферти", "Реклами", "Посещения"]
@@ -209,6 +213,7 @@ for (let i = 0; i < categoriesList.length; i++) {
         addObjectTitle2.textContent = addObjectTitle2Array[i]
 
         if (i === 6) {
+            sectionAdd[i].style.display = "block"
             document.getElementsByTagName("body")[0].style.backgroundColor = "#535351"
             document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
             document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
@@ -710,6 +715,23 @@ function calender() {
         calenderLoop()
     })
 
+    for (let i = 0; i < dateNumber.length; i++) {
+        dateNumber[i].addEventListener("click", (e) => {
+            e.preventDefault()
+
+
+            calenderReview.style.display = "none"
+            calenderAdministration.style.display = "flex"
+            isCalender = false
+            document.getElementsByTagName("body")[0].style.backgroundColor = "#ffffff"
+            document.getElementById("nav-index").style.background = "none"
+            document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
+            document.getElementsByClassName("translateEN")[0].style.color = "#545454"
+            document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
+            document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
+        })
+    }
+
 }
 
 let renewButton = document.getElementsByClassName("renew-button")[0]
@@ -743,7 +765,19 @@ addOfferButton.addEventListener("click", (e) => {
     }
 })
 
+saveBookingButton.addEventListener("click", (e) => {
+    e.preventDefault()
 
+    calenderReview.style.display = "flex"
+    calenderAdministration.style.display = "none"
+    isCalender = true
+    document.getElementById("nav-index").style.background = "none"
+    document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
+    document.getElementsByClassName("translateEN")[0].style.color = "#DCDFDE"
+    document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
+    document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+    document.getElementsByTagName("body")[0].style.backgroundColor = "#535351"
+})
 
 
 

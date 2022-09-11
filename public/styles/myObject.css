@@ -228,9 +228,11 @@ main {
 
 .my-object {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .my-object article:nth-of-type(1) {
@@ -255,24 +257,43 @@ main {
 
 .my-object button {
     position: absolute;
-    /* right: -60%; */
-    left: 92%;
+    left: 78%;
     top: -80%;
+    border: none;
+    background-color: #212123;
+    border-radius: 20px;
+    padding: 10px 7px;
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
 }
 
 .my-object button a {
-    font-family: Forum;
-    color: black;
-    font-size: 12px;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: 'Montserrat';
+    opacity: 0.6;
+    text-transform: uppercase;
 }
 
 .my-object img {
-    width: 126%;
+    width: 115%;
 }
+
+.my-object article:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.my-object article:nth-of-type(2) div {
+    display: flex;
+    gap: 30px;
+}
+
 
 .my-object article:nth-of-type(2) p {
     color: #ffffff;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 12px;
 }
 
 
