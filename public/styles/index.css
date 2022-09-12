@@ -309,7 +309,7 @@ span {
 /* ----------------------catalogues-------------------------------------- */
 
 .catalogues {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .catalogues button {
@@ -319,7 +319,7 @@ span {
     box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
     margin-left: 50%;
     transform: translate(-50%);
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 .catalogues button a {
