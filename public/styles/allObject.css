@@ -201,7 +201,6 @@ span {
 
 header {
     display: flex;
-    width: 100%;
     flex-direction: row;
     align-items: flex-end;
     gap: 5px;
@@ -211,21 +210,19 @@ header>div:nth-of-type(1) {
     position: relative;
 }
 
+header>div:nth-of-type(1) i {
+    position: absolute;
+    left: 85%;
+    top: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255, 0.5);
+}
+
 header>div:nth-of-type(1) img {
     width: 100%;
     margin-left: 50%;
 }
 
-header>div:nth-of-type(2) {
-    height: 12vh;
-    overflow-y: scroll;
-}
-
-
-header>div:nth-of-type(2) div {
-    position: relative;
-    
-}
 
 header>div:nth-of-type(2) img {
     width: 18%;
@@ -235,14 +232,18 @@ header>div:nth-of-type(2) img:nth-of-type(1) {
     margin-left: 13%;
 }
 
+header>div:nth-of-type(2) div:nth-of-type(1) {
+    position: relative;
+}
+
 header h1 {
     font-family: 'The Seasons';
     color: rgb(255, 255, 255, 0.5);
     font-size: 32px;
     transform: rotate(270deg);
     position: absolute;
-    top: 50px;
-    left: -40px;
+    top: 55px;
+    left: -36px;
 }
 
 header h2 {
@@ -252,14 +253,37 @@ header h2 {
     font-size: 28px;
 }
 
-header i {
+header div:nth-of-type(2) i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 91%;
+    left: 92%;
     color: rgb(255, 255, 255, 0.5);
+    font-size: 18px;
 }
 
-.test {
-    
+header .catalogues-menu {
+    background-color: #34332E;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    height: 100vh;
+    top: 2%;
+    z-index: 1000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+header .catalogues-menu .close-menu-button {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+header .catalogues-menu div img {
+    padding-right: 30px;
+}
+

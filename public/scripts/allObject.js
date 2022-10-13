@@ -134,3 +134,24 @@ navMenuIcon.addEventListener("click", (e) => {
 
     navMenu.style.display = "flex"
 })
+
+let arrowOpenMenuButton = document.getElementsByClassName("arrow-open-menu")[0]
+let cataloguesMenu = document.getElementsByClassName("catalogues-menu")[0]
+let closeMenuCatalogues = document.getElementsByClassName("close-menu-catalogues")[0]
+
+cataloguesMenu.style.display = "none"
+
+
+arrowOpenMenuButton.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    cataloguesMenu.style.display = "flex"
+
+})
+
+closeMenuCatalogues.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    cataloguesMenu.style.display = "none"
+
+})
