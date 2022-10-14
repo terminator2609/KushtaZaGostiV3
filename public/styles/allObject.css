@@ -296,10 +296,12 @@ main {
 
 .object-item {
     display: flex;
-    flex-direction: row;
-    margin-top: 35px;
+    flex-direction: column;
+    margin-top: 20px;
     position: relative;
-    padding-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
 }
 
 .object-item article:nth-of-type(1) {
@@ -313,77 +315,62 @@ main {
 }
 
 .object-item h3 {
+    margin-left: 55%;
+    font-family: 'The Seasons';
+    color: #fbbc04;
+    font-size: 20px;
+}
+
+.object-item h4 {
     font-family: 'Forum';
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
-    position: absolute;
-    top: 5%;
-    width: 50%;
-    right: 60%;
 }
 
-.object-item article:nth-of-type(1) div:nth-of-type(1) {
+.object-item article:nth-of-type(1) div {
     position: relative;
-    width: 100%;
 }
 
-.object-item article:nth-of-type(1)>div:nth-of-type(2) {
+.object-item button {
     position: absolute;
-    width: 75%;
-    left: 40%;
-    top: 90%;
-    font-family: 'Forum';
-    color: #535351;
-    background-color: #ffffff;
-    font-size: 13px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.object-item article:nth-of-type(1)>div:nth-of-type(2) p {
-    padding: 3px 0px 0px 5px;
-    color: #535151;
-    font-family: 'Montserrat';
-    padding-bottom: 5px;
-}
-
-.object-item article:nth-of-type(1)>div:nth-of-type(2) p:nth-of-type(1) {
-    border-bottom: 1px solid #545454;
-    width: 95%;
-    padding-bottom: 2px;
-    font-family: 'Montserrat';
-    padding-top: 5px;
-}
-
-.object-item article:nth-of-type(1)>div:nth-of-type(2) i {
-    padding-right: 5px;
-    font-size: 15px;
+    left: 78%;
+    top: -80%;
+    border: none;
+    background-color: #212123;
+    border-radius: 20px;
+    padding: 10px 7px;
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
 }
 
 .object-item button a {
-    font-family: Forum;
-    color: black;
-    font-size: 12px;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: 'Montserrat';
+    opacity: 0.6;
+    text-transform: uppercase;
 }
 
 .object-item img {
-    width: 120%;
+    width: 115%;
 }
+
+.object-item article:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.object-item article:nth-of-type(2) div {
+    display: flex;
+    gap: 30px;
+}
+
 
 .object-item article:nth-of-type(2) p {
     color: #ffffff;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 12px;
 }
 
-.object-item h4 {
-    position: absolute;
-    font-family: 'The Seasons';
-    color: #fbbc04;
-    top: -4%;
-    font-size: 19px;
-    left: 82%;
-}
 
 
