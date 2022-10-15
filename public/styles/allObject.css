@@ -323,7 +323,7 @@ main {
 
 .object-item h4 {
     font-family: 'Forum';
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
 }
 
@@ -365,7 +365,9 @@ main {
 
 .object-item article:nth-of-type(2) div {
     display: flex;
-    gap: 30px;
+    gap: 45px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -374,7 +376,7 @@ main {
     margin-bottom: 10px;
     text-transform: uppercase;
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .object-item i {
