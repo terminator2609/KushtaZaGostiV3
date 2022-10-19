@@ -289,6 +289,8 @@ main button {
     box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
     margin-top: 20%;
     margin-bottom: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 main button a {
