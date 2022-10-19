@@ -257,21 +257,26 @@ main {
 
 main h5 {
     font-size: 17px;
+    margin-left: 55%;
+    transform: translateX(-55%);
 }
 
 main p {
-    width: 155px;
-    margin-left: 77%;
-    transform: translateX(-68%);
+    width: 45%;
+    margin-left: 55%;
+    transform: translateX(-55%);
     font-size: 15px;
 }
 
 main article:nth-of-type(1) {
     position: relative;
-    width: 128px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .line-title {
-    width: 224px;
-    border-bottom: 3px solid;
+    width: 80%;
+    border-bottom: 3px solid #ffffff;
+    overflow: hidden;
+    margin-left: 30%;
 }
