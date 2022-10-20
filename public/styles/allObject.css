@@ -197,13 +197,81 @@ span {
 }
 
 
-/* --------------------------------------------------------------------------------header-------------------------------------------------------------------------------- */
+/* ----------------------------header---------------------------------------------------------- */
 
-header i {
+
+header>i {
     padding-left: 5%;
     font-size: 24px;
     color: rgb(255, 255, 255, 0.5);
 }
+
+.catalogues-menu {
+    width: 100%;
+    height: 300vh;
+    background-color: #35332e;
+    position: absolute;
+    z-index: 1000;
+    top: 2%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.catalogues-menu>i {
+    padding-top: 20px;
+    font-size: 30px;
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+.catalogues-menu img {
+    width: 60%;
+}
+
+.catalogues-menu article {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalogues-menu article div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogues-menu article div i {
+    position: absolute;
+    bottom: 85%;
+    left: 72%;
+    color: #ffffff;
+    font-size: 22px;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 2px 5px;
+    border-radius: 77%;
+}
+
+.catalogues-menu button {
+    position: sticky;
+    top: 87%;
+    background: none;
+    border: none;
+}
+
+.catalogues-menu button a {
+    color: #ffffff;
+    font-size: 80px;
+    font-family: Montserrat;
+    font-weight: lighter;
+
+}
+
 
 
 /* -------------------------------------------------------------------------------main------------------------------------------------------------------------------- */
@@ -219,6 +287,7 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 20%;
 }
 
 .object-item>p {
@@ -262,3 +331,14 @@ main {
     font-size: 24px;
 }
 
+.object-item i {
+    position: absolute;
+    left: 83%;
+    font-size: 18px;
+    color: #ffffff;
+    bottom: 40%;
+}
+
+.object-item h3 {
+    opacity: 0;
+}
