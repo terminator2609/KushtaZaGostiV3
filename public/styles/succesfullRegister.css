@@ -265,7 +265,7 @@ main p {
     width: 45%;
     margin-left: 55%;
     transform: translateX(-55%);
-    font-size: 15px;
+    font-size: 13px;
 }
 
 main article:nth-of-type(1) {
@@ -276,7 +276,7 @@ main article:nth-of-type(1) {
 
 .line-title {
     width: 80%;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     overflow: hidden;
     margin-left: 30%;
 }
