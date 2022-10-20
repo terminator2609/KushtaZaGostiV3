@@ -294,7 +294,7 @@ main {
     font-family: "The Seasons";
     color: #fbbc04;
     position: absolute;
-    top: 0%;
+    top: 2%;
     left: 60%;
     font-size: 22px;
 }
@@ -306,7 +306,7 @@ main {
 
 .object-item h1 {
     position: absolute;
-    bottom: -100%;
+    bottom: -133%;
     left: 5%;
     font-family: Montserrat;
     color: rgb(255, 255, 255);

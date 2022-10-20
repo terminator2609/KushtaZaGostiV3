@@ -259,6 +259,7 @@ main h5 {
     font-size: 17px;
     margin-left: 55%;
     transform: translateX(-55%);
+    padding-bottom: 2px;
 }
 
 main p {
