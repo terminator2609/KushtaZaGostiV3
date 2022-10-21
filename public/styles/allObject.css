@@ -220,11 +220,11 @@ header>i {
     gap: 50px;
 }
 
-.catalogues-menu>i {
+.catalogues-menu>svg {
     padding-top: 20px;
     font-size: 30px;
     padding-left: 20px;
-    color: #ffffff;
+    fill: #ffffff;
 }
 
 .catalogues-menu img {
@@ -246,14 +246,14 @@ header>i {
     align-items: center;
 }
 
-.catalogues-menu article div i {
+.catalogues-menu article div svg {
     position: absolute;
     bottom: 85%;
-    left: 72%;
-    color: #ffffff;
+    left: 70%;
+    fill: #ffffff;
     font-size: 22px;
     background-color: rgb(0, 0, 0, 0.3);
-    padding: 2px 5px;
+    padding: 2px 2px;
     border-radius: 77%;
 }
 
@@ -268,8 +268,7 @@ header>i {
     color: #ffffff;
     font-size: 80px;
     font-family: Montserrat;
-    font-weight: lighter;
-
+    font-weight: 100;
 }
 
 
