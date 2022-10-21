@@ -323,7 +323,7 @@ main {
 .object-item article p {
     position: absolute;
     left: 5%;
-    bottom: -240%;
+    bottom: -290%;
     color: rgb(255, 255, 255, 0.5);
     text-transform: uppercase;
     font-family: 'Montserrat';
