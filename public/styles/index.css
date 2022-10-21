@@ -103,13 +103,13 @@ nav>ul>li:nth-of-type(3) {
 }
 
 .nav-menu-phone {
-    background-color: #545454;
-    width: 85%;
+    background-color: #35332e;
+    width: 100%;
     font-family: Forum;
     z-index: 101;
     position: absolute;
     left: 0%;
-    top: 0%;
+    top: 10%;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -118,7 +118,10 @@ nav>ul>li:nth-of-type(3) {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+
 
 .nav-menu-phone article:nth-of-type(1) ul {
     display: -webkit-box;
