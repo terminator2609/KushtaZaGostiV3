@@ -4,6 +4,9 @@ let roleList = document.getElementsByClassName("role-list")[0]
 let closeMenuButton = document.getElementsByClassName("close-menu-button")[0]
 let navMenuIcon = document.getElementsByClassName("nav-menu-icon")[0]
 let navMenu = document.getElementsByClassName("nav-menu-phone")[0]
+let roleButton = document.getElementById("role-button")
+let roleText = document.getElementById("role-text")
+let navigationText = document.getElementsByClassName("navigation-text")[0]
 
 
 navMenu.style.display = "none"
@@ -35,34 +38,29 @@ document.addEventListener("scroll", (e) => {
 })
 
 
-
-let roleButton = document.getElementById("role-button")
-let roleText = document.getElementById("role-text")
-
 roleButton.addEventListener("click", (e) => {
 
+    e.preventDefault()
 
     if (roleButton.textContent === "Гост") {
         roleButton.textContent = "Домакин"
         roleText.textContent = "Гост"
-        roleButton.style.border = "2px solid #545454"
-        roleButton.style.color = "black"
+        roleButton.style.color = "rgb(0, 0, 0, 0.5)"
         roleButton.style.backgroundColor = "white"
         hostSection.style.display = "none"
         guestSection.style.display = "none"
-        roleList.style.marginLeft = "0px"
+        navigationText.style.marginLeft = ""
         roleText.style.fontSize = ""
         roleText.style.color = ""
     } else {
         roleButton.textContent = "Гост"
         roleText.textContent = "Домакин"
-        roleButton.style.border = "2px solid white"
-        roleButton.style.color = "white"
-        roleButton.style.background = "none"
+        roleButton.style.color = "rgb(255, 255, 255, 0.5)"
+        roleButton.style.backgroundColor = "#212123"
         hostSection.style.display = "none"
         guestSection.style.display = "none"
         roleText.style.fontSize = ""
-        roleList.style.marginLeft = "0px"
+        navigationText.style.marginLeft = ""
         roleText.style.fontSize = ""
         roleText.style.color = ""
     }
@@ -72,27 +70,27 @@ roleText.addEventListener("click", (e) => {
     e.preventDefault()
 
     if (roleText.textContent === "Домакин" && hostSection.style.display === "none") {
-        hostSection.style.display = "block"
+        hostSection.style.display = "flex"
         guestSection.style.display = "none"
-        roleList.style.marginLeft = "10px"
-        roleText.style.fontSize = "40px"
+        navigationText.style.marginLeft = "12%"
+        roleText.style.fontSize = "30px"
         roleText.style.color = "white"
     } else if (roleText.textContent === "Домакин" && hostSection.style.display === "block") {
         hostSection.style.display = "none"
         guestSection.style.display = "none"
-        roleList.style.marginLeft = "0px"
+        navigationText.style.marginLeft = ""
         roleText.style.fontSize = ""
         roleText.style.color = ""
     } else if (roleText.textContent === "Гост" && guestSection.style.display === "none") {
         hostSection.style.display = "none"
         guestSection.style.display = "block"
-        roleList.style.marginLeft = "10px"
-        roleText.style.fontSize = "40px"
+        navigationText.style.marginLeft = "12%"
+        roleText.style.fontSize = "30px"
         roleText.style.color = "white"
     } else {
         hostSection.style.display = "none"
         guestSection.style.display = "none"
-        roleList.style.marginLeft = "0px"
+        navigationText.style.marginLeft = ""
         roleText.style.fontSize = ""
         roleText.style.color = ""
     }

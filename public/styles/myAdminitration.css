@@ -95,14 +95,15 @@ nav>ul>li:nth-of-type(3) {
 }
 
 .nav-menu-phone {
-    background-color: #545454;
-    width: 85%;
+    background-color: #35332e;
+    width: 100%;
     font-family: Forum;
     z-index: 101;
     position: absolute;
     left: 0%;
-    top: 0%;
+    top: 10%;
     height: 100vh;
+    overflow: scroll;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -110,130 +111,60 @@ nav>ul>li:nth-of-type(3) {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-}
-
-.nav-menu-phone article:nth-of-type(1) ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: relative;
-    margin-top: 15px;
-    /* border-bottom: 1px solid white; */
-}
-
-.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(1) {
-    margin-left: 15px;
-    font-size: 45px;
-    margin-top: 5px;
-}
-
-
-.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(3) {
-    margin-right: 15px;
-    font-size: 30px;
-    color: white;
-}
-
-
-.nav-menu-phone article:nth-of-type(1) ul li:nth-of-type(2) img {
-    width: 60%;
-    position: absolute;
-    left: 50%;
-    top: -20%;
-    -webkit-transform: translateX(-50%) translateY(-25%);
-    -ms-transform: translateX(-50%) translateY(-25%);
-    transform: translateX(-50%) translateY(-25%);
-    z-index: -1;
-}
-
-.line-menu {
-    border-bottom: 1px solid white;
-    margin-top: 34px;
-    margin-left: 20px;
-}
-
-.nav-menu-phone article:nth-of-type(2) {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    margin-top: 20px;
-}
-
-
-.nav-menu-phone article:nth-of-type(2) button {
-    background: none;
-    width: 170px;
-    height: 40px;
-    border: 2px solid white;
-    font-family: 'Forum';
-    font-size: 25px;
-    color: white;
-    -webkit-box-shadow: -2px 7px 8px -3px rgba(0, 0, 0, 0.68);
-    box-shadow: -2px 7px 8px -3px rgba(0, 0, 0, 0.68);
-}
-
-.nav-menu-phone article:nth-of-type(3) {
-    margin-top: 60px;
-    margin-left: 20px;
-}
-
-
-.nav-menu-phone article:nth-of-type(3)>ul li {
-    line-height: 1.5;
-}
-
-.nav-menu-phone article:nth-of-type(3)>ul li a,
-span {
-    color: #C3C3C3;
-    font-family: Forum;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-
-.nav-menu-phone article:nth-of-type(3) ul li:nth-of-type(4) div ul li {
-    line-height: 1;
-}
-
-.nav-menu-phone article:nth-of-type(3) ul li:nth-of-type(4) div ul li a {
-    font-size: 18px;
-}
-
-.nav-menu-phone article:nth-of-type(4) {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    margin-top: 40px;
-}
-
-
-.nav-menu-phone article:nth-of-type(4) button {
-    background: none;
-    border: 2px solid white;
-    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-    margin-right: 20px;
-    padding: 5px 15px 5px 15px;
-}
-
-
-.nav-menu-phone article:nth-of-type(4) button a {
-    font-family: 'Forum';
-    font-size: 22px;
-    color: white;
 }
 
 .close-menu-button {
     fill: #DCDFDE;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.nav-menu-phone article:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-menu-phone article:nth-of-type(2) ul>li>a,
+span {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.nav-menu-phone .role-list div.guest-section ul ,
+.nav-menu-phone .role-list div.host-section ul {
+    border-left: 2px solid #ffffff;
+}
+
+
+.nav-menu-phone .role-list div.guest-section ul li a,
+.nav-menu-phone .role-list div.host-section ul li a {
+    font-size: 18px;
+    color: rgb(255, 255, 255, 0.5);
+    padding-left: 5px;
+}
+
+.nav-menu-phone article:nth-of-type(3) {
+    padding-bottom: 20px;
+    align-self: center;
+}
+
+.nav-menu-phone article:nth-of-type(3) button {
+    border: none;
+    background-color: #212123;
+    border-radius: 20px;
+    padding: 7px 40px;
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    font-family: Forum;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 18px;
 }
 
 /* ----------------------------------------------------------------------------header------------------------------------------------------ */
