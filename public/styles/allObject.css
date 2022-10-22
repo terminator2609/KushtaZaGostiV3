@@ -207,7 +207,7 @@ header>i {
 
 .catalogues-menu button {
     position: sticky;
-    top: 86%;
+    top: 88%;
     background: none;
     border: none;
 }
@@ -218,8 +218,12 @@ header>i {
     font-family: Montserrat;
     font-weight: 100;
     background-color: rgb(255, 255, 255, 0.2);
+    padding-left: 100px;
+    padding-right: 111px;
+    padding-bottom: 130px;
+    border-top-left-radius: 92%;
+    border-top-right-radius: 89%;
 }
-
 
 
 /* -------------------------------------------------------------------------------main------------------------------------------------------------------------------- */
