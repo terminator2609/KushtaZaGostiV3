@@ -27,8 +27,8 @@ let calenderReview = document.getElementsByClassName("calender-review")[0]
 let saveBookingButton = document.getElementsByClassName("save-booking")[0]
 calenderAdministration.style.display = "none"
 
-let addObjectTitle1Array = ["Моите", "Моето", "Моята", "Моята", "Моите", "Моите", "", "Моите", "Моите", "Моите"]
-let addObjectTitle2Array = ["Основни данни", "Ревю", "Медия", "Цена", "Социални мрежи", "Каталози", "", "Оферти", "Реклами", "Посещения"]
+let addObjectTitle1Array = ["Main", "Моето", "Моята", "Моята", "Моите", "Моите", "", "Моите", "Моите", "Моите"]
+let addObjectTitle2Array = ["Info", "Ревю", "Медия", "Цена", "Социални мрежи", "Каталози", "", "Оферти", "Реклами", "Посещения"]
 let currentCatalogues = ["./public/image/catalog/mountain.jpg", "./public/image/catalog/familiarization.jpg", "./public/image/catalog/varna.jpg", "./public/image/catalog/shumen.jpg", "./public/image/catalog/stara planina.jpg",
     "./public/image/catalog/team building.jpg", "./public/image/catalog/family with children.jpg", "./public/image/catalog/village.jpg", "./public/image/catalog/house with pets.jpg"]
 
@@ -65,7 +65,11 @@ for (let i = 0; i < definitionDiv.length; i++) {
 
 document.addEventListener("scroll", (e) => {
 
-    if (isCalender) {
+
+    if (document.getElementById("header-parallax")) {
+        document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
+    }
+
         if (window.scrollY > 0) {
             document.getElementById("nav-index").style.backgroundColor = "white"
             document.getElementById("nav-index").style.transition = "0.8s"
@@ -81,29 +85,24 @@ document.addEventListener("scroll", (e) => {
             document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
             document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
         }
-    } else {
-        if (window.scrollY > 0) {
-            document.getElementById("nav-index").style.backgroundColor = "#545451"
-            document.getElementById("nav-index").style.transition = "0.8s"
-            document.getElementsByClassName("fa-solid")[0].style.color = "#ffffff"
-            document.getElementsByClassName("translateEN")[0].style.color = "#ffffff"
-            document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-            document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-            document.getElementsByClassName("logo-nav-2")[0].style.top = "-60%"
-        } else {
-            document.getElementById("nav-index").style.background = "none"
-            document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
-            document.getElementsByClassName("translateEN")[0].style.color = "#545454"
-            document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
-            document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-        }
+
+
+
+    if (window.innerHeight < 620 && document.getElementById("customHeight")) {
+        document.getElementById("customHeight").style.height = "100vh"
     }
 
-
-
+    if (window.innerHeight >= 620 && window.innerHeight < 700 && document.getElementById("customHeight")) {
+        document.getElementById("customHeight").style.height = "90vh"
+    } else if (window.innerHeight >= 700 && window.innerHeight < 800 && document.getElementById("customHeight")) {
+        document.getElementById("customHeight").style.height = "82vh"
+    } else if (window.innerHeight >= 800 && window.innerHeight < 890 && document.getElementById("customHeight")) {
+        document.getElementById("customHeight").style.height = "70vh"
+    } else if (window.innerHeight >= 890 && document.getElementById("customHeight")) {
+        document.getElementById("customHeight").style.height = "60vh"
+    }
 
 })
-
 
 roleButton.addEventListener("click", (e) => {
 
@@ -206,6 +205,7 @@ for (let i = 0; i < categoriesList.length; i++) {
     categoriesList[i].addEventListener("click", (e) => {
         e.preventDefault()
 
+        addObjectTitle2.style.textShadow = "none"
         sectionAdd[i].style.display = "flex"
         categories.style.display = "none"
         addObjectTitle1.textContent = addObjectTitle1Array[i]

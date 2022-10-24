@@ -1,42 +1,25 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @font-face {
     font-family: The Seasons;
     src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
 }
 
 body {
-    overflow-x: hidden
+    background-color: #535351;
 }
 
 nav {
-    position: fixed;
-    z-index: 100;
+    position: sticky;
+    z-index: 1000;
     width: 100%;
     height: 100px;
+    top: 0%;
+    margin-bottom: 10%;
 }
 
+
 nav>ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
     padding-top: 25px;
@@ -46,11 +29,11 @@ nav>ul {
 }
 
 nav>ul>li {
-    color: #545454;
+    color: #DCDFDE;
 }
 
 nav>ul>li>a {
-    color: #545454;
+    color: #DCDFDE;
     font-family: The Seasons;
     font-size: 22px;
 }
@@ -70,14 +53,8 @@ nav>ul>li:nth-of-type(2) img {
     transform: translateX(-50%);
 }
 
-nav>ul>li:nth-of-type(2) img.logo-nav-1 {
-    display: none;
-}
-
 nav>ul>li:nth-of-type(2) img.logo-nav-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
 }
 
 
@@ -138,7 +115,7 @@ span {
     text-transform: uppercase;
 }
 
-.nav-menu-phone .role-list div.guest-section ul ,
+.nav-menu-phone .role-list div.guest-section ul,
 .nav-menu-phone .role-list div.host-section ul {
     border-left: 2px solid #ffffff;
 }
@@ -167,36 +144,35 @@ span {
     font-size: 18px;
 }
 
-/* ----------------------------------------------------------------------------header------------------------------------------------------ */
 
-header {
-    text-align: center;
-    padding-top: 40%;
-}
+/* ---------------------------------------------------------------------header--------------------------------------------------------------------- */
 
 header h1 {
-    font-family: Montserrat;
-    font-size: 30px;
-    color: #535351;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 50px;
     text-transform: uppercase;
 }
 
 header h2 {
-    font-family: Forum;
-    font-size: 33px;
-    text-shadow: 2px 7px 4px rgba(84, 84, 84, 0.7);
-    color: #545454;
+    text-align: center;
+    font-family: 'The Seasons';
+    font-size: 48px;
+    color: #ffffff;
     text-transform: uppercase;
+    text-shadow: 0px 9px 3px rgb(255 255 255 / 50%);
 }
 
 /* -----------------------------------------------------------------------------main-------------------------------------------------------------- */
 
-
-/* ---------------------------------------------section.general-info-villa------------------------------------------------- */
-
+main {
+    margin-top: 20%;
+}
 
 .categories {
-    margin-top: 20%;
+    
     margin-left: 20px;
     margin-bottom: 20%;
 }
@@ -206,1009 +182,83 @@ header h2 {
 }
 
 .categories ul li a {
-    font-family: Forum;
+    font-family: Montserrat;
     font-size: 16px;
-    color: rgb(83, 83, 81, 0.7);
+    color: rgb(255, 255, 255, 0.5);
     text-transform: uppercase;
 }
 
 
-main section article:nth-of-type(1) {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    justify-self: flex-start;
-    position: relative;
-}
-
-main section article.flags-article:nth-of-type(1) {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-
-main section article:nth-of-type(1)>div:nth-of-type(1) {
-    position: relative;
-}
-
-main section article.flags-article:nth-of-type(1)>div:last-of-type {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    gap: 5px;
-}
-
-main section article.flags-article:nth-of-type(1)>div:last-of-type img {
-    width: 6%;
-}
-
-main section article:nth-of-type(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 10px;
-}
-
-main section article:nth-of-type(2) form>div .line-form {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ABABAA;
-    margin-top: 20px;
-    width: 300px;
-}
-
-main section article:nth-of-type(2) form div label {
-    color: #535351;
-    font-family: Forum;
-    font-size: 16px;
-}
+/* ---------------------------------------------section.general-info-villa------------------------------------------------- */
 
 .general-info-villa {
-    margin-top: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 60vh;
-    margin-bottom: 60%;
-}
-
-.general-info-villa article:nth-of-type(2) a {
-    color: #A8A8A7;
-    font-family: Montserrat;
-    font-size: 13px;
-    margin-left: 50%;
-}
-
-.general-info-villa article:nth-of-type(2) form div input {
-    border: none;
-    background: none;
-    color: #A8A8A7;
-    font-family: Montserrat;
-    width: 60%;
-}
-
-.general-info-villa article:nth-of-type(2) form div input:focus {
-    outline: none !important;
-    border: none;
-    background: none;
-}
-
-main section article:nth-of-type(3) {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-main section article:nth-of-type(3) button {
-    background: none;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-
-    margin-bottom: 20px;
-    /* margin-top: 20px; */
-}
-
-main section article:nth-of-type(3) button a {
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 18px;
-}
-
-.review-villa,
-.add-photos,
-.price-info-villa,
-.social-media-info-villa {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 10vh;
-}
-
-.review-villa {
-    height: 30vh;
-    margin-top: 30%;
-    margin-bottom: 40%;
-}
-
-.review-villa article:nth-of-type(2) form div textarea {
-    border: none;
-    background: none;
-    color: #A8A8A7;
-    font-family: Montserrat;
-}
-
-.review-villa article:nth-of-type(2) form div textarea:focus {
-    outline: none !important;
-    border: none;
-    background: none;
-}
-
-.add-photos {
-    height: 50vh;
-    gap: 50px;
-    margin-top: 20%;
-}
-
-.add-photos article:nth-of-type(1) {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    margin-left: 20px;
-    width: 90%;
-}
-
-.add-photos article:nth-of-type(1) form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 70px;
-}
-
-.add-photos article:nth-of-type(1) form div label {
-    background: none;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-
-.add-photos article:nth-of-type(1) form div:nth-of-type(1) label {
-    padding-right: 20%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-}
-
-.add-photos article:nth-of-type(1) form div:nth-of-type(2) label {
-    padding-right: 26.5%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-}
-
-.add-photos article:nth-of-type(1) form div:nth-of-type(3) label {
-    padding-right: 18.2%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-}
-
-.add-photos article:nth-of-type(1) form div input {
-    display: none;
-}
-
-.add-photos article:nth-of-type(2) button,
-.price-info-villa article:nth-of-type(2) button,
-.social-media-info-villa article:nth-of-type(2) button {
-    background: none;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-
-    margin-bottom: 20px;
-    /* margin-top: 20px; */
-}
-
-.add-photos article:nth-of-type(2) button a,
-.price-info-villa article:nth-of-type(2) button a,
-.social-media-info-villa article:nth-of-type(2) button a {
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 18px;
-}
-
-.price-info-villa {
-    height: 70vh;
-    gap: 30px;
-    margin-top: 15%;
-}
-
-
-.price-info-villa article:nth-of-type(1) {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    margin-left: 20px;
-    width: 80%;
-}
-
-.price-info-villa article:nth-of-type(1) form div input,
-.price-info-villa article:nth-of-type(1) form div select {
-    background: none;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 14px;
-    margin-bottom: 30px;
-    width: 100.5%;
-    height: 34px;
-}
-
-.price-info-villa article:nth-of-type(1) form div input::-webkit-input-placeholder {
-    color: #A8A8A7;
     width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(1) form div input::-moz-placeholder {
-    color: #A8A8A7;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(1) form div input:-ms-input-placeholder {
-    color: #A8A8A7;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(1) form div input::-ms-input-placeholder {
-    color: #A8A8A7;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(1) form div input::placeholder {
-    color: #A8A8A7;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(1) form div select#currency {
-    width: 103%;
-    height: 42px;
-}
-
-.price-info-villa article:nth-of-type(1) form div select#typeForRent {
-    width: 103%;
-    height: 42px;
-}
-
-.price-info-villa article:nth-of-type(1) form div input:focus {
-    outline: none !important;
-}
-
-.price-info-villa article:nth-of-type(1) form div select:focus {
-    outline: none !important;
-}
-
-.price-info-villa article:nth-of-type(1) form div select option {
-    padding-left: 10px;
-}
-
-
-.social-media-info-villa {
-    height: 55vh;
-    gap: 30px;
-    margin-top: 15%;
-}
-
-.social-media-info-villa article:nth-of-type(1) {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    margin-left: 20px;
-}
-
-.social-media-info-villa article:nth-of-type(1) form div {
-    background: none;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-
-
-.social-media-info-villa article:nth-of-type(1) form div input {
-    border: none;
-    background: none;
-    color: #A8A8A7;
-    font-family: Montserrat;
-}
-
-.social-media-info-villa article:nth-of-type(1) form div input:focus {
-    outline: none !important;
-    border: none;
-    background: none;
-}
-
-.social-media-info-villa article:nth-of-type(1) i {
-    border: 1px solid #ffffff;
-    border-radius: 100px;
-    padding: 5px;
-    font-size: 15px;
-}
-
-.social-media-info-villa article:nth-of-type(1) div:nth-of-type(1) i {
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-.catalogues-select-villa {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 10%;
-}
-
-.catalogues-select-villa article:nth-of-type(1) form div img {
-    width: 20%;
-    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-}
-
-main section article.three-div-elements:nth-of-type(1) {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-main section article.three-div-elements:nth-of-type(1) div:nth-of-type(2) {
-    width: 35%;
-    font-family: 'Forum';
-    color: #ffffff;
-}
-
-main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
-    width: 30%;
-    font-family: 'Forum';
-    color: #ffffff;
-}
-
-
-.catalogues-select-villa article:nth-of-type(1) form div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 5px;
-}
-
-.catalogues-select-villa article:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.catalogues-select-villa article:nth-of-type(2) button {
-    background: none;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    margin-bottom: 20px;
-    /* margin-top: 20px; */
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 18px;
-}
-
-.selectedCatalogues {
-    border: 3px solid #A8A8A7;
-}
-
-
-.calender article:nth-of-type(1) {
-    display: flex;
-    -webkit-box-align: center;
-    position: relative;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(1) {
-    color: #ffffff;
-    font-family: Forum;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 30%;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(1) div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    height: 100%;
     flex-direction: column;
 }
 
-.calender article:nth-of-type(1)>div:nth-of-type(1) div h1 {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    font-size: 20px;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(1) div h2 {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    font-size: 14px;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(1) div h3 {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    font-size: 14px;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(2) {
-    margin-top: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 10px;
-    width: 60%;
-    color: #ffffff;
-    font-family: Forum;
-    border-left: 1px solid #ABABAA;
-    margin-bottom: 30px;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(2)>div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 5px;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(2) div.calender-line {
-    border-bottom: 1px solid #ABABAA;
-    width: 105%;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(2) div:nth-of-type(1) h4 {
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(2) div:nth-of-type(n + 1) p {
-    padding-top: 5px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(2) div:last-of-type {
-    padding-top: 20px;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(3) {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(3) i {
-    position: absolute;
-    left: 10%;
-    font-size: 22px;
-    color: #ffffff;
-    top: 95%;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(3) i:nth-of-type(2) {
-    left: 85%;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(4) {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(4) button {
-    position: absolute;
-    left: 20%;
-    top: 100%;
-    background: none;
-    width: 62%;
-    height: 40px;
-    border: 2px solid white;
-    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(4) button a {
-    font-family: 'Forum';
-    font-size: 15px;
-    color: #A8A8A7;
-}
-
-.calender article:nth-of-type(1)>div:nth-of-type(4) button:nth-of-type(2) {
-    top: 108%;
-    font-family: 'Forum';
-    font-size: 15px;
-    color: #A8A8A7;
-}
-
-.calender-administration {
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 10%;
-}
-
-.calender-administration>div:nth-of-type(1) {
+article.flags-article {
+    width: 95%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-
-.calender-administration>div:nth-of-type(1)>div {
-    display: flex;
-    gap: 10px;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    color: #545454;
-}
-
-.calender-administration>div:nth-of-type(1)>div div:nth-of-type(1) p:nth-of-type(1) {
-    border-bottom: 1px solid rgb(83, 83, 81, 0.5);
-    padding-bottom: 5px;
-}
-
-.calender-administration>div:nth-of-type(1)>div div:nth-of-type(3) p:nth-of-type(1) {
-    border-bottom: 1px solid rgb(83, 83, 81, 0.5);
-    padding-bottom: 5px;
-}
-
-.calender-administration>div:nth-of-type(1)>div p:nth-of-type(2) {
-    text-align: center;
-    border-bottom: 1px solid rgb(83, 83, 81, 0.5);
-    padding-top: 15px;
-    padding-bottom: 5px;
-    color: rgb(83, 83, 83, 0.4);
-}
-
-.calender-administration>div:nth-of-type(1) h1 {
-    font-family: 'Forum';
-    color: rgb(83, 83, 81, 0.7);
-    text-transform: uppercase;
-    font-size: 18px;
-    transform: rotate(270deg);
-}
-
-.calender-administration>div:nth-of-type(2),
-.calender-administration>div:nth-of-type(3) {
-    align-self: center;
-}
-
-.calender-administration>div:nth-of-type(n + 1) button {
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    background: none;
-    color: rgb(83, 83, 81, 0.6);
-    padding: 10px 20px;
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-    font-family: Forum;
-    font-size: 16px;
-}
-
-.calender-administration>div:nth-of-type(3) button {
-    text-transform: uppercase;
-}
-
-.add-ads {
-    margin-top: 20%;
-    height: 60vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.add-ads article:nth-of-type(1) {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
-
-.add-ads article:nth-of-type(1)>div:nth-of-type(1) {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.add-ads article:nth-of-type(1)>div:nth-of-type(1) p {
-    font-size: 25px;
-    font-family: 'The Seasons';
-    color: #fbbc04;
-}
-
-.add-ads article:nth-of-type(1)>div:nth-of-type(1) i {
-    font-size: 18px;
-    color: #737271;
-}
-
-.add-ads article:nth-of-type(1)>div:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Forum';
-    color: #545454;
-    opacity: 0.8;
-    gap: 10px;
-    font-size: 14px;
-}
-
-.add-ads article:nth-of-type(1)>div:nth-of-type(2) div {
-    display: flex;
-    gap: 2px;
-}
-
-.add-ads article:nth-of-type(2) {
-    align-self: flex-end;
-    width: 51%;
-    margin-right: 10px;
-    color: #545454;
-    opacity: 0.8;
-    font-family: 'Forum';
-    font-size: 15px;
-}
-
-.add-ads article:nth-of-type(3) button {
-    background: none;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    margin-bottom: 20px;
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 18px;
-}
-
-.add-offer {
-    flex-direction: column;
-    align-items: center;
-    height: 90vh;
-    justify-content: space-evenly;
-}
-
-.add-offer article:nth-of-type(1) {
-    width: 100%;
-}
-
-.add-offer article:nth-of-type(1) div:nth-of-type(1) {
-    margin-left: 10px;
-    font-family: 'Forum';
-    color: #545454;
-    margin-bottom: 20px;
-}
-
-.swiper {
-    width: 100%;
-    background-color: #545454;
-    padding-bottom: 15px;
-}
-
-.swiper-slide img {
-    width: 80%;
-    margin-top: 10%;
-}
-
-.swiper-slide>div {
-    position: relative;
-}
-
-.swiper-slide>div div:nth-of-type(1) {
-    position: relative;
-}
-
-.swiper-slide div h3 {
-    color: #ffffff;
-    font-family: Forum;
-    text-transform: uppercase;
-    font-size: 16px;
-    position: absolute;
-    bottom: 70%;
-    right: 90%;
-    transform: translateX(40%);
-}
-
-.swiper-slide>div div:nth-of-type(1) p {
-    color: rgb(255, 255, 255, 0.6);
-}
-
-.swiper-slide>div div:nth-of-type(2) {
-    background-color: #ffffff;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    font-family: 'Montserrat';
-    padding: 5px;
-    line-height: 1.2;
-    color: #535351;
-}
-
-.swiper-slide>div div:nth-of-type(2) p:nth-of-type(1) {
-    font-size: 10px;
-    text-align: center;
-    text-decoration: line-through;
-    text-decoration-color: red;
-}
-
-.swiper-slide>div div:nth-of-type(2) p:nth-of-type(2) {
-    font-size: 14px;
-}
-
-.swiper-pagination {
-    bottom: -10%;
-}
-
-.add-offer article:nth-of-type(1)>p {
-    font-family: 'Forum';
-    position: absolute;
-    left: 72%;
-    color: rgb(84, 84, 84, 0.7);
-}
-
-.add-offer article:nth-of-type(3) button {
-    background: none;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 18px;
-    margin-top: 25px;
-}
-
-.add-offer-page>div:nth-of-type(1) {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-
-.add-offer-page>div:nth-of-type(1) div:nth-of-type(1) {
-    position: relative;
-}
-
-.add-offer-page>div:nth-of-type(1) div:nth-of-type(1) i {
-    color: #fbbc04;
-}
-
-.add-offer-page>div:nth-of-type(1) div.definition {
-    font-family: Forum;
-    color: #B1B1B1;
-    background-color: #717273;
-    border: 2px solid #5f6368;
-    position: absolute;
-    left: 50%;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.add-offer-page>div:nth-of-type(1) div.definition p {
-    width: 120px;
-}
-
-.add-offer-page>div:nth-of-type(1) div:nth-of-type(2) {
-    display: flex;
-    align-items: center;
-    gap: 5px;
     justify-content: flex-end;
+    gap: 5px;
 }
 
-.add-offer-page>div:nth-of-type(1) div:nth-of-type(2) img {
+article.flags-article img {
     width: 6%;
 }
 
-
-.add-offer-page>div:nth-of-type(2) form {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.general-info-villa article:nth-of-type(2) {
+    padding-left: 20px;
+    padding-top: 40px;
 }
 
-.add-offer-page>div:nth-of-type(2) form div input#title {
-    border: none;
+.general-info-villa article:nth-of-type(2) form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.general-info-villa article:nth-of-type(2) form input {
     background: none;
-    width: 100%;
-    border-bottom: 1px solid #545454;
-    font-family: 'Forum';
-    font-size: 18px;
-    outline: none;
-    color: #545454;
-}
-
-.add-offer-page>div:nth-of-type(2) form div input#standardPrice,
-.add-offer-page>div:nth-of-type(2) form div input#offerPrice,
-.add-offer-page>div:nth-of-type(2) form div select {
-    width: 100%;
-    padding: 16px 2px;
-    border: 2px solid rgb(83, 83, 81, 0.5);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-}
-
-.add-offer-page>div:nth-of-type(2) form div select {
-    width: 103%;
-}
-
-.add-offer-page>div:nth-of-type(2) form div input#offerPrice::placeholder {
-    font-size: 12px;
-    font-family: Forum;
-    color: #A8A8A7
-}
-
-.add-offer-page>div:nth-of-type(2) form div input#standardPrice::placeholder {
-    font-size: 13px;
-    font-family: Forum;
-    color: #A8A8A7
-}
-
-.visits {
-    flex-direction: column;
-    margin-top: 10%;
-}
-
-.visits article:nth-of-type(1) {
-    display: flex;
-    gap: 10px;
-    margin-left: 10px;
-    align-items: center;
-}
-
-.visits article:nth-of-type(1) i {
-    color: rgb(83, 83, 81, 0.6);
-    font-size: 18px;
-}
-
-.visits article:nth-of-type(1) p {
-    color: #545454;
+    border: none;
+    width: 70%;
     font-family: Montserrat;
-    font-size: 22px;
+    font-size: 15px;
+    color: #ffffff;
 }
 
-.visits article:nth-of-type(2) {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.general-info-villa article:nth-of-type(2) form input:focus {
+    outline: none !important;
 }
 
-.visits article:nth-of-type(2) div {
-    display: flex;
-    gap: 25px;
-    align-items: center;
+.line-form {
+    border-bottom: 3px solid rgb(255, 255, 255, 0.5);
+    width: 70%;
+    padding-top: 2px;
 }
 
-.visits article:nth-of-type(2) div h1 {
-    font-family: "Open Sans";
-    font-size: 30px;
-    font-weight: bold;
-    color: #545454;
-    transform: rotate(270deg);
-    border-bottom: 1px solid rgb(83, 83, 81, 0.4);
-    padding-bottom: 5px;
+.general-info-villa article:nth-of-type(3) {
+   padding-top: 40px;
+   align-self: center;
 }
 
-.visits article:nth-of-type(2) div p {
-    font-family: 'Montserrat';
-    color: rgb(83, 83, 81, 0.5);
-    font-size: 18px;
+.general-info-villa article:nth-of-type(3) button {
+    border: none;
+    background-color: #212123;
+    border-radius: 35px;
+    padding: 7px 15px;
+    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
+    width: 145px;
 }
 
+.general-info-villa article:nth-of-type(3) button a {
+    font-family: Montserrat;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 15px;
+}
 
 /* ----------------------------footer-------------------------------------- */
 
