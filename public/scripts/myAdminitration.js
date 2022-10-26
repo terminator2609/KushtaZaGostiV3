@@ -27,8 +27,8 @@ let calenderReview = document.getElementsByClassName("calender-review")[0]
 let saveBookingButton = document.getElementsByClassName("save-booking")[0]
 calenderAdministration.style.display = "none"
 
-let addObjectTitle1Array = ["Main", "My", "Моята", "Моята", "Моите", "Моите", "", "Моите", "Моите", "Моите"]
-let addObjectTitle2Array = ["Info", "Review", "Медия", "Цена", "Социални мрежи", "Каталози", "", "Оферти", "Реклами", "Посещения"]
+let addObjectTitle1Array = ["Main", "My", "My", "Моята", "Моите", "Моите", "", "Моите", "Моите", "Моите"]
+let addObjectTitle2Array = ["Info", "Review", "Media", "Цена", "Социални мрежи", "Каталози", "", "Оферти", "Реклами", "Посещения"]
 let currentCatalogues = ["./public/image/catalog/mountain.jpg", "./public/image/catalog/familiarization.jpg", "./public/image/catalog/varna.jpg", "./public/image/catalog/shumen.jpg", "./public/image/catalog/stara planina.jpg",
     "./public/image/catalog/team building.jpg", "./public/image/catalog/family with children.jpg", "./public/image/catalog/village.jpg", "./public/image/catalog/house with pets.jpg"]
 
