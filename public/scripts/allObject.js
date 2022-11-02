@@ -7,9 +7,22 @@ let navMenu = document.getElementsByClassName("nav-menu-phone")[0]
 let roleButton = document.getElementById("role-button")
 let roleText = document.getElementById("role-text")
 let navigationText = document.getElementsByClassName("navigation-text")[0]
+let myObjectImg = document.getElementsByClassName("object-item-img")
 
 
-
+if (window.innerHeight >= 800) {
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "45vh"
+    }
+} else if (window.innerHeight >= 700 && window.innerHeight < 800) {
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "50vh"
+    }
+} else {
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "55vh"
+    }
+}
 
 navMenu.style.display = "none"
 
@@ -23,21 +36,21 @@ document.addEventListener("scroll", (e) => {
         document.getElementById("header-parallax").style.backgroundPositionY = window.scrollY * 1 + "px"
     }
 
-        if (window.scrollY > 0) {
-            document.getElementById("nav-index").style.backgroundColor = "white"
-            document.getElementById("nav-index").style.transition = "0.8s"
-            document.getElementsByClassName("fa-solid")[0].style.color = "#6F6F6F"
-            document.getElementsByClassName("translateEN")[0].style.color = "#6F6F6F"
-            document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
-            document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-            document.getElementsByClassName("logo-nav-2")[0].style.top = "-60%"
-        } else {
-            document.getElementById("nav-index").style.background = "none"
-            document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
-            document.getElementsByClassName("translateEN")[0].style.color = "#DCDFDE"
-            document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-            document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-        }
+    if (window.scrollY > 0) {
+        document.getElementById("nav-index").style.backgroundColor = "white"
+        document.getElementById("nav-index").style.transition = "0.8s"
+        document.getElementsByClassName("fa-solid")[0].style.color = "#6F6F6F"
+        document.getElementsByClassName("translateEN")[0].style.color = "#6F6F6F"
+        document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
+        document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
+        document.getElementsByClassName("logo-nav-2")[0].style.top = "-60%"
+    } else {
+        document.getElementById("nav-index").style.background = "none"
+        document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
+        document.getElementsByClassName("translateEN")[0].style.color = "#DCDFDE"
+        document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
+        document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+    }
 
 
 

@@ -267,17 +267,16 @@ main h2 {
     border-top-right-radius: 24px;
     border-bottom-left-radius: 17px;
     border-bottom-right-radius: 17px;
-    height: 45vh;
 }
 
 .object-item h1 {
     position: absolute;
-    top: 60%;
+    top: 73%;
     left: 10%;
     font-family: Montserrat;
     color: rgb(255, 255, 255);
     width: 0%;
-    font-size: 22px;
+    font-size: 25px;
     text-transform: uppercase;
 }
 
@@ -288,11 +287,11 @@ main h2 {
 .object-item article p {
     position: absolute;
     left: 10%;
-    bottom: 12%;
+    top: 86%;
     text-transform: uppercase;
     font-family: 'Montserrat';
     font-weight: lighter;
-    font-size: 28px;
+    font-size: 30px;
     color: #ffffff;
 }
 
