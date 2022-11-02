@@ -8,7 +8,23 @@ let roleButton = document.getElementById("role-button")
 let roleText = document.getElementById("role-text")
 let navigationText = document.getElementsByClassName("navigation-text")[0]
 let myObjectImg = document.getElementsByClassName("object-item-img")
+let objectItemH1 = document.getElementsByClassName("object-item-h1")
+let objectItemP = document.getElementsByClassName("object-item-p")
+let objectHeartLogo = document.getElementsByClassName("fa-heart")
 
+if(window.innerHeight < 600) {
+    for (let i = 0; i < objectItemH1.length; i++) {
+        objectItemH1[i].style.top = "67%"
+    }
+
+    for(let i = 0; i < objectItemP.length; i++) {
+        objectItemP[i].style.top = "83%"
+    }
+
+    for(let i = 0; i < objectHeartLogo.length; i++) {
+        objectHeartLogo[i].style.top = "85%"
+    }
+}
 
 if (window.innerHeight >= 800) {
     for (let i = 0; i < myObjectImg.length; i++) {
