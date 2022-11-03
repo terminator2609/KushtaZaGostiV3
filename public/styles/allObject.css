@@ -257,7 +257,7 @@ main h2 {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 20%;
+    height: 50vh;
 }
 
 .object-item img {

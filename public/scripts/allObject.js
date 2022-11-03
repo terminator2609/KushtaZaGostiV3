@@ -41,7 +41,6 @@ let objectItem =  document.getElementsByClassName("object-item")
 //     }
 // }
 
-objectItem[0].style.height = "50vh"
 
 navMenu.style.display = "none"
 
