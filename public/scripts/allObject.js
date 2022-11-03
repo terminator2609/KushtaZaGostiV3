@@ -11,20 +11,21 @@ let myObjectImg = document.getElementsByClassName("object-item-img")
 let objectItemH1 = document.getElementsByClassName("object-item-h1")
 let objectItemP = document.getElementsByClassName("object-item-p")
 let objectHeartLogo = document.getElementsByClassName("fa-heart")
+let objectItem =  document.getElementsByClassName("object-item")
 
-if(window.innerHeight < 600) {
-    for (let i = 0; i < objectItemH1.length; i++) {
-        objectItemH1[i].style.top = "67%"
-    }
+// // if(window.innerHeight < 600) {
+// //     for (let i = 0; i < objectItemH1.length; i++) {
+// //         objectItemH1[i].style.top = "67%"
+// //     }
 
-    for(let i = 0; i < objectItemP.length; i++) {
-        objectItemP[i].style.top = "83%"
-    }
+// //     for(let i = 0; i < objectItemP.length; i++) {
+// //         objectItemP[i].style.top = "83%"
+// //     }
 
-    for(let i = 0; i < objectHeartLogo.length; i++) {
-        objectHeartLogo[i].style.top = "85%"
-    }
-}
+// //     for(let i = 0; i < objectHeartLogo.length; i++) {
+// //         objectHeartLogo[i].style.top = "85%"
+// //     }
+// // }
 
 // if (window.innerHeight >= 800) {
 //     for (let i = 0; i < myObjectImg.length; i++) {
@@ -40,15 +41,7 @@ if(window.innerHeight < 600) {
 //     }
 // }
 
-if (window.innerHeight >= 600) {
-    for (let i = 0; i < myObjectImg.length; i++) {
-        myObjectImg[i].style.height = "360px"
-    }
-} else {
-    for (let i = 0; i < myObjectImg.length; i++) {
-        myObjectImg[i].style.height = "300px"
-    }
-}
+objectItem[0].style.height = "50vh"
 
 navMenu.style.display = "none"
 
