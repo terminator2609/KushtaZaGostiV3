@@ -26,17 +26,27 @@ if(window.innerHeight < 600) {
     }
 }
 
-if (window.innerHeight >= 800) {
+// if (window.innerHeight >= 800) {
+//     for (let i = 0; i < myObjectImg.length; i++) {
+//         myObjectImg[i].style.height = "330px"
+//     }
+// } else if (window.innerHeight >= 700 && window.innerHeight < 800) {
+//     for (let i = 0; i < myObjectImg.length; i++) {
+//         myObjectImg[i].style.height = "330px"
+//     }
+// } else {
+//     for (let i = 0; i < myObjectImg.length; i++) {
+//         myObjectImg[i].style.height = "350px"
+//     }
+// }
+
+if (window.innerHeight >= 600) {
     for (let i = 0; i < myObjectImg.length; i++) {
-        myObjectImg[i].style.height = "45vh"
-    }
-} else if (window.innerHeight >= 700 && window.innerHeight < 800) {
-    for (let i = 0; i < myObjectImg.length; i++) {
-        myObjectImg[i].style.height = "50vh"
+        myObjectImg[i].style.height = "360px"
     }
 } else {
     for (let i = 0; i < myObjectImg.length; i++) {
-        myObjectImg[i].style.height = "55vh"
+        myObjectImg[i].style.height = "300px"
     }
 }
 
