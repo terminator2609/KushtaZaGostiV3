@@ -279,8 +279,8 @@ main h2 {
 
 .object-item h2 {
     position: absolute;
-    top: 74%;
-    left: 10%;
+    top: calc(100% - 23%);
+    left: calc(90% - 85%);
     font-family: Montserrat;
     color: rgb(255, 255, 255);
     width: 0%;
@@ -294,8 +294,8 @@ main h2 {
 
 .object-item article p {
     position: absolute;
-    left: 10%;
-    top: 86%;
+    left: calc(90% - 80%);
+    top: calc(100% - 10%);
     text-transform: uppercase;
     font-family: 'Montserrat';
     font-weight: lighter;
@@ -305,10 +305,10 @@ main h2 {
 
 .object-item i {
     position: absolute;
-    left: 86%;
-    font-size: 18px;
+    font-size: 20px;
     color: #ffffff;
-    top: 87%;
+    top: calc(100% - 9%);
+    right: 10%;
 }
 
 /* ----------------------------footer-------------------------------------- */

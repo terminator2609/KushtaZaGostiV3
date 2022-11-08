@@ -15,21 +15,22 @@ let objectItem =  document.getElementsByClassName("object-item")
 
 if(window.innerHeight < 600) {
     for (let i = 0; i < objectItemH1.length; i++) {
-        objectItemH1[i].style.top = "67%"
+        objectItemH1[i].style.top = "calc(100% - 24%)"
+        objectItemH1[i].style.left = "calc(90% - 87%)"
     }
 
     for(let i = 0; i < objectItemP.length; i++) {
-        objectItemP[i].style.top = "83%"
+        objectItemP[i].style.top = "90%"
     }
 
     for(let i = 0; i < objectHeartLogo.length; i++) {
-        objectHeartLogo[i].style.top = "85%"
+        objectHeartLogo[i].style.top = "92%"
     }
 }
 
 if (window.innerHeight >= 800) {
     for (let i = 0; i < myObjectImg.length; i++) {
-        myObjectImg[i].style.height = "390px"
+        myObjectImg[i].style.height = "370px"
     }
 } else if (window.innerHeight >= 700 && window.innerHeight < 800) {
     for (let i = 0; i < myObjectImg.length; i++) {
@@ -43,7 +44,7 @@ if (window.innerHeight >= 800) {
 
 } else {
     for (let i = 0; i < myObjectImg.length; i++) {
-        myObjectImg[i].style.height = "320px"
+        myObjectImg[i].style.height = "330px"
     }
 }
 
