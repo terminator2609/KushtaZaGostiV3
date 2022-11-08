@@ -30,27 +30,27 @@ for (let i = 0; i < definitionDiv.length; i++) {
 }
 
 
-document.addEventListener("scroll", (e) => {
+// document.addEventListener("scroll", (e) => {
 
 
-    if (window.scrollY > 0) {
-        document.getElementById("nav-index").style.backgroundColor = "#545451"
-        document.getElementById("nav-index").style.transition = "0.8s"
-        document.getElementsByClassName("fa-solid")[0].style.color = "#ffffff"
-        document.getElementsByClassName("translateEN")[0].style.color = "#ffffff"
-        document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-        document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-        document.getElementsByClassName("logo-nav-2")[0].style.top = "-60%"
-    } else {
-        document.getElementById("nav-index").style.background = "none"
-        document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
-        document.getElementsByClassName("translateEN")[0].style.color = "#545454"
-        document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
-        document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-    }
+//     if (window.scrollY > 0) {
+//         document.getElementById("nav-index").style.backgroundColor = "#545451"
+//         document.getElementById("nav-index").style.transition = "0.8s"
+//         document.getElementsByClassName("fa-solid")[0].style.color = "#ffffff"
+//         document.getElementsByClassName("translateEN")[0].style.color = "#ffffff"
+//         document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
+//         document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+//         document.getElementsByClassName("logo-nav-2")[0].style.top = "-60%"
+//     } else {
+//         document.getElementById("nav-index").style.background = "none"
+//         document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
+//         document.getElementsByClassName("translateEN")[0].style.color = "#545454"
+//         document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
+//         document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
+//     }
 
 
-})
+// })
 
 
 roleButton.addEventListener("click", (e) => {

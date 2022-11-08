@@ -9,10 +9,12 @@ let roleText = document.getElementById("role-text")
 let navigationText = document.getElementsByClassName("navigation-text")[0]
 
 
+
 navMenu.style.display = "none"
 
 guestSection.style.display = "none"
 hostSection.style.display = "none"
+
 
 
 // document.addEventListener("scroll", (e) => {
@@ -33,6 +35,7 @@ hostSection.style.display = "none"
 //         document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
 //         document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
 //     }
+
 
 
 // })
