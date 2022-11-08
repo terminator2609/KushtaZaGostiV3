@@ -294,7 +294,7 @@ main h2 {
 
 .object-item article p {
     position: absolute;
-    left: calc(90% - 81%);
+    left: calc(90% - 82%);
     top: calc(100% - 10%);
     text-transform: uppercase;
     font-family: 'Montserrat';
