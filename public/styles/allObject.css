@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #535351;
+    background-color: #35332e;
 }
 
 nav {
@@ -157,7 +157,7 @@ span {
 
 header>i {
     padding-left: 5%;
-    font-size: 24px;
+    font-size: 26px;
     color: rgb(255, 255, 255, 0.5);
 }
 
@@ -236,7 +236,7 @@ header>i {
 
 
 main {
-    margin-top: 20%;
+    margin-top: 10%;
     width: 100%;
     height: 100%;
 }
@@ -257,20 +257,27 @@ main h2 {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 50vh;
+}
+
+.object-item h1 {
+    font-family: "The Seasons";
+    color: #fbbc04;
+    font-size: 26px;
+    position: absolute;
+    top: 0%;
+    right: 10%
 }
 
 .object-item img {
     width: 90%;
-    padding-top: 10px;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
     border-bottom-left-radius: 17px;
     border-bottom-right-radius: 17px;
-    height: 100%;
+    margin-top: 17px;
 }
 
-.object-item h1 {
+.object-item h2 {
     position: absolute;
     top: 74%;
     left: 10%;
@@ -304,16 +311,12 @@ main h2 {
     top: 87%;
 }
 
-.object-item h3 {
-    opacity: 0;
-}
-
 /* ----------------------------footer-------------------------------------- */
 
 footer {
     margin-top: 50px;
     height: 82vh;
-    background-color: #535351;
+    background-color: #35332e;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

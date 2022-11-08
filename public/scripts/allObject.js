@@ -13,33 +13,39 @@ let objectItemP = document.getElementsByClassName("object-item-p")
 let objectHeartLogo = document.getElementsByClassName("fa-heart")
 let objectItem =  document.getElementsByClassName("object-item")
 
-// // if(window.innerHeight < 600) {
-// //     for (let i = 0; i < objectItemH1.length; i++) {
-// //         objectItemH1[i].style.top = "67%"
-// //     }
+if(window.innerHeight < 600) {
+    for (let i = 0; i < objectItemH1.length; i++) {
+        objectItemH1[i].style.top = "67%"
+    }
 
-// //     for(let i = 0; i < objectItemP.length; i++) {
-// //         objectItemP[i].style.top = "83%"
-// //     }
+    for(let i = 0; i < objectItemP.length; i++) {
+        objectItemP[i].style.top = "83%"
+    }
 
-// //     for(let i = 0; i < objectHeartLogo.length; i++) {
-// //         objectHeartLogo[i].style.top = "85%"
-// //     }
-// // }
+    for(let i = 0; i < objectHeartLogo.length; i++) {
+        objectHeartLogo[i].style.top = "85%"
+    }
+}
 
-// if (window.innerHeight >= 800) {
-//     for (let i = 0; i < myObjectImg.length; i++) {
-//         myObjectImg[i].style.height = "330px"
-//     }
-// } else if (window.innerHeight >= 700 && window.innerHeight < 800) {
-//     for (let i = 0; i < myObjectImg.length; i++) {
-//         myObjectImg[i].style.height = "330px"
-//     }
-// } else {
-//     for (let i = 0; i < myObjectImg.length; i++) {
-//         myObjectImg[i].style.height = "350px"
-//     }
-// }
+if (window.innerHeight >= 800) {
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "390px"
+    }
+} else if (window.innerHeight >= 700 && window.innerHeight < 800) {
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "355px"
+    }
+} else if(window.innerHeight >= 600 && window.innerHeight < 700) {
+
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "365px"
+    }
+
+} else {
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "320px"
+    }
+}
 
 
 navMenu.style.display = "none"
@@ -164,23 +170,23 @@ navMenuIcon.addEventListener("click", (e) => {
     navMenu.style.display = "flex"
 })
 
-// let arrowOpenMenuButton = document.getElementsByClassName("arrow-open-menu")[0]
-// let cataloguesMenu = document.getElementsByClassName("catalogues-menu")[0]
-// let closeMenuCatalogues = document.getElementsByClassName("close-menu-catalogues")[0]
+let arrowOpenMenuButton = document.getElementsByClassName("arrow-open-menu")[0]
+let cataloguesMenu = document.getElementsByClassName("catalogues-menu")[0]
+let closeMenuCatalogues = document.getElementsByClassName("close-menu-catalogues")[0]
 
-// cataloguesMenu.style.display = "none"
+cataloguesMenu.style.display = "none"
 
 
-// arrowOpenMenuButton.addEventListener("click", (e) => {
-//     e.preventDefault()
+arrowOpenMenuButton.addEventListener("click", (e) => {
+    e.preventDefault()
 
-//     cataloguesMenu.style.display = "flex"
+    cataloguesMenu.style.display = "flex"
 
-// })
+})
 
-// closeMenuCatalogues.addEventListener("click", (e) => {
-//     e.preventDefault()
+closeMenuCatalogues.addEventListener("click", (e) => {
+    e.preventDefault()
 
-//     cataloguesMenu.style.display = "none"
+    cataloguesMenu.style.display = "none"
 
-// })
+})
