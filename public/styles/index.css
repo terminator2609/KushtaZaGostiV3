@@ -103,7 +103,7 @@ nav>ul>li:nth-of-type(3) {
 }
 
 .nav-menu-phone {
-    background-color: #35332e;
+    background-color: #27251E;
     width: 100%;
     font-family: Forum;
     z-index: 101;
@@ -391,7 +391,7 @@ span {
 footer {
     margin-top: 50px;
     height: 82vh;
-    background-color: #535351;
+    background-color: #312e2d;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
