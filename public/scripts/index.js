@@ -98,7 +98,7 @@ roleText.addEventListener("click", (e) => {
         guestSection.style.display = "none"
         navigationText.style.marginRight = "5%"
         navigationText.style.justifyContent = "flex-end"
-        navigationText.style.marginTop = "70%"
+        navigationText.style.marginTop = "60%"
         roleText.style.fontSize = "30px"
         roleText.style.color = "white"
     } else if (roleText.textContent === "Домакин" && hostSection.style.display === "block") {
@@ -114,7 +114,7 @@ roleText.addEventListener("click", (e) => {
         guestSection.style.display = "block"
         navigationText.style.marginRight = "5%"
         navigationText.style.justifyContent = "flex-end"
-        navigationText.style.marginTop = "70%"
+        navigationText.style.marginTop = "60%"
         roleText.style.fontSize = "30px"
         roleText.style.color = "white"
     } else {
