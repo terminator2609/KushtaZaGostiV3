@@ -12,6 +12,17 @@ let objectItemH1 = document.getElementsByClassName("object-item-h1")
 let objectItemP = document.getElementsByClassName("object-item-p")
 let objectHeartLogo = document.getElementsByClassName("fa-heart")
 let objectItem =  document.getElementsByClassName("object-item")
+let lineRoleHost = document.getElementsByClassName("line-role-host")
+let lineRoleGuest = document.getElementsByClassName("line-role-guest")
+let guestName = document.getElementsByClassName("guest-name")
+let hostName = document.getElementsByClassName("host-name")
+
+
+navMenu.style.display = "none"
+
+guestSection.style.display = "none"
+hostSection.style.display = "none"
+lineRoleGuest[0].style.display = "none"
 
 if(window.innerHeight < 600) {
     for (let i = 0; i < objectItemH1.length; i++) {
@@ -40,11 +51,6 @@ if(window.innerHeight < 600) {
     }
 }
 
-
-navMenu.style.display = "none"
-
-guestSection.style.display = "none"
-hostSection.style.display = "none"
 
 // document.addEventListener("scroll", (e) => {
 
@@ -87,33 +93,35 @@ hostSection.style.display = "none"
 
 // })
 
-roleButton.addEventListener("click", (e) => {
-
+hostName[0].addEventListener("click", (e) => {
     e.preventDefault()
 
-    if (roleButton.textContent === "Гост") {
-        roleButton.textContent = "Домакин"
-        roleText.textContent = "Гост"
-        roleButton.style.color = "rgb(0, 0, 0, 0.5)"
-        roleButton.style.backgroundColor = "white"
-        hostSection.style.display = "none"
-        guestSection.style.display = "none"
-        navigationText.style.marginLeft = ""
-        roleText.style.fontSize = ""
-        roleText.style.color = ""
-    } else {
-        roleButton.textContent = "Гост"
-        roleText.textContent = "Домакин"
-        roleButton.style.color = "rgb(255, 255, 255, 0.5)"
-        roleButton.style.backgroundColor = "#212123"
-        hostSection.style.display = "none"
-        guestSection.style.display = "none"
-        roleText.style.fontSize = ""
-        navigationText.style.marginLeft = ""
-        roleText.style.fontSize = ""
-        roleText.style.color = ""
-    }
+    lineRoleGuest[0].style.display = "none"
+    lineRoleHost[0].style.display = "flex"
+    roleText.textContent = "Домакин"
+    hostSection.style.display = "none"
+    guestSection.style.display = "none"
+    navigationText.style.marginLeft = ""
+    roleText.style.fontSize = ""
+    roleText.style.color = ""
+    navigationText.style.justifyContent = ""
 })
+
+guestName[0].addEventListener("click", (e) => {
+    e.preventDefault()
+
+    lineRoleGuest[0].style.display = "flex"
+    lineRoleHost[0].style.display = "none"
+    roleText.textContent = "Гост"
+    hostSection.style.display = "none"
+    guestSection.style.display = "none"
+    navigationText.style.marginLeft = ""
+    roleText.style.fontSize = ""
+    roleText.style.color = ""
+    navigationText.style.justifyContent = ""
+})
+
+
 
 roleText.addEventListener("click", (e) => {
     e.preventDefault()
@@ -121,25 +129,33 @@ roleText.addEventListener("click", (e) => {
     if (roleText.textContent === "Домакин" && hostSection.style.display === "none") {
         hostSection.style.display = "flex"
         guestSection.style.display = "none"
-        navigationText.style.marginLeft = "12%"
+        navigationText.style.marginRight = "5%"
+        navigationText.style.justifyContent = "flex-end"
+        navigationText.style.marginTop = "60%"
         roleText.style.fontSize = "30px"
         roleText.style.color = "white"
     } else if (roleText.textContent === "Домакин" && hostSection.style.display === "block") {
         hostSection.style.display = "none"
         guestSection.style.display = "none"
-        navigationText.style.marginLeft = ""
+        navigationText.style.marginRight = ""
+        navigationText.style.justifyContent = ""
+        navigationText.style.marginTop = ""
         roleText.style.fontSize = ""
         roleText.style.color = ""
     } else if (roleText.textContent === "Гост" && guestSection.style.display === "none") {
         hostSection.style.display = "none"
         guestSection.style.display = "block"
-        navigationText.style.marginLeft = "12%"
+        navigationText.style.marginRight = "5%"
+        navigationText.style.justifyContent = "flex-end"
+        navigationText.style.marginTop = "60%"
         roleText.style.fontSize = "30px"
         roleText.style.color = "white"
     } else {
         hostSection.style.display = "none"
         guestSection.style.display = "none"
-        navigationText.style.marginLeft = ""
+        navigationText.style.marginRight = ""
+        navigationText.style.justifyContent = ""
+        navigationText.style.marginTop = ""
         roleText.style.fontSize = ""
         roleText.style.color = ""
     }

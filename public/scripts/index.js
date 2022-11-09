@@ -74,6 +74,7 @@ hostName[0].addEventListener("click", (e) => {
     navigationText.style.marginLeft = ""
     roleText.style.fontSize = ""
     roleText.style.color = ""
+    navigationText.style.justifyContent = ""
 })
 
 guestName[0].addEventListener("click", (e) => {
@@ -87,6 +88,7 @@ guestName[0].addEventListener("click", (e) => {
     navigationText.style.marginLeft = ""
     roleText.style.fontSize = ""
     roleText.style.color = ""
+    navigationText.style.justifyContent = ""
 })
 
 
