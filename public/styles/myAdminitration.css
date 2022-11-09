@@ -3,10 +3,6 @@
     src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
 }
 
-body {
-    background-color: #312e2d;
-}
-
 nav {
     position: sticky;
     z-index: 1000;
@@ -14,7 +10,7 @@ nav {
     height: 100px;
     top: 0%;
     margin-bottom: 10%;
-    background-color: #312e2d;
+    background-color: #ffffff;
 }
 
 
@@ -30,13 +26,14 @@ nav>ul {
 }
 
 nav>ul>li {
-    color: #DCDFDE;
+    color: #545454;
 }
 
 nav>ul>li>a {
     color: #DCDFDE;
     font-family: The Seasons;
     font-size: 22px;
+    color: #545454;
 }
 
 nav>ul>li:nth-of-type(1) {
@@ -54,7 +51,7 @@ nav>ul>li:nth-of-type(2) img {
     transform: translateX(-50%);
 }
 
-nav>ul>li:nth-of-type(2) img.logo-nav-2 {
+nav>ul>li:nth-of-type(2) img.logo-nav-1 {
     display: none;
 }
 
@@ -159,45 +156,57 @@ span {
 
 /* ---------------------------------------------------------------------header--------------------------------------------------------------------- */
 
-header h1 {
-    text-align: center;
-    padding-bottom: 20px;
-    font-family: 'Montserrat';
-    color: #ffffff;
-    font-size: 50px;
-    text-transform: uppercase;
+header {
+    width: 100%;
+    font-family: Montserrat;
+    color: #35332e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15%;
 }
 
-header h2 {
-    text-align: center;
-    font-family: 'The Seasons';
-    font-size: 48px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-shadow: 0px 9px 3px rgb(255 255 255 / 50%);
+header h1 {
+    padding-left: 10%;
+    font-size: 24px;
+}
+
+header img {
+    width: 50px;
+    border-radius: 60%;
+    height: 50px;
+    object-fit: fill;
+    margin-right: 15px;
 }
 
 /* -----------------------------------------------------------------------------main-------------------------------------------------------------- */
 
 main {
     margin-top: 20%;
+    width: 100%;
 }
 
 .categories {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
 
-    margin-left: 20px;
-    margin-bottom: 20%;
+.categories .statistic {
+    width: 90%;
 }
 
 .categories ul {
-    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
-.categories ul li a {
-    font-family: Montserrat;
-    font-size: 16px;
-    color: rgb(255, 255, 255, 0.5);
-    text-transform: uppercase;
+.categories ul li {
+    background-color: #312e2d;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 
