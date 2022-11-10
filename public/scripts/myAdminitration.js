@@ -25,7 +25,7 @@ let isCalender = false
 let calenderAdministration = document.getElementsByClassName("calender-administration")[0]
 let calenderReview = document.getElementsByClassName("calender-review")[0]
 let saveBookingButton = document.getElementsByClassName("save-booking")[0]
-calenderAdministration.style.display = "none"
+// calenderAdministration.style.display = "none"
 
 let addObjectTitle1Array = ["Main", "My", "My", "Моята", "Моите", "Моите", "", "Моите", "Моите", "Моите"]
 let addObjectTitle2Array = ["Info", "Review", "Media", "Цена", "Социални мрежи", "Каталози", "", "Оферти", "Реклами", "Посещения"]
