@@ -171,9 +171,9 @@ header h1 {
 }
 
 header img {
-    width: 55px;
+    width: 45px;
     border-radius: 60%;
-    height: 51px;
+    height: 40px;
     object-fit: fill;
     margin-right: 15px;
 }
@@ -188,13 +188,12 @@ main {
 .categories {
     display: flex;
     align-items: center;
-    margin-left: 5%;
     flex-direction: column;
     gap: 25px;
 }
 
 .categories .statistic {
-    width: 95%;
+    width: 90%;
 }
 
 .categories .statistic ul {
@@ -211,7 +210,7 @@ main {
     color: white;
     font-family: Montserrat;
     font-weight: 100;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .categories .statistic ul li:nth-of-type(2) {
@@ -222,6 +221,7 @@ main {
 
 .categories .statistic ul li:nth-of-type(2) p {
     font-size: 14px;
+    font-family: 'Montserrat';
 }
 
 .categories .statistic ul li:nth-of-type(3) {
@@ -255,7 +255,7 @@ main {
     border-radius: 10px;
     color: #ffffff;
     font-family: 'Montserrat';
-    padding: 24%;
+    padding: 22%;
     position: relative;
     text-transform: uppercase;
 }
@@ -296,7 +296,7 @@ main {
     border-radius: 10px;
     color: #ffffff;
     font-family: 'Montserrat';
-    padding: 24%;
+    padding: 22%;
     position: relative;
     text-transform: uppercase;
 }
@@ -376,7 +376,7 @@ main {
     border-radius: 10px;
     color: #ffffff;
     font-family: 'Montserrat';
-    padding: 24%;
+    padding: 22%;
     position: relative;
     text-transform: uppercase;
 }
@@ -408,6 +408,38 @@ main {
     justify-content: space-between;
 }
 
+
+/* --------------------------------------------------------------------main section.edit-menu-------------------------------------------------------------------- */
+
+main section.edit-menu {
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 340vh;
+    top: 2%;
+    z-index: 10001;
+    box-shadow: 3px -1px 24px 8px rgb(0 0 0 / 42%);
+    -webkit-box-shadow: 3px -1px 24px 8px rgb(0 0 0 / 42%);
+    -moz-box-shadow: 3px -1px 24px 8px rgba(0, 0, 0, 0.42);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+main section.edit-menu .navigation-menu-edit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+main section.edit-menu .navigation-menu-edit div:nth-of-type(2) ul {
+    display: flex;
+    width: 93%;
+    overflow: scroll;
+    margin-left: 5%;
+    gap: 15%;
+}
 
 
 /* ---------------------------------------------section.general-info-villa------------------------------------------------- */
