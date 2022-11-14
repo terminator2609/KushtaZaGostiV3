@@ -437,7 +437,15 @@ main section.edit-menu .navigation-menu-edit div:nth-of-type(2) ul {
     width: 93%;
     overflow: scroll;
     margin-left: 5%;
-    gap: 15%;
+    gap: 12%;
+}
+
+main section.edit-menu .navigation-menu-edit div:nth-of-type(2) ul li {
+    font-family: Montserrat;
+    color: #35332e;
+    opacity: 0.6;
+    display: flex;
+    gap: 3px;
 }
 
 
