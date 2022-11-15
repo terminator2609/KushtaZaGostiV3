@@ -3,6 +3,11 @@
     src: url(../fonts/Fontspring-DEMO-theseasons-lt.otf);
 }
 
+
+body {
+    background-color: #312e2d;
+}
+
 nav {
     position: sticky;
     z-index: 1000;
@@ -10,9 +15,8 @@ nav {
     height: 100px;
     top: 0%;
     margin-bottom: 10%;
-    background-color: #ffffff;
+    background-color: #312e2d;
 }
-
 
 nav>ul {
     display: flex;
@@ -26,14 +30,13 @@ nav>ul {
 }
 
 nav>ul>li {
-    color: #545454;
+    color: #ffffff;
 }
 
 nav>ul>li>a {
-    color: #DCDFDE;
     font-family: The Seasons;
     font-size: 22px;
-    color: #545454;
+    color: #ffffff;
 }
 
 nav>ul>li:nth-of-type(1) {
@@ -51,7 +54,7 @@ nav>ul>li:nth-of-type(2) img {
     transform: translateX(-50%);
 }
 
-nav>ul>li:nth-of-type(2) img.logo-nav-1 {
+nav>ul>li:nth-of-type(2) img.logo-nav-2 {
     display: none;
 }
 
@@ -159,416 +162,51 @@ span {
 header {
     width: 100%;
     font-family: Montserrat;
-    color: #35332e;
+    color: #ffffff;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
-header h1 {
-    padding-left: 10%;
-    font-size: 24px;
+header div:nth-of-type(1) {
+    padding-left: 5%;
 }
 
-header img {
-    width: 45px;
-    border-radius: 60%;
-    height: 40px;
-    object-fit: fill;
-    margin-right: 15px;
+header div:nth-of-type(1) h1 {
+    width: 90%;
+    line-height: 1.2;
+    font-size: 25px;
+}
+
+header div:nth-of-type(1) h2 {
+    font-size: 13px;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.swipe-check {
+    background-color: #77b800;
+    margin-right: 5%;
+    width: 60px;
+    height: 25px;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 1.5%;
+}
+
+.swipe-check p {
+    position: absolute;
+    right: 5%;
+    padding: 0px;
+    background-color: #ffffff;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    top: 10%;
 }
 
 /* -----------------------------------------------------------------------------main-------------------------------------------------------------- */
 
-main {
-    margin-top: 10%;
-    width: 100%;
-}
 
-.categories {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.categories .statistic {
-    width: 90%;
-}
-
-.categories .statistic ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
-
-.categories .statistic ul li {
-    background-color: #312e2d;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    font-family: Montserrat;
-    font-weight: 100;
-    font-size: 24px;
-}
-
-.categories .statistic ul li:nth-of-type(2) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.categories .statistic ul li:nth-of-type(2) p {
-    font-size: 14px;
-    font-family: 'Montserrat';
-}
-
-.categories .statistic ul li:nth-of-type(3) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.categories .object-boxes {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    gap: 20px;
-}
-
-.categories .object-boxes div:nth-of-type(1) {
-    margin-right: 10px;
-}
-
-.categories .object-boxes div:nth-of-type(1)>ul {
-    display: flex;
-    gap: 10px;
-    width: 97%;
-    overflow: scroll;
-    height: 100%;
-    margin-left: 3%;
-}
-
-.categories .object-boxes div:nth-of-type(1)>ul li {
-    background-color: #312e2d;
-    border-radius: 10px;
-    color: #ffffff;
-    font-family: 'Montserrat';
-    padding: 22%;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.categories .object-boxes div:nth-of-type(1)>ul li p:nth-of-type(1) {
-    position: absolute;
-    left: 10%;
-    font-size: 11px;
-    top: 10%;
-}
-
-.categories .object-boxes div:nth-of-type(1)>ul li p:nth-of-type(2) {
-    font-size: 20px;
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
-
-.categories .object-boxes div:nth-of-type(1)>ul li p:nth-of-type(3) {
-    font-family: 'Montserrat';
-    font-weight: 100;
-    bottom: 12%;
-    position: absolute;
-    left: 5%;
-    font-size: 18px;
-}
-
-.categories .object-boxes div:nth-of-type(2)>ul {
-    display: flex;
-    gap: 10px;
-    width: 96%;
-    height: 100%;
-    margin-left: 3%;
-}
-
-.categories .object-boxes div:nth-of-type(2)>ul li {
-    background-color: #312e2d;
-    border-radius: 10px;
-    color: #ffffff;
-    font-family: 'Montserrat';
-    padding: 22%;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.categories .object-boxes div:nth-of-type(2)>ul li p:nth-of-type(1) {
-    position: absolute;
-    left: 10%;
-    font-size: 11px;
-    top: 10%;
-}
-
-.categories .object-boxes div:nth-of-type(2)>ul li p:nth-of-type(2) {
-    font-size: 20px;
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
-
-.categories .object-boxes div:nth-of-type(2)>ul li:nth-of-type(2) p:nth-of-type(3) {
-    font-family: 'Montserrat';
-    font-weight: 100;
-    bottom: 12%;
-    position: absolute;
-    left: 5%;
-    font-size: 16px;
-}
-
-.categories .object-boxes div:nth-of-type(2)>ul li:nth-of-type(1) p:nth-of-type(3) {
-    position: absolute;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    left: 5%;
-    bottom: 10%;
-    width: 33px;
-    background-color: rgb(255, 255, 255, 0.2);
-    height: 19px;
-}
-
-.radio-checker {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: 0px;
-    left: -1px;
-    position: relative;
-    background-color: #ffffff;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
-
-.radio-checker:hover {
-    position: absolute;
-    left: 13px;
-    background-color: white;
-}
-
-.categories .object-boxes div:nth-of-type(2)>ul li:nth-of-type(1) p:nth-of-type(3):hover {
-    background-color: #77b800;
-}
-
-
-.categories .object-boxes div:nth-of-type(3)>ul {
-    display: flex;
-    gap: 10px;
-    width: 96%;
-    height: 100%;
-    margin-left: 3%;
-}
-
-.categories .object-boxes div:nth-of-type(3)>ul li {
-    background-color: #312e2d;
-    border-radius: 10px;
-    color: #ffffff;
-    font-family: 'Montserrat';
-    padding: 22%;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.categories .object-boxes div:nth-of-type(3)>ul li p:nth-of-type(1) {
-    position: absolute;
-    left: 10%;
-    font-size: 11px;
-    top: 10%;
-}
-
-.categories .object-boxes div:nth-of-type(3)>ul li p:nth-of-type(2) {
-    font-size: 20px;
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
-
-.categories .object-boxes div:nth-of-type(4) {
-    background-color: #312e2d;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    font-family: Montserrat;
-    font-weight: 100;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-/* --------------------------------------------------------------------main section.edit-menu-------------------------------------------------------------------- */
-
-main section.edit-menu {
-    display: flex;
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    height: 340vh;
-    top: 2%;
-    z-index: 10001;
-    box-shadow: 3px -1px 24px 8px rgb(0 0 0 / 42%);
-    -webkit-box-shadow: 3px -1px 24px 8px rgb(0 0 0 / 42%);
-    -moz-box-shadow: 3px -1px 24px 8px rgba(0, 0, 0, 0.42);
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-}
-
-main section.edit-menu .navigation-menu-edit {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 40px;
-}
-
-main section.edit-menu .navigation-menu-edit div:nth-of-type(2) ul {
-    display: flex;
-    width: 93%;
-    overflow: scroll;
-    margin-left: 5%;
-    gap: 12%;
-}
-
-main section.edit-menu .navigation-menu-edit div:nth-of-type(2) ul li {
-    font-family: Montserrat;
-    color: #35332e;
-    opacity: 0.6;
-    display: flex;
-    gap: 3px;
-}
-
-
-/* ---------------------------------------------section.general-info-villa------------------------------------------------- */
-
-.general-info-villa {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-}
-
-article.flags-article {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
-}
-
-article.flags-article img {
-    width: 6%;
-}
-
-.general-info-villa article:nth-of-type(2) {
-    padding-left: 20px;
-    padding-top: 40px;
-}
-
-.general-info-villa article:nth-of-type(2) form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.general-info-villa article:nth-of-type(2) form input {
-    background: none;
-    border: none;
-    width: 70%;
-    font-family: Montserrat;
-    font-size: 15px;
-    color: #ffffff;
-}
-
-.general-info-villa article:nth-of-type(2) form input:focus {
-    outline: none !important;
-}
-
-.line-form {
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
-    width: 70%;
-    padding-top: 2px;
-}
-
-.general-info-villa article:nth-of-type(3) {
-    padding-top: 40px;
-    align-self: center;
-}
-
-.general-info-villa article:nth-of-type(3) button {
-    border: none;
-    background-color: #212123;
-    border-radius: 35px;
-    padding: 7px 15px;
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-    width: 145px;
-}
-
-.general-info-villa article:nth-of-type(3) button a {
-    font-family: Montserrat;
-    color: rgb(255, 255, 255, 0.5);
-    font-size: 14px;
-}
-
-
-/* ---------------------------------------------section.review-villa------------------------------------------------ */
-
-.review-villa {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-}
-
-.review-villa article:nth-of-type(2) {
-    padding-left: 20px;
-    padding-top: 40px;
-}
-
-.review-villa .line-form {
-    width: 90%;
-}
-
-.review-villa article:nth-of-type(2) form textarea {
-    background: none;
-    border: none;
-    font-family: Montserrat;
-    color: #ffffff;
-}
-
-.review-villa article:nth-of-type(2) form textarea:focus {
-    outline: none !important;
-}
-
-
-.review-villa article:nth-of-type(3) {
-    padding-top: 40px;
-    align-self: center;
-}
-
-.review-villa article:nth-of-type(3) button {
-    border: none;
-    background-color: #212123;
-    border-radius: 35px;
-    padding: 7px 15px;
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-    width: 145px;
-}
-
-.review-villa article:nth-of-type(3) button a {
-    font-family: Montserrat;
-    color: rgb(255, 255, 255, 0.5);
-    font-size: 14px;
-}
 
 /* ----------------------------footer-------------------------------------- */
 
