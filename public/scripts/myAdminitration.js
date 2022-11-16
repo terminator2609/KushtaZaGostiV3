@@ -50,6 +50,7 @@ let allCatalogues = ["./public/image/catalog/sea.jpg", "./public/image/catalog/m
     let hostName = document.getElementsByClassName("host-name")
     let roleText = document.getElementById("role-text")
     let navigationText = document.getElementsByClassName("navigation-text")[0]
+    let myObjectImg = document.getElementsByClassName("object-item-img")
     
     
     navMenu.style.display = "none"
@@ -62,6 +63,8 @@ let allCatalogues = ["./public/image/catalog/sea.jpg", "./public/image/catalog/m
 for (let i = 0; i < definitionDiv.length; i++) {
     definitionDiv[i].style.display = "none"
 }
+
+
 
 
 
@@ -193,602 +196,615 @@ navMenuIcon.addEventListener("click", (e) => {
 })
 
 
+if(window.innerHeight >= 600) {
 
-for (let i = 0; i < questionButton.length; i++) {
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "330px"
+    }
 
-
-    questionButton[i].addEventListener("click", (e) => {
-        e.preventDefault()
-
-
-        if (definitionDiv[i].style.display === "none") {
-            definitionDiv[i].style.display = "flex"
-        } else {
-            definitionDiv[i].style.display = "none"
-        }
-    })
+} else {
+    for (let i = 0; i < myObjectImg.length; i++) {
+        myObjectImg[i].style.height = "280px"
+    }
 }
 
 
-for (let i = 0; i < categoriesList.length; i++) {
 
-    sectionAdd[i].style.display = "none"
+// for (let i = 0; i < questionButton.length; i++) {
 
-    categoriesList[i].addEventListener("click", (e) => {
-        e.preventDefault()
 
-        addObjectTitle2.style.textShadow = "none"
-        sectionAdd[i].style.display = "flex"
-        categories.style.display = "none"
-        addObjectTitle1.textContent = addObjectTitle1Array[i]
-        addObjectTitle2.textContent = addObjectTitle2Array[i]
+//     questionButton[i].addEventListener("click", (e) => {
+//         e.preventDefault()
 
-        if (i === 6) {
-            sectionAdd[i].style.display = "block"
-            document.getElementsByTagName("body")[0].style.backgroundColor = "#535351"
-            document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-            document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-            let navLi = document.getElementsByTagName("nav")[0].children[0].children
 
-            navLi[0].style.color = "#DCDFDE"
-            navLi[2].children[0].style.color = "#DCDFDE"
+//         if (definitionDiv[i].style.display === "none") {
+//             definitionDiv[i].style.display = "flex"
+//         } else {
+//             definitionDiv[i].style.display = "none"
+//         }
+//     })
+// }
 
-            isCalender = true
-        }
-    })
 
+// for (let i = 0; i < categoriesList.length; i++) {
 
-}
+//     sectionAdd[i].style.display = "none"
 
-document.getElementById("name").value = "Деребеевата къща"
-document.getElementById("location").value = "с. Черни връх"
-document.getElementById("postCode").value = "9827"
-document.getElementById("street").value = "ул.Балкан"
-document.getElementById("number").value = "1"
-document.getElementById("area").value = "Шумен"
-document.getElementById("owner").value = "Илия Илиев"
-document.getElementById("phone").value = "0876728108"
+//     categoriesList[i].addEventListener("click", (e) => {
+//         e.preventDefault()
 
+//         addObjectTitle2.style.textShadow = "none"
+//         sectionAdd[i].style.display = "flex"
+//         categories.style.display = "none"
+//         addObjectTitle1.textContent = addObjectTitle1Array[i]
+//         addObjectTitle2.textContent = addObjectTitle2Array[i]
 
-document.getElementById("review").textContent = "Деребеевата къща е едно прекрасно място, реновирано във възрожденски стил, сгушено в източна Стара планина. Разположението и е стратегическо заради уникалната гледка. Къщата е подходяща за почивка през всички сезони. Предназначена е както за семейства с деца, така и за приятелски компании. Вилата е с капацитет от 16 души. Разполага с 5 стаи и два санитарни възела, разделени в две крила. Обединява ги трапезарията, която е както дневна, така и кухня, която е напълно обурудвана с посуда и кухненски уреди като: съмиялна, фурна, ледогенератор, аспиратор, два хладилника, кафемашина, грил-тостер, климатик, озвучителна система, андроид телевизор и др. На разположение за гостите има осигурен паркинг със седем парко места. Дворът от своя страна е с големи зелени площи за игра, къщата предлага и уникално барбекю с възможност за чеверме, навес с място за сядане. Басейнът на Деребеевата къща няма аналог. Био-инфинити басейнът е атракция сам по себе си както с размерите си от 10 на 4 метра, така и с пространството за игра и шезлонги. В него няма никакви химикали. Водата е жива, като се филтрира непрестанно. Селцето ни е подходящо и за разходки.В близост има река и язовир за любителите на риболова, както и места за опознаване.  Заповядайте! ”Назад към прородата. “- Жан Жак Русо"
-document.getElementById("price").value = "800"
-document.getElementById("currency").value = "bgn"
-document.getElementById("typeForRent").value = "fullHouse"
-document.getElementById("capacity").value = "16"
-document.getElementById("numberOfRoom").value = "5"
+//         if (i === 6) {
+//             sectionAdd[i].style.display = "block"
+//             document.getElementsByTagName("body")[0].style.backgroundColor = "#535351"
+//             document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+//             document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
+//             let navLi = document.getElementsByTagName("nav")[0].children[0].children
 
-let currentCataloguesDiv = document.getElementsByClassName("current-catalogues-div")
-let addCataloguesButton = document.getElementsByClassName("add-catalogues-button")[0]
+//             navLi[0].style.color = "#DCDFDE"
+//             navLi[2].children[0].style.color = "#DCDFDE"
 
+//             isCalender = true
+//         }
+//     })
 
-function currentCataloguesFunc() {
-    currentCatalogues.forEach((a) => {
 
-        let img = document.createElement("img")
-        img.className = "cataloguesSelectPhoto"
-        img.src = a
-        img.alt = a.substring(23)
+// }
 
-        for (let i = 0; i < currentCataloguesDiv.length; i++) {
+// document.getElementById("name").value = "Деребеевата къща"
+// document.getElementById("location").value = "с. Черни връх"
+// document.getElementById("postCode").value = "9827"
+// document.getElementById("street").value = "ул.Балкан"
+// document.getElementById("number").value = "1"
+// document.getElementById("area").value = "Шумен"
+// document.getElementById("owner").value = "Илия Илиев"
+// document.getElementById("phone").value = "0876728108"
 
-            if (currentCataloguesDiv[i].children.length < 4) {
-                currentCataloguesDiv[i].appendChild(img)
-                break;
-            }
-        }
 
-    })
+// document.getElementById("review").textContent = "Деребеевата къща е едно прекрасно място, реновирано във възрожденски стил, сгушено в източна Стара планина. Разположението и е стратегическо заради уникалната гледка. Къщата е подходяща за почивка през всички сезони. Предназначена е както за семейства с деца, така и за приятелски компании. Вилата е с капацитет от 16 души. Разполага с 5 стаи и два санитарни възела, разделени в две крила. Обединява ги трапезарията, която е както дневна, така и кухня, която е напълно обурудвана с посуда и кухненски уреди като: съмиялна, фурна, ледогенератор, аспиратор, два хладилника, кафемашина, грил-тостер, климатик, озвучителна система, андроид телевизор и др. На разположение за гостите има осигурен паркинг със седем парко места. Дворът от своя страна е с големи зелени площи за игра, къщата предлага и уникално барбекю с възможност за чеверме, навес с място за сядане. Басейнът на Деребеевата къща няма аналог. Био-инфинити басейнът е атракция сам по себе си както с размерите си от 10 на 4 метра, така и с пространството за игра и шезлонги. В него няма никакви химикали. Водата е жива, като се филтрира непрестанно. Селцето ни е подходящо и за разходки.В близост има река и язовир за любителите на риболова, както и места за опознаване.  Заповядайте! ”Назад към прородата. “- Жан Жак Русо"
+// document.getElementById("price").value = "800"
+// document.getElementById("currency").value = "bgn"
+// document.getElementById("typeForRent").value = "fullHouse"
+// document.getElementById("capacity").value = "16"
+// document.getElementById("numberOfRoom").value = "5"
 
-}
+// let currentCataloguesDiv = document.getElementsByClassName("current-catalogues-div")
+// let addCataloguesButton = document.getElementsByClassName("add-catalogues-button")[0]
 
-currentCataloguesFunc()
 
-addCataloguesButton.addEventListener("click", (e) => {
-    e.preventDefault()
+// function currentCataloguesFunc() {
+//     currentCatalogues.forEach((a) => {
 
-    let currentSelectCatalogues = []
+//         let img = document.createElement("img")
+//         img.className = "cataloguesSelectPhoto"
+//         img.src = a
+//         img.alt = a.substring(23)
 
+//         for (let i = 0; i < currentCataloguesDiv.length; i++) {
 
-    if (addCataloguesButton.textContent === "Добави") {
+//             if (currentCataloguesDiv[i].children.length < 4) {
+//                 currentCataloguesDiv[i].appendChild(img)
+//                 break;
+//             }
+//         }
 
-        for (let i = 0; i < currentCataloguesDiv.length; i++) {
+//     })
 
-            for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
-                currentCataloguesDiv[i].children[a].remove()
+// }
 
-                a--
-            }
+// currentCataloguesFunc()
 
-        }
+// addCataloguesButton.addEventListener("click", (e) => {
+//     e.preventDefault()
 
-        allCatalogues.forEach((a) => {
-            if (currentCatalogues.indexOf(a) === -1) {
-                currentSelectCatalogues.push(a)
-            }
-        })
+//     let currentSelectCatalogues = []
 
-        currentSelectCatalogues.forEach((a) => {
-            let img = document.createElement("img")
-            img.className = "cataloguesSelectPhoto"
-            img.src = a
-            img.alt = a.substring(23)
 
-            for (let i = 0; i < currentCataloguesDiv.length; i++) {
+//     if (addCataloguesButton.textContent === "Добави") {
 
-                if (currentCataloguesDiv[i].children.length < 4) {
-                    currentCataloguesDiv[i].appendChild(img)
-                    break;
-                }
-            }
+//         for (let i = 0; i < currentCataloguesDiv.length; i++) {
 
-        })
+//             for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
+//                 currentCataloguesDiv[i].children[a].remove()
 
-        for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
+//                 a--
+//             }
 
-            cataloguesSelectPhoto[i].addEventListener("click", (e) => {
-                e.preventDefault()
+//         }
 
-                if (cataloguesSelectPhoto[i].className === "cataloguesSelectPhoto selectedCatalogues") {
-                    cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto"
-                } else {
-                    cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto selectedCatalogues"
-                }
-            })
+//         allCatalogues.forEach((a) => {
+//             if (currentCatalogues.indexOf(a) === -1) {
+//                 currentSelectCatalogues.push(a)
+//             }
+//         })
 
+//         currentSelectCatalogues.forEach((a) => {
+//             let img = document.createElement("img")
+//             img.className = "cataloguesSelectPhoto"
+//             img.src = a
+//             img.alt = a.substring(23)
 
-        }
+//             for (let i = 0; i < currentCataloguesDiv.length; i++) {
 
-        addCataloguesButton.textContent = "Запази"
-        removeCataloguesButton.textContent = "Отмени"
+//                 if (currentCataloguesDiv[i].children.length < 4) {
+//                     currentCataloguesDiv[i].appendChild(img)
+//                     break;
+//                 }
+//             }
 
-    } else if (addCataloguesButton.textContent === "Запази") {
+//         })
 
-        let selectedCatalogues = document.getElementsByClassName("selectedCatalogues")
+//         for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
 
-        for (let i = 0; i < selectedCatalogues.length; i++) {
+//             cataloguesSelectPhoto[i].addEventListener("click", (e) => {
+//                 e.preventDefault()
 
-            let indexNumber = selectedCatalogues[i].src.indexOf("/public")
+//                 if (cataloguesSelectPhoto[i].className === "cataloguesSelectPhoto selectedCatalogues") {
+//                     cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto"
+//                 } else {
+//                     cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto selectedCatalogues"
+//                 }
+//             })
 
-            let link = "." + selectedCatalogues[i].src.substring(indexNumber)
 
-            currentCatalogues.push(link)
-        }
+//         }
 
+//         addCataloguesButton.textContent = "Запази"
+//         removeCataloguesButton.textContent = "Отмени"
 
-        for (let i = 0; i < currentCataloguesDiv.length; i++) {
+//     } else if (addCataloguesButton.textContent === "Запази") {
 
-            for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
-                currentCataloguesDiv[i].children[a].remove()
+//         let selectedCatalogues = document.getElementsByClassName("selectedCatalogues")
 
-                a--
-            }
+//         for (let i = 0; i < selectedCatalogues.length; i++) {
 
-        }
+//             let indexNumber = selectedCatalogues[i].src.indexOf("/public")
 
+//             let link = "." + selectedCatalogues[i].src.substring(indexNumber)
 
-        currentCataloguesFunc()
+//             currentCatalogues.push(link)
+//         }
 
-        addCataloguesButton.textContent = "Добави"
-        removeCataloguesButton.textContent = "Изтрий"
 
-    } else if (addCataloguesButton.textContent === "Отмени") {
-        for (let i = 0; i < currentCataloguesDiv.length; i++) {
+//         for (let i = 0; i < currentCataloguesDiv.length; i++) {
 
-            for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
-                currentCataloguesDiv[i].children[a].remove()
+//             for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
+//                 currentCataloguesDiv[i].children[a].remove()
 
-                a--
-            }
+//                 a--
+//             }
 
-        }
+//         }
 
-        currentCataloguesFunc()
 
-        addCataloguesButton.textContent = "Добави"
-        removeCataloguesButton.textContent = "Изтрий"
-    }
+//         currentCataloguesFunc()
 
+//         addCataloguesButton.textContent = "Добави"
+//         removeCataloguesButton.textContent = "Изтрий"
 
-})
+//     } else if (addCataloguesButton.textContent === "Отмени") {
+//         for (let i = 0; i < currentCataloguesDiv.length; i++) {
 
+//             for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
+//                 currentCataloguesDiv[i].children[a].remove()
 
-removeCataloguesButton.addEventListener("click", (e) => {
-    e.preventDefault()
+//                 a--
+//             }
 
-    if (removeCataloguesButton.textContent === "Отмени") {
-        for (let i = 0; i < currentCataloguesDiv.length; i++) {
+//         }
 
-            for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
-                currentCataloguesDiv[i].children[a].remove()
+//         currentCataloguesFunc()
 
-                a--
-            }
+//         addCataloguesButton.textContent = "Добави"
+//         removeCataloguesButton.textContent = "Изтрий"
+//     }
 
-        }
 
-        currentCataloguesFunc()
+// })
 
-        addCataloguesButton.textContent = "Добави"
-        removeCataloguesButton.textContent = "Изтрий"
 
+// removeCataloguesButton.addEventListener("click", (e) => {
+//     e.preventDefault()
 
-    } else if (removeCataloguesButton.textContent === "Изтрий") {
+//     if (removeCataloguesButton.textContent === "Отмени") {
+//         for (let i = 0; i < currentCataloguesDiv.length; i++) {
 
+//             for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
+//                 currentCataloguesDiv[i].children[a].remove()
 
+//                 a--
+//             }
 
-        for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
+//         }
 
-            cataloguesSelectPhoto[i].addEventListener("click", (e) => {
-                e.preventDefault()
+//         currentCataloguesFunc()
 
-                if (cataloguesSelectPhoto[i].className === "cataloguesSelectPhoto selectedCatalogues") {
-                    cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto"
-                } else {
-                    cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto selectedCatalogues"
-                }
-            })
+//         addCataloguesButton.textContent = "Добави"
+//         removeCataloguesButton.textContent = "Изтрий"
 
 
-        }
+//     } else if (removeCataloguesButton.textContent === "Изтрий") {
 
 
-        addCataloguesButton.textContent = "Отмени"
-        removeCataloguesButton.textContent = "Потвърди"
 
-    } else if (removeCataloguesButton.textContent === "Потвърди") {
+//         for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
 
-        let selectedCatalogues = document.getElementsByClassName("selectedCatalogues")
+//             cataloguesSelectPhoto[i].addEventListener("click", (e) => {
+//                 e.preventDefault()
 
-        for (let i = 0; i < selectedCatalogues.length; i++) {
+//                 if (cataloguesSelectPhoto[i].className === "cataloguesSelectPhoto selectedCatalogues") {
+//                     cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto"
+//                 } else {
+//                     cataloguesSelectPhoto[i].className = "cataloguesSelectPhoto selectedCatalogues"
+//                 }
+//             })
 
-            let indexNumber = selectedCatalogues[i].src.indexOf("/public")
 
-            let link = "." + selectedCatalogues[i].src.substring(indexNumber)
+//         }
 
-            let currentLinkIndex = currentCatalogues.indexOf(link)
 
-            currentCatalogues.splice(currentLinkIndex, 1)
-        }
+//         addCataloguesButton.textContent = "Отмени"
+//         removeCataloguesButton.textContent = "Потвърди"
 
+//     } else if (removeCataloguesButton.textContent === "Потвърди") {
 
-        for (let i = 0; i < currentCataloguesDiv.length; i++) {
+//         let selectedCatalogues = document.getElementsByClassName("selectedCatalogues")
 
-            for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
-                currentCataloguesDiv[i].children[a].remove()
+//         for (let i = 0; i < selectedCatalogues.length; i++) {
 
-                a--
-            }
+//             let indexNumber = selectedCatalogues[i].src.indexOf("/public")
 
-        }
+//             let link = "." + selectedCatalogues[i].src.substring(indexNumber)
 
+//             let currentLinkIndex = currentCatalogues.indexOf(link)
 
-        currentCataloguesFunc()
+//             currentCatalogues.splice(currentLinkIndex, 1)
+//         }
 
-        addCataloguesButton.textContent = "Добави"
-        removeCataloguesButton.textContent = "Изтрий"
-    }
-})
 
-let counter = 1
+//         for (let i = 0; i < currentCataloguesDiv.length; i++) {
 
-calender()
+//             for (let a = 0; a < currentCataloguesDiv[i].children.length; a++) {
+//                 currentCataloguesDiv[i].children[a].remove()
 
-function calender() {
+//                 a--
+//             }
 
-    let month = ["Януари", "Февруари", "Март", "Април", "Май", "Юни", "Юли", "Август", "Септември", "Октомври", "Ноември", "Декември"]
+//         }
 
-    let dateObject = new Date()
 
-    currentMonth.textContent = month[dateObject.getMonth()]
-    currentNumberMonth.textContent = dateObject.getMonth() + 1 < 10 ? `00${dateObject.getMonth() + 1}` : `0${dateObject.getMonth() + 1}`
-    currentDate.textContent = `${dateObject.getDate() < 10 ? `0${dateObject.getDate()}` : dateObject.getDate()}.${dateObject.getMonth() + 1 < 10 ? `0${dateObject.getMonth() + 1}` : dateObject.getMonth() + 1}.${dateObject.getFullYear()}`
+//         currentCataloguesFunc()
 
-    function calenderLoop() {
+//         addCataloguesButton.textContent = "Добави"
+//         removeCataloguesButton.textContent = "Изтрий"
+//     }
+// })
 
-        for (let i = 0; i < dateNumber.length; i++) {
+// let counter = 1
 
-            if (i === 0) {
-                dateObject.setDate(1)
-            }
+// calender()
 
-            if (dateObject.getDay() > 1 && i === 0 || dateObject.getDay() === 0 && i === 0) {
+// function calender() {
 
-                if (dateObject.getDay() === 0) {
-                    // dateObject.setMonth(dateObject.getMonth() - 1)
+//     let month = ["Януари", "Февруари", "Март", "Април", "Май", "Юни", "Юли", "Август", "Септември", "Октомври", "Ноември", "Декември"]
 
-                    if (dateObject.getMonth() - 1 === 0 || dateObject.getMonth() - 1 === 2 || dateObject.getMonth() - 1 === 4 || dateObject.getMonth() - 1 === 6 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === 9 || dateObject.getMonth() - 1 === -1 || dateObject.getMonth() - 1 === 11) {
-                        for (let b = 0; b < 6; b++) {
-                            dateNumber[i].textContent = 26 + b
-                            i++
-                        }
+//     let dateObject = new Date()
 
-                        i--
-                    } else if (dateObject.getMonth() - 1 === 1) {
+//     currentMonth.textContent = month[dateObject.getMonth()]
+//     currentNumberMonth.textContent = dateObject.getMonth() + 1 < 10 ? `00${dateObject.getMonth() + 1}` : `0${dateObject.getMonth() + 1}`
+//     currentDate.textContent = `${dateObject.getDate() < 10 ? `0${dateObject.getDate()}` : dateObject.getDate()}.${dateObject.getMonth() + 1 < 10 ? `0${dateObject.getMonth() + 1}` : dateObject.getMonth() + 1}.${dateObject.getFullYear()}`
 
-                        if (dateObject.getFullYear() % 4 === 0) {
-                            for (let b = 0; b < 6; b++) {
-                                dateNumber[i].textContent = 24 + b
-                                i++
-                            }
+//     function calenderLoop() {
 
-                            i--
-                        } else {
-                            for (let b = 0; b < 6; b++) {
-                                dateNumber[i].textContent = 23 + b
-                                i++
-                            }
+//         for (let i = 0; i < dateNumber.length; i++) {
 
-                            i--
-                        }
+//             if (i === 0) {
+//                 dateObject.setDate(1)
+//             }
 
-                    } else {
-                        for (let b = 0; b < 6; b++) {
-                            dateNumber[i].textContent = 25 + b
-                            i++
-                        }
+//             if (dateObject.getDay() > 1 && i === 0 || dateObject.getDay() === 0 && i === 0) {
 
-                        i--
-                    }
-                } else {
+//                 if (dateObject.getDay() === 0) {
+//                     // dateObject.setMonth(dateObject.getMonth() - 1)
 
-                    if (dateObject.getMonth() - 1 === 0 || dateObject.getMonth() - 1 === 2 || dateObject.getMonth() - 1 === 4 || dateObject.getMonth() - 1 === 6 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === 9 || dateObject.getMonth() - 1 === -1 || dateObject.getMonth() - 1 === 11) {
+//                     if (dateObject.getMonth() - 1 === 0 || dateObject.getMonth() - 1 === 2 || dateObject.getMonth() - 1 === 4 || dateObject.getMonth() - 1 === 6 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === 9 || dateObject.getMonth() - 1 === -1 || dateObject.getMonth() - 1 === 11) {
+//                         for (let b = 0; b < 6; b++) {
+//                             dateNumber[i].textContent = 26 + b
+//                             i++
+//                         }
 
-                        let latestDay = 32 - dateObject.getDay()
+//                         i--
+//                     } else if (dateObject.getMonth() - 1 === 1) {
 
-                        for (let b = 1; b < dateObject.getDay(); b++) {
-                            dateNumber[i].textContent = latestDay + b
-                            i++
-                        }
+//                         if (dateObject.getFullYear() % 4 === 0) {
+//                             for (let b = 0; b < 6; b++) {
+//                                 dateNumber[i].textContent = 24 + b
+//                                 i++
+//                             }
 
-                        i--
+//                             i--
+//                         } else {
+//                             for (let b = 0; b < 6; b++) {
+//                                 dateNumber[i].textContent = 23 + b
+//                                 i++
+//                             }
 
-                    } else if (dateObject.getMonth() - 1 === 1) {
+//                             i--
+//                         }
 
-                        if (dateObject.getFullYear() % 4 === 0) {
+//                     } else {
+//                         for (let b = 0; b < 6; b++) {
+//                             dateNumber[i].textContent = 25 + b
+//                             i++
+//                         }
 
-                            let latestDay = 30 - dateObject.getDay()
+//                         i--
+//                     }
+//                 } else {
 
-                            for (let b = 1; b < dateObject.getDay(); b++) {
-                                dateNumber[i].textContent = latestDay + b
-                                i++
-                            }
+//                     if (dateObject.getMonth() - 1 === 0 || dateObject.getMonth() - 1 === 2 || dateObject.getMonth() - 1 === 4 || dateObject.getMonth() - 1 === 6 || dateObject.getMonth() - 1 === 7 || dateObject.getMonth() - 1 === 9 || dateObject.getMonth() - 1 === -1 || dateObject.getMonth() - 1 === 11) {
 
-                            i--
-                        } else {
+//                         let latestDay = 32 - dateObject.getDay()
 
-                            let latestDay = 29 - dateObject.getDay()
+//                         for (let b = 1; b < dateObject.getDay(); b++) {
+//                             dateNumber[i].textContent = latestDay + b
+//                             i++
+//                         }
 
-                            for (let b = 1; b < dateObject.getDay(); b++) {
-                                dateNumber[i].textContent = latestDay + b
-                                i++
-                            }
+//                         i--
 
-                            i--
-                        }
+//                     } else if (dateObject.getMonth() - 1 === 1) {
 
-                    } else {
+//                         if (dateObject.getFullYear() % 4 === 0) {
 
-                        let latestDay = 31 - dateObject.getDay()
+//                             let latestDay = 30 - dateObject.getDay()
 
-                        for (let b = 1; b < dateObject.getDay(); b++) {
-                            dateNumber[i].textContent = latestDay + b
-                            i++
-                        }
+//                             for (let b = 1; b < dateObject.getDay(); b++) {
+//                                 dateNumber[i].textContent = latestDay + b
+//                                 i++
+//                             }
 
-                        i--
-                    }
-                }
+//                             i--
+//                         } else {
 
-            } else {
+//                             let latestDay = 29 - dateObject.getDay()
 
-                if (dateObject.getMonth() === 0 || dateObject.getMonth() === 2 || dateObject.getMonth() === 4 || dateObject.getMonth() === 6 || dateObject.getMonth() === 7 || dateObject.getMonth() === 9 || dateObject.getMonth() === -1 || dateObject.getMonth() === 11) {
-                    for (let b = 1; b <= 31; b++) {
+//                             for (let b = 1; b < dateObject.getDay(); b++) {
+//                                 dateNumber[i].textContent = latestDay + b
+//                                 i++
+//                             }
 
-                        if (b < 10) {
-                            dateNumber[i].textContent = `0${b}`
-                        } else {
-                            dateNumber[i].textContent = b
-                        }
+//                             i--
+//                         }
 
-                        i++
-                    }
+//                     } else {
 
-                    if (i >= 31 && i <= 41) {
+//                         let latestDay = 31 - dateObject.getDay()
 
-                        let firstNumbersNewMonth = 42 - i
+//                         for (let b = 1; b < dateObject.getDay(); b++) {
+//                             dateNumber[i].textContent = latestDay + b
+//                             i++
+//                         }
 
-                        for (let b = 1; b <= firstNumbersNewMonth; b++) {
+//                         i--
+//                     }
+//                 }
 
-                            if (b < 10) {
-                                dateNumber[i].textContent = `0${b}`
-                            } else {
-                                dateNumber[i].textContent = b
-                            }
+//             } else {
 
-                            i++
-                        }
-                    }
+//                 if (dateObject.getMonth() === 0 || dateObject.getMonth() === 2 || dateObject.getMonth() === 4 || dateObject.getMonth() === 6 || dateObject.getMonth() === 7 || dateObject.getMonth() === 9 || dateObject.getMonth() === -1 || dateObject.getMonth() === 11) {
+//                     for (let b = 1; b <= 31; b++) {
 
-                } else if (dateObject.getMonth() === 1) {
+//                         if (b < 10) {
+//                             dateNumber[i].textContent = `0${b}`
+//                         } else {
+//                             dateNumber[i].textContent = b
+//                         }
 
-                    if (dateObject.getFullYear() % 4 === 0) {
-                        for (let b = 1; b <= 29; b++) {
+//                         i++
+//                     }
 
-                            if (b < 10) {
-                                dateNumber[i].textContent = `0${b}`
-                            } else {
-                                dateNumber[i].textContent = b
-                            }
+//                     if (i >= 31 && i <= 41) {
 
-                            i++
-                        }
+//                         let firstNumbersNewMonth = 42 - i
 
-                        if (i >= 29 && i <= 41) {
+//                         for (let b = 1; b <= firstNumbersNewMonth; b++) {
 
-                            let firstNumbersNewMonth = 42 - i
+//                             if (b < 10) {
+//                                 dateNumber[i].textContent = `0${b}`
+//                             } else {
+//                                 dateNumber[i].textContent = b
+//                             }
 
-                            for (let b = 1; b <= firstNumbersNewMonth; b++) {
+//                             i++
+//                         }
+//                     }
 
-                                if (b < 10) {
-                                    dateNumber[i].textContent = `0${b}`
-                                } else {
-                                    dateNumber[i].textContent = b
-                                }
+//                 } else if (dateObject.getMonth() === 1) {
 
-                                i++
-                            }
-                        }
+//                     if (dateObject.getFullYear() % 4 === 0) {
+//                         for (let b = 1; b <= 29; b++) {
 
-                    } else {
-                        for (let b = 1; b <= 28; b++) {
+//                             if (b < 10) {
+//                                 dateNumber[i].textContent = `0${b}`
+//                             } else {
+//                                 dateNumber[i].textContent = b
+//                             }
 
-                            if (b < 10) {
-                                dateNumber[i].textContent = `0${b}`
-                            } else {
-                                dateNumber[i].textContent = b
-                            }
+//                             i++
+//                         }
 
-                            i++
-                        }
+//                         if (i >= 29 && i <= 41) {
 
-                        if (i >= 28 && i <= 41) {
+//                             let firstNumbersNewMonth = 42 - i
 
-                            let firstNumbersNewMonth = 42 - i
+//                             for (let b = 1; b <= firstNumbersNewMonth; b++) {
 
-                            for (let b = 1; b <= firstNumbersNewMonth; b++) {
+//                                 if (b < 10) {
+//                                     dateNumber[i].textContent = `0${b}`
+//                                 } else {
+//                                     dateNumber[i].textContent = b
+//                                 }
 
-                                if (b < 10) {
-                                    dateNumber[i].textContent = `0${b}`
-                                } else {
-                                    dateNumber[i].textContent = b
-                                }
+//                                 i++
+//                             }
+//                         }
 
-                                i++
-                            }
-                        }
-                    }
+//                     } else {
+//                         for (let b = 1; b <= 28; b++) {
 
-                } else {
-                    for (let b = 1; b <= 30; b++) {
+//                             if (b < 10) {
+//                                 dateNumber[i].textContent = `0${b}`
+//                             } else {
+//                                 dateNumber[i].textContent = b
+//                             }
 
-                        if (b < 10) {
-                            dateNumber[i].textContent = `0${b}`
-                        } else {
-                            dateNumber[i].textContent = b
-                        }
+//                             i++
+//                         }
 
-                        i++
-                    }
+//                         if (i >= 28 && i <= 41) {
 
-                    if (i >= 30 && i <= 41) {
+//                             let firstNumbersNewMonth = 42 - i
 
-                        let firstNumbersNewMonth = 42 - i
+//                             for (let b = 1; b <= firstNumbersNewMonth; b++) {
 
-                        for (let b = 1; b <= firstNumbersNewMonth; b++) {
+//                                 if (b < 10) {
+//                                     dateNumber[i].textContent = `0${b}`
+//                                 } else {
+//                                     dateNumber[i].textContent = b
+//                                 }
 
-                            if (b < 10) {
-                                dateNumber[i].textContent = `0${b}`
-                            } else {
-                                dateNumber[i].textContent = b
-                            }
+//                                 i++
+//                             }
+//                         }
+//                     }
 
-                            i++
-                        }
-                    }
-                }
+//                 } else {
+//                     for (let b = 1; b <= 30; b++) {
 
-            }
+//                         if (b < 10) {
+//                             dateNumber[i].textContent = `0${b}`
+//                         } else {
+//                             dateNumber[i].textContent = b
+//                         }
 
+//                         i++
+//                     }
 
-        }
-    }
+//                     if (i >= 30 && i <= 41) {
 
-    calenderLoop()
+//                         let firstNumbersNewMonth = 42 - i
 
+//                         for (let b = 1; b <= firstNumbersNewMonth; b++) {
 
-    let leftCalenderButton = document.getElementsByClassName("calender-left-button")
-    let rightCalenderButton = document.getElementsByClassName("calender-right-button")
+//                             if (b < 10) {
+//                                 dateNumber[i].textContent = `0${b}`
+//                             } else {
+//                                 dateNumber[i].textContent = b
+//                             }
 
-    leftCalenderButton[0].addEventListener("click", (e) => {
-        e.preventDefault()
+//                             i++
+//                         }
+//                     }
+//                 }
 
-        dateObject.setMonth(dateObject.getMonth() - counter)
+//             }
 
-        calenderLoop()
 
-    })
+//         }
+//     }
 
-    rightCalenderButton[0].addEventListener("click", (e) => {
-        e.preventDefault()
+//     calenderLoop()
 
-        dateObject.setMonth(dateObject.getMonth() + counter)
 
-        calenderLoop()
-    })
+//     let leftCalenderButton = document.getElementsByClassName("calender-left-button")
+//     let rightCalenderButton = document.getElementsByClassName("calender-right-button")
 
-    for (let i = 0; i < dateNumber.length; i++) {
-        dateNumber[i].addEventListener("click", (e) => {
-            e.preventDefault()
+//     leftCalenderButton[0].addEventListener("click", (e) => {
+//         e.preventDefault()
 
+//         dateObject.setMonth(dateObject.getMonth() - counter)
 
-            calenderReview.style.display = "none"
-            calenderAdministration.style.display = "flex"
-            isCalender = false
-            document.getElementsByTagName("body")[0].style.backgroundColor = "#ffffff"
-            document.getElementById("nav-index").style.background = "none"
-            document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
-            document.getElementsByClassName("translateEN")[0].style.color = "#545454"
-            document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
-            document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-        })
-    }
+//         calenderLoop()
 
-}
+//     })
 
-let renewButton = document.getElementsByClassName("renew-button")[0]
+//     rightCalenderButton[0].addEventListener("click", (e) => {
+//         e.preventDefault()
 
-renewButton.addEventListener("click", (e) => {
-    e.preventDefault()
+//         dateObject.setMonth(dateObject.getMonth() + counter)
 
-    document.getElementsByClassName("ads-checker")[0].style.color = "#77b800"
-    document.getElementsByClassName("days-counter")[0].textContent = "07"
-    document.getElementsByClassName("ads-counter")[0].textContent = "10"
-})
+//         calenderLoop()
+//     })
 
+//     for (let i = 0; i < dateNumber.length; i++) {
+//         dateNumber[i].addEventListener("click", (e) => {
+//             e.preventDefault()
 
-let addOfferPage = document.getElementsByClassName("add-offer-page")[0]
-let addOfferButton = document.getElementsByClassName("add-offer-button")[0]
-let allOffer = document.getElementsByClassName("all-offer")[0]
 
-addOfferPage.style.display = "none"
+//             calenderReview.style.display = "none"
+//             calenderAdministration.style.display = "flex"
+//             isCalender = false
+//             document.getElementsByTagName("body")[0].style.backgroundColor = "#ffffff"
+//             document.getElementById("nav-index").style.background = "none"
+//             document.getElementsByClassName("fa-solid")[0].style.color = "#545454"
+//             document.getElementsByClassName("translateEN")[0].style.color = "#545454"
+//             document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
+//             document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
+//         })
+//     }
 
-addOfferButton.addEventListener("click", (e) => {
-    e.preventDefault()
+// }
 
-    if (addOfferButton.textContent === "Добави оферта") {
-        allOffer.style.display = "none"
-        addOfferPage.style.display = "flex"
-        addOfferButton.textContent = "Публикувай"
-    } else {
-        allOffer.style.display = "block"
-        addOfferPage.style.display = "none"
-        addOfferButton.textContent = "Добави оферта"
-    }
-})
+// let renewButton = document.getElementsByClassName("renew-button")[0]
 
-saveBookingButton.addEventListener("click", (e) => {
-    e.preventDefault()
+// renewButton.addEventListener("click", (e) => {
+//     e.preventDefault()
 
-    calenderReview.style.display = "flex"
-    calenderAdministration.style.display = "none"
-    isCalender = true
-    document.getElementById("nav-index").style.background = "none"
-    document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
-    document.getElementsByClassName("translateEN")[0].style.color = "#DCDFDE"
-    document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-    document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-    document.getElementsByTagName("body")[0].style.backgroundColor = "#535351"
-})
+//     document.getElementsByClassName("ads-checker")[0].style.color = "#77b800"
+//     document.getElementsByClassName("days-counter")[0].textContent = "07"
+//     document.getElementsByClassName("ads-counter")[0].textContent = "10"
+// })
+
+
+// let addOfferPage = document.getElementsByClassName("add-offer-page")[0]
+// let addOfferButton = document.getElementsByClassName("add-offer-button")[0]
+// let allOffer = document.getElementsByClassName("all-offer")[0]
+
+// addOfferPage.style.display = "none"
+
+// addOfferButton.addEventListener("click", (e) => {
+//     e.preventDefault()
+
+//     if (addOfferButton.textContent === "Добави оферта") {
+//         allOffer.style.display = "none"
+//         addOfferPage.style.display = "flex"
+//         addOfferButton.textContent = "Публикувай"
+//     } else {
+//         allOffer.style.display = "block"
+//         addOfferPage.style.display = "none"
+//         addOfferButton.textContent = "Добави оферта"
+//     }
+// })
+
+// saveBookingButton.addEventListener("click", (e) => {
+//     e.preventDefault()
+
+//     calenderReview.style.display = "flex"
+//     calenderAdministration.style.display = "none"
+//     isCalender = true
+//     document.getElementById("nav-index").style.background = "none"
+//     document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
+//     document.getElementsByClassName("translateEN")[0].style.color = "#DCDFDE"
+//     document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
+//     document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
+//     document.getElementsByTagName("body")[0].style.backgroundColor = "#535351"
+// })
 
 
 
