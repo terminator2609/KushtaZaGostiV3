@@ -44,20 +44,20 @@ let allCatalogues = ["./public/image/catalog/sea.jpg", "./public/image/catalog/m
     "./public/image/catalog/vraca.jpg", "./public/image/catalog/pazardjik.jpg", "./public/image/catalog/blagoevgrad.jpg", "./public/image/catalog/rila.jpg",
     "./public/image/catalog/pirin.jpg", "./public/image/catalog/rodopi.jpg", "./public/image/catalog/stara planina.jpg", "./public/image/catalog/strandja.jpg"]
 
-    let lineRoleHost = document.getElementsByClassName("line-role-host")
-    let lineRoleGuest = document.getElementsByClassName("line-role-guest")
-    let guestName = document.getElementsByClassName("guest-name")
-    let hostName = document.getElementsByClassName("host-name")
-    let roleText = document.getElementById("role-text")
-    let navigationText = document.getElementsByClassName("navigation-text")[0]
-    let myObjectImg = document.getElementsByClassName("object-item-img")
-    
-    
-    navMenu.style.display = "none"
-    
-    guestSection.style.display = "none"
-    hostSection.style.display = "none"
-    lineRoleGuest[0].style.display = "none"
+let lineRoleHost = document.getElementsByClassName("line-role-host")
+let lineRoleGuest = document.getElementsByClassName("line-role-guest")
+let guestName = document.getElementsByClassName("guest-name")
+let hostName = document.getElementsByClassName("host-name")
+let roleText = document.getElementById("role-text")
+let navigationText = document.getElementsByClassName("navigation-text")[0]
+let myObjectImg = document.getElementsByClassName("object-item-img")
+
+
+navMenu.style.display = "none"
+
+guestSection.style.display = "none"
+hostSection.style.display = "none"
+lineRoleGuest[0].style.display = "none"
 
 
 for (let i = 0; i < definitionDiv.length; i++) {
@@ -66,10 +66,30 @@ for (let i = 0; i < definitionDiv.length; i++) {
 
 
 let cataloguesDiv = document.getElementsByClassName("catalogues-div")
+let cataloguesImg = document.getElementsByClassName("catalogues-img")
 
 
 cataloguesDiv[0].addEventListener("scroll", (e) => {
-   console.log(e.currentTarget)
+    let scrollCounter = cataloguesDiv[0].scrollLeft
+
+    console.log(scrollCounter)
+
+    if (scrollCounter % 40 === 0 && scrollCounter !== 0) {
+
+        console.log(scrollCounter)
+
+        let index = scrollCounter / 40
+
+        if (index === 0) {
+            cataloguesImg[index + 1].style.opacity = "1"
+            cataloguesImg[index].style.opacity = "0.3"
+            cataloguesImg[index + 1].style.width = "60%"
+            cataloguesImg[index].style.width = "50%"
+        }
+
+    }
+
+
 })
 
 
@@ -202,7 +222,7 @@ navMenuIcon.addEventListener("click", (e) => {
 })
 
 
-if(window.innerHeight >= 600) {
+if (window.innerHeight >= 600) {
 
     for (let i = 0; i < myObjectImg.length; i++) {
         myObjectImg[i].style.height = "330px"
