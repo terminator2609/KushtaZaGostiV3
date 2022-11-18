@@ -65,13 +65,12 @@ for (let i = 0; i < definitionDiv.length; i++) {
 }
 
 
-let cataloguesDiv = document.getElementsByClassName("catalogues-img")
+let cataloguesDiv = document.getElementsByClassName("catalogues-div")
 
-for(let i = 0; i < cataloguesDiv.length; i++) {
-    cataloguesDiv[i].addEventListener("click", (e) => {
-        console.log(e)
-    })
-}
+
+cataloguesDiv[0].addEventListener("scroll", (e) => {
+   console.log(e.currentTarget)
+})
 
 
 
