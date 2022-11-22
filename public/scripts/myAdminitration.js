@@ -68,54 +68,90 @@ for (let i = 0; i < definitionDiv.length; i++) {
 let cataloguesDiv = document.getElementsByClassName("catalogues-div")
 let cataloguesImg = document.getElementsByClassName("catalogues-img")
 let counter = 0
-let counterEvent = 0
-
+let eventCounter = 0
+let scrollCounter = 0
+let returnCounter = 0
 
 cataloguesDiv[0].addEventListener("scroll", (e) => {
-    let scrollCounter = cataloguesDiv[0].scrollLeft
+
+    if (counter === 1) {
+
+        cataloguesImg[counter].style.opacity = "1"
+        cataloguesImg[counter - 1].style.opacity = "0.3"
+        cataloguesImg[counter].style.width = "60%"
+        cataloguesImg[counter - 1].style.width = "50%"
+
+        returnCounter = counter
+
+    } else if ((counter - 1) % 4 === 0 && counter !== 0 && returnCounter < counter) {
+
+        eventCounter = (counter - 1) / 4
+
+        if (cataloguesImg[eventCounter + 1]) {
+            cataloguesImg[eventCounter + 1].style.opacity = "1"
+            cataloguesImg[eventCounter].style.opacity = "0.3"
+            cataloguesImg[eventCounter - 1].style.opacity = "0.3"
+            cataloguesImg[eventCounter + 1].style.width = "60%"
+            cataloguesImg[eventCounter].style.width = "50%"
+            cataloguesImg[eventCounter - 1].style.width = "50%"
+        }
+
+
+        returnCounter = counter
+
+
+
+    } else if (counter === 0) {
+
+        cataloguesImg[counter].style.opacity = "1"
+        cataloguesImg[counter + 1].style.opacity = "0.3"
+        cataloguesImg[counter].style.width = "60%"
+        cataloguesImg[counter + 1].style.width = "50%"
+    }
+
+    scrollCounter = cataloguesDiv[0].scrollLeft
 
     counter = scrollCounter / 40
 
     counter = Number(counter.toFixed(0))
 
 
-    if (counter === 1) {
-        cataloguesImg[counter].style.opacity = "1"
-        cataloguesImg[counter - 1].style.opacity = "0.3"
-        cataloguesImg[counter].style.width = "60%"
-        cataloguesImg[counter - 1].style.width = "50%"
-    } else if((counter - 1) % 4 === 0 && counter !== 0) {
 
-        let eventCounter = counter - 4
+    if (returnCounter > counter && (counter - 1) % 4 === 0 && counter !== 0) {
 
-        
-        cataloguesImg[counter - 3].style.opacity = "1"
-        cataloguesImg[counter - 4].style.opacity = "0.3"
-        cataloguesImg[counter - 2].style.opacity = "0.3"
-        cataloguesImg[counter - 3].style.width = "60%"
-        cataloguesImg[counter - 4].style.width = "50%"
-        cataloguesImg[counter - 2].style.width = "50%"
-    } 
 
-    // if (scrollCounter ) {
+        eventCounter = (counter - 1) / 4
 
-    //     console.log(scrollCounter)
 
-    //     let index = scrollCounter / 40
+        if (cataloguesImg[eventCounter + 2]) {
+            cataloguesImg[eventCounter + 1].style.opacity = "1"
+            cataloguesImg[eventCounter + 2].style.opacity = "0.3"
+            cataloguesImg[eventCounter].style.opacity = "0.3"
+            cataloguesImg[eventCounter + 1].style.width = "60%"
+            cataloguesImg[eventCounter + 2].style.width = "50%"
+            cataloguesImg[eventCounter].style.width = "50%"
+        } else {
+            cataloguesImg[eventCounter].style.opacity = "1"
+            cataloguesImg[eventCounter + 1].style.opacity = "0.3"
+            cataloguesImg[eventCounter - 1].style.opacity = "0.3"
+            cataloguesImg[eventCounter].style.width = "60%"
+            cataloguesImg[eventCounter + 1].style.width = "50%"
+            cataloguesImg[eventCounter - 1].style.width = "50%"
+        }
 
-    //     if (index === 0) {
-    //         cataloguesImg[index + 1].style.opacity = "1"
-    //         cataloguesImg[index].style.opacity = "0.3"
-    //         cataloguesImg[index + 1].style.width = "60%"
-    //         cataloguesImg[index].style.width = "50%"
-    //     }
 
-    // }
 
-    
+    }
 
-    
+
 })
+
+
+
+
+
+
+
 
 
 
