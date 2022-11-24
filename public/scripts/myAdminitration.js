@@ -116,12 +116,12 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
 
 
 
-    if (returnCounter > counter && (counter - 1) % 4 === 0 && counter !== 0) {
+    if (returnCounter > counter && (counter - 1) % 6 === 0 && counter !== 0) {
 
         returnCounter = counter
 
 
-        eventCounter = (counter - 1) / 4
+        eventCounter = (counter - 1) / 6
 
 
         if (cataloguesImg[eventCounter + 2]) {
