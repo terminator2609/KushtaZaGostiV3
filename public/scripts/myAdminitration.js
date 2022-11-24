@@ -84,7 +84,7 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
 
         returnCounter = counter
 
-    } else if ((counter - 1) % 4 === 0 && counter !== 0 && returnCounter <= counter) {
+    } else if ((counter - 1) % 4 === 0 && counter !== 0 && returnCounter < counter) {
 
         eventCounter = (counter - 1) / 4
 
@@ -95,13 +95,9 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
             cataloguesImg[eventCounter + 1].style.width = "60%"
             cataloguesImg[eventCounter].style.width = "50%"
             cataloguesImg[eventCounter - 1].style.width = "50%"
-            
-
         } 
 
         returnCounter = counter
-
-
 
     } else if (counter === 0) {
 
@@ -109,15 +105,16 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
         cataloguesImg[counter + 1].style.opacity = "0.3"
         cataloguesImg[counter].style.width = "60%"
         cataloguesImg[counter + 1].style.width = "50%"
-    }
 
+    } 
+    
     scrollCounter = cataloguesDiv[0].scrollLeft
 
     counter = scrollCounter / 40
 
     counter = Number(counter.toFixed(0))
 
-    console.log(counter)
+
 
     if (returnCounter > counter && (counter - 1) % 4 === 0 && counter !== 0) {
 
