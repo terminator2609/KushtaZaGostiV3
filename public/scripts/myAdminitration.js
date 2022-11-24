@@ -71,6 +71,7 @@ let counter = 0
 let eventCounter = 0
 let scrollCounter = 0
 let returnCounter = 0
+let addingDiv = document.getElementsByClassName("adding-div")[0]
 
 cataloguesDiv[0].addEventListener("scroll", (e) => {
 
@@ -83,7 +84,7 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
 
         returnCounter = counter
 
-    } else if ((counter - 1) % 4 === 0 && counter !== 0 && returnCounter < counter) {
+    } else if ((counter - 1) % 4 === 0 && counter !== 0 && returnCounter <= counter) {
 
         eventCounter = (counter - 1) / 4
 
@@ -94,8 +95,9 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
             cataloguesImg[eventCounter + 1].style.width = "60%"
             cataloguesImg[eventCounter].style.width = "50%"
             cataloguesImg[eventCounter - 1].style.width = "50%"
-        }
+            
 
+        } 
 
         returnCounter = counter
 
@@ -115,9 +117,11 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
 
     counter = Number(counter.toFixed(0))
 
-
+    console.log(counter)
 
     if (returnCounter > counter && (counter - 1) % 4 === 0 && counter !== 0) {
+
+        returnCounter = counter
 
 
         eventCounter = (counter - 1) / 4
@@ -132,15 +136,10 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
             cataloguesImg[eventCounter].style.width = "50%"
         } else {
             cataloguesImg[eventCounter].style.opacity = "1"
-            cataloguesImg[eventCounter + 1].style.opacity = "0.3"
             cataloguesImg[eventCounter - 1].style.opacity = "0.3"
             cataloguesImg[eventCounter].style.width = "60%"
-            cataloguesImg[eventCounter + 1].style.width = "50%"
             cataloguesImg[eventCounter - 1].style.width = "50%"
         }
-
-
-
     }
 
 
