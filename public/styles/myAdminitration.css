@@ -419,18 +419,37 @@ section.categories article:nth-of-type(5)>div:nth-of-type(1) {
     align-items: center;
 }
 
-section.categories article:nth-of-type(5)>div:nth-of-type(1) img {
-    width: 60%;
+section.categories article:nth-of-type(5)>div:nth-of-type(1) div {
+    position: relative;
+    padding-top: 20px;
+}
+
+section.categories article:nth-of-type(5)>div:nth-of-type(1) div svg.delete-catalog-img {
+    position: absolute;
+    top: 0%;
+    left: 86%;
+    fill: #ffffff;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 30px;
+}
+
+section.categories article:nth-of-type(5)>div:nth-of-type(1) div:nth-of-type(1n + 2) svg.delete-catalog-img {
+    display: none;
+}
+
+section.categories article:nth-of-type(5)>div:nth-of-type(1) div img {
+    width: 200px;
     border-radius: 15px;
     transition: 500ms;
 }
 
-section.categories article:nth-of-type(5)>div:nth-of-type(1) img:nth-of-type(1n + 2) {
-    width: 50%;
+section.categories article:nth-of-type(5)>div:nth-of-type(1) div:nth-of-type(1n + 2) img{
+    width: 170px;
     opacity: 0.3;
 }
 
-section.categories article:nth-of-type(5)>div:nth-of-type(1)>div {
+section.categories article:nth-of-type(5)>div:nth-of-type(1)>div.adding-div {
     background-color: #484544;
     padding: 38% 25%;
     border-radius: 18px;

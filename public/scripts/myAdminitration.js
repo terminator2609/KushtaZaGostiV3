@@ -72,6 +72,7 @@ let eventCounter = 0
 let scrollCounter = 0
 let returnCounter = 0
 let addingDiv = document.getElementsByClassName("adding-div")[0]
+let deleteCatalogiesImg = document.getElementsByClassName("delete-catalog-img")
 
 cataloguesDiv[0].addEventListener("scroll", (e) => {
 
@@ -79,23 +80,28 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
 
         cataloguesImg[counter].style.opacity = "1"
         cataloguesImg[counter - 1].style.opacity = "0.3"
-        cataloguesImg[counter].style.width = "60%"
-        cataloguesImg[counter - 1].style.width = "50%"
+        cataloguesImg[counter].style.width = "200px"
+        cataloguesImg[counter - 1].style.width = "170px"
+        deleteCatalogiesImg[counter].style.display = "block"
+        deleteCatalogiesImg[counter - 1].style.display = "none"
 
         returnCounter = counter
 
-    } else if ((counter - 1) % 4 === 0 && counter !== 0 && returnCounter < counter) {
+    } else if ((counter - 1) % 5 === 0 && counter !== 0 && returnCounter <= counter) {
 
-        eventCounter = (counter - 1) / 4
+        eventCounter = (counter - 1) / 5
 
         if (cataloguesImg[eventCounter + 1]) {
             cataloguesImg[eventCounter + 1].style.opacity = "1"
             cataloguesImg[eventCounter].style.opacity = "0.3"
             cataloguesImg[eventCounter - 1].style.opacity = "0.3"
-            cataloguesImg[eventCounter + 1].style.width = "60%"
-            cataloguesImg[eventCounter].style.width = "50%"
-            cataloguesImg[eventCounter - 1].style.width = "50%"
-        } 
+            cataloguesImg[eventCounter + 1].style.width = "200px"
+            cataloguesImg[eventCounter].style.width = "170px"
+            cataloguesImg[eventCounter - 1].style.width = "170px"
+            deleteCatalogiesImg[eventCounter + 1].style.display = "block"
+            deleteCatalogiesImg[eventCounter].style.display = "none"
+            deleteCatalogiesImg[eventCounter - 1].style.display = "none"
+        }
 
         returnCounter = counter
 
@@ -103,11 +109,13 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
 
         cataloguesImg[counter].style.opacity = "1"
         cataloguesImg[counter + 1].style.opacity = "0.3"
-        cataloguesImg[counter].style.width = "60%"
-        cataloguesImg[counter + 1].style.width = "50%"
+        cataloguesImg[counter].style.width = "200px"
+        cataloguesImg[counter + 1].style.width = "170px"
+        deleteCatalogiesImg[counter].style.display = "block"
+        deleteCatalogiesImg[counter + 1].style.display = "none"
 
-    } 
-    
+    }
+
     scrollCounter = cataloguesDiv[0].scrollLeft
 
     counter = scrollCounter / 40
@@ -128,14 +136,17 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
             cataloguesImg[eventCounter + 1].style.opacity = "1"
             cataloguesImg[eventCounter + 2].style.opacity = "0.3"
             cataloguesImg[eventCounter].style.opacity = "0.3"
-            cataloguesImg[eventCounter + 1].style.width = "60%"
-            cataloguesImg[eventCounter + 2].style.width = "50%"
-            cataloguesImg[eventCounter].style.width = "50%"
+            cataloguesImg[eventCounter + 1].style.width = "200px"
+            cataloguesImg[eventCounter + 2].style.width = "170px"
+            cataloguesImg[eventCounter].style.width = "170px"
+            deleteCatalogiesImg[eventCounter + 1].style.display = "block"
+            deleteCatalogiesImg[eventCounter + 2].style.display = "none"
+            deleteCatalogiesImg[eventCounter].style.display = "none"
         } else {
             cataloguesImg[eventCounter].style.opacity = "1"
             cataloguesImg[eventCounter - 1].style.opacity = "0.3"
-            cataloguesImg[eventCounter].style.width = "60%"
-            cataloguesImg[eventCounter - 1].style.width = "50%"
+            cataloguesImg[eventCounter].style.width = "200px"
+            cataloguesImg[eventCounter - 1].style.width = "170px"
         }
     }
 
