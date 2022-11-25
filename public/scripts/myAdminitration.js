@@ -255,6 +255,23 @@ if (window.innerHeight >= 600) {
 
 
 let cataloguesMenuButton = document.getElementsByClassName("catalogues-menu-button")
+let categoriesAddClouds = document.getElementsByClassName("categories-add-clouds")
+let header = document.getElementsByTagName("header")[0]
+
+for(let i = 0; i < cataloguesMenuButton.length; i++) {
+    cataloguesMenuButton[i].addEventListener("click", (e) => {
+        e.preventDefault()
+
+        if(i === 0) {
+            categories.style.display = "none"
+        }
+
+        header.style.display = "none"
+        categoriesAddClouds[i].style.display = "flex"
+
+
+    })
+}
 
 
 
