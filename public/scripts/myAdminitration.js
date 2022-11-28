@@ -216,8 +216,9 @@ let cataloguesMenuButton = document.getElementsByClassName("catalogues-menu-butt
 let categoriesAddClouds = document.getElementsByClassName("categories-add-clouds")
 let header = document.getElementsByTagName("header")[0]
 let closeButtonClouds = document.getElementsByClassName("close-menu-button-clouds")
+let calenderArticle = document.getElementsByClassName("calender")[0]
 
-for(let i = 0; i < cataloguesMenuButton.length; i++) {
+for (let i = 0; i < cataloguesMenuButton.length; i++) {
     cataloguesMenuButton[i].addEventListener("click", (e) => {
         e.preventDefault()
 
@@ -228,7 +229,7 @@ for(let i = 0; i < cataloguesMenuButton.length; i++) {
     })
 }
 
-for(let i = 0; i < closeButtonClouds.length; i++) {
+for (let i = 0; i < closeButtonClouds.length; i++) {
     closeButtonClouds[i].addEventListener("click", (e) => {
         e.preventDefault()
 
@@ -239,6 +240,86 @@ for(let i = 0; i < closeButtonClouds.length; i++) {
 function calender() {
     let fullDate = new Date()
 
-    let allMonth = ["Ян", "февр", "апр", "март", "юни", "юли", "авг", "септ", "окт", "ноем", "дек"]
+    let allMonth = ["Ян", "февр", "март", "апр", "май", "юни", "юли", "авг", "септ", "окт", "ноем", "дек"]
+    let currentMonth = fullDate.getMonth()
+    let currentFullYear = fullDate.getFullYear()
+
+    for (let i = currentMonth; i <= 11; i++) {
+
+
+        let divFullMonth = document.createElement("div")
+        let monthYearBoard = document.createElement("h1")
+        let daysDiv = document.createElement("div")
+        let daysUl = document.createElement("ul")
+        let mondayLi = document.createElement("li")
+        let turLi = document.createElement("li")
+        let wesLi = document.createElement("li")
+        let tuesLi = document.createElement("li")
+        let fryLi = document.createElement("li")
+        let satLi = document.createElement("li")
+        let sunLi = document.createElement("li")
+
+        let dateHolderUl1 = document.createElement("ul")
+        let dateHolderli1 = document.createElement("li")
+        let dateHolderli2 = document.createElement("li")
+        let dateHolderli3 = document.createElement("li")
+        let dateHolderli4 = document.createElement("li")
+        let dateHolderli5 = document.createElement("li")
+        let dateHolderli6 = document.createElement("li")
+        let dateHolderli7 = document.createElement("li")
+
+        dateHolderli1.className = "date-holder"
+        dateHolderli2.className = "date-holder"
+        dateHolderli3.className = "date-holder"
+        dateHolderli4.className = "date-holder"
+        dateHolderli5.className = "date-holder"
+        dateHolderli6.className = "date-holder"
+        dateHolderli7.className = "date-holder"
+
+
+        mondayLi.textContent = "П"
+        turLi.textContent = "В"
+        wesLi.textContent = "С"
+        tuesLi.textContent = "Ч"
+        fryLi.textContent = "П"
+        satLi.textContent = "С"
+        sunLi.textContent = "Н"
+
+        daysUl.appendChild(mondayLi)
+        daysUl.appendChild(turLi)
+        daysUl.appendChild(wesLi)
+        daysUl.appendChild(tuesLi)
+        daysUl.appendChild(fryLi)
+        daysUl.appendChild(satLi)
+        daysUl.appendChild(sunLi)
+
+        daysDiv.appendChild(daysUl)
+
+        divFullMonth.className = "full-month"
+        monthYearBoard.className = "month-year-board"
+
+        monthYearBoard.textContent = allMonth[i] + " " + currentFullYear
+
+        divFullMonth.appendChild(monthYearBoard)
+        divFullMonth.appendChild(daysDiv)
+
+        function daysRendering() {
+            fullDate.setMonth(i)
+            fullDate.setDate(1)
+
+            if(fullDate.getDay() < 1) {
+                
+            }
+        }
+
+        daysRendering()
+
+        calenderArticle.appendChild(divFullMonth)
+
+
+
+    }
 }
+
+calender()
 
