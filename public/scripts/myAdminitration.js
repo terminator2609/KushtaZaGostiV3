@@ -5,44 +5,6 @@ let closeMenuButton = document.getElementsByClassName("close-menu-button")[0]
 let navMenuIcon = document.getElementsByClassName("nav-menu-icon")[0]
 let navMenu = document.getElementsByClassName("nav-menu-phone")[0]
 let navACatalogues = document.getElementById("nav-catalogues")
-let subscribtionPlan = document.getElementsByClassName("subscription-plan")
-let subscriptionPlanNext = document.getElementsByClassName("section-plans-next")
-let activeSubscriptionButton = document.getElementsByClassName("active-subscription-plan")
-let definitionDiv = document.getElementsByClassName("definition")
-let questionButton = document.getElementsByClassName("fa-circle-question")
-let categories = document.getElementsByClassName("categories")[0]
-let sectionAdd = document.getElementsByClassName("section-add")
-let categoriesList = document.getElementsByClassName("categories-list")
-let addObjectTitle1 = document.getElementById("addObject-title-1")
-let addObjectTitle2 = document.getElementById("addObject-title-2")
-let cataloguesSelectPhoto = document.getElementsByClassName("cataloguesSelectPhoto")
-let removeCataloguesButton = document.getElementsByClassName("remove-catalogues-button")[0]
-let dateNumber = document.getElementsByClassName("date-number")
-let currentMonth = document.getElementById("current-month")
-let currentNumberMonth = document.getElementById("current-number-month")
-let currentDate = document.getElementById("current-date")
-let isCalender = false
-let calenderAdministration = document.getElementsByClassName("calender-administration")[0]
-let calenderReview = document.getElementsByClassName("calender-review")[0]
-let saveBookingButton = document.getElementsByClassName("save-booking")[0]
-// calenderAdministration.style.display = "none"
-
-let addObjectTitle1Array = ["Main", "My", "My", "Моята", "Моите", "Моите", "", "Моите", "Моите", "Моите"]
-let addObjectTitle2Array = ["Info", "Review", "Media", "Цена", "Социални мрежи", "Каталози", "", "Оферти", "Реклами", "Посещения"]
-let currentCatalogues = ["./public/image/catalog/mountain.jpg", "./public/image/catalog/familiarization.jpg", "./public/image/catalog/varna.jpg", "./public/image/catalog/shumen.jpg", "./public/image/catalog/stara planina.jpg",
-    "./public/image/catalog/team building.jpg", "./public/image/catalog/family with children.jpg", "./public/image/catalog/village.jpg", "./public/image/catalog/house with pets.jpg"]
-
-let allCatalogues = ["./public/image/catalog/sea.jpg", "./public/image/catalog/mountain.jpg", "./public/image/catalog/familiarization.jpg",
-    "./public/image/catalog/restaurant.jpg", "./public/image/catalog/BBQ.jpg", "./public/image/catalog/poll.jpg", "./public/image/catalog/horse-riding.jpg",
-    "./public/image/catalog/party.jpg", "./public/image/catalog/offer.jpg", "./public/image/catalog/family with children.jpg", "./public/image/catalog/team building.jpg",
-    "./public/image/catalog/house with pets.jpg", "./public/image/catalog/invalid people.jpg", "./public/image/catalog/agro.jpg", "./public/image/catalog/wine.jpg", "./public/image/catalog/village.jpg",
-    "./public/image/catalog/sofia.jpg", "./public/image/catalog/plovdiv.jpg", "./public/image/catalog/varna.jpg", "./public/image/catalog/burgas.jpg", "./public/image/catalog/shumen.jpg",
-    "./public/image/catalog/veliko turnovo.jpg", "./public/image/catalog/gabrovo.jpg", "./public/image/catalog/dobrich.jpg", "./public/image/catalog/silistra.jpg",
-    "./public/image/catalog/ruse.jpg", "./public/image/catalog/smolqn.jpg", "./public/image/catalog/sliven.jpg", "./public/image/catalog/stara zagora.jpg", "./public/image/catalog/haskovo.jpg",
-    "./public/image/catalog/vidin.jpg", "./public/image/catalog/pernik.jpg", "./public/image/catalog/kustendil.jpg", "./public/image/catalog/jambol.jpg", "./public/image/catalog/kurdjali.jpg",
-    "./public/image/catalog/pleven.jpg", "./public/image/catalog/turgovishte.jpg", "./public/image/catalog/razgrad.jpg", "./public/image/catalog/montana.jpg", "./public/image/catalog/lovech.jpg",
-    "./public/image/catalog/vraca.jpg", "./public/image/catalog/pazardjik.jpg", "./public/image/catalog/blagoevgrad.jpg", "./public/image/catalog/rila.jpg",
-    "./public/image/catalog/pirin.jpg", "./public/image/catalog/rodopi.jpg", "./public/image/catalog/stara planina.jpg", "./public/image/catalog/strandja.jpg"]
 
 let lineRoleHost = document.getElementsByClassName("line-role-host")
 let lineRoleGuest = document.getElementsByClassName("line-role-guest")
@@ -59,10 +21,6 @@ guestSection.style.display = "none"
 hostSection.style.display = "none"
 lineRoleGuest[0].style.display = "none"
 
-
-for (let i = 0; i < definitionDiv.length; i++) {
-    definitionDiv[i].style.display = "none"
-}
 
 
 let cataloguesDiv = document.getElementsByClassName("catalogues-div")
@@ -278,9 +236,9 @@ for(let i = 0; i < closeButtonClouds.length; i++) {
     })
 }
 
+function calender() {
+    let fullDate = new Date()
 
-
-
-
-
+    let allMonth = ["Ян", "февр", "апр", "март", "юни", "юли", "авг", "септ", "окт", "ноем", "дек"]
+}
 
