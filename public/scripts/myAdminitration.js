@@ -250,6 +250,9 @@ function calender() {
         let divFullMonth = document.createElement("div")
         let monthYearBoard = document.createElement("h1")
         let daysDiv = document.createElement("div")
+        let daysDiv2 = document.createElement("div")
+        let daysDiv3 = document.createElement("div")
+        let daysDiv4 = document.createElement("div")
         let daysUl = document.createElement("ul")
         let mondayLi = document.createElement("li")
         let turLi = document.createElement("li")
@@ -268,6 +271,36 @@ function calender() {
         let dateHolderli6 = document.createElement("li")
         let dateHolderli7 = document.createElement("li")
 
+        let dateHolderUl2 = document.createElement("ul")
+        let dateHolderli8 = document.createElement("li")
+        let dateHolderli9 = document.createElement("li")
+        let dateHolderli10 = document.createElement("li")
+        let dateHolderli11 = document.createElement("li")
+        let dateHolderli12 = document.createElement("li")
+        let dateHolderli13 = document.createElement("li")
+        let dateHolderli14 = document.createElement("li")
+
+        let dateHolderUl3 = document.createElement("ul")
+        let dateHolderli15 = document.createElement("li")
+        let dateHolderli16 = document.createElement("li")
+        let dateHolderli17 = document.createElement("li")
+        let dateHolderli18 = document.createElement("li")
+        let dateHolderli19 = document.createElement("li")
+        let dateHolderli20 = document.createElement("li")
+        let dateHolderli21 = document.createElement("li")
+
+        let dateHolderUl4 = document.createElement("ul")
+        let dateHolderli22 = document.createElement("li")
+        let dateHolderli23 = document.createElement("li")
+        let dateHolderli24 = document.createElement("li")
+        let dateHolderli25 = document.createElement("li")
+        let dateHolderli26 = document.createElement("li")
+        let dateHolderli27 = document.createElement("li")
+        let dateHolderli28 = document.createElement("li")
+
+
+
+
         dateHolderli1.className = "date-holder"
         dateHolderli2.className = "date-holder"
         dateHolderli3.className = "date-holder"
@@ -275,6 +308,31 @@ function calender() {
         dateHolderli5.className = "date-holder"
         dateHolderli6.className = "date-holder"
         dateHolderli7.className = "date-holder"
+        dateHolderli8.className = "date-holder"
+        dateHolderli9.className = "date-holder"
+        dateHolderli10.className = "date-holder"
+        dateHolderli11.className = "date-holder"
+        dateHolderli12.className = "date-holder"
+        dateHolderli13.className = "date-holder"
+        dateHolderli14.className = "date-holder"
+
+        dateHolderli15.className = "date-holder"
+        dateHolderli16.className = "date-holder"
+        dateHolderli17.className = "date-holder"
+        dateHolderli18.className = "date-holder"
+        dateHolderli19.className = "date-holder"
+        dateHolderli20.className = "date-holder"
+        dateHolderli21.className = "date-holder"
+
+
+        dateHolderli22.className = "date-holder"
+        dateHolderli23.className = "date-holder"
+        dateHolderli24.className = "date-holder"
+        dateHolderli25.className = "date-holder"
+        dateHolderli26.className = "date-holder"
+        dateHolderli27.className = "date-holder"
+        dateHolderli28.className = "date-holder"
+
 
 
         mondayLi.textContent = "П"
@@ -295,31 +353,1619 @@ function calender() {
 
         daysDiv.appendChild(daysUl)
 
+
         divFullMonth.className = "full-month"
         monthYearBoard.className = "month-year-board"
 
         monthYearBoard.textContent = allMonth[i] + " " + currentFullYear
 
+        daysRendering()
         divFullMonth.appendChild(monthYearBoard)
         divFullMonth.appendChild(daysDiv)
+        divFullMonth.appendChild(daysDiv2)
+        divFullMonth.appendChild(daysDiv3)
+        divFullMonth.appendChild(daysDiv4)
 
         function daysRendering() {
             fullDate.setMonth(i)
             fullDate.setDate(1)
 
-            if(fullDate.getDay() < 1) {
-                
+            if (fullDate.getDay() === 1) {
+                if (fullDate.getMonth() === 0 || fullDate.getMonth() === 2 || fullDate.getMonth() === 4 || fullDate.getMonth() === 6 || fullDate.getMonth() === 7 || fullDate.getMonth() === 9 || fullDate.getMonth() === 11) {
+                    for (let i = 1; i <= 42; i++) {
+                        dateHolderli1.textContent = "01"
+                        dateHolderli2.textContent = "02"
+                        dateHolderli3.textContent = "03"
+                        dateHolderli4.textContent = "04"
+                        dateHolderli5.textContent = "05"
+                        dateHolderli6.textContent = "06"
+                        dateHolderli7.textContent = "07"
+
+                        dateHolderli8.textContent = "08"
+                        dateHolderli9.textContent = "09"
+                        dateHolderli10.textContent = "10"
+                        dateHolderli11.textContent = "11"
+                        dateHolderli12.textContent = "12"
+                        dateHolderli13.textContent = "13"
+                        dateHolderli14.textContent = "14"
+
+                        dateHolderli15.textContent = "15"
+                        dateHolderli16.textContent = "16"
+                        dateHolderli17.textContent = "17"
+                        dateHolderli18.textContent = "18"
+                        dateHolderli19.textContent = "19"
+                        dateHolderli20.textContent = "20"
+                        dateHolderli21.textContent = "21"
+
+                        dateHolderli22.textContent = "22"
+                        dateHolderli23.textContent = "23"
+                        dateHolderli24.textContent = "24"
+                        dateHolderli25.textContent = "25"
+                        dateHolderli26.textContent = "26"
+                        dateHolderli27.textContent = "27"
+                        dateHolderli28.textContent = "28"
+
+                        dateHolderUl1.appendChild(dateHolderli1)
+                        dateHolderUl1.appendChild(dateHolderli2)
+                        dateHolderUl1.appendChild(dateHolderli3)
+                        dateHolderUl1.appendChild(dateHolderli4)
+                        dateHolderUl1.appendChild(dateHolderli5)
+                        dateHolderUl1.appendChild(dateHolderli6)
+                        dateHolderUl1.appendChild(dateHolderli7)
+
+                        dateHolderUl2.appendChild(dateHolderli8)
+                        dateHolderUl2.appendChild(dateHolderli9)
+                        dateHolderUl2.appendChild(dateHolderli10)
+                        dateHolderUl2.appendChild(dateHolderli11)
+                        dateHolderUl2.appendChild(dateHolderli12)
+                        dateHolderUl2.appendChild(dateHolderli13)
+                        dateHolderUl2.appendChild(dateHolderli14)
+
+                        dateHolderUl3.appendChild(dateHolderli15)
+                        dateHolderUl3.appendChild(dateHolderli16)
+                        dateHolderUl3.appendChild(dateHolderli17)
+                        dateHolderUl3.appendChild(dateHolderli18)
+                        dateHolderUl3.appendChild(dateHolderli19)
+                        dateHolderUl3.appendChild(dateHolderli20)
+                        dateHolderUl3.appendChild(dateHolderli21)
+
+                        dateHolderUl4.appendChild(dateHolderli22)
+                        dateHolderUl4.appendChild(dateHolderli23)
+                        dateHolderUl4.appendChild(dateHolderli24)
+                        dateHolderUl4.appendChild(dateHolderli25)
+                        dateHolderUl4.appendChild(dateHolderli26)
+                        dateHolderUl4.appendChild(dateHolderli27)
+                        dateHolderUl4.appendChild(dateHolderli28)
+
+                        daysDiv.appendChild(dateHolderUl1)
+                        daysDiv2.appendChild(dateHolderUl2)
+                        daysDiv3.appendChild(dateHolderUl3)
+                        daysDiv4.appendChild(dateHolderUl4)
+                    }
+                } else if (fullDate.getMonth() === 1) {
+                    if (fullDate.getFullYear() % 4 === 0) {
+                        for (let i = 1; i <= 42; i++) {
+                            dateHolderli1.textContent = "01"
+                            dateHolderli2.textContent = "02"
+                            dateHolderli3.textContent = "03"
+                            dateHolderli4.textContent = "04"
+                            dateHolderli5.textContent = "05"
+                            dateHolderli6.textContent = "06"
+                            dateHolderli7.textContent = "07"
+    
+                            dateHolderli8.textContent = "08"
+                            dateHolderli9.textContent = "09"
+                            dateHolderli10.textContent = "10"
+                            dateHolderli11.textContent = "11"
+                            dateHolderli12.textContent = "12"
+                            dateHolderli13.textContent = "13"
+                            dateHolderli14.textContent = "14"
+    
+                            dateHolderli15.textContent = "15"
+                            dateHolderli16.textContent = "16"
+                            dateHolderli17.textContent = "17"
+                            dateHolderli18.textContent = "18"
+                            dateHolderli19.textContent = "19"
+                            dateHolderli20.textContent = "20"
+                            dateHolderli21.textContent = "21"
+    
+                            dateHolderli22.textContent = "22"
+                            dateHolderli23.textContent = "23"
+                            dateHolderli24.textContent = "24"
+                            dateHolderli25.textContent = "25"
+                            dateHolderli26.textContent = "26"
+                            dateHolderli27.textContent = "27"
+                            dateHolderli28.textContent = "28"
+    
+                            dateHolderUl1.appendChild(dateHolderli1)
+                            dateHolderUl1.appendChild(dateHolderli2)
+                            dateHolderUl1.appendChild(dateHolderli3)
+                            dateHolderUl1.appendChild(dateHolderli4)
+                            dateHolderUl1.appendChild(dateHolderli5)
+                            dateHolderUl1.appendChild(dateHolderli6)
+                            dateHolderUl1.appendChild(dateHolderli7)
+    
+                            dateHolderUl2.appendChild(dateHolderli8)
+                            dateHolderUl2.appendChild(dateHolderli9)
+                            dateHolderUl2.appendChild(dateHolderli10)
+                            dateHolderUl2.appendChild(dateHolderli11)
+                            dateHolderUl2.appendChild(dateHolderli12)
+                            dateHolderUl2.appendChild(dateHolderli13)
+                            dateHolderUl2.appendChild(dateHolderli14)
+    
+                            dateHolderUl3.appendChild(dateHolderli15)
+                            dateHolderUl3.appendChild(dateHolderli16)
+                            dateHolderUl3.appendChild(dateHolderli17)
+                            dateHolderUl3.appendChild(dateHolderli18)
+                            dateHolderUl3.appendChild(dateHolderli19)
+                            dateHolderUl3.appendChild(dateHolderli20)
+                            dateHolderUl3.appendChild(dateHolderli21)
+    
+                            dateHolderUl4.appendChild(dateHolderli22)
+                            dateHolderUl4.appendChild(dateHolderli23)
+                            dateHolderUl4.appendChild(dateHolderli24)
+                            dateHolderUl4.appendChild(dateHolderli25)
+                            dateHolderUl4.appendChild(dateHolderli26)
+                            dateHolderUl4.appendChild(dateHolderli27)
+                            dateHolderUl4.appendChild(dateHolderli28)
+    
+                            daysDiv.appendChild(dateHolderUl1)
+                            daysDiv2.appendChild(dateHolderUl2)
+                            daysDiv3.appendChild(dateHolderUl3)
+                            daysDiv4.appendChild(dateHolderUl4)
+                        }
+                    } else {
+                        for (let i = 1; i <= 42; i++) {
+                            dateHolderli1.textContent = "01"
+                            dateHolderli2.textContent = "02"
+                            dateHolderli3.textContent = "03"
+                            dateHolderli4.textContent = "04"
+                            dateHolderli5.textContent = "05"
+                            dateHolderli6.textContent = "06"
+                            dateHolderli7.textContent = "07"
+    
+                            dateHolderli8.textContent = "08"
+                            dateHolderli9.textContent = "09"
+                            dateHolderli10.textContent = "10"
+                            dateHolderli11.textContent = "11"
+                            dateHolderli12.textContent = "12"
+                            dateHolderli13.textContent = "13"
+                            dateHolderli14.textContent = "14"
+    
+                            dateHolderli15.textContent = "15"
+                            dateHolderli16.textContent = "16"
+                            dateHolderli17.textContent = "17"
+                            dateHolderli18.textContent = "18"
+                            dateHolderli19.textContent = "19"
+                            dateHolderli20.textContent = "20"
+                            dateHolderli21.textContent = "21"
+    
+                            dateHolderli22.textContent = "22"
+                            dateHolderli23.textContent = "23"
+                            dateHolderli24.textContent = "24"
+                            dateHolderli25.textContent = "25"
+                            dateHolderli26.textContent = "26"
+                            dateHolderli27.textContent = "27"
+                            dateHolderli28.textContent = "28"
+    
+                            dateHolderUl1.appendChild(dateHolderli1)
+                            dateHolderUl1.appendChild(dateHolderli2)
+                            dateHolderUl1.appendChild(dateHolderli3)
+                            dateHolderUl1.appendChild(dateHolderli4)
+                            dateHolderUl1.appendChild(dateHolderli5)
+                            dateHolderUl1.appendChild(dateHolderli6)
+                            dateHolderUl1.appendChild(dateHolderli7)
+    
+                            dateHolderUl2.appendChild(dateHolderli8)
+                            dateHolderUl2.appendChild(dateHolderli9)
+                            dateHolderUl2.appendChild(dateHolderli10)
+                            dateHolderUl2.appendChild(dateHolderli11)
+                            dateHolderUl2.appendChild(dateHolderli12)
+                            dateHolderUl2.appendChild(dateHolderli13)
+                            dateHolderUl2.appendChild(dateHolderli14)
+    
+                            dateHolderUl3.appendChild(dateHolderli15)
+                            dateHolderUl3.appendChild(dateHolderli16)
+                            dateHolderUl3.appendChild(dateHolderli17)
+                            dateHolderUl3.appendChild(dateHolderli18)
+                            dateHolderUl3.appendChild(dateHolderli19)
+                            dateHolderUl3.appendChild(dateHolderli20)
+                            dateHolderUl3.appendChild(dateHolderli21)
+    
+                            dateHolderUl4.appendChild(dateHolderli22)
+                            dateHolderUl4.appendChild(dateHolderli23)
+                            dateHolderUl4.appendChild(dateHolderli24)
+                            dateHolderUl4.appendChild(dateHolderli25)
+                            dateHolderUl4.appendChild(dateHolderli26)
+                            dateHolderUl4.appendChild(dateHolderli27)
+                            dateHolderUl4.appendChild(dateHolderli28)
+    
+                            daysDiv.appendChild(dateHolderUl1)
+                            daysDiv2.appendChild(dateHolderUl2)
+                            daysDiv3.appendChild(dateHolderUl3)
+                            daysDiv4.appendChild(dateHolderUl4)
+                        }
+                    }
+                } else {
+                    for (let i = 1; i <= 42; i++) {
+                        dateHolderli1.textContent = "01"
+                        dateHolderli2.textContent = "02"
+                        dateHolderli3.textContent = "03"
+                        dateHolderli4.textContent = "04"
+                        dateHolderli5.textContent = "05"
+                        dateHolderli6.textContent = "06"
+                        dateHolderli7.textContent = "07"
+
+                        dateHolderli8.textContent = "08"
+                        dateHolderli9.textContent = "09"
+                        dateHolderli10.textContent = "10"
+                        dateHolderli11.textContent = "11"
+                        dateHolderli12.textContent = "12"
+                        dateHolderli13.textContent = "13"
+                        dateHolderli14.textContent = "14"
+
+                        dateHolderli15.textContent = "15"
+                        dateHolderli16.textContent = "16"
+                        dateHolderli17.textContent = "17"
+                        dateHolderli18.textContent = "18"
+                        dateHolderli19.textContent = "19"
+                        dateHolderli20.textContent = "20"
+                        dateHolderli21.textContent = "21"
+
+                        dateHolderli22.textContent = "22"
+                        dateHolderli23.textContent = "23"
+                        dateHolderli24.textContent = "24"
+                        dateHolderli25.textContent = "25"
+                        dateHolderli26.textContent = "26"
+                        dateHolderli27.textContent = "27"
+                        dateHolderli28.textContent = "28"
+
+                        dateHolderUl1.appendChild(dateHolderli1)
+                        dateHolderUl1.appendChild(dateHolderli2)
+                        dateHolderUl1.appendChild(dateHolderli3)
+                        dateHolderUl1.appendChild(dateHolderli4)
+                        dateHolderUl1.appendChild(dateHolderli5)
+                        dateHolderUl1.appendChild(dateHolderli6)
+                        dateHolderUl1.appendChild(dateHolderli7)
+
+                        dateHolderUl2.appendChild(dateHolderli8)
+                        dateHolderUl2.appendChild(dateHolderli9)
+                        dateHolderUl2.appendChild(dateHolderli10)
+                        dateHolderUl2.appendChild(dateHolderli11)
+                        dateHolderUl2.appendChild(dateHolderli12)
+                        dateHolderUl2.appendChild(dateHolderli13)
+                        dateHolderUl2.appendChild(dateHolderli14)
+
+                        dateHolderUl3.appendChild(dateHolderli15)
+                        dateHolderUl3.appendChild(dateHolderli16)
+                        dateHolderUl3.appendChild(dateHolderli17)
+                        dateHolderUl3.appendChild(dateHolderli18)
+                        dateHolderUl3.appendChild(dateHolderli19)
+                        dateHolderUl3.appendChild(dateHolderli20)
+                        dateHolderUl3.appendChild(dateHolderli21)
+
+                        dateHolderUl4.appendChild(dateHolderli22)
+                        dateHolderUl4.appendChild(dateHolderli23)
+                        dateHolderUl4.appendChild(dateHolderli24)
+                        dateHolderUl4.appendChild(dateHolderli25)
+                        dateHolderUl4.appendChild(dateHolderli26)
+                        dateHolderUl4.appendChild(dateHolderli27)
+                        dateHolderUl4.appendChild(dateHolderli28)
+
+                        daysDiv.appendChild(dateHolderUl1)
+                        daysDiv2.appendChild(dateHolderUl2)
+                        daysDiv3.appendChild(dateHolderUl3)
+                        daysDiv4.appendChild(dateHolderUl4)
+                    }
+                }
+            } else if (fullDate.getDay() === 0) {
+                if (fullDate.getMonth() === 0 || fullDate.getMonth() === 2 || fullDate.getMonth() === 4 || fullDate.getMonth() === 6 || fullDate.getMonth() === 7 || fullDate.getMonth() === 9 || fullDate.getMonth() === 11) {
+                    for (let i = 1; i <= 42; i++) {
+
+                        if (i < 7) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+                            dateHolderli3.textContent = "00"
+                            dateHolderli4.textContent = "00"
+                            dateHolderli5.textContent = "00"
+                            dateHolderli6.textContent = "00"
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+                            dateHolderli3.style.opacity = "0"
+                            dateHolderli4.style.opacity = "0"
+                            dateHolderli5.style.opacity = "0"
+                            dateHolderli6.style.opacity = "0"
+                        }
+
+                        dateHolderli7.textContent = "01"
+
+                        dateHolderli8.textContent = "02"
+                        dateHolderli9.textContent = "03"
+                        dateHolderli10.textContent = "04"
+                        dateHolderli11.textContent = "05"
+                        dateHolderli12.textContent = "06"
+                        dateHolderli13.textContent = "07"
+                        dateHolderli14.textContent = "08"
+
+                        dateHolderli15.textContent = "09"
+                        dateHolderli16.textContent = "10"
+                        dateHolderli17.textContent = "11"
+                        dateHolderli18.textContent = "12"
+                        dateHolderli19.textContent = "13"
+                        dateHolderli20.textContent = "14"
+                        dateHolderli21.textContent = "15"
+
+                        dateHolderli22.textContent = "16"
+                        dateHolderli23.textContent = "17"
+                        dateHolderli24.textContent = "18"
+                        dateHolderli25.textContent = "19"
+                        dateHolderli26.textContent = "20"
+                        dateHolderli27.textContent = "21"
+                        dateHolderli28.textContent = "22"
+
+
+                        dateHolderUl1.appendChild(dateHolderli1)
+                        dateHolderUl1.appendChild(dateHolderli2)
+                        dateHolderUl1.appendChild(dateHolderli3)
+                        dateHolderUl1.appendChild(dateHolderli4)
+                        dateHolderUl1.appendChild(dateHolderli5)
+                        dateHolderUl1.appendChild(dateHolderli6)
+                        dateHolderUl1.appendChild(dateHolderli7)
+
+                        dateHolderUl2.appendChild(dateHolderli8)
+                        dateHolderUl2.appendChild(dateHolderli9)
+                        dateHolderUl2.appendChild(dateHolderli10)
+                        dateHolderUl2.appendChild(dateHolderli11)
+                        dateHolderUl2.appendChild(dateHolderli12)
+                        dateHolderUl2.appendChild(dateHolderli13)
+                        dateHolderUl2.appendChild(dateHolderli14)
+
+                        dateHolderUl3.appendChild(dateHolderli15)
+                        dateHolderUl3.appendChild(dateHolderli16)
+                        dateHolderUl3.appendChild(dateHolderli17)
+                        dateHolderUl3.appendChild(dateHolderli18)
+                        dateHolderUl3.appendChild(dateHolderli19)
+                        dateHolderUl3.appendChild(dateHolderli20)
+                        dateHolderUl3.appendChild(dateHolderli21)
+
+                        dateHolderUl4.appendChild(dateHolderli22)
+                        dateHolderUl4.appendChild(dateHolderli23)
+                        dateHolderUl4.appendChild(dateHolderli24)
+                        dateHolderUl4.appendChild(dateHolderli25)
+                        dateHolderUl4.appendChild(dateHolderli26)
+                        dateHolderUl4.appendChild(dateHolderli27)
+                        dateHolderUl4.appendChild(dateHolderli28)
+
+                        daysDiv.appendChild(dateHolderUl1)
+                        daysDiv2.appendChild(dateHolderUl2)
+                        daysDiv3.appendChild(dateHolderUl3)
+                        daysDiv4.appendChild(dateHolderUl4)
+                    }
+                } else if (fullDate.getMonth() === 1) {
+                    if (fullDate.getFullYear() % 4 === 0) {
+                        for (let i = 1; i <= 42; i++) {
+
+                            if (i < 7) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+                                dateHolderli3.textContent = "00"
+                                dateHolderli4.textContent = "00"
+                                dateHolderli5.textContent = "00"
+                                dateHolderli6.textContent = "00"
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+                                dateHolderli3.style.opacity = "0"
+                                dateHolderli4.style.opacity = "0"
+                                dateHolderli5.style.opacity = "0"
+                                dateHolderli6.style.opacity = "0"
+                            }
+    
+                            dateHolderli7.textContent = "01"
+    
+                            dateHolderli8.textContent = "02"
+                            dateHolderli9.textContent = "03"
+                            dateHolderli10.textContent = "04"
+                            dateHolderli11.textContent = "05"
+                            dateHolderli12.textContent = "06"
+                            dateHolderli13.textContent = "07"
+                            dateHolderli14.textContent = "08"
+    
+                            dateHolderli15.textContent = "09"
+                            dateHolderli16.textContent = "10"
+                            dateHolderli17.textContent = "11"
+                            dateHolderli18.textContent = "12"
+                            dateHolderli19.textContent = "13"
+                            dateHolderli20.textContent = "14"
+                            dateHolderli21.textContent = "15"
+    
+                            dateHolderli22.textContent = "16"
+                            dateHolderli23.textContent = "17"
+                            dateHolderli24.textContent = "18"
+                            dateHolderli25.textContent = "19"
+                            dateHolderli26.textContent = "20"
+                            dateHolderli27.textContent = "21"
+                            dateHolderli28.textContent = "22"
+    
+    
+                            dateHolderUl1.appendChild(dateHolderli1)
+                            dateHolderUl1.appendChild(dateHolderli2)
+                            dateHolderUl1.appendChild(dateHolderli3)
+                            dateHolderUl1.appendChild(dateHolderli4)
+                            dateHolderUl1.appendChild(dateHolderli5)
+                            dateHolderUl1.appendChild(dateHolderli6)
+                            dateHolderUl1.appendChild(dateHolderli7)
+    
+                            dateHolderUl2.appendChild(dateHolderli8)
+                            dateHolderUl2.appendChild(dateHolderli9)
+                            dateHolderUl2.appendChild(dateHolderli10)
+                            dateHolderUl2.appendChild(dateHolderli11)
+                            dateHolderUl2.appendChild(dateHolderli12)
+                            dateHolderUl2.appendChild(dateHolderli13)
+                            dateHolderUl2.appendChild(dateHolderli14)
+    
+                            dateHolderUl3.appendChild(dateHolderli15)
+                            dateHolderUl3.appendChild(dateHolderli16)
+                            dateHolderUl3.appendChild(dateHolderli17)
+                            dateHolderUl3.appendChild(dateHolderli18)
+                            dateHolderUl3.appendChild(dateHolderli19)
+                            dateHolderUl3.appendChild(dateHolderli20)
+                            dateHolderUl3.appendChild(dateHolderli21)
+    
+                            dateHolderUl4.appendChild(dateHolderli22)
+                            dateHolderUl4.appendChild(dateHolderli23)
+                            dateHolderUl4.appendChild(dateHolderli24)
+                            dateHolderUl4.appendChild(dateHolderli25)
+                            dateHolderUl4.appendChild(dateHolderli26)
+                            dateHolderUl4.appendChild(dateHolderli27)
+                            dateHolderUl4.appendChild(dateHolderli28)
+    
+                            daysDiv.appendChild(dateHolderUl1)
+                            daysDiv2.appendChild(dateHolderUl2)
+                            daysDiv3.appendChild(dateHolderUl3)
+                            daysDiv4.appendChild(dateHolderUl4)
+                        }
+                    } else {
+                        for (let i = 1; i <= 42; i++) {
+
+                            if (i < 7) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+                                dateHolderli3.textContent = "00"
+                                dateHolderli4.textContent = "00"
+                                dateHolderli5.textContent = "00"
+                                dateHolderli6.textContent = "00"
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+                                dateHolderli3.style.opacity = "0"
+                                dateHolderli4.style.opacity = "0"
+                                dateHolderli5.style.opacity = "0"
+                                dateHolderli6.style.opacity = "0"
+                            }
+    
+                            dateHolderli7.textContent = "01"
+    
+                            dateHolderli8.textContent = "02"
+                            dateHolderli9.textContent = "03"
+                            dateHolderli10.textContent = "04"
+                            dateHolderli11.textContent = "05"
+                            dateHolderli12.textContent = "06"
+                            dateHolderli13.textContent = "07"
+                            dateHolderli14.textContent = "08"
+    
+                            dateHolderli15.textContent = "09"
+                            dateHolderli16.textContent = "10"
+                            dateHolderli17.textContent = "11"
+                            dateHolderli18.textContent = "12"
+                            dateHolderli19.textContent = "13"
+                            dateHolderli20.textContent = "14"
+                            dateHolderli21.textContent = "15"
+    
+                            dateHolderli22.textContent = "16"
+                            dateHolderli23.textContent = "17"
+                            dateHolderli24.textContent = "18"
+                            dateHolderli25.textContent = "19"
+                            dateHolderli26.textContent = "20"
+                            dateHolderli27.textContent = "21"
+                            dateHolderli28.textContent = "22"
+    
+    
+                            dateHolderUl1.appendChild(dateHolderli1)
+                            dateHolderUl1.appendChild(dateHolderli2)
+                            dateHolderUl1.appendChild(dateHolderli3)
+                            dateHolderUl1.appendChild(dateHolderli4)
+                            dateHolderUl1.appendChild(dateHolderli5)
+                            dateHolderUl1.appendChild(dateHolderli6)
+                            dateHolderUl1.appendChild(dateHolderli7)
+    
+                            dateHolderUl2.appendChild(dateHolderli8)
+                            dateHolderUl2.appendChild(dateHolderli9)
+                            dateHolderUl2.appendChild(dateHolderli10)
+                            dateHolderUl2.appendChild(dateHolderli11)
+                            dateHolderUl2.appendChild(dateHolderli12)
+                            dateHolderUl2.appendChild(dateHolderli13)
+                            dateHolderUl2.appendChild(dateHolderli14)
+    
+                            dateHolderUl3.appendChild(dateHolderli15)
+                            dateHolderUl3.appendChild(dateHolderli16)
+                            dateHolderUl3.appendChild(dateHolderli17)
+                            dateHolderUl3.appendChild(dateHolderli18)
+                            dateHolderUl3.appendChild(dateHolderli19)
+                            dateHolderUl3.appendChild(dateHolderli20)
+                            dateHolderUl3.appendChild(dateHolderli21)
+    
+                            dateHolderUl4.appendChild(dateHolderli22)
+                            dateHolderUl4.appendChild(dateHolderli23)
+                            dateHolderUl4.appendChild(dateHolderli24)
+                            dateHolderUl4.appendChild(dateHolderli25)
+                            dateHolderUl4.appendChild(dateHolderli26)
+                            dateHolderUl4.appendChild(dateHolderli27)
+                            dateHolderUl4.appendChild(dateHolderli28)
+    
+                            daysDiv.appendChild(dateHolderUl1)
+                            daysDiv2.appendChild(dateHolderUl2)
+                            daysDiv3.appendChild(dateHolderUl3)
+                            daysDiv4.appendChild(dateHolderUl4)
+                        }
+                    }
+                } else {
+                    for (let i = 1; i <= 42; i++) {
+
+                        if (i < 7) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+                            dateHolderli3.textContent = "00"
+                            dateHolderli4.textContent = "00"
+                            dateHolderli5.textContent = "00"
+                            dateHolderli6.textContent = "00"
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+                            dateHolderli3.style.opacity = "0"
+                            dateHolderli4.style.opacity = "0"
+                            dateHolderli5.style.opacity = "0"
+                            dateHolderli6.style.opacity = "0"
+                        }
+
+                        dateHolderli7.textContent = "01"
+
+                        dateHolderli8.textContent = "02"
+                        dateHolderli9.textContent = "03"
+                        dateHolderli10.textContent = "04"
+                        dateHolderli11.textContent = "05"
+                        dateHolderli12.textContent = "06"
+                        dateHolderli13.textContent = "07"
+                        dateHolderli14.textContent = "08"
+
+                        dateHolderli15.textContent = "09"
+                        dateHolderli16.textContent = "10"
+                        dateHolderli17.textContent = "11"
+                        dateHolderli18.textContent = "12"
+                        dateHolderli19.textContent = "13"
+                        dateHolderli20.textContent = "14"
+                        dateHolderli21.textContent = "15"
+
+                        dateHolderli22.textContent = "16"
+                        dateHolderli23.textContent = "17"
+                        dateHolderli24.textContent = "18"
+                        dateHolderli25.textContent = "19"
+                        dateHolderli26.textContent = "20"
+                        dateHolderli27.textContent = "21"
+                        dateHolderli28.textContent = "22"
+
+
+                        dateHolderUl1.appendChild(dateHolderli1)
+                        dateHolderUl1.appendChild(dateHolderli2)
+                        dateHolderUl1.appendChild(dateHolderli3)
+                        dateHolderUl1.appendChild(dateHolderli4)
+                        dateHolderUl1.appendChild(dateHolderli5)
+                        dateHolderUl1.appendChild(dateHolderli6)
+                        dateHolderUl1.appendChild(dateHolderli7)
+
+                        dateHolderUl2.appendChild(dateHolderli8)
+                        dateHolderUl2.appendChild(dateHolderli9)
+                        dateHolderUl2.appendChild(dateHolderli10)
+                        dateHolderUl2.appendChild(dateHolderli11)
+                        dateHolderUl2.appendChild(dateHolderli12)
+                        dateHolderUl2.appendChild(dateHolderli13)
+                        dateHolderUl2.appendChild(dateHolderli14)
+
+                        dateHolderUl3.appendChild(dateHolderli15)
+                        dateHolderUl3.appendChild(dateHolderli16)
+                        dateHolderUl3.appendChild(dateHolderli17)
+                        dateHolderUl3.appendChild(dateHolderli18)
+                        dateHolderUl3.appendChild(dateHolderli19)
+                        dateHolderUl3.appendChild(dateHolderli20)
+                        dateHolderUl3.appendChild(dateHolderli21)
+
+                        dateHolderUl4.appendChild(dateHolderli22)
+                        dateHolderUl4.appendChild(dateHolderli23)
+                        dateHolderUl4.appendChild(dateHolderli24)
+                        dateHolderUl4.appendChild(dateHolderli25)
+                        dateHolderUl4.appendChild(dateHolderli26)
+                        dateHolderUl4.appendChild(dateHolderli27)
+                        dateHolderUl4.appendChild(dateHolderli28)
+
+                        daysDiv.appendChild(dateHolderUl1)
+                        daysDiv2.appendChild(dateHolderUl2)
+                        daysDiv3.appendChild(dateHolderUl3)
+                        daysDiv4.appendChild(dateHolderUl4)
+                    }
+                }
+            } else {
+
+                if (fullDate.getMonth() === 0 || fullDate.getMonth() === 2 || fullDate.getMonth() === 4 || fullDate.getMonth() === 6 || fullDate.getMonth() === 7 || fullDate.getMonth() === 9 || fullDate.getMonth() === 11) {
+                    let currentDay = fullDate.getDay()
+
+                    for (let i = 1; i <= 42; i++) {
+
+                        if (currentDay === 2) {
+                            dateHolderli1.textContent = "00"
+
+                            dateHolderli1.style.opacity = "0"
+
+                            dateHolderli2.textContent = "01"
+                            dateHolderli3.textContent = "02"
+                            dateHolderli4.textContent = "03"
+                            dateHolderli5.textContent = "04"
+                            dateHolderli6.textContent = "05"
+                            dateHolderli7.textContent = "06"
+
+                            dateHolderli8.textContent = "07"
+                            dateHolderli9.textContent = "08"
+                            dateHolderli10.textContent = "09"
+                            dateHolderli11.textContent = "10"
+                            dateHolderli12.textContent = "11"
+                            dateHolderli13.textContent = "12"
+                            dateHolderli14.textContent = "13"
+
+                            dateHolderli15.textContent = "14"
+                            dateHolderli16.textContent = "15"
+                            dateHolderli17.textContent = "16"
+                            dateHolderli18.textContent = "17"
+                            dateHolderli19.textContent = "18"
+                            dateHolderli20.textContent = "19"
+                            dateHolderli21.textContent = "20"
+
+                            dateHolderli22.textContent = "21"
+                            dateHolderli23.textContent = "22"
+                            dateHolderli24.textContent = "23"
+                            dateHolderli25.textContent = "24"
+                            dateHolderli26.textContent = "25"
+                            dateHolderli27.textContent = "26"
+                            dateHolderli28.textContent = "27"
+
+                        } else if (currentDay === 3) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+
+                            dateHolderli3.textContent = "01"
+                            dateHolderli4.textContent = "02"
+                            dateHolderli5.textContent = "03"
+                            dateHolderli6.textContent = "04"
+                            dateHolderli7.textContent = "05"
+
+                            dateHolderli8.textContent = "06"
+                            dateHolderli9.textContent = "07"
+                            dateHolderli10.textContent = "08"
+                            dateHolderli11.textContent = "09"
+                            dateHolderli12.textContent = "10"
+                            dateHolderli13.textContent = "11"
+                            dateHolderli14.textContent = "12"
+
+                            dateHolderli15.textContent = "13"
+                            dateHolderli16.textContent = "14"
+                            dateHolderli17.textContent = "15"
+                            dateHolderli18.textContent = "16"
+                            dateHolderli19.textContent = "17"
+                            dateHolderli20.textContent = "18"
+                            dateHolderli21.textContent = "19"
+
+                            dateHolderli22.textContent = "20"
+                            dateHolderli23.textContent = "21"
+                            dateHolderli24.textContent = "22"
+                            dateHolderli25.textContent = "23"
+                            dateHolderli26.textContent = "24"
+                            dateHolderli27.textContent = "25"
+                            dateHolderli28.textContent = "26"
+
+                        } else if (currentDay === 4) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+                            dateHolderli3.textContent = "00"
+
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+                            dateHolderli3.style.opacity = "0"
+
+                            dateHolderli4.textContent = "01"
+                            dateHolderli5.textContent = "02"
+                            dateHolderli6.textContent = "03"
+                            dateHolderli7.textContent = "04"
+
+                            dateHolderli8.textContent = "05"
+                            dateHolderli9.textContent = "06"
+                            dateHolderli10.textContent = "07"
+                            dateHolderli11.textContent = "08"
+                            dateHolderli12.textContent = "09"
+                            dateHolderli13.textContent = "10"
+                            dateHolderli14.textContent = "11"
+
+                            dateHolderli15.textContent = "12"
+                            dateHolderli16.textContent = "13"
+                            dateHolderli17.textContent = "14"
+                            dateHolderli18.textContent = "15"
+                            dateHolderli19.textContent = "16"
+                            dateHolderli20.textContent = "17"
+                            dateHolderli21.textContent = "18"
+
+                            dateHolderli22.textContent = "19"
+                            dateHolderli23.textContent = "20"
+                            dateHolderli24.textContent = "21"
+                            dateHolderli25.textContent = "22"
+                            dateHolderli26.textContent = "23"
+                            dateHolderli27.textContent = "24"
+                            dateHolderli28.textContent = "25"
+
+                        } else if (currentDay === 5) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+                            dateHolderli3.textContent = "00"
+                            dateHolderli4.textContent = "00"
+
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+                            dateHolderli3.style.opacity = "0"
+                            dateHolderli4.style.opacity = "0"
+
+                            dateHolderli5.textContent = "01"
+                            dateHolderli6.textContent = "02"
+                            dateHolderli7.textContent = "03"
+
+                            dateHolderli8.textContent = "04"
+                            dateHolderli9.textContent = "05"
+                            dateHolderli10.textContent = "06"
+                            dateHolderli11.textContent = "07"
+                            dateHolderli12.textContent = "08"
+                            dateHolderli13.textContent = "09"
+                            dateHolderli14.textContent = "10"
+
+                            dateHolderli15.textContent = "11"
+                            dateHolderli16.textContent = "12"
+                            dateHolderli17.textContent = "13"
+                            dateHolderli18.textContent = "14"
+                            dateHolderli19.textContent = "15"
+                            dateHolderli20.textContent = "16"
+                            dateHolderli21.textContent = "17"
+
+                            dateHolderli22.textContent = "18"
+                            dateHolderli23.textContent = "19"
+                            dateHolderli24.textContent = "20"
+                            dateHolderli25.textContent = "21"
+                            dateHolderli26.textContent = "22"
+                            dateHolderli27.textContent = "23"
+                            dateHolderli28.textContent = "24"
+
+                        } else if (currentDay === 6) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+                            dateHolderli3.textContent = "00"
+                            dateHolderli4.textContent = "00"
+                            dateHolderli5.textContent = "00"
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+                            dateHolderli3.style.opacity = "0"
+                            dateHolderli4.style.opacity = "0"
+                            dateHolderli5.style.opacity = "0"
+
+                            dateHolderli6.textContent = "01"
+                            dateHolderli7.textContent = "02"
+
+                            dateHolderli8.textContent = "03"
+                            dateHolderli9.textContent = "04"
+                            dateHolderli10.textContent = "05"
+                            dateHolderli11.textContent = "06"
+                            dateHolderli12.textContent = "07"
+                            dateHolderli13.textContent = "08"
+                            dateHolderli14.textContent = "09"
+
+                            dateHolderli15.textContent = "10"
+                            dateHolderli16.textContent = "11"
+                            dateHolderli17.textContent = "12"
+                            dateHolderli18.textContent = "13"
+                            dateHolderli19.textContent = "14"
+                            dateHolderli20.textContent = "15"
+                            dateHolderli21.textContent = "16"
+
+                            dateHolderli22.textContent = "17"
+                            dateHolderli23.textContent = "18"
+                            dateHolderli24.textContent = "19"
+                            dateHolderli25.textContent = "20"
+                            dateHolderli26.textContent = "21"
+                            dateHolderli27.textContent = "22"
+                            dateHolderli28.textContent = "23"
+                        }
+
+                        dateHolderUl1.appendChild(dateHolderli1)
+                        dateHolderUl1.appendChild(dateHolderli2)
+                        dateHolderUl1.appendChild(dateHolderli3)
+                        dateHolderUl1.appendChild(dateHolderli4)
+                        dateHolderUl1.appendChild(dateHolderli5)
+                        dateHolderUl1.appendChild(dateHolderli6)
+                        dateHolderUl1.appendChild(dateHolderli7)
+
+                        dateHolderUl2.appendChild(dateHolderli8)
+                        dateHolderUl2.appendChild(dateHolderli9)
+                        dateHolderUl2.appendChild(dateHolderli10)
+                        dateHolderUl2.appendChild(dateHolderli11)
+                        dateHolderUl2.appendChild(dateHolderli12)
+                        dateHolderUl2.appendChild(dateHolderli13)
+                        dateHolderUl2.appendChild(dateHolderli14)
+
+                        dateHolderUl3.appendChild(dateHolderli15)
+                        dateHolderUl3.appendChild(dateHolderli16)
+                        dateHolderUl3.appendChild(dateHolderli17)
+                        dateHolderUl3.appendChild(dateHolderli18)
+                        dateHolderUl3.appendChild(dateHolderli19)
+                        dateHolderUl3.appendChild(dateHolderli20)
+                        dateHolderUl3.appendChild(dateHolderli21)
+
+                        dateHolderUl4.appendChild(dateHolderli22)
+                        dateHolderUl4.appendChild(dateHolderli23)
+                        dateHolderUl4.appendChild(dateHolderli24)
+                        dateHolderUl4.appendChild(dateHolderli25)
+                        dateHolderUl4.appendChild(dateHolderli26)
+                        dateHolderUl4.appendChild(dateHolderli27)
+                        dateHolderUl4.appendChild(dateHolderli28)
+
+                        
+
+                        daysDiv.appendChild(dateHolderUl1)
+                        daysDiv2.appendChild(dateHolderUl2)
+                        daysDiv3.appendChild(dateHolderUl3)
+                        daysDiv4.appendChild(dateHolderUl4)
+
+                    }
+                } else if (fullDate.getMonth() === 1) {
+                    if (fullDate.getFullYear() % 4 === 0) {
+                        let currentDay = fullDate.getDay()
+
+                        for (let i = 1; i <= 42; i++) {
+
+                            if (currentDay === 2) {
+                                dateHolderli1.textContent = "00"
+    
+                                dateHolderli1.style.opacity = "0"
+    
+                                dateHolderli2.textContent = "01"
+                                dateHolderli3.textContent = "02"
+                                dateHolderli4.textContent = "03"
+                                dateHolderli5.textContent = "04"
+                                dateHolderli6.textContent = "05"
+                                dateHolderli7.textContent = "06"
+    
+                                dateHolderli8.textContent = "07"
+                                dateHolderli9.textContent = "08"
+                                dateHolderli10.textContent = "09"
+                                dateHolderli11.textContent = "10"
+                                dateHolderli12.textContent = "11"
+                                dateHolderli13.textContent = "12"
+                                dateHolderli14.textContent = "13"
+    
+                                dateHolderli15.textContent = "14"
+                                dateHolderli16.textContent = "15"
+                                dateHolderli17.textContent = "16"
+                                dateHolderli18.textContent = "17"
+                                dateHolderli19.textContent = "18"
+                                dateHolderli20.textContent = "19"
+                                dateHolderli21.textContent = "20"
+    
+                                dateHolderli22.textContent = "21"
+                                dateHolderli23.textContent = "22"
+                                dateHolderli24.textContent = "23"
+                                dateHolderli25.textContent = "24"
+                                dateHolderli26.textContent = "25"
+                                dateHolderli27.textContent = "26"
+                                dateHolderli28.textContent = "27"
+    
+                            } else if (currentDay === 3) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+    
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+    
+                                dateHolderli3.textContent = "01"
+                                dateHolderli4.textContent = "02"
+                                dateHolderli5.textContent = "03"
+                                dateHolderli6.textContent = "04"
+                                dateHolderli7.textContent = "05"
+    
+                                dateHolderli8.textContent = "06"
+                                dateHolderli9.textContent = "07"
+                                dateHolderli10.textContent = "08"
+                                dateHolderli11.textContent = "09"
+                                dateHolderli12.textContent = "10"
+                                dateHolderli13.textContent = "11"
+                                dateHolderli14.textContent = "12"
+    
+                                dateHolderli15.textContent = "13"
+                                dateHolderli16.textContent = "14"
+                                dateHolderli17.textContent = "15"
+                                dateHolderli18.textContent = "16"
+                                dateHolderli19.textContent = "17"
+                                dateHolderli20.textContent = "18"
+                                dateHolderli21.textContent = "19"
+    
+                                dateHolderli22.textContent = "20"
+                                dateHolderli23.textContent = "21"
+                                dateHolderli24.textContent = "22"
+                                dateHolderli25.textContent = "23"
+                                dateHolderli26.textContent = "24"
+                                dateHolderli27.textContent = "25"
+                                dateHolderli28.textContent = "26"
+    
+                            } else if (currentDay === 4) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+                                dateHolderli3.textContent = "00"
+    
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+                                dateHolderli3.style.opacity = "0"
+    
+                                dateHolderli4.textContent = "01"
+                                dateHolderli5.textContent = "02"
+                                dateHolderli6.textContent = "03"
+                                dateHolderli7.textContent = "04"
+    
+                                dateHolderli8.textContent = "05"
+                                dateHolderli9.textContent = "06"
+                                dateHolderli10.textContent = "07"
+                                dateHolderli11.textContent = "08"
+                                dateHolderli12.textContent = "09"
+                                dateHolderli13.textContent = "10"
+                                dateHolderli14.textContent = "11"
+    
+                                dateHolderli15.textContent = "12"
+                                dateHolderli16.textContent = "13"
+                                dateHolderli17.textContent = "14"
+                                dateHolderli18.textContent = "15"
+                                dateHolderli19.textContent = "16"
+                                dateHolderli20.textContent = "17"
+                                dateHolderli21.textContent = "18"
+    
+                                dateHolderli22.textContent = "19"
+                                dateHolderli23.textContent = "20"
+                                dateHolderli24.textContent = "21"
+                                dateHolderli25.textContent = "22"
+                                dateHolderli26.textContent = "23"
+                                dateHolderli27.textContent = "24"
+                                dateHolderli28.textContent = "25"
+    
+                            } else if (currentDay === 5) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+                                dateHolderli3.textContent = "00"
+                                dateHolderli4.textContent = "00"
+    
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+                                dateHolderli3.style.opacity = "0"
+                                dateHolderli4.style.opacity = "0"
+    
+                                dateHolderli5.textContent = "01"
+                                dateHolderli6.textContent = "02"
+                                dateHolderli7.textContent = "03"
+    
+                                dateHolderli8.textContent = "04"
+                                dateHolderli9.textContent = "05"
+                                dateHolderli10.textContent = "06"
+                                dateHolderli11.textContent = "07"
+                                dateHolderli12.textContent = "08"
+                                dateHolderli13.textContent = "09"
+                                dateHolderli14.textContent = "10"
+    
+                                dateHolderli15.textContent = "11"
+                                dateHolderli16.textContent = "12"
+                                dateHolderli17.textContent = "13"
+                                dateHolderli18.textContent = "14"
+                                dateHolderli19.textContent = "15"
+                                dateHolderli20.textContent = "16"
+                                dateHolderli21.textContent = "17"
+    
+                                dateHolderli22.textContent = "18"
+                                dateHolderli23.textContent = "19"
+                                dateHolderli24.textContent = "20"
+                                dateHolderli25.textContent = "21"
+                                dateHolderli26.textContent = "22"
+                                dateHolderli27.textContent = "23"
+                                dateHolderli28.textContent = "24"
+    
+                            } else if (currentDay === 6) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+                                dateHolderli3.textContent = "00"
+                                dateHolderli4.textContent = "00"
+                                dateHolderli5.textContent = "00"
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+                                dateHolderli3.style.opacity = "0"
+                                dateHolderli4.style.opacity = "0"
+                                dateHolderli5.style.opacity = "0"
+    
+                                dateHolderli6.textContent = "01"
+                                dateHolderli7.textContent = "02"
+    
+                                dateHolderli8.textContent = "03"
+                                dateHolderli9.textContent = "04"
+                                dateHolderli10.textContent = "05"
+                                dateHolderli11.textContent = "06"
+                                dateHolderli12.textContent = "07"
+                                dateHolderli13.textContent = "08"
+                                dateHolderli14.textContent = "09"
+    
+                                dateHolderli15.textContent = "10"
+                                dateHolderli16.textContent = "11"
+                                dateHolderli17.textContent = "12"
+                                dateHolderli18.textContent = "13"
+                                dateHolderli19.textContent = "14"
+                                dateHolderli20.textContent = "15"
+                                dateHolderli21.textContent = "16"
+    
+                                dateHolderli22.textContent = "17"
+                                dateHolderli23.textContent = "18"
+                                dateHolderli24.textContent = "19"
+                                dateHolderli25.textContent = "20"
+                                dateHolderli26.textContent = "21"
+                                dateHolderli27.textContent = "22"
+                                dateHolderli28.textContent = "23"
+                            }
+    
+                            dateHolderUl1.appendChild(dateHolderli1)
+                            dateHolderUl1.appendChild(dateHolderli2)
+                            dateHolderUl1.appendChild(dateHolderli3)
+                            dateHolderUl1.appendChild(dateHolderli4)
+                            dateHolderUl1.appendChild(dateHolderli5)
+                            dateHolderUl1.appendChild(dateHolderli6)
+                            dateHolderUl1.appendChild(dateHolderli7)
+    
+                            dateHolderUl2.appendChild(dateHolderli8)
+                            dateHolderUl2.appendChild(dateHolderli9)
+                            dateHolderUl2.appendChild(dateHolderli10)
+                            dateHolderUl2.appendChild(dateHolderli11)
+                            dateHolderUl2.appendChild(dateHolderli12)
+                            dateHolderUl2.appendChild(dateHolderli13)
+                            dateHolderUl2.appendChild(dateHolderli14)
+    
+                            dateHolderUl3.appendChild(dateHolderli15)
+                            dateHolderUl3.appendChild(dateHolderli16)
+                            dateHolderUl3.appendChild(dateHolderli17)
+                            dateHolderUl3.appendChild(dateHolderli18)
+                            dateHolderUl3.appendChild(dateHolderli19)
+                            dateHolderUl3.appendChild(dateHolderli20)
+                            dateHolderUl3.appendChild(dateHolderli21)
+    
+                            dateHolderUl4.appendChild(dateHolderli22)
+                            dateHolderUl4.appendChild(dateHolderli23)
+                            dateHolderUl4.appendChild(dateHolderli24)
+                            dateHolderUl4.appendChild(dateHolderli25)
+                            dateHolderUl4.appendChild(dateHolderli26)
+                            dateHolderUl4.appendChild(dateHolderli27)
+                            dateHolderUl4.appendChild(dateHolderli28)
+    
+                            
+    
+                            daysDiv.appendChild(dateHolderUl1)
+                            daysDiv2.appendChild(dateHolderUl2)
+                            daysDiv3.appendChild(dateHolderUl3)
+                            daysDiv4.appendChild(dateHolderUl4)
+    
+                        }
+                    } else {
+                        let currentDay = fullDate.getDay()
+
+                        for (let i = 1; i <= 42; i++) {
+
+                            if (currentDay === 2) {
+                                dateHolderli1.textContent = "00"
+    
+                                dateHolderli1.style.opacity = "0"
+    
+                                dateHolderli2.textContent = "01"
+                                dateHolderli3.textContent = "02"
+                                dateHolderli4.textContent = "03"
+                                dateHolderli5.textContent = "04"
+                                dateHolderli6.textContent = "05"
+                                dateHolderli7.textContent = "06"
+    
+                                dateHolderli8.textContent = "07"
+                                dateHolderli9.textContent = "08"
+                                dateHolderli10.textContent = "09"
+                                dateHolderli11.textContent = "10"
+                                dateHolderli12.textContent = "11"
+                                dateHolderli13.textContent = "12"
+                                dateHolderli14.textContent = "13"
+    
+                                dateHolderli15.textContent = "14"
+                                dateHolderli16.textContent = "15"
+                                dateHolderli17.textContent = "16"
+                                dateHolderli18.textContent = "17"
+                                dateHolderli19.textContent = "18"
+                                dateHolderli20.textContent = "19"
+                                dateHolderli21.textContent = "20"
+    
+                                dateHolderli22.textContent = "21"
+                                dateHolderli23.textContent = "22"
+                                dateHolderli24.textContent = "23"
+                                dateHolderli25.textContent = "24"
+                                dateHolderli26.textContent = "25"
+                                dateHolderli27.textContent = "26"
+                                dateHolderli28.textContent = "27"
+    
+                            } else if (currentDay === 3) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+    
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+    
+                                dateHolderli3.textContent = "01"
+                                dateHolderli4.textContent = "02"
+                                dateHolderli5.textContent = "03"
+                                dateHolderli6.textContent = "04"
+                                dateHolderli7.textContent = "05"
+    
+                                dateHolderli8.textContent = "06"
+                                dateHolderli9.textContent = "07"
+                                dateHolderli10.textContent = "08"
+                                dateHolderli11.textContent = "09"
+                                dateHolderli12.textContent = "10"
+                                dateHolderli13.textContent = "11"
+                                dateHolderli14.textContent = "12"
+    
+                                dateHolderli15.textContent = "13"
+                                dateHolderli16.textContent = "14"
+                                dateHolderli17.textContent = "15"
+                                dateHolderli18.textContent = "16"
+                                dateHolderli19.textContent = "17"
+                                dateHolderli20.textContent = "18"
+                                dateHolderli21.textContent = "19"
+    
+                                dateHolderli22.textContent = "20"
+                                dateHolderli23.textContent = "21"
+                                dateHolderli24.textContent = "22"
+                                dateHolderli25.textContent = "23"
+                                dateHolderli26.textContent = "24"
+                                dateHolderli27.textContent = "25"
+                                dateHolderli28.textContent = "26"
+    
+                            } else if (currentDay === 4) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+                                dateHolderli3.textContent = "00"
+    
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+                                dateHolderli3.style.opacity = "0"
+    
+                                dateHolderli4.textContent = "01"
+                                dateHolderli5.textContent = "02"
+                                dateHolderli6.textContent = "03"
+                                dateHolderli7.textContent = "04"
+    
+                                dateHolderli8.textContent = "05"
+                                dateHolderli9.textContent = "06"
+                                dateHolderli10.textContent = "07"
+                                dateHolderli11.textContent = "08"
+                                dateHolderli12.textContent = "09"
+                                dateHolderli13.textContent = "10"
+                                dateHolderli14.textContent = "11"
+    
+                                dateHolderli15.textContent = "12"
+                                dateHolderli16.textContent = "13"
+                                dateHolderli17.textContent = "14"
+                                dateHolderli18.textContent = "15"
+                                dateHolderli19.textContent = "16"
+                                dateHolderli20.textContent = "17"
+                                dateHolderli21.textContent = "18"
+    
+                                dateHolderli22.textContent = "19"
+                                dateHolderli23.textContent = "20"
+                                dateHolderli24.textContent = "21"
+                                dateHolderli25.textContent = "22"
+                                dateHolderli26.textContent = "23"
+                                dateHolderli27.textContent = "24"
+                                dateHolderli28.textContent = "25"
+    
+                            } else if (currentDay === 5) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+                                dateHolderli3.textContent = "00"
+                                dateHolderli4.textContent = "00"
+    
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+                                dateHolderli3.style.opacity = "0"
+                                dateHolderli4.style.opacity = "0"
+    
+                                dateHolderli5.textContent = "01"
+                                dateHolderli6.textContent = "02"
+                                dateHolderli7.textContent = "03"
+    
+                                dateHolderli8.textContent = "04"
+                                dateHolderli9.textContent = "05"
+                                dateHolderli10.textContent = "06"
+                                dateHolderli11.textContent = "07"
+                                dateHolderli12.textContent = "08"
+                                dateHolderli13.textContent = "09"
+                                dateHolderli14.textContent = "10"
+    
+                                dateHolderli15.textContent = "11"
+                                dateHolderli16.textContent = "12"
+                                dateHolderli17.textContent = "13"
+                                dateHolderli18.textContent = "14"
+                                dateHolderli19.textContent = "15"
+                                dateHolderli20.textContent = "16"
+                                dateHolderli21.textContent = "17"
+    
+                                dateHolderli22.textContent = "18"
+                                dateHolderli23.textContent = "19"
+                                dateHolderli24.textContent = "20"
+                                dateHolderli25.textContent = "21"
+                                dateHolderli26.textContent = "22"
+                                dateHolderli27.textContent = "23"
+                                dateHolderli28.textContent = "24"
+    
+                            } else if (currentDay === 6) {
+                                dateHolderli1.textContent = "00"
+                                dateHolderli2.textContent = "00"
+                                dateHolderli3.textContent = "00"
+                                dateHolderli4.textContent = "00"
+                                dateHolderli5.textContent = "00"
+    
+                                dateHolderli1.style.opacity = "0"
+                                dateHolderli2.style.opacity = "0"
+                                dateHolderli3.style.opacity = "0"
+                                dateHolderli4.style.opacity = "0"
+                                dateHolderli5.style.opacity = "0"
+    
+                                dateHolderli6.textContent = "01"
+                                dateHolderli7.textContent = "02"
+    
+                                dateHolderli8.textContent = "03"
+                                dateHolderli9.textContent = "04"
+                                dateHolderli10.textContent = "05"
+                                dateHolderli11.textContent = "06"
+                                dateHolderli12.textContent = "07"
+                                dateHolderli13.textContent = "08"
+                                dateHolderli14.textContent = "09"
+    
+                                dateHolderli15.textContent = "10"
+                                dateHolderli16.textContent = "11"
+                                dateHolderli17.textContent = "12"
+                                dateHolderli18.textContent = "13"
+                                dateHolderli19.textContent = "14"
+                                dateHolderli20.textContent = "15"
+                                dateHolderli21.textContent = "16"
+    
+                                dateHolderli22.textContent = "17"
+                                dateHolderli23.textContent = "18"
+                                dateHolderli24.textContent = "19"
+                                dateHolderli25.textContent = "20"
+                                dateHolderli26.textContent = "21"
+                                dateHolderli27.textContent = "22"
+                                dateHolderli28.textContent = "23"
+                            }
+    
+                            dateHolderUl1.appendChild(dateHolderli1)
+                            dateHolderUl1.appendChild(dateHolderli2)
+                            dateHolderUl1.appendChild(dateHolderli3)
+                            dateHolderUl1.appendChild(dateHolderli4)
+                            dateHolderUl1.appendChild(dateHolderli5)
+                            dateHolderUl1.appendChild(dateHolderli6)
+                            dateHolderUl1.appendChild(dateHolderli7)
+    
+                            dateHolderUl2.appendChild(dateHolderli8)
+                            dateHolderUl2.appendChild(dateHolderli9)
+                            dateHolderUl2.appendChild(dateHolderli10)
+                            dateHolderUl2.appendChild(dateHolderli11)
+                            dateHolderUl2.appendChild(dateHolderli12)
+                            dateHolderUl2.appendChild(dateHolderli13)
+                            dateHolderUl2.appendChild(dateHolderli14)
+    
+                            dateHolderUl3.appendChild(dateHolderli15)
+                            dateHolderUl3.appendChild(dateHolderli16)
+                            dateHolderUl3.appendChild(dateHolderli17)
+                            dateHolderUl3.appendChild(dateHolderli18)
+                            dateHolderUl3.appendChild(dateHolderli19)
+                            dateHolderUl3.appendChild(dateHolderli20)
+                            dateHolderUl3.appendChild(dateHolderli21)
+    
+                            dateHolderUl4.appendChild(dateHolderli22)
+                            dateHolderUl4.appendChild(dateHolderli23)
+                            dateHolderUl4.appendChild(dateHolderli24)
+                            dateHolderUl4.appendChild(dateHolderli25)
+                            dateHolderUl4.appendChild(dateHolderli26)
+                            dateHolderUl4.appendChild(dateHolderli27)
+                            dateHolderUl4.appendChild(dateHolderli28)
+    
+                            
+    
+                            daysDiv.appendChild(dateHolderUl1)
+                            daysDiv2.appendChild(dateHolderUl2)
+                            daysDiv3.appendChild(dateHolderUl3)
+                            daysDiv4.appendChild(dateHolderUl4)
+    
+                        }
+                    }
+                } else {
+                    let currentDay = fullDate.getDay()
+
+                    for (let i = 1; i <= 42; i++) {
+
+                        if (currentDay === 2) {
+                            dateHolderli1.textContent = "00"
+
+                            dateHolderli1.style.opacity = "0"
+
+                            dateHolderli2.textContent = "01"
+                            dateHolderli3.textContent = "02"
+                            dateHolderli4.textContent = "03"
+                            dateHolderli5.textContent = "04"
+                            dateHolderli6.textContent = "05"
+                            dateHolderli7.textContent = "06"
+
+                            dateHolderli8.textContent = "07"
+                            dateHolderli9.textContent = "08"
+                            dateHolderli10.textContent = "09"
+                            dateHolderli11.textContent = "10"
+                            dateHolderli12.textContent = "11"
+                            dateHolderli13.textContent = "12"
+                            dateHolderli14.textContent = "13"
+
+                            dateHolderli15.textContent = "14"
+                            dateHolderli16.textContent = "15"
+                            dateHolderli17.textContent = "16"
+                            dateHolderli18.textContent = "17"
+                            dateHolderli19.textContent = "18"
+                            dateHolderli20.textContent = "19"
+                            dateHolderli21.textContent = "20"
+
+                            dateHolderli22.textContent = "21"
+                            dateHolderli23.textContent = "22"
+                            dateHolderli24.textContent = "23"
+                            dateHolderli25.textContent = "24"
+                            dateHolderli26.textContent = "25"
+                            dateHolderli27.textContent = "26"
+                            dateHolderli28.textContent = "27"
+
+                        } else if (currentDay === 3) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+
+                            dateHolderli3.textContent = "01"
+                            dateHolderli4.textContent = "02"
+                            dateHolderli5.textContent = "03"
+                            dateHolderli6.textContent = "04"
+                            dateHolderli7.textContent = "05"
+
+                            dateHolderli8.textContent = "06"
+                            dateHolderli9.textContent = "07"
+                            dateHolderli10.textContent = "08"
+                            dateHolderli11.textContent = "09"
+                            dateHolderli12.textContent = "10"
+                            dateHolderli13.textContent = "11"
+                            dateHolderli14.textContent = "12"
+
+                            dateHolderli15.textContent = "13"
+                            dateHolderli16.textContent = "14"
+                            dateHolderli17.textContent = "15"
+                            dateHolderli18.textContent = "16"
+                            dateHolderli19.textContent = "17"
+                            dateHolderli20.textContent = "18"
+                            dateHolderli21.textContent = "19"
+
+                            dateHolderli22.textContent = "20"
+                            dateHolderli23.textContent = "21"
+                            dateHolderli24.textContent = "22"
+                            dateHolderli25.textContent = "23"
+                            dateHolderli26.textContent = "24"
+                            dateHolderli27.textContent = "25"
+                            dateHolderli28.textContent = "26"
+
+                        } else if (currentDay === 4) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+                            dateHolderli3.textContent = "00"
+
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+                            dateHolderli3.style.opacity = "0"
+
+                            dateHolderli4.textContent = "01"
+                            dateHolderli5.textContent = "02"
+                            dateHolderli6.textContent = "03"
+                            dateHolderli7.textContent = "04"
+
+                            dateHolderli8.textContent = "05"
+                            dateHolderli9.textContent = "06"
+                            dateHolderli10.textContent = "07"
+                            dateHolderli11.textContent = "08"
+                            dateHolderli12.textContent = "09"
+                            dateHolderli13.textContent = "10"
+                            dateHolderli14.textContent = "11"
+
+                            dateHolderli15.textContent = "12"
+                            dateHolderli16.textContent = "13"
+                            dateHolderli17.textContent = "14"
+                            dateHolderli18.textContent = "15"
+                            dateHolderli19.textContent = "16"
+                            dateHolderli20.textContent = "17"
+                            dateHolderli21.textContent = "18"
+
+                            dateHolderli22.textContent = "19"
+                            dateHolderli23.textContent = "20"
+                            dateHolderli24.textContent = "21"
+                            dateHolderli25.textContent = "22"
+                            dateHolderli26.textContent = "23"
+                            dateHolderli27.textContent = "24"
+                            dateHolderli28.textContent = "25"
+
+                        } else if (currentDay === 5) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+                            dateHolderli3.textContent = "00"
+                            dateHolderli4.textContent = "00"
+
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+                            dateHolderli3.style.opacity = "0"
+                            dateHolderli4.style.opacity = "0"
+
+                            dateHolderli5.textContent = "01"
+                            dateHolderli6.textContent = "02"
+                            dateHolderli7.textContent = "03"
+
+                            dateHolderli8.textContent = "04"
+                            dateHolderli9.textContent = "05"
+                            dateHolderli10.textContent = "06"
+                            dateHolderli11.textContent = "07"
+                            dateHolderli12.textContent = "08"
+                            dateHolderli13.textContent = "09"
+                            dateHolderli14.textContent = "10"
+
+                            dateHolderli15.textContent = "11"
+                            dateHolderli16.textContent = "12"
+                            dateHolderli17.textContent = "13"
+                            dateHolderli18.textContent = "14"
+                            dateHolderli19.textContent = "15"
+                            dateHolderli20.textContent = "16"
+                            dateHolderli21.textContent = "17"
+
+                            dateHolderli22.textContent = "18"
+                            dateHolderli23.textContent = "19"
+                            dateHolderli24.textContent = "20"
+                            dateHolderli25.textContent = "21"
+                            dateHolderli26.textContent = "22"
+                            dateHolderli27.textContent = "23"
+                            dateHolderli28.textContent = "24"
+
+                        } else if (currentDay === 6) {
+                            dateHolderli1.textContent = "00"
+                            dateHolderli2.textContent = "00"
+                            dateHolderli3.textContent = "00"
+                            dateHolderli4.textContent = "00"
+                            dateHolderli5.textContent = "00"
+
+                            dateHolderli1.style.opacity = "0"
+                            dateHolderli2.style.opacity = "0"
+                            dateHolderli3.style.opacity = "0"
+                            dateHolderli4.style.opacity = "0"
+                            dateHolderli5.style.opacity = "0"
+
+                            dateHolderli6.textContent = "01"
+                            dateHolderli7.textContent = "02"
+
+                            dateHolderli8.textContent = "03"
+                            dateHolderli9.textContent = "04"
+                            dateHolderli10.textContent = "05"
+                            dateHolderli11.textContent = "06"
+                            dateHolderli12.textContent = "07"
+                            dateHolderli13.textContent = "08"
+                            dateHolderli14.textContent = "09"
+
+                            dateHolderli15.textContent = "10"
+                            dateHolderli16.textContent = "11"
+                            dateHolderli17.textContent = "12"
+                            dateHolderli18.textContent = "13"
+                            dateHolderli19.textContent = "14"
+                            dateHolderli20.textContent = "15"
+                            dateHolderli21.textContent = "16"
+
+                            dateHolderli22.textContent = "17"
+                            dateHolderli23.textContent = "18"
+                            dateHolderli24.textContent = "19"
+                            dateHolderli25.textContent = "20"
+                            dateHolderli26.textContent = "21"
+                            dateHolderli27.textContent = "22"
+                            dateHolderli28.textContent = "23"
+                        }
+
+                        dateHolderUl1.appendChild(dateHolderli1)
+                        dateHolderUl1.appendChild(dateHolderli2)
+                        dateHolderUl1.appendChild(dateHolderli3)
+                        dateHolderUl1.appendChild(dateHolderli4)
+                        dateHolderUl1.appendChild(dateHolderli5)
+                        dateHolderUl1.appendChild(dateHolderli6)
+                        dateHolderUl1.appendChild(dateHolderli7)
+
+                        dateHolderUl2.appendChild(dateHolderli8)
+                        dateHolderUl2.appendChild(dateHolderli9)
+                        dateHolderUl2.appendChild(dateHolderli10)
+                        dateHolderUl2.appendChild(dateHolderli11)
+                        dateHolderUl2.appendChild(dateHolderli12)
+                        dateHolderUl2.appendChild(dateHolderli13)
+                        dateHolderUl2.appendChild(dateHolderli14)
+
+                        dateHolderUl3.appendChild(dateHolderli15)
+                        dateHolderUl3.appendChild(dateHolderli16)
+                        dateHolderUl3.appendChild(dateHolderli17)
+                        dateHolderUl3.appendChild(dateHolderli18)
+                        dateHolderUl3.appendChild(dateHolderli19)
+                        dateHolderUl3.appendChild(dateHolderli20)
+                        dateHolderUl3.appendChild(dateHolderli21)
+
+                        dateHolderUl4.appendChild(dateHolderli22)
+                        dateHolderUl4.appendChild(dateHolderli23)
+                        dateHolderUl4.appendChild(dateHolderli24)
+                        dateHolderUl4.appendChild(dateHolderli25)
+                        dateHolderUl4.appendChild(dateHolderli26)
+                        dateHolderUl4.appendChild(dateHolderli27)
+                        dateHolderUl4.appendChild(dateHolderli28)
+
+                        
+
+                        daysDiv.appendChild(dateHolderUl1)
+                        daysDiv2.appendChild(dateHolderUl2)
+                        daysDiv3.appendChild(dateHolderUl3)
+                        daysDiv4.appendChild(dateHolderUl4)
+
+                    }
+                }
             }
+
+
+
         }
 
-        daysRendering()
-
         calenderArticle.appendChild(divFullMonth)
-
-
-
     }
 }
+
+
 
 calender()
 
