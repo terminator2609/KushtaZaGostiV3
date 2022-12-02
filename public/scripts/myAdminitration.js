@@ -253,6 +253,7 @@ function calender() {
         let daysDiv2 = document.createElement("div")
         let daysDiv3 = document.createElement("div")
         let daysDiv4 = document.createElement("div")
+        let daysDiv5 = document.createElement("div")
         let daysUl = document.createElement("ul")
         let mondayLi = document.createElement("li")
         let turLi = document.createElement("li")
@@ -298,7 +299,14 @@ function calender() {
         let dateHolderli27 = document.createElement("li")
         let dateHolderli28 = document.createElement("li")
 
-
+        let dateHolderUl5 = document.createElement("ul")
+        let dateHolderli29 = document.createElement("li")
+        let dateHolderli30 = document.createElement("li")
+        let dateHolderli31 = document.createElement("li")
+        let dateHolderli32 = document.createElement("li")
+        let dateHolderli33 = document.createElement("li")
+        let dateHolderli34 = document.createElement("li")
+        let dateHolderli35 = document.createElement("li")
 
 
         dateHolderli1.className = "date-holder"
@@ -333,6 +341,14 @@ function calender() {
         dateHolderli27.className = "date-holder"
         dateHolderli28.className = "date-holder"
 
+        dateHolderli29.className = "date-holder"
+        dateHolderli30.className = "date-holder"
+        dateHolderli31.className = "date-holder"
+        dateHolderli32.className = "date-holder"
+        dateHolderli33.className = "date-holder"
+        dateHolderli34.className = "date-holder"
+        dateHolderli35.className = "date-holder"
+
 
 
         mondayLi.textContent = "П"
@@ -365,6 +381,7 @@ function calender() {
         divFullMonth.appendChild(daysDiv2)
         divFullMonth.appendChild(daysDiv3)
         divFullMonth.appendChild(daysDiv4)
+        divFullMonth.appendChild(daysDiv5)
 
         function daysRendering() {
             fullDate.setMonth(i)
@@ -405,6 +422,24 @@ function calender() {
                         dateHolderli27.textContent = "27"
                         dateHolderli28.textContent = "28"
 
+                        dateHolderli29.textContent = "29"
+                        dateHolderli30.textContent = "30"
+                        dateHolderli31.textContent = "31"
+
+                        dateHolderli32.textContent = "32"
+                        dateHolderli33.textContent = "33"
+                        dateHolderli34.textContent = "34"
+                        dateHolderli35.textContent = "35"
+
+
+                        dateHolderli32.style.opacity = "0"
+                        dateHolderli33.style.opacity = "0"
+                        dateHolderli34.style.opacity = "0"
+                        dateHolderli35.style.opacity = "0"
+
+
+
+
                         dateHolderUl1.appendChild(dateHolderli1)
                         dateHolderUl1.appendChild(dateHolderli2)
                         dateHolderUl1.appendChild(dateHolderli3)
@@ -437,10 +472,19 @@ function calender() {
                         dateHolderUl4.appendChild(dateHolderli27)
                         dateHolderUl4.appendChild(dateHolderli28)
 
+                        dateHolderUl5.appendChild(dateHolderli29)
+                        dateHolderUl5.appendChild(dateHolderli30)
+                        dateHolderUl5.appendChild(dateHolderli31)
+                        dateHolderUl5.appendChild(dateHolderli32)
+                        dateHolderUl5.appendChild(dateHolderli33)
+                        dateHolderUl5.appendChild(dateHolderli34)
+                        dateHolderUl5.appendChild(dateHolderli35)
+
                         daysDiv.appendChild(dateHolderUl1)
                         daysDiv2.appendChild(dateHolderUl2)
                         daysDiv3.appendChild(dateHolderUl3)
                         daysDiv4.appendChild(dateHolderUl4)
+                        daysDiv5.appendChild(dateHolderUl5)
                     }
                 } else if (fullDate.getMonth() === 1) {
                     if (fullDate.getFullYear() % 4 === 0) {
@@ -452,7 +496,7 @@ function calender() {
                             dateHolderli5.textContent = "05"
                             dateHolderli6.textContent = "06"
                             dateHolderli7.textContent = "07"
-    
+
                             dateHolderli8.textContent = "08"
                             dateHolderli9.textContent = "09"
                             dateHolderli10.textContent = "10"
@@ -460,7 +504,7 @@ function calender() {
                             dateHolderli12.textContent = "12"
                             dateHolderli13.textContent = "13"
                             dateHolderli14.textContent = "14"
-    
+
                             dateHolderli15.textContent = "15"
                             dateHolderli16.textContent = "16"
                             dateHolderli17.textContent = "17"
@@ -468,7 +512,7 @@ function calender() {
                             dateHolderli19.textContent = "19"
                             dateHolderli20.textContent = "20"
                             dateHolderli21.textContent = "21"
-    
+
                             dateHolderli22.textContent = "22"
                             dateHolderli23.textContent = "23"
                             dateHolderli24.textContent = "24"
@@ -476,7 +520,26 @@ function calender() {
                             dateHolderli26.textContent = "26"
                             dateHolderli27.textContent = "27"
                             dateHolderli28.textContent = "28"
-    
+                            dateHolderli29.textContent = "29"
+
+
+                            dateHolderli30.textContent = "30"
+                            dateHolderli31.textContent = "31"
+                            dateHolderli32.textContent = "32"
+                            dateHolderli33.textContent = "33"
+                            dateHolderli34.textContent = "34"
+                            dateHolderli35.textContent = "35"
+
+                            dateHolderli30.style.opacity = "0"
+                            dateHolderli31.style.opacity = "0"
+                            dateHolderli32.style.opacity = "0"
+                            dateHolderli33.style.opacity = "0"
+                            dateHolderli34.style.opacity = "0"
+                            dateHolderli35.style.opacity = "0"
+
+
+
+
                             dateHolderUl1.appendChild(dateHolderli1)
                             dateHolderUl1.appendChild(dateHolderli2)
                             dateHolderUl1.appendChild(dateHolderli3)
@@ -484,7 +547,7 @@ function calender() {
                             dateHolderUl1.appendChild(dateHolderli5)
                             dateHolderUl1.appendChild(dateHolderli6)
                             dateHolderUl1.appendChild(dateHolderli7)
-    
+
                             dateHolderUl2.appendChild(dateHolderli8)
                             dateHolderUl2.appendChild(dateHolderli9)
                             dateHolderUl2.appendChild(dateHolderli10)
@@ -492,7 +555,7 @@ function calender() {
                             dateHolderUl2.appendChild(dateHolderli12)
                             dateHolderUl2.appendChild(dateHolderli13)
                             dateHolderUl2.appendChild(dateHolderli14)
-    
+
                             dateHolderUl3.appendChild(dateHolderli15)
                             dateHolderUl3.appendChild(dateHolderli16)
                             dateHolderUl3.appendChild(dateHolderli17)
@@ -500,7 +563,7 @@ function calender() {
                             dateHolderUl3.appendChild(dateHolderli19)
                             dateHolderUl3.appendChild(dateHolderli20)
                             dateHolderUl3.appendChild(dateHolderli21)
-    
+
                             dateHolderUl4.appendChild(dateHolderli22)
                             dateHolderUl4.appendChild(dateHolderli23)
                             dateHolderUl4.appendChild(dateHolderli24)
@@ -508,11 +571,20 @@ function calender() {
                             dateHolderUl4.appendChild(dateHolderli26)
                             dateHolderUl4.appendChild(dateHolderli27)
                             dateHolderUl4.appendChild(dateHolderli28)
-    
+
+                            dateHolderUl5.appendChild(dateHolderli29)
+                            dateHolderUl5.appendChild(dateHolderli30)
+                            dateHolderUl5.appendChild(dateHolderli31)
+                            dateHolderUl5.appendChild(dateHolderli32)
+                            dateHolderUl5.appendChild(dateHolderli33)
+                            dateHolderUl5.appendChild(dateHolderli34)
+                            dateHolderUl5.appendChild(dateHolderli35)
+
                             daysDiv.appendChild(dateHolderUl1)
                             daysDiv2.appendChild(dateHolderUl2)
                             daysDiv3.appendChild(dateHolderUl3)
                             daysDiv4.appendChild(dateHolderUl4)
+                            daysDiv5.appendChild(dateHolderUl5)
                         }
                     } else {
                         for (let i = 1; i <= 42; i++) {
@@ -523,7 +595,7 @@ function calender() {
                             dateHolderli5.textContent = "05"
                             dateHolderli6.textContent = "06"
                             dateHolderli7.textContent = "07"
-    
+
                             dateHolderli8.textContent = "08"
                             dateHolderli9.textContent = "09"
                             dateHolderli10.textContent = "10"
@@ -531,7 +603,7 @@ function calender() {
                             dateHolderli12.textContent = "12"
                             dateHolderli13.textContent = "13"
                             dateHolderli14.textContent = "14"
-    
+
                             dateHolderli15.textContent = "15"
                             dateHolderli16.textContent = "16"
                             dateHolderli17.textContent = "17"
@@ -539,7 +611,7 @@ function calender() {
                             dateHolderli19.textContent = "19"
                             dateHolderli20.textContent = "20"
                             dateHolderli21.textContent = "21"
-    
+
                             dateHolderli22.textContent = "22"
                             dateHolderli23.textContent = "23"
                             dateHolderli24.textContent = "24"
@@ -547,7 +619,27 @@ function calender() {
                             dateHolderli26.textContent = "26"
                             dateHolderli27.textContent = "27"
                             dateHolderli28.textContent = "28"
-    
+
+
+                            dateHolderli29.textContent = "29"
+                            dateHolderli30.textContent = "30"
+                            dateHolderli31.textContent = "31"
+                            dateHolderli32.textContent = "32"
+                            dateHolderli33.textContent = "33"
+                            dateHolderli34.textContent = "34"
+                            dateHolderli35.textContent = "35"
+
+                            dateHolderli29.style.opacity = "0"
+                            dateHolderli30.style.opacity = "0"
+                            dateHolderli31.style.opacity = "0"
+                            dateHolderli32.style.opacity = "0"
+                            dateHolderli33.style.opacity = "0"
+                            dateHolderli34.style.opacity = "0"
+                            dateHolderli35.style.opacity = "0"
+
+
+
+
                             dateHolderUl1.appendChild(dateHolderli1)
                             dateHolderUl1.appendChild(dateHolderli2)
                             dateHolderUl1.appendChild(dateHolderli3)
@@ -555,7 +647,7 @@ function calender() {
                             dateHolderUl1.appendChild(dateHolderli5)
                             dateHolderUl1.appendChild(dateHolderli6)
                             dateHolderUl1.appendChild(dateHolderli7)
-    
+
                             dateHolderUl2.appendChild(dateHolderli8)
                             dateHolderUl2.appendChild(dateHolderli9)
                             dateHolderUl2.appendChild(dateHolderli10)
@@ -563,7 +655,7 @@ function calender() {
                             dateHolderUl2.appendChild(dateHolderli12)
                             dateHolderUl2.appendChild(dateHolderli13)
                             dateHolderUl2.appendChild(dateHolderli14)
-    
+
                             dateHolderUl3.appendChild(dateHolderli15)
                             dateHolderUl3.appendChild(dateHolderli16)
                             dateHolderUl3.appendChild(dateHolderli17)
@@ -571,7 +663,7 @@ function calender() {
                             dateHolderUl3.appendChild(dateHolderli19)
                             dateHolderUl3.appendChild(dateHolderli20)
                             dateHolderUl3.appendChild(dateHolderli21)
-    
+
                             dateHolderUl4.appendChild(dateHolderli22)
                             dateHolderUl4.appendChild(dateHolderli23)
                             dateHolderUl4.appendChild(dateHolderli24)
@@ -579,11 +671,20 @@ function calender() {
                             dateHolderUl4.appendChild(dateHolderli26)
                             dateHolderUl4.appendChild(dateHolderli27)
                             dateHolderUl4.appendChild(dateHolderli28)
-    
+
+                            dateHolderUl5.appendChild(dateHolderli29)
+                            dateHolderUl5.appendChild(dateHolderli30)
+                            dateHolderUl5.appendChild(dateHolderli31)
+                            dateHolderUl5.appendChild(dateHolderli32)
+                            dateHolderUl5.appendChild(dateHolderli33)
+                            dateHolderUl5.appendChild(dateHolderli34)
+                            dateHolderUl5.appendChild(dateHolderli35)
+
                             daysDiv.appendChild(dateHolderUl1)
                             daysDiv2.appendChild(dateHolderUl2)
                             daysDiv3.appendChild(dateHolderUl3)
                             daysDiv4.appendChild(dateHolderUl4)
+                            daysDiv5.appendChild(dateHolderUl5)
                         }
                     }
                 } else {
@@ -619,6 +720,24 @@ function calender() {
                         dateHolderli26.textContent = "26"
                         dateHolderli27.textContent = "27"
                         dateHolderli28.textContent = "28"
+                        dateHolderli29.textContent = "29"
+                        dateHolderli30.textContent = "30"
+
+
+                        dateHolderli31.textContent = "31"
+                        dateHolderli32.textContent = "32"
+                        dateHolderli33.textContent = "33"
+                        dateHolderli34.textContent = "34"
+                        dateHolderli35.textContent = "35"
+
+                        dateHolderli31.style.opacity = "0"
+                        dateHolderli32.style.opacity = "0"
+                        dateHolderli33.style.opacity = "0"
+                        dateHolderli34.style.opacity = "0"
+                        dateHolderli35.style.opacity = "0"
+
+
+
 
                         dateHolderUl1.appendChild(dateHolderli1)
                         dateHolderUl1.appendChild(dateHolderli2)
@@ -652,10 +771,19 @@ function calender() {
                         dateHolderUl4.appendChild(dateHolderli27)
                         dateHolderUl4.appendChild(dateHolderli28)
 
+                        dateHolderUl5.appendChild(dateHolderli29)
+                        dateHolderUl5.appendChild(dateHolderli30)
+                        dateHolderUl5.appendChild(dateHolderli31)
+                        dateHolderUl5.appendChild(dateHolderli32)
+                        dateHolderUl5.appendChild(dateHolderli33)
+                        dateHolderUl5.appendChild(dateHolderli34)
+                        dateHolderUl5.appendChild(dateHolderli35)
+
                         daysDiv.appendChild(dateHolderUl1)
                         daysDiv2.appendChild(dateHolderUl2)
                         daysDiv3.appendChild(dateHolderUl3)
                         daysDiv4.appendChild(dateHolderUl4)
+                        daysDiv5.appendChild(dateHolderUl5)
                     }
                 }
             } else if (fullDate.getDay() === 0) {
@@ -753,7 +881,7 @@ function calender() {
                                 dateHolderli4.textContent = "00"
                                 dateHolderli5.textContent = "00"
                                 dateHolderli6.textContent = "00"
-    
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
                                 dateHolderli3.style.opacity = "0"
@@ -761,9 +889,9 @@ function calender() {
                                 dateHolderli5.style.opacity = "0"
                                 dateHolderli6.style.opacity = "0"
                             }
-    
+
                             dateHolderli7.textContent = "01"
-    
+
                             dateHolderli8.textContent = "02"
                             dateHolderli9.textContent = "03"
                             dateHolderli10.textContent = "04"
@@ -771,7 +899,7 @@ function calender() {
                             dateHolderli12.textContent = "06"
                             dateHolderli13.textContent = "07"
                             dateHolderli14.textContent = "08"
-    
+
                             dateHolderli15.textContent = "09"
                             dateHolderli16.textContent = "10"
                             dateHolderli17.textContent = "11"
@@ -779,7 +907,7 @@ function calender() {
                             dateHolderli19.textContent = "13"
                             dateHolderli20.textContent = "14"
                             dateHolderli21.textContent = "15"
-    
+
                             dateHolderli22.textContent = "16"
                             dateHolderli23.textContent = "17"
                             dateHolderli24.textContent = "18"
@@ -787,8 +915,8 @@ function calender() {
                             dateHolderli26.textContent = "20"
                             dateHolderli27.textContent = "21"
                             dateHolderli28.textContent = "22"
-    
-    
+
+
                             dateHolderUl1.appendChild(dateHolderli1)
                             dateHolderUl1.appendChild(dateHolderli2)
                             dateHolderUl1.appendChild(dateHolderli3)
@@ -796,7 +924,7 @@ function calender() {
                             dateHolderUl1.appendChild(dateHolderli5)
                             dateHolderUl1.appendChild(dateHolderli6)
                             dateHolderUl1.appendChild(dateHolderli7)
-    
+
                             dateHolderUl2.appendChild(dateHolderli8)
                             dateHolderUl2.appendChild(dateHolderli9)
                             dateHolderUl2.appendChild(dateHolderli10)
@@ -804,7 +932,7 @@ function calender() {
                             dateHolderUl2.appendChild(dateHolderli12)
                             dateHolderUl2.appendChild(dateHolderli13)
                             dateHolderUl2.appendChild(dateHolderli14)
-    
+
                             dateHolderUl3.appendChild(dateHolderli15)
                             dateHolderUl3.appendChild(dateHolderli16)
                             dateHolderUl3.appendChild(dateHolderli17)
@@ -812,7 +940,7 @@ function calender() {
                             dateHolderUl3.appendChild(dateHolderli19)
                             dateHolderUl3.appendChild(dateHolderli20)
                             dateHolderUl3.appendChild(dateHolderli21)
-    
+
                             dateHolderUl4.appendChild(dateHolderli22)
                             dateHolderUl4.appendChild(dateHolderli23)
                             dateHolderUl4.appendChild(dateHolderli24)
@@ -820,7 +948,7 @@ function calender() {
                             dateHolderUl4.appendChild(dateHolderli26)
                             dateHolderUl4.appendChild(dateHolderli27)
                             dateHolderUl4.appendChild(dateHolderli28)
-    
+
                             daysDiv.appendChild(dateHolderUl1)
                             daysDiv2.appendChild(dateHolderUl2)
                             daysDiv3.appendChild(dateHolderUl3)
@@ -836,7 +964,7 @@ function calender() {
                                 dateHolderli4.textContent = "00"
                                 dateHolderli5.textContent = "00"
                                 dateHolderli6.textContent = "00"
-    
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
                                 dateHolderli3.style.opacity = "0"
@@ -844,9 +972,9 @@ function calender() {
                                 dateHolderli5.style.opacity = "0"
                                 dateHolderli6.style.opacity = "0"
                             }
-    
+
                             dateHolderli7.textContent = "01"
-    
+
                             dateHolderli8.textContent = "02"
                             dateHolderli9.textContent = "03"
                             dateHolderli10.textContent = "04"
@@ -854,7 +982,7 @@ function calender() {
                             dateHolderli12.textContent = "06"
                             dateHolderli13.textContent = "07"
                             dateHolderli14.textContent = "08"
-    
+
                             dateHolderli15.textContent = "09"
                             dateHolderli16.textContent = "10"
                             dateHolderli17.textContent = "11"
@@ -862,7 +990,7 @@ function calender() {
                             dateHolderli19.textContent = "13"
                             dateHolderli20.textContent = "14"
                             dateHolderli21.textContent = "15"
-    
+
                             dateHolderli22.textContent = "16"
                             dateHolderli23.textContent = "17"
                             dateHolderli24.textContent = "18"
@@ -870,8 +998,8 @@ function calender() {
                             dateHolderli26.textContent = "20"
                             dateHolderli27.textContent = "21"
                             dateHolderli28.textContent = "22"
-    
-    
+
+
                             dateHolderUl1.appendChild(dateHolderli1)
                             dateHolderUl1.appendChild(dateHolderli2)
                             dateHolderUl1.appendChild(dateHolderli3)
@@ -879,7 +1007,7 @@ function calender() {
                             dateHolderUl1.appendChild(dateHolderli5)
                             dateHolderUl1.appendChild(dateHolderli6)
                             dateHolderUl1.appendChild(dateHolderli7)
-    
+
                             dateHolderUl2.appendChild(dateHolderli8)
                             dateHolderUl2.appendChild(dateHolderli9)
                             dateHolderUl2.appendChild(dateHolderli10)
@@ -887,7 +1015,7 @@ function calender() {
                             dateHolderUl2.appendChild(dateHolderli12)
                             dateHolderUl2.appendChild(dateHolderli13)
                             dateHolderUl2.appendChild(dateHolderli14)
-    
+
                             dateHolderUl3.appendChild(dateHolderli15)
                             dateHolderUl3.appendChild(dateHolderli16)
                             dateHolderUl3.appendChild(dateHolderli17)
@@ -895,7 +1023,7 @@ function calender() {
                             dateHolderUl3.appendChild(dateHolderli19)
                             dateHolderUl3.appendChild(dateHolderli20)
                             dateHolderUl3.appendChild(dateHolderli21)
-    
+
                             dateHolderUl4.appendChild(dateHolderli22)
                             dateHolderUl4.appendChild(dateHolderli23)
                             dateHolderUl4.appendChild(dateHolderli24)
@@ -903,7 +1031,7 @@ function calender() {
                             dateHolderUl4.appendChild(dateHolderli26)
                             dateHolderUl4.appendChild(dateHolderli27)
                             dateHolderUl4.appendChild(dateHolderli28)
-    
+
                             daysDiv.appendChild(dateHolderUl1)
                             daysDiv2.appendChild(dateHolderUl2)
                             daysDiv3.appendChild(dateHolderUl3)
@@ -1227,7 +1355,7 @@ function calender() {
                         dateHolderUl4.appendChild(dateHolderli27)
                         dateHolderUl4.appendChild(dateHolderli28)
 
-                        
+
 
                         daysDiv.appendChild(dateHolderUl1)
                         daysDiv2.appendChild(dateHolderUl2)
@@ -1243,16 +1371,16 @@ function calender() {
 
                             if (currentDay === 2) {
                                 dateHolderli1.textContent = "00"
-    
+
                                 dateHolderli1.style.opacity = "0"
-    
+
                                 dateHolderli2.textContent = "01"
                                 dateHolderli3.textContent = "02"
                                 dateHolderli4.textContent = "03"
                                 dateHolderli5.textContent = "04"
                                 dateHolderli6.textContent = "05"
                                 dateHolderli7.textContent = "06"
-    
+
                                 dateHolderli8.textContent = "07"
                                 dateHolderli9.textContent = "08"
                                 dateHolderli10.textContent = "09"
@@ -1260,7 +1388,7 @@ function calender() {
                                 dateHolderli12.textContent = "11"
                                 dateHolderli13.textContent = "12"
                                 dateHolderli14.textContent = "13"
-    
+
                                 dateHolderli15.textContent = "14"
                                 dateHolderli16.textContent = "15"
                                 dateHolderli17.textContent = "16"
@@ -1268,7 +1396,7 @@ function calender() {
                                 dateHolderli19.textContent = "18"
                                 dateHolderli20.textContent = "19"
                                 dateHolderli21.textContent = "20"
-    
+
                                 dateHolderli22.textContent = "21"
                                 dateHolderli23.textContent = "22"
                                 dateHolderli24.textContent = "23"
@@ -1276,21 +1404,21 @@ function calender() {
                                 dateHolderli26.textContent = "25"
                                 dateHolderli27.textContent = "26"
                                 dateHolderli28.textContent = "27"
-    
+
                             } else if (currentDay === 3) {
                                 dateHolderli1.textContent = "00"
                                 dateHolderli2.textContent = "00"
-    
-    
+
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
-    
+
                                 dateHolderli3.textContent = "01"
                                 dateHolderli4.textContent = "02"
                                 dateHolderli5.textContent = "03"
                                 dateHolderli6.textContent = "04"
                                 dateHolderli7.textContent = "05"
-    
+
                                 dateHolderli8.textContent = "06"
                                 dateHolderli9.textContent = "07"
                                 dateHolderli10.textContent = "08"
@@ -1298,7 +1426,7 @@ function calender() {
                                 dateHolderli12.textContent = "10"
                                 dateHolderli13.textContent = "11"
                                 dateHolderli14.textContent = "12"
-    
+
                                 dateHolderli15.textContent = "13"
                                 dateHolderli16.textContent = "14"
                                 dateHolderli17.textContent = "15"
@@ -1306,7 +1434,7 @@ function calender() {
                                 dateHolderli19.textContent = "17"
                                 dateHolderli20.textContent = "18"
                                 dateHolderli21.textContent = "19"
-    
+
                                 dateHolderli22.textContent = "20"
                                 dateHolderli23.textContent = "21"
                                 dateHolderli24.textContent = "22"
@@ -1314,22 +1442,22 @@ function calender() {
                                 dateHolderli26.textContent = "24"
                                 dateHolderli27.textContent = "25"
                                 dateHolderli28.textContent = "26"
-    
+
                             } else if (currentDay === 4) {
                                 dateHolderli1.textContent = "00"
                                 dateHolderli2.textContent = "00"
                                 dateHolderli3.textContent = "00"
-    
-    
+
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
                                 dateHolderli3.style.opacity = "0"
-    
+
                                 dateHolderli4.textContent = "01"
                                 dateHolderli5.textContent = "02"
                                 dateHolderli6.textContent = "03"
                                 dateHolderli7.textContent = "04"
-    
+
                                 dateHolderli8.textContent = "05"
                                 dateHolderli9.textContent = "06"
                                 dateHolderli10.textContent = "07"
@@ -1337,7 +1465,7 @@ function calender() {
                                 dateHolderli12.textContent = "09"
                                 dateHolderli13.textContent = "10"
                                 dateHolderli14.textContent = "11"
-    
+
                                 dateHolderli15.textContent = "12"
                                 dateHolderli16.textContent = "13"
                                 dateHolderli17.textContent = "14"
@@ -1345,7 +1473,7 @@ function calender() {
                                 dateHolderli19.textContent = "16"
                                 dateHolderli20.textContent = "17"
                                 dateHolderli21.textContent = "18"
-    
+
                                 dateHolderli22.textContent = "19"
                                 dateHolderli23.textContent = "20"
                                 dateHolderli24.textContent = "21"
@@ -1353,23 +1481,23 @@ function calender() {
                                 dateHolderli26.textContent = "23"
                                 dateHolderli27.textContent = "24"
                                 dateHolderli28.textContent = "25"
-    
+
                             } else if (currentDay === 5) {
                                 dateHolderli1.textContent = "00"
                                 dateHolderli2.textContent = "00"
                                 dateHolderli3.textContent = "00"
                                 dateHolderli4.textContent = "00"
-    
-    
+
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
                                 dateHolderli3.style.opacity = "0"
                                 dateHolderli4.style.opacity = "0"
-    
+
                                 dateHolderli5.textContent = "01"
                                 dateHolderli6.textContent = "02"
                                 dateHolderli7.textContent = "03"
-    
+
                                 dateHolderli8.textContent = "04"
                                 dateHolderli9.textContent = "05"
                                 dateHolderli10.textContent = "06"
@@ -1377,7 +1505,7 @@ function calender() {
                                 dateHolderli12.textContent = "08"
                                 dateHolderli13.textContent = "09"
                                 dateHolderli14.textContent = "10"
-    
+
                                 dateHolderli15.textContent = "11"
                                 dateHolderli16.textContent = "12"
                                 dateHolderli17.textContent = "13"
@@ -1385,7 +1513,7 @@ function calender() {
                                 dateHolderli19.textContent = "15"
                                 dateHolderli20.textContent = "16"
                                 dateHolderli21.textContent = "17"
-    
+
                                 dateHolderli22.textContent = "18"
                                 dateHolderli23.textContent = "19"
                                 dateHolderli24.textContent = "20"
@@ -1393,23 +1521,23 @@ function calender() {
                                 dateHolderli26.textContent = "22"
                                 dateHolderli27.textContent = "23"
                                 dateHolderli28.textContent = "24"
-    
+
                             } else if (currentDay === 6) {
                                 dateHolderli1.textContent = "00"
                                 dateHolderli2.textContent = "00"
                                 dateHolderli3.textContent = "00"
                                 dateHolderli4.textContent = "00"
                                 dateHolderli5.textContent = "00"
-    
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
                                 dateHolderli3.style.opacity = "0"
                                 dateHolderli4.style.opacity = "0"
                                 dateHolderli5.style.opacity = "0"
-    
+
                                 dateHolderli6.textContent = "01"
                                 dateHolderli7.textContent = "02"
-    
+
                                 dateHolderli8.textContent = "03"
                                 dateHolderli9.textContent = "04"
                                 dateHolderli10.textContent = "05"
@@ -1417,7 +1545,7 @@ function calender() {
                                 dateHolderli12.textContent = "07"
                                 dateHolderli13.textContent = "08"
                                 dateHolderli14.textContent = "09"
-    
+
                                 dateHolderli15.textContent = "10"
                                 dateHolderli16.textContent = "11"
                                 dateHolderli17.textContent = "12"
@@ -1425,7 +1553,7 @@ function calender() {
                                 dateHolderli19.textContent = "14"
                                 dateHolderli20.textContent = "15"
                                 dateHolderli21.textContent = "16"
-    
+
                                 dateHolderli22.textContent = "17"
                                 dateHolderli23.textContent = "18"
                                 dateHolderli24.textContent = "19"
@@ -1434,7 +1562,7 @@ function calender() {
                                 dateHolderli27.textContent = "22"
                                 dateHolderli28.textContent = "23"
                             }
-    
+
                             dateHolderUl1.appendChild(dateHolderli1)
                             dateHolderUl1.appendChild(dateHolderli2)
                             dateHolderUl1.appendChild(dateHolderli3)
@@ -1442,7 +1570,7 @@ function calender() {
                             dateHolderUl1.appendChild(dateHolderli5)
                             dateHolderUl1.appendChild(dateHolderli6)
                             dateHolderUl1.appendChild(dateHolderli7)
-    
+
                             dateHolderUl2.appendChild(dateHolderli8)
                             dateHolderUl2.appendChild(dateHolderli9)
                             dateHolderUl2.appendChild(dateHolderli10)
@@ -1450,7 +1578,7 @@ function calender() {
                             dateHolderUl2.appendChild(dateHolderli12)
                             dateHolderUl2.appendChild(dateHolderli13)
                             dateHolderUl2.appendChild(dateHolderli14)
-    
+
                             dateHolderUl3.appendChild(dateHolderli15)
                             dateHolderUl3.appendChild(dateHolderli16)
                             dateHolderUl3.appendChild(dateHolderli17)
@@ -1458,7 +1586,7 @@ function calender() {
                             dateHolderUl3.appendChild(dateHolderli19)
                             dateHolderUl3.appendChild(dateHolderli20)
                             dateHolderUl3.appendChild(dateHolderli21)
-    
+
                             dateHolderUl4.appendChild(dateHolderli22)
                             dateHolderUl4.appendChild(dateHolderli23)
                             dateHolderUl4.appendChild(dateHolderli24)
@@ -1466,14 +1594,14 @@ function calender() {
                             dateHolderUl4.appendChild(dateHolderli26)
                             dateHolderUl4.appendChild(dateHolderli27)
                             dateHolderUl4.appendChild(dateHolderli28)
-    
-                            
-    
+
+
+
                             daysDiv.appendChild(dateHolderUl1)
                             daysDiv2.appendChild(dateHolderUl2)
                             daysDiv3.appendChild(dateHolderUl3)
                             daysDiv4.appendChild(dateHolderUl4)
-    
+
                         }
                     } else {
                         let currentDay = fullDate.getDay()
@@ -1482,16 +1610,16 @@ function calender() {
 
                             if (currentDay === 2) {
                                 dateHolderli1.textContent = "00"
-    
+
                                 dateHolderli1.style.opacity = "0"
-    
+
                                 dateHolderli2.textContent = "01"
                                 dateHolderli3.textContent = "02"
                                 dateHolderli4.textContent = "03"
                                 dateHolderli5.textContent = "04"
                                 dateHolderli6.textContent = "05"
                                 dateHolderli7.textContent = "06"
-    
+
                                 dateHolderli8.textContent = "07"
                                 dateHolderli9.textContent = "08"
                                 dateHolderli10.textContent = "09"
@@ -1499,7 +1627,7 @@ function calender() {
                                 dateHolderli12.textContent = "11"
                                 dateHolderli13.textContent = "12"
                                 dateHolderli14.textContent = "13"
-    
+
                                 dateHolderli15.textContent = "14"
                                 dateHolderli16.textContent = "15"
                                 dateHolderli17.textContent = "16"
@@ -1507,7 +1635,7 @@ function calender() {
                                 dateHolderli19.textContent = "18"
                                 dateHolderli20.textContent = "19"
                                 dateHolderli21.textContent = "20"
-    
+
                                 dateHolderli22.textContent = "21"
                                 dateHolderli23.textContent = "22"
                                 dateHolderli24.textContent = "23"
@@ -1515,21 +1643,21 @@ function calender() {
                                 dateHolderli26.textContent = "25"
                                 dateHolderli27.textContent = "26"
                                 dateHolderli28.textContent = "27"
-    
+
                             } else if (currentDay === 3) {
                                 dateHolderli1.textContent = "00"
                                 dateHolderli2.textContent = "00"
-    
-    
+
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
-    
+
                                 dateHolderli3.textContent = "01"
                                 dateHolderli4.textContent = "02"
                                 dateHolderli5.textContent = "03"
                                 dateHolderli6.textContent = "04"
                                 dateHolderli7.textContent = "05"
-    
+
                                 dateHolderli8.textContent = "06"
                                 dateHolderli9.textContent = "07"
                                 dateHolderli10.textContent = "08"
@@ -1537,7 +1665,7 @@ function calender() {
                                 dateHolderli12.textContent = "10"
                                 dateHolderli13.textContent = "11"
                                 dateHolderli14.textContent = "12"
-    
+
                                 dateHolderli15.textContent = "13"
                                 dateHolderli16.textContent = "14"
                                 dateHolderli17.textContent = "15"
@@ -1545,7 +1673,7 @@ function calender() {
                                 dateHolderli19.textContent = "17"
                                 dateHolderli20.textContent = "18"
                                 dateHolderli21.textContent = "19"
-    
+
                                 dateHolderli22.textContent = "20"
                                 dateHolderli23.textContent = "21"
                                 dateHolderli24.textContent = "22"
@@ -1553,22 +1681,22 @@ function calender() {
                                 dateHolderli26.textContent = "24"
                                 dateHolderli27.textContent = "25"
                                 dateHolderli28.textContent = "26"
-    
+
                             } else if (currentDay === 4) {
                                 dateHolderli1.textContent = "00"
                                 dateHolderli2.textContent = "00"
                                 dateHolderli3.textContent = "00"
-    
-    
+
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
                                 dateHolderli3.style.opacity = "0"
-    
+
                                 dateHolderli4.textContent = "01"
                                 dateHolderli5.textContent = "02"
                                 dateHolderli6.textContent = "03"
                                 dateHolderli7.textContent = "04"
-    
+
                                 dateHolderli8.textContent = "05"
                                 dateHolderli9.textContent = "06"
                                 dateHolderli10.textContent = "07"
@@ -1576,7 +1704,7 @@ function calender() {
                                 dateHolderli12.textContent = "09"
                                 dateHolderli13.textContent = "10"
                                 dateHolderli14.textContent = "11"
-    
+
                                 dateHolderli15.textContent = "12"
                                 dateHolderli16.textContent = "13"
                                 dateHolderli17.textContent = "14"
@@ -1584,7 +1712,7 @@ function calender() {
                                 dateHolderli19.textContent = "16"
                                 dateHolderli20.textContent = "17"
                                 dateHolderli21.textContent = "18"
-    
+
                                 dateHolderli22.textContent = "19"
                                 dateHolderli23.textContent = "20"
                                 dateHolderli24.textContent = "21"
@@ -1592,23 +1720,23 @@ function calender() {
                                 dateHolderli26.textContent = "23"
                                 dateHolderli27.textContent = "24"
                                 dateHolderli28.textContent = "25"
-    
+
                             } else if (currentDay === 5) {
                                 dateHolderli1.textContent = "00"
                                 dateHolderli2.textContent = "00"
                                 dateHolderli3.textContent = "00"
                                 dateHolderli4.textContent = "00"
-    
-    
+
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
                                 dateHolderli3.style.opacity = "0"
                                 dateHolderli4.style.opacity = "0"
-    
+
                                 dateHolderli5.textContent = "01"
                                 dateHolderli6.textContent = "02"
                                 dateHolderli7.textContent = "03"
-    
+
                                 dateHolderli8.textContent = "04"
                                 dateHolderli9.textContent = "05"
                                 dateHolderli10.textContent = "06"
@@ -1616,7 +1744,7 @@ function calender() {
                                 dateHolderli12.textContent = "08"
                                 dateHolderli13.textContent = "09"
                                 dateHolderli14.textContent = "10"
-    
+
                                 dateHolderli15.textContent = "11"
                                 dateHolderli16.textContent = "12"
                                 dateHolderli17.textContent = "13"
@@ -1624,7 +1752,7 @@ function calender() {
                                 dateHolderli19.textContent = "15"
                                 dateHolderli20.textContent = "16"
                                 dateHolderli21.textContent = "17"
-    
+
                                 dateHolderli22.textContent = "18"
                                 dateHolderli23.textContent = "19"
                                 dateHolderli24.textContent = "20"
@@ -1632,23 +1760,23 @@ function calender() {
                                 dateHolderli26.textContent = "22"
                                 dateHolderli27.textContent = "23"
                                 dateHolderli28.textContent = "24"
-    
+
                             } else if (currentDay === 6) {
                                 dateHolderli1.textContent = "00"
                                 dateHolderli2.textContent = "00"
                                 dateHolderli3.textContent = "00"
                                 dateHolderli4.textContent = "00"
                                 dateHolderli5.textContent = "00"
-    
+
                                 dateHolderli1.style.opacity = "0"
                                 dateHolderli2.style.opacity = "0"
                                 dateHolderli3.style.opacity = "0"
                                 dateHolderli4.style.opacity = "0"
                                 dateHolderli5.style.opacity = "0"
-    
+
                                 dateHolderli6.textContent = "01"
                                 dateHolderli7.textContent = "02"
-    
+
                                 dateHolderli8.textContent = "03"
                                 dateHolderli9.textContent = "04"
                                 dateHolderli10.textContent = "05"
@@ -1656,7 +1784,7 @@ function calender() {
                                 dateHolderli12.textContent = "07"
                                 dateHolderli13.textContent = "08"
                                 dateHolderli14.textContent = "09"
-    
+
                                 dateHolderli15.textContent = "10"
                                 dateHolderli16.textContent = "11"
                                 dateHolderli17.textContent = "12"
@@ -1664,7 +1792,7 @@ function calender() {
                                 dateHolderli19.textContent = "14"
                                 dateHolderli20.textContent = "15"
                                 dateHolderli21.textContent = "16"
-    
+
                                 dateHolderli22.textContent = "17"
                                 dateHolderli23.textContent = "18"
                                 dateHolderli24.textContent = "19"
@@ -1673,7 +1801,7 @@ function calender() {
                                 dateHolderli27.textContent = "22"
                                 dateHolderli28.textContent = "23"
                             }
-    
+
                             dateHolderUl1.appendChild(dateHolderli1)
                             dateHolderUl1.appendChild(dateHolderli2)
                             dateHolderUl1.appendChild(dateHolderli3)
@@ -1681,7 +1809,7 @@ function calender() {
                             dateHolderUl1.appendChild(dateHolderli5)
                             dateHolderUl1.appendChild(dateHolderli6)
                             dateHolderUl1.appendChild(dateHolderli7)
-    
+
                             dateHolderUl2.appendChild(dateHolderli8)
                             dateHolderUl2.appendChild(dateHolderli9)
                             dateHolderUl2.appendChild(dateHolderli10)
@@ -1689,7 +1817,7 @@ function calender() {
                             dateHolderUl2.appendChild(dateHolderli12)
                             dateHolderUl2.appendChild(dateHolderli13)
                             dateHolderUl2.appendChild(dateHolderli14)
-    
+
                             dateHolderUl3.appendChild(dateHolderli15)
                             dateHolderUl3.appendChild(dateHolderli16)
                             dateHolderUl3.appendChild(dateHolderli17)
@@ -1697,7 +1825,7 @@ function calender() {
                             dateHolderUl3.appendChild(dateHolderli19)
                             dateHolderUl3.appendChild(dateHolderli20)
                             dateHolderUl3.appendChild(dateHolderli21)
-    
+
                             dateHolderUl4.appendChild(dateHolderli22)
                             dateHolderUl4.appendChild(dateHolderli23)
                             dateHolderUl4.appendChild(dateHolderli24)
@@ -1705,14 +1833,14 @@ function calender() {
                             dateHolderUl4.appendChild(dateHolderli26)
                             dateHolderUl4.appendChild(dateHolderli27)
                             dateHolderUl4.appendChild(dateHolderli28)
-    
-                            
-    
+
+
+
                             daysDiv.appendChild(dateHolderUl1)
                             daysDiv2.appendChild(dateHolderUl2)
                             daysDiv3.appendChild(dateHolderUl3)
                             daysDiv4.appendChild(dateHolderUl4)
-    
+
                         }
                     }
                 } else {
@@ -1946,7 +2074,7 @@ function calender() {
                         dateHolderUl4.appendChild(dateHolderli27)
                         dateHolderUl4.appendChild(dateHolderli28)
 
-                        
+
 
                         daysDiv.appendChild(dateHolderUl1)
                         daysDiv2.appendChild(dateHolderUl2)
