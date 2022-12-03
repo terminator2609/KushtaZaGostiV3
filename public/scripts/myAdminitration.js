@@ -256,10 +256,20 @@ function calender() {
 
     let counter = 0
     let counter2 = 1
+    let counter3 = 0
+    let returnCounter = 0
 
     window.addEventListener("scroll", (e) => {
 
+        let counterSum = counter / 500
 
+        counterSum = Number(counterSum.toFixed(0))
+
+
+        if(counterSum > returnCounter) {
+            counter3 = 0
+        }
+       
         if (categoriesAddClouds[3].style.display === "flex") {
 
             if (counter === 0) {
@@ -272,7 +282,7 @@ function calender() {
 
                 dateLogic()
 
-            } else if (counter % 500 === 0 && counter !== 0) {
+            } else if ( counterSum !== 0 && counter3 === 0) {
 
                 counter2++
                 
@@ -285,11 +295,13 @@ function calender() {
                 calenderArticle.style.height = `${1000 * counter2}vh`
 
                 dateLogic()
+
+                counter3++
             }
 
             counter++
 
-
+            returnCounter = counterSum
         }
 
 
