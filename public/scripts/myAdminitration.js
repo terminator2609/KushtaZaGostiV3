@@ -251,7 +251,6 @@ function calender() {
 
     dateLogic()
 
-    let counter = 0
     let counter2 = 1
 
     window.addEventListener("scroll", (e) => {
@@ -259,34 +258,17 @@ function calender() {
 
         if (categoriesAddClouds[3].style.display === "flex") {
 
-            if (counter === 0) {
-                fullDate.setMonth(0)
-                fullDate.setFullYear(currentFullYear + 1)
 
-                currentMonth = fullDate.getMonth()
-                currentFullYear = fullDate.getFullYear()
-                calenderArticle.style.height = "1000vh"
+            fullDate.setMonth(0)
+            fullDate.setFullYear(currentFullYear + 1)
 
-                dateLogic()
+            currentMonth = fullDate.getMonth()
+            currentFullYear = fullDate.getFullYear()
+            calenderArticle.style.height = `${1000 * counter2}vh`
 
-            } else {
+            dateLogic()
 
-                counter2++
-
-                fullDate.setMonth(0)
-                fullDate.setFullYear(currentFullYear + 1)
-
-                currentMonth = fullDate.getMonth()
-                currentFullYear = fullDate.getFullYear()
-
-                calenderArticle.style.height = `${1000 * counter2}vh`
-
-                dateLogic()
-            }
-
-            counter++
-
-
+            counter2++
         }
 
 
