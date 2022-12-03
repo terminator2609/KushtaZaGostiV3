@@ -810,7 +810,7 @@ section.clouds article.calender {
     top: 2%;
     background-color: #27251E;
     width: 100%;
-    height: 100;
+    height: 500vh;
     z-index: 1001;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;

@@ -255,7 +255,6 @@ function calender() {
 
     window.addEventListener("scroll", (e) => {
 
-        console.log(window.scrollY)
 
         if (categoriesAddClouds[3].style.display === "flex") {
 
@@ -268,7 +267,7 @@ function calender() {
 
                 dateLogic()
 
-            } else if (window.scrollY % 2000 === 0 && window.scrollY !== 0) {
+            } else if (counter % 700 === 0 && counter !== 0) {
 
                 fullDate.setMonth(0)
                 fullDate.setFullYear(currentFullYear + 1)
