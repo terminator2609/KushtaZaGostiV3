@@ -231,6 +231,9 @@ for (let i = 0; i < cataloguesMenuButton.length; i++) {
         categoriesAddClouds[i].style.display = "flex"
 
 
+        window.scrollTo(top)
+
+
     })
 }
 
