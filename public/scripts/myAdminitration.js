@@ -252,6 +252,7 @@ function calender() {
     dateLogic()
 
     let counter = 0
+    let counter2 = 1
 
     window.addEventListener("scroll", (e) => {
 
@@ -264,16 +265,21 @@ function calender() {
 
                 currentMonth = fullDate.getMonth()
                 currentFullYear = fullDate.getFullYear()
+                calenderArticle.style.height = "1000vh"
 
                 dateLogic()
 
-            } else if (counter % 700 === 0 && counter !== 0) {
+            } else {
+
+                counter2++
 
                 fullDate.setMonth(0)
                 fullDate.setFullYear(currentFullYear + 1)
 
                 currentMonth = fullDate.getMonth()
                 currentFullYear = fullDate.getFullYear()
+
+                calenderArticle.style.height = `${1000 * counter2}vh`
 
                 dateLogic()
             }
