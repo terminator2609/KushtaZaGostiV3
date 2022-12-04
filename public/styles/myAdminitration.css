@@ -416,6 +416,10 @@ section.categories article:nth-of-type(5)>div:nth-of-type(1) {
     align-items: center;
 }
 
+section.categories article:nth-of-type(5)>div:nth-of-type(1)::-webkit-scrollbar {
+    display: none;
+}
+
 section.categories article:nth-of-type(5)>div:nth-of-type(1) div {
     position: relative;
     padding-top: 20px;
@@ -789,7 +793,7 @@ section.clouds article.subscribe-plan svg {
 
 section.clouds article.subscribe-plan h1 {
     align-self: center;
-    font-size: 170px;
+    font-size: 160px;
     font-weight: 100;
     color: #35332e;
 }
@@ -797,7 +801,7 @@ section.clouds article.subscribe-plan h1 {
 section.clouds article.subscribe-plan h2 {
     align-self: center;
     padding-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: #35332e;
 }
 
@@ -924,6 +928,10 @@ section.clouds article.edit-info>div:nth-of-type(2) ul {
     align-items: center;
     font-size: 16px;
     color: #35332e;
+}
+
+section.clouds article.edit-info>div:nth-of-type(2) ul::-webkit-scrollbar {
+    display: none;
 }
 
 section.clouds article.edit-info>div:nth-of-type(2) ul li {
