@@ -927,8 +927,12 @@ section.clouds article.edit-info>div:nth-of-type(2) ul {
 }
 
 section.clouds article.edit-info>div:nth-of-type(2) ul li {
-    border-bottom: 2px solid rgb(53, 51, 46);
+    /* border-bottom: 2px solid rgb(53, 51, 46); */
     padding-bottom: 10px;
+}
+
+section.clouds article.edit-info>div:nth-of-type(2) ul li:nth-of-type(1) {
+    border-bottom: 2px solid rgb(53, 51, 46);
 }
 
 section.clouds article.edit-info>div:nth-of-type(2) ul li:nth-of-type(1),
@@ -938,7 +942,7 @@ section.clouds article.edit-info>div:nth-of-type(2) ul li:nth-of-type(4) {
 }
 
 section.clouds article.edit-info>div:nth-of-type(2) ul li:nth-of-type(1n + 2) p {
-    opacity: 0.5;
+    color: rgb(53, 51, 46, 0.5);
 }
 
 section.clouds article.edit-info>div:nth-of-type(2) ul li:nth-of-type(5) {
@@ -950,7 +954,7 @@ section.clouds article.edit-info>div:nth-of-type(2) ul li:nth-of-type(5) {
 }
 
 section.clouds article.edit-info>div:nth-of-type(2) ul li:nth-of-type(5) div {
-    border-bottom: 2px solid;
+    border: none;
     position: absolute;
     width: 100%;
     top: 63%;

@@ -266,10 +266,10 @@ function calender() {
         counterSum = Number(counterSum.toFixed(0))
 
 
-        if(counterSum > returnCounter) {
+        if (counterSum > returnCounter) {
             counter3 = 0
         }
-       
+
         if (categoriesAddClouds[3].style.display === "flex") {
 
             if (counter === 0) {
@@ -282,10 +282,10 @@ function calender() {
 
                 dateLogic()
 
-            } else if ( counterSum !== 0 && counter3 === 0) {
+            } else if (counterSum !== 0 && counter3 === 0) {
 
                 counter2++
-                
+
                 fullDate.setMonth(0)
                 fullDate.setFullYear(currentFullYear + 1)
 
@@ -3041,6 +3041,81 @@ function calender() {
         }
     }
 
+
+}
+
+let subcategories = document.getElementsByClassName("sub-categories")
+let subcategories5 = document.getElementsByClassName("sub-categories-5")
+let subtitleP = document.getElementsByClassName("sub-title-p")
+
+
+
+
+for (let i = 0; i < subcategories.length; i++) {
+
+    subcategories[i].addEventListener("click", (e) => {
+
+        e.preventDefault()
+
+        if (i === 0) {
+
+            // subcategories.forEach(a => {
+            //     a.style.border = "none"
+            // });
+
+            for (let index of subcategories) {
+                index.style.border = "none"
+            }
+
+            for (let index of subtitleP) {
+                index.style.color = "rgb(53, 51, 46, 0.5)"
+            }
+
+            // subtitleP.forEach(a => {
+            //     a.style.color = "rgb(53, 51, 46, 0.5)"
+            // });
+
+            subcategories5[0].style.border = "none"
+
+            subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
+            subtitleP[i].style.color = "rgb(53, 51, 46, 1)"
+            subtitleP[i + 1].style.color = "rgb(53, 51, 46, 1)"
+
+
+        } else if (i > 0 && i <= 6) {
+
+            for (let index of subcategories) {
+                index.style.border = "none"
+            }
+
+            for (let index of subtitleP) {
+                index.style.color = "rgb(53, 51, 46, 0.5)"
+            }
+
+
+            if (i === 4) {
+                subtitleP[i + 2].style.color = "rgb(53, 51, 46, 1)"
+                subcategories5[0].style.borderBottom = "2px solid rgb(53, 51, 46)"
+            } else if (i === 3) {
+                subtitleP[i + 1].style.color = "rgb(53, 51, 46, 1)"
+                subtitleP[i + 2].style.color = "rgb(53, 51, 46, 1)"
+                subcategories5[0].style.border = "none"
+                subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
+            } else if (i > 3) {
+                subtitleP[i + 2].style.color = "rgb(53, 51, 46, 1)"
+                subcategories5[0].style.border = "none"
+                subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
+            } else {
+                subtitleP[i + 1].style.color = "rgb(53, 51, 46, 1)"
+                subcategories5[0].style.border = "none"
+                subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
+            }
+
+
+
+
+        }
+    })
 
 }
 
