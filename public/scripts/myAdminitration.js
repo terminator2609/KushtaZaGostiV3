@@ -3122,5 +3122,5 @@ calender()
 
 document.getElementById("name").value = "Деребеевата къща"
 document.getElementById("owner").value = "Велина Александрова"
-document.getElementById("phoneNumber").value = "0876728018"
+document.getElementById("phone").value = "0876728018"
 
