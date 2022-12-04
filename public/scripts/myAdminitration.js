@@ -3111,15 +3111,16 @@ for (let i = 0; i < subcategories.length; i++) {
                 subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
             }
 
-
-
-
         }
     })
 
 }
 
 
-
 calender()
+
+
+document.getElementById("name").value = "Деребеевата къща"
+document.getElementById("owner").value = "Велина Александрова"
+document.getElementById("phoneNumber").value = "0876728018"
 
