@@ -3071,7 +3071,7 @@ for (let i = 0; i < subcategories.length; i++) {
                 index.style.color = "rgb(53, 51, 46, 0.5)"
             }
 
-            for(let index of editInfoSection) {
+            for (let index of editInfoSection) {
                 index.style.display = "none"
             }
 
@@ -3097,7 +3097,7 @@ for (let i = 0; i < subcategories.length; i++) {
                 index.style.color = "rgb(53, 51, 46, 0.5)"
             }
 
-            for(let index of editInfoSection) {
+            for (let index of editInfoSection) {
                 index.style.display = "none"
             }
 
@@ -3134,4 +3134,21 @@ calender()
 document.getElementById("name").value = "Деребеевата къща"
 document.getElementById("owner").value = "Велина Александрова"
 document.getElementById("phone").value = "0876728018"
+
+
+document.getElementById("review-area").textContent = "Това най-доброто място за почивка в област Варна. Същото така е 100% в съотношени цена и качество."
+document.getElementById("review-area").rows = Number((document.getElementById("review-area").textContent.length / 10).toFixed(0))
+
+// document.getElementById("review-area").addEventListener("change", (e) => {
+//     e.preventDefault()
+
+//     console.log("checked")
+
+
+// })
+
+
+function textSize() {
+    document.getElementById("review-area").rows = Number((document.getElementById("review-area").textContent.length / 10).toFixed(0))
+}
 
