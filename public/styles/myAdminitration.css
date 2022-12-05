@@ -997,7 +997,7 @@ section.clouds article.edit-info>div:nth-of-type(3).main-info>div:nth-of-type(1)
 }
 
 section.clouds article.edit-info>div:nth-of-type(3).main-info>div:nth-of-type(1) img {
-    width: 8%;
+    width: 5%;
     padding-right: 15px;
 }
 
@@ -1029,7 +1029,7 @@ section.clouds article.edit-info>div:nth-of-type(3).main-info>div:nth-of-type(2)
     border: none;
     font-family: 'Montserrat';
     color: #35332e;
-    font-size: 18px;
+    font-size: 20px;
     width: 90%;
 }
 
@@ -1052,6 +1052,26 @@ section.clouds article.edit-info>div:nth-of-type(3).main-info>div:nth-of-type(3)
     color: #ffffff;
     text-transform: uppercase;
     font-size: 12px;
+}
+
+
+
+section.clouds article.edit-info>div:nth-of-type(4).review {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 90px;
+}
+
+section.clouds article.edit-info>div:nth-of-type(4).review>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section.clouds article.edit-info>div:nth-of-type(4).review>div:nth-of-type(1) img {
+    width: 5%;
+    padding-right: 15px;
 }
 
 

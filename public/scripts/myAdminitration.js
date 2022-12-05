@@ -3047,7 +3047,7 @@ function calender() {
 let subcategories = document.getElementsByClassName("sub-categories")
 let subcategories5 = document.getElementsByClassName("sub-categories-5")
 let subtitleP = document.getElementsByClassName("sub-title-p")
-
+let editInfoSection = document.getElementsByClassName("edit-info-section")
 
 
 
@@ -3071,6 +3071,10 @@ for (let i = 0; i < subcategories.length; i++) {
                 index.style.color = "rgb(53, 51, 46, 0.5)"
             }
 
+            for(let index of editInfoSection) {
+                index.style.display = "none"
+            }
+
             // subtitleP.forEach(a => {
             //     a.style.color = "rgb(53, 51, 46, 0.5)"
             // });
@@ -3080,6 +3084,7 @@ for (let i = 0; i < subcategories.length; i++) {
             subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
             subtitleP[i].style.color = "rgb(53, 51, 46, 1)"
             subtitleP[i + 1].style.color = "rgb(53, 51, 46, 1)"
+            editInfoSection[i].style.display = "flex"
 
 
         } else if (i > 0 && i <= 6) {
@@ -3090,6 +3095,10 @@ for (let i = 0; i < subcategories.length; i++) {
 
             for (let index of subtitleP) {
                 index.style.color = "rgb(53, 51, 46, 0.5)"
+            }
+
+            for(let index of editInfoSection) {
+                index.style.display = "none"
             }
 
 
@@ -3110,6 +3119,8 @@ for (let i = 0; i < subcategories.length; i++) {
                 subcategories5[0].style.border = "none"
                 subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
             }
+
+            editInfoSection[i].style.display = "flex"
 
         }
     })
