@@ -3045,7 +3045,6 @@ function calender() {
 }
 
 let subcategories = document.getElementsByClassName("sub-categories")
-let subcategories5 = document.getElementsByClassName("sub-categories-5")
 let subtitleP = document.getElementsByClassName("sub-title-p")
 let editInfoSection = document.getElementsByClassName("edit-info-section")
 
@@ -3079,7 +3078,6 @@ for (let i = 0; i < subcategories.length; i++) {
             //     a.style.color = "rgb(53, 51, 46, 0.5)"
             // });
 
-            subcategories5[0].style.border = "none"
 
             subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
             subtitleP[i].style.color = "rgb(53, 51, 46, 1)"
@@ -3102,21 +3100,13 @@ for (let i = 0; i < subcategories.length; i++) {
             }
 
 
-            if (i === 4) {
-                subtitleP[i + 2].style.color = "rgb(53, 51, 46, 1)"
-                subcategories5[0].style.borderBottom = "2px solid rgb(53, 51, 46)"
-            } else if (i === 3) {
+
+            if (i === 3) {
                 subtitleP[i + 1].style.color = "rgb(53, 51, 46, 1)"
                 subtitleP[i + 2].style.color = "rgb(53, 51, 46, 1)"
-                subcategories5[0].style.border = "none"
-                subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
-            } else if (i > 3) {
-                subtitleP[i + 2].style.color = "rgb(53, 51, 46, 1)"
-                subcategories5[0].style.border = "none"
                 subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
             } else {
                 subtitleP[i + 1].style.color = "rgb(53, 51, 46, 1)"
-                subcategories5[0].style.border = "none"
                 subcategories[i].style.borderBottom = "2px solid rgb(53, 51, 46)"
             }
 
@@ -3139,16 +3129,72 @@ document.getElementById("phone").value = "0876728018"
 document.getElementById("review-area").textContent = "Това най-доброто място за почивка в област Варна. Същото така е 100% в съотношени цена и качество."
 document.getElementById("review-area").rows = Number((document.getElementById("review-area").textContent.length / 10).toFixed(0))
 
-// document.getElementById("review-area").addEventListener("change", (e) => {
-//     e.preventDefault()
-
-//     console.log("checked")
-
-
-// })
-
 
 function textSize() {
     document.getElementById("review-area").rows = Number((document.getElementById("review-area").textContent.length / 10).toFixed(0))
 }
 
+document.getElementById("priceForNight").value = "800"
+
+let checkedOptionP = document.getElementsByClassName("checked-option-p")
+let checkedOption = document.getElementsByClassName("checked-option")
+let inputRadio = document.getElementsByClassName("input-radio")
+
+let checkedOptionP2 = document.getElementsByClassName("checked-option-p-2")
+let checkedOption2 = document.getElementsByClassName("checked-option-2")
+let inputRadio2 = document.getElementsByClassName("input-radio-2")
+
+
+for (let i = 0; i < checkedOptionP.length; i++) {
+
+    checkedOptionP[i].addEventListener("click", (e) => {
+        e.preventDefault()
+
+        for (let index of checkedOptionP) {
+            index.style.backgroundColor = ""
+        }
+
+        for (let index of checkedOption) {
+            index.style.visibility = ""
+        }
+
+        for (let index of inputRadio) {
+            index.checked = false
+        }
+
+        checkedOptionP[i].style.backgroundColor = "#8E8C8C"
+        checkedOption[i].style.visibility = "visible"
+        inputRadio[i].checked = true
+    })
+}
+
+for (let i = 0; i < checkedOptionP2.length; i++) {
+
+    checkedOptionP2[i].addEventListener("click", (e) => {
+        e.preventDefault()
+
+        for (let index of checkedOptionP2) {
+            index.style.backgroundColor = ""
+        }
+
+        for (let index of checkedOption2) {
+            index.style.visibility = ""
+        }
+
+        for (let index of inputRadio2) {
+            index.checked = false
+        }
+
+        checkedOptionP2[i].style.backgroundColor = "#8E8C8C"
+        checkedOption2[i].style.visibility = "visible"
+        inputRadio2[i].checked = true
+    })
+}
+
+checkedOptionP[0].style.backgroundColor = "#8E8C8C"
+checkedOption[0].style.visibility = "visible"
+inputRadio[0].checked = true
+
+checkedOptionP2[0].style.backgroundColor = "#8E8C8C"
+checkedOption2[0].style.visibility = "visible"
+inputRadio2[0].checked = true

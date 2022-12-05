@@ -572,7 +572,7 @@
                             <p class="sub-title-p">Social</p>
                             <p class="sub-title-p">media</p>
                         </li>
-                        <li class="sub-categories">
+                        <!-- <li class="sub-categories">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
                                 viewBox="0 0 48 48">
                                 <path fill="#48b564"
@@ -599,7 +599,7 @@
                         </li>
                         <li class="sub-categories">
                             <p class="sub-title-p">Gallery</p>
-                        </li>
+                        </li> -->
                     </ul>
 
                     <div class="line-categories"></div>
@@ -661,28 +661,55 @@
 
                 </div>
 
-                <div class="price categories-add-clouds">
+                <div class="price edit-info-section">
                     <form action="#" method="#">
                         <div>
                             <label for="priceForNight">Цена за нощувка</label>
-                            <input type="input" id="priceForNight" name="priceForNight">
+                            <input type="number" id="priceForNight" name="priceForNight">
                         </div>
+
                         <div>
                             <div>
                                 <label for="BGNCurrency">BGN</label>
-                                <input type="radio" name="BGNCurrency" id="BGNCurrency">
+                                <input type="radio" name="BGNCurrency" id="BGNCurrency" class="input-radio">
+                                <p class="checked-option-p"><i class="checked-option fa-solid fa-check"></i></p>
                             </div>
                             <div>
-                                <label for=""></label>
-                                <input type="radio">
+                                <label for="EURCurrency">EUR</label>
+                                <input type="radio" name="EURCurrency" id="EURCurrency" class="input-radio">
+                                <p class="checked-option-p"><i class="checked-option fa-solid fa-check"></i></p>
                             </div>
                             <div>
-                                <label for=""></label>
-                                <input type="radio">
+                                <label for="USDCurrency">USD</label>
+                                <input type="radio" name="USDCurrency" id="USDCurrency" class="input-radio">
+                                <p class="checked-option-p"><i class="checked-option fa-solid fa-check"></i></p>
                             </div>
                         </div>
-                        <div></div>
+
+                        <div>
+                            <div>
+                                <label for="fullHouse">Целият имот</label>
+                                <input type="radio" name="fullHouse" id="fullHouse" class="input-radio-2">
+                                <p class="checked-option-p-2"><i class="checked-option-2 fa-solid fa-check"></i></p>
+                            </div>
+                            <div>
+                                <label for="room">Стаи</label>
+                                <input type="radio" name="rooms" id="rooms" class="input-radio-2">
+                                <p class="checked-option-p-2"><i class="checked-option-2 fa-solid fa-check"></i></p>
+                            </div>
+                            <div>
+                                <label for="fullHouseRoom">Целият имот/ стаи</label>
+                                <input type="radio" name="fullHouseRooms" id="fullHouseRooms" class="input-radio-2">
+                                <p class="checked-option-p-2"><i class="checked-option-2 fa-solid fa-check"></i></p>
+                            </div>
+                        </div>
                     </form>
+
+                    <div>
+                        <button>
+                            <a href="">Запази</a>
+                        </button>
+                    </div>
                 </div>
 
             </article>
