@@ -3198,3 +3198,6 @@ inputRadio[0].checked = true
 checkedOptionP2[0].style.backgroundColor = "#8E8C8C"
 checkedOption2[0].style.visibility = "visible"
 inputRadio2[0].checked = true
+
+
+document.getElementById("facebookLink").value = "https://www.youtube.com/"
