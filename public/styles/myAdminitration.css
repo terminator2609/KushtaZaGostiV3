@@ -1133,6 +1133,7 @@ section.clouds article.edit-info>div:nth-of-type(5).price {
     width: 90%;
     margin-left: 30px;
     gap: 90px;
+    display: none;
 }
 
 section.clouds article.edit-info>div:nth-of-type(5).price form {
