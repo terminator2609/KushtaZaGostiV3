@@ -1034,6 +1034,12 @@ section.clouds article.edit-info>div:nth-of-type(3).main-info>div:nth-of-type(2)
     width: 90%;
 }
 
+section.clouds article.edit-info>div:nth-of-type(3).main-info>div:nth-of-type(2) form div input::placeholder {
+    color: rgb(53, 51, 46, 0.5);
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
 section.clouds article.edit-info>div:nth-of-type(3).main-info>div:nth-of-type(2) form div input:focus {
     outline: none !important;
 }
@@ -1105,6 +1111,12 @@ section.clouds article.edit-info>div:nth-of-type(4).review>div:nth-of-type(2) fo
     font-size: 15px;
 }
 
+section.clouds article.edit-info>div:nth-of-type(4).review>div:nth-of-type(2) form textarea::placeholder {
+    color: rgb(53, 51, 46, 0.5);
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
 section.clouds article.edit-info>div:nth-of-type(4).review>div:nth-of-type(2) form textarea:focus {
     outline: none !important;
 }
@@ -1163,6 +1175,12 @@ section.clouds article.edit-info>div:nth-of-type(5).price form>div:nth-of-type(1
     color: #35332e;
     font-size: 20px;
     width: 90%;
+}
+
+section.clouds article.edit-info>div:nth-of-type(5).price form>div:nth-of-type(1) input::placeholder {
+    color: rgb(53, 51, 46, 0.5);
+    font-family: Montserrat;
+    font-size: 20px;
 }
 
 section.clouds article.edit-info>div:nth-of-type(5).price form>div:nth-of-type(1n + 2) {
