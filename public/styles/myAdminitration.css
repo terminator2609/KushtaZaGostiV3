@@ -1222,6 +1222,7 @@ section.clouds article.edit-info>div:nth-of-type(6).social-media {
     flex-direction: column;
     margin-top: 80px;
     width: 100%;
+    display: none;
 }
 
 section.clouds article.edit-info>div:nth-of-type(6).social-media form {
