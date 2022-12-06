@@ -1218,6 +1218,23 @@ section.clouds article.edit-info>div:nth-of-type(5).price>div:nth-of-type(1) but
 
 
 
+section.clouds article.edit-info>div:nth-of-type(6).social-media {
+    flex-direction: column;
+    margin-top: 80px;
+    width: 100%;
+}
+
+section.clouds article.edit-info>div:nth-of-type(6).social-media form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 20px;
+    width: 80%;
+}
+
+
+
+
 /* ----------------------------footer-------------------------------------- */
 
 footer {
