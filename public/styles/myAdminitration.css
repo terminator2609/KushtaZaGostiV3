@@ -738,23 +738,52 @@ section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2)>div {
     width: 93%;
     overflow: scroll;
     gap: 10px;
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-left: 10px;
     align-items: center;
     padding-right: 67px;
 }
 
+section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2) div.row-gallery {
+    position: relative;
+    margin-top: 20px;
+}
+
+section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2) div.row-gallery svg {
+    background-color: #535351;
+    fill: #ffffff;
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    padding: 5px;
+    border-radius: 23px;
+    opacity: 0.4;
+}
+
+/* section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2) div.row-gallery:nth-of-type(1n + 2) svg {
+    display: none;
+} */
+
 section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2) img {
-    width: 255px;
-    height: 245px;
+    width: 235px;
+    height: 230px;
     border-radius: 15px;
 }
 
 section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2)>div>div:nth-of-type(1n+2) img {
-    width: 215px;
-    height: 210px;
+    width: 190px;
+    height: 185px;
     border-radius: 15px;
 }
+
+section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2) div.row-gallery i {
+    background-color: rgb(49, 46, 45, 0.5);
+    border-radius: 15px;
+    padding-top: 1;
+    padding: 75px;
+    font-size: 35px;
+    color: #ffffff;
+}
+
 
 
 section.clouds article.subscribe-plan {

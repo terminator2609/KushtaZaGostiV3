@@ -112,6 +112,90 @@ cataloguesDiv[0].addEventListener("scroll", (e) => {
 })
 
 
+// cataloguesDiv[1].addEventListener("scroll", (e) => {
+
+//     console.log(counter)
+
+//     if (counter === 1) {
+
+//         cataloguesImg[counter].style.height = "230px"
+//         cataloguesImg[counter - 1].style.height = "185px"
+//         cataloguesImg[counter].style.width = "235px"
+//         cataloguesImg[counter - 1].style.width = "190px"
+//         deleteCatalogiesImg[counter].style.display = "block"
+//         deleteCatalogiesImg[counter - 1].style.display = "none"
+
+//         returnCounter = counter
+
+//     } else if ((counter - 1) % 5 === 0 && counter !== 0 && returnCounter <= counter) {
+
+//         eventCounter = (counter - 1) / 5
+
+//         if (cataloguesImg[eventCounter + 1]) {
+//             cataloguesImg[eventCounter + 1].style.height = "230px"
+//             cataloguesImg[eventCounter].style.height = "185px"
+//             cataloguesImg[eventCounter - 1].style.height = "185px"
+//             cataloguesImg[eventCounter + 1].style.width = "235px"
+//             cataloguesImg[eventCounter].style.width = "190px"
+//             cataloguesImg[eventCounter - 1].style.width = "190px"
+//             deleteCatalogiesImg[eventCounter + 1].style.display = "block"
+//             deleteCatalogiesImg[eventCounter].style.display = "none"
+//             deleteCatalogiesImg[eventCounter - 1].style.display = "none"
+//         }
+
+//         returnCounter = counter
+
+//     } else if (counter === 0) {
+
+      
+//         cataloguesImg[counter].style.height = "230px"
+//         cataloguesImg[counter + 1].style.height = "185px"
+//         cataloguesImg[counter].style.width = "235px"
+//         cataloguesImg[counter + 1].style.width = "190px"
+//         deleteCatalogiesImg[counter].style.display = "block"
+//         deleteCatalogiesImg[counter - 1].style.display = "none"
+
+
+//     }
+
+//     scrollCounter = cataloguesDiv[0].scrollLeft
+
+//     counter = scrollCounter / 40
+
+//     counter = Number(counter.toFixed(0))
+
+
+
+//     if (returnCounter > counter && (counter - 1) % 6 === 0 && counter !== 0) {
+
+//         returnCounter = counter
+
+
+//         eventCounter = (counter - 1) / 6
+
+
+//         if (cataloguesImg[eventCounter + 2]) {
+//             cataloguesImg[eventCounter + 1].style.height = "230px"
+//             cataloguesImg[eventCounter + 2].style.height = "185px"
+//             cataloguesImg[eventCounter].style.height = "185px"
+//             cataloguesImg[eventCounter + 1].style.width = "235px"
+//             cataloguesImg[eventCounter + 2].style.width = "190px"
+//             cataloguesImg[eventCounter].style.width = "190px"
+//             deleteCatalogiesImg[eventCounter + 1].style.display = "block"
+//             deleteCatalogiesImg[eventCounter + 2].style.display = "none"
+//             deleteCatalogiesImg[eventCounter].style.display = "none"
+//         } else {
+//             cataloguesImg[eventCounter].style.height = "230px"
+//             cataloguesImg[eventCounter - 1].style.height = "185px"
+//             cataloguesImg[eventCounter].style.width = "235px"
+//             cataloguesImg[eventCounter - 1].style.width = "190px"
+//         }
+//     }
+
+
+// })
+
+
 hostName[0].addEventListener("click", (e) => {
     e.preventDefault()
 
