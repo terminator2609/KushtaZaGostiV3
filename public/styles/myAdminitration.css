@@ -1450,7 +1450,7 @@ section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder:nth-of-t
 }
 
 section.clouds article.promo-offers>div:nth-of-type(2) div.add-offer-button {
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: #484544;
     padding: 100px 90px 112px 90px;
     border-radius: 10px;
     position: relative;
