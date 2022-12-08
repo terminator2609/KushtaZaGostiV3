@@ -743,6 +743,10 @@ section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2)>div {
     padding-right: 67px;
 }
 
+section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2)>div::-webkit-scrollbar {
+    display: none;
+}
+
 section.clouds article.gallery>div:nth-of-type(3)>div:nth-of-type(2) div.row-gallery {
     position: relative;
     margin-top: 20px;
@@ -1371,19 +1375,101 @@ section.clouds article.promo-offers>div:nth-of-type(1) p {
 
 section.clouds article.promo-offers>div:nth-of-type(2) {
     display: flex;
-    width: 100%;
+    width: 90%;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     overflow: scroll;
-    margin-left: 10px;
+    margin-left: 20px;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2)::-webkit-scrollbar {
+    display: none;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder {
+    position: relative;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder p {
+    font-family: 'The Seasons';
+    color: #ea4335;
+    font-size: 22px;
+    position: absolute;
+    top: 0%;
+    right: 5%;
 }
 
 section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder img {
-    width: 200px
+    width: 270px;
+    height: 265px;
+    border-radius: 10px;
+    margin-top: 13px;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder>div {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: 'Montserrat';
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder>div div:nth-of-type(1) {
+    width: 50%;
+    margin-left: 10px;
+    line-height: 1.2;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder>div div:nth-of-type(1) h1 {
+    font-size: 20px;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder>div div:nth-of-type(1) h2 {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder>div div:nth-of-type(2) i {
+    margin-bottom: 5px;
+    margin-right: 10px;
 }
 
 
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder:nth-of-type(1n + 2) img {
+    width: 250px;
+    height: 245px;
+}
 
+section.clouds article.promo-offers>div:nth-of-type(2) div.offer-holder:nth-of-type(1n + 2)>div {
+    top: 68%;
+    left: 0%;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.add-offer-button {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 100px 90px 112px 90px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 13px;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.add-offer-button p {
+    position: absolute;
+    font-family: 'The Seasons';
+    color: #ea4335;
+    top: -5%;
+    font-size: 22px;
+    right: 5%;
+}
+
+section.clouds article.promo-offers>div:nth-of-type(2) div.add-offer-button i {
+    font-size: 35px;
+    color: #ffffff;
+}
 
 
 
