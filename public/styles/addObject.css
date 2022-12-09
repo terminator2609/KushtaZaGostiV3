@@ -21,911 +21,111 @@ body {
     background-color: #312e2d;
 }
 
-nav {
-    position: sticky;
-    z-index: 1000;
-    width: 100%;
-    height: 100px;
-    top: 0%;
-    margin-bottom: 10%;
-    background-color:  #312e2d;
-}
-
-
-nav>ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    position: relative;
-    padding-top: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-}
-
-nav>ul>li {
-    color: #DCDFDE;
-}
-
-nav>ul>li>a {
-    color: #DCDFDE;
-    font-family: The Seasons;
-    font-size: 22px;
-}
-
-nav>ul>li:nth-of-type(1) {
-    font-size: 35px;
-}
-
-
-nav>ul>li:nth-of-type(2) img {
-    width: 190px;
-    position: absolute;
-    left: 50%;
-    top: -60%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-nav>ul>li:nth-of-type(2) img.logo-nav-2 {
-    display: none;
-}
-
-
-nav>ul>li:nth-of-type(3) {
-    font-size: 25px;
-}
-
-.line {
-    border-bottom: 1px solid #3D4141;
-    position: absolute;
-    width: 90%;
-    bottom: 0%;
-    left: 5%;
-    right: 5%;
-}
-
-
-.nav-menu-phone {
-    background-color: #27251E;
-    width: 100%;
-    font-family: Forum;
-    z-index: 101;
-    position: absolute;
-    left: 0%;
-    top: 10%;
-    height: 100vh;
-    overflow: scroll;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.close-menu-button {
-    fill: #DCDFDE;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.nav-menu-phone article:nth-of-type(1)>div {
-    padding-top: 10%;
-    padding-left: 20px;
-}
-
-.nav-menu-phone article:nth-of-type(1)>div ul {
-    display: flex;
-    font-size: 20px;
-    font-family: 'Montserrat';
-    gap: 40px;
-    border-bottom: 2px solid rgb(255, 255, 255, 0.2);
-    width: 95%;
-    padding-bottom: 5px;
-}
-
-.nav-menu-phone article:nth-of-type(1)>div ul li {
-    position: relative;
-    color: #ffffff;
-}
-
-.nav-menu-phone article:nth-of-type(1)>div ul li div {
-    border-bottom: 2px solid #ffffff;
-    position: absolute;
-    width: 100%;
-    bottom: -7px;
-    transition: 2ms ease-in;
-}
-
-.nav-menu-phone article:nth-of-type(2) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50%;
-    transform: translateY(-50%);
-}
-
-.nav-menu-phone article:nth-of-type(2) ul>li>a,
-span {
-    color: #ffffff;
-    font-family: 'Montserrat';
-    font-size: 26px;
-    text-transform: uppercase;
-}
-
-.nav-menu-phone .role-list div.guest-section ul,
-.nav-menu-phone .role-list div.host-section ul {
-    border-left: 2px solid #ffffff;
-}
-
-
-.nav-menu-phone .role-list div.guest-section ul li a,
-.nav-menu-phone .role-list div.host-section ul li a {
-    font-size: 18px;
-    color: rgb(255, 255, 255, 0.5);
-    padding-left: 5px;
-}
-
-/* ----------------------------------------------------------------------------header------------------------------------------------------ */
-
-header {
-    font-family: Forum;
-    color: #ffffff;
-    text-align: center;
-    font-size: 35px;
-    text-shadow: 0px 7px 2px rgb(255 255 255 / 55%);
-}
-
-/* -----------------------------------------------------------------------------main-------------------------------------------------------------- */
-
-
-/* ---------------------------------------------section.general-info-villa------------------------------------------------- */
+/* ---------------------------------------------main---------------------------------------- */
 
 
 main {
-    margin-top: 40%;
-    margin-bottom: 60%;
-}
-
-
-main section article:nth-of-type(1) {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    justify-self: flex-start;
-    position: relative;
-}
-
-main section article.flags-article:nth-of-type(1) {
+    background-color: #ffffff;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 25%;
-}
-
-main section article:nth-of-type(1)>div:nth-of-type(1) {
-    position: relative;
-}
-
-main section article:nth-of-type(1) i {
-    color: #fbbc04;
-    margin-left: 20px;
-}
-
-main section article.flags-article:nth-of-type(1) i {
-    margin-left: 0px;
-}
-
-main section article:nth-of-type(1) div.definition {
-    font-family: Forum;
-    color: #B1B1B1;
-    background-color: #717273;
-    border: 2px solid #5f6368;
+    height: 500vh;
     position: absolute;
-    left: 50%;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-main section article.flags-article:nth-of-type(1)>div:last-of-type {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    gap: 5px;
-}
-
-main section article.flags-article:nth-of-type(1)>div:last-of-type img {
-    width: 6%;
-}
-
-main section article:nth-of-type(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 10px;
-}
-
-main section article:nth-of-type(2) form>div .line-form {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ABABAA;
-    margin-top: 20px;
-    width: 300px;
-}
-
-main section article:nth-of-type(2) form div label {
-    color: #ffffff;
-    font-family: Forum;
-    font-size: 17px;
-}
-
-.general-info-villa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 60vh;
-}
-
-.general-info-villa article:nth-of-type(2) a {
-    color: #A8A8A7;
-    font-family: Montserrat;
-    font-size: 13px;
-    margin-left: 50%;
-}
-
-.general-info-villa article:nth-of-type(2) form div input {
-    border: none;
-    background: none;
-    color: #A8A8A7;
-    font-family: Montserrat;
-}
-
-.general-info-villa article:nth-of-type(2) form div input:focus {
-    outline: none !important;
-    border: none;
-    background: none;
-}
-
-main section article:nth-of-type(3) {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-}
-
-main section article:nth-of-type(3) button {
-    background: none;
-    border: 2px solid #ffffff;
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 18px;
-    margin-bottom: 20px;
-    /* margin-top: 20px; */
-}
-
-.review-villa,
-.add-photos,
-.price-info-villa,
-.social-media-info-villa {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 10vh;
-}
-
-.review-villa {
-    height: 25vh;
-}
-
-.review-villa article:nth-of-type(2) form div textarea {
-    border: none;
-    background: none;
-    color: #A8A8A7;
-    font-family: Montserrat;
-}
-
-.review-villa article:nth-of-type(2) form div textarea:focus {
-    outline: none !important;
-    border: none;
-    background: none;
-}
-
-.add-photos {
-    height: 50vh;
-    gap: 40px;
-}
-
-.add-photos article:nth-of-type(2) {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    margin-left: 20px;
-    width: 90%;
-}
-
-.add-photos article:nth-of-type(2) form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 70px;
-}
-
-.add-photos article:nth-of-type(2) form div label {
-    background: none;
-    border: 2px solid #ffffff;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-
-.add-photos article:nth-of-type(2) form div:nth-of-type(1) label {
-    padding-right: 20%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-}
-
-.add-photos article:nth-of-type(2) form div:nth-of-type(2) label {
-    padding-right: 26.5%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-}
-
-.add-photos article:nth-of-type(2) form div:nth-of-type(3) label {
-    padding-right: 18.2%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-}
-
-.add-photos article:nth-of-type(2) form div input {
-    display: none;
-}
-
-.price-info-villa {
-    height: 70vh;
-    gap: 30px;
+    top: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 
-.price-info-villa article:nth-of-type(1) div.definition p {
-    width: 150px;
-}
-
-.price-info-villa article:nth-of-type(2) {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    margin-left: 20px;
-    width: 80%;
-}
-
-.price-info-villa article:nth-of-type(2) form div input, select {
-    background: none;
-    border: 2px solid #ffffff;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 14px;
-    margin-bottom: 30px;
-    width: 100.5%;
-    height: 34px;
-}
-
-.price-info-villa article:nth-of-type(2) form div input::-webkit-input-placeholder {
-    color: #A8A8A7;
+main article:nth-of-type(1) {
     width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(2) form div input::-moz-placeholder {
-    color: #A8A8A7;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(2) form div input:-ms-input-placeholder {
-    color: #A8A8A7;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(2) form div input::-ms-input-placeholder {
-    color: #A8A8A7;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(2) form div input::placeholder {
-    color: #A8A8A7;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.price-info-villa article:nth-of-type(2) form div select#currency {
-   width: 103%;
-   height: 42px;
-}
-
-.price-info-villa article:nth-of-type(2) form div select#typeForRent {
-    width: 103%;
-    height: 42px;
-}
-
-.price-info-villa article:nth-of-type(2) form div input:focus {
-    outline: none !important;
-}
-
-.price-info-villa article:nth-of-type(2) form div select:focus {
-    outline: none !important;
-}
-
-.price-info-villa article:nth-of-type(2) form div select option {
-    padding-left: 10px;
-}
-
-
-.social-media-info-villa {
-    height: 55vh;
-    gap: 30px;
-}
-
-.social-media-info-villa article:nth-of-type(2) {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    margin-left: 20px;
-}
-
-.social-media-info-villa article:nth-of-type(2) form div {
-    background: none;
-    border: 2px solid #ffffff;
-    padding: 10px 20px 10px 20px;
-    -webkit-box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-            box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 50%);
-    color: #A8A8A7;
-    font-family: Forum;
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-
-
-.social-media-info-villa article:nth-of-type(2) form div input {
-    border: none;
-    background: none;
-    color: #A8A8A7;
-    font-family: Montserrat;
-}
-
-.social-media-info-villa article:nth-of-type(2) form div input:focus {
-    outline: none !important;
-    border: none;
-    background: none;
-}
-
-.social-media-info-villa article:nth-of-type(2) i {
-    border: 1px solid #ffffff;
-    border-radius: 100px;
-    padding: 5px;
-    font-size: 15px;
-}
-
-.social-media-info-villa article:nth-of-type(2) div:nth-of-type(1) i {
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-.catalogues-select-villa {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 0%;
-}
-
-.catalogues-select-villa article:nth-of-type(2) form div img {
-    width: 20%;
-    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-            box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-}
-
-main section article.three-div-elements:nth-of-type(1) {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-main section article.three-div-elements:nth-of-type(1) div:nth-of-type(2) {
-    width: 35%;
-    font-family: 'Forum';
-    color: #ffffff;
+main article:nth-of-type(1) svg {
+    padding-top: 20px;
+    padding-left: 20px;
+    fill: #312e2d;
 }
 
-main section article.three-div-elements:nth-of-type(1) div:nth-of-type(3) {
-    width: 30%;
-    font-family: 'Forum';
-    color: #ffffff;
-}
-
-
-.catalogues-select-villa article:nth-of-type(2) form div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.selectedCatalogues {
-    border: 3px solid #A8A8A7;
-}
-
-
-.catalogues-select-villa article:nth-of-type(1) div.definition p {
-    width: 110px;
-}
-
-.calender {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-}
-
-.calender article:nth-of-type(1) {
-    color: #ffffff;
-    font-family: Forum;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 30%;
-}
-
-.calender article:nth-of-type(1) div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-}
-
-.calender article:nth-of-type(1) div h1 {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 20px;
-}
-
-.calender article:nth-of-type(1) div h2 {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    font-size: 14px;
-}
-
-.calender article:nth-of-type(1) div h3 {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 14px;
-}
-
-.calender article:nth-of-type(1) i {
-    color: #fbbc04;
-    margin-left: 0px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-top: 5px;
-}
-
-.calender article:nth-of-type(1) div.definition {
-    left: 10%;
-    top: 100%;
-}
-
-.calender article:nth-of-type(1) div.definition p {
-    width: 165px;
-}
-
-.calender article:nth-of-type(2) {
-    margin-top: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 10px;
-    width: 60%;
-    color: #ffffff;
-    font-family: Forum;
-    border-left: 1px solid #ABABAA;
-    margin-bottom: 30px;
-}
-
-.calender article:nth-of-type(2)>div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    margin-top: 5px;
-}
-
-.calender article:nth-of-type(2) div.calender-line {
-    border-bottom: 1px solid #ABABAA;
-    width: 105%;
-}
-
-.calender article:nth-of-type(2) div:nth-of-type(1) h4 {
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
-
-.calender article:nth-of-type(2) div:nth-of-type(n + 1) p {
-    padding-top: 5px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-}
-
-.calender article:nth-of-type(2) div:last-of-type {
+main article:nth-of-type(1) p {
+    font-size: 24px;
+    color: #312e2d;
+    font-family: 'The Seasons';
+    padding-right: 15px;
     padding-top: 20px;
 }
 
-.calender article:nth-of-type(3) {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-} 
 
-.calender article:nth-of-type(3) i {
-    position: absolute;
-    left: 10%;
-    font-size: 22px;
-    color: #ffffff;
-    top: 90%;
-}
-
-.calender article:nth-of-type(3) i:nth-of-type(2) {
-    left: 85%;
-}
-
-.calender article:nth-of-type(4) {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-}
-
-.calender article:nth-of-type(4) button {
-    position: absolute;
-    left: 20%;
-    top: 96%;
-    background: none;
-    width: 62%;
-    height: 40px;
-    border: 2px solid white;
-    -webkit-box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-    box-shadow: -2px 7px 8px -3px rgb(0 0 0 / 68%);
-}
-
-.calender article:nth-of-type(4) button a {
-    font-family: 'Forum';
-    font-size: 15px;
-    color: #A8A8A7;
-}
-
-.calender article:nth-of-type(4) button:nth-of-type(2) {
-    top: 108%;
-    font-family: 'Forum';
-    font-size: 15px;
-    color: #A8A8A7;
-}
-
-/* ----------------------------footer-------------------------------------- */
-
-footer {
+main article:nth-of-type(2) {
+    width: 90%;
     margin-top: 50px;
-    height: 82vh;
-    background-color: #312e2d;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-family: Forum;
-    font-size: 18px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-
-
-footer article:nth-of-type(1),
-footer article:nth-of-type(2) {
-    align-self: flex-start;
-    margin-top: 30px;
     margin-left: 20px;
+    position: relative;
 }
 
-footer article:nth-of-type(1) h1,
-footer article:nth-of-type(2) h1 {
+main article:nth-of-type(2) ul {
+    display: flex;
+    gap: 45px;
+    width: 100%;
+    overflow: scroll;
+    color: #35332e;
     font-family: Montserrat;
-    font-size: 30px;
-}
-
-footer article:nth-of-type(1) ul,
-footer article:nth-of-type(2) ul {
-    line-height: 1.2;
-    margin-top: 10px;
-}
-
-footer article:nth-of-type(1) ul li a,
-footer article:nth-of-type(2) ul li {
-    color: #fbbc04;
     font-size: 16px;
+    padding-bottom: 10px;
 }
 
-footer article:nth-of-type(1) ul li a {
-    text-transform: uppercase;
+main article:nth-of-type(2) ul::-webkit-scrollbar {
+    display: none;
 }
 
-footer article:nth-of-type(3) {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    margin-top: 20px;
-    margin-right: 10px;
+main article:nth-of-type(2) ul li {
+    width: 100%;
+    position: relative;
+    padding-top: 40px;
 }
 
-footer article:nth-of-type(3) li:nth-of-type(1) {
-    padding-bottom: 22px;
+main article:nth-of-type(2) ul li:nth-of-type(1) p {
+    width: 80px;
 }
 
-
-footer article:nth-of-type(3) a {
-    color: white;
-    font-size: 20px;
-    border-radius: 70%;
-    border-top-left-radius: 70%;
-    border-top-right-radius: 70%;
-    border-bottom-right-radius: 80%;
-    border-bottom-left-radius: 70%;
-    border: 1px solid white;
-    padding: 6px 7px 4px 7px;
+main article:nth-of-type(2) ul li:nth-of-type(4) p {
+    width: 110px;
 }
 
-footer article:nth-of-type(3) li:nth-of-type(1) a {
-    color: white;
-    font-size: 20px;
-    border-radius: 70%;
-    border-top-left-radius: 70%;
-    border-top-right-radius: 70%;
-    border-bottom-right-radius: 80%;
-    border-bottom-left-radius: 70%;
-    border: 1px solid white;
-    padding: 6px 10px 5px 10px;
+main article:nth-of-type(2) ul li:nth-of-type(1n + 2) p {
+    color: rgb(53, 51, 46, 0.5);
 }
 
-
-footer article:nth-of-type(4) {
-    align-self: flex-start;
-    margin-left: 10px;
+main article:nth-of-type(2) ul li svg {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-footer article:nth-of-type(4) ul {
-    display: flex;
-    gap: 10px;
-    padding-bottom: 5px;
+main article:nth-of-type(2) ul li .line-categories {
+    border-bottom: 2px solid rgb(53, 51, 46);
+    width: 95%;
+    padding-top: 10px;
+    
 }
 
-footer article:nth-of-type(4) div:nth-of-type(2) {
-    width: 97%;
-    border-bottom: 1px solid #ffffff;
+main article:nth-of-type(2) ul li:nth-of-type(1n + 2) .line-categories {
+    border: none;
 }
 
-footer article:nth-of-type(4) div:nth-of-type(3) {
-    display: flex;
-    font-size: 12px;
-    gap: 85px;
-    align-items: center;
-    justify-content: space-between;
+.general-line {
+    border-bottom: 2px solid rgb(53, 51, 46, 0.5);
+    position: absolute;
+    width: 95%;
+    top: 85%;
 }
+ 
+
+
+
+
+
+
+
