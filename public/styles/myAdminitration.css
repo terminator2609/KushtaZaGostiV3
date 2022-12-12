@@ -1003,7 +1003,7 @@ section.clouds article.edit-info>div:nth-of-type(2) ul li:nth-of-type(5) svg {
 section.clouds article.edit-info>div:nth-of-type(3).main-info {
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 30px;
     width: 100%;
     margin-top: 20px;
 }
@@ -1086,7 +1086,7 @@ section.clouds article.edit-info>div:nth-of-type(4).review {
     display: none;
     flex-direction: column;
     width: 100%;
-    gap: 90px;
+    gap: 70px;
     margin-top: 20px;
 }
 
@@ -1161,7 +1161,7 @@ section.clouds article.edit-info>div:nth-of-type(4).review>div:nth-of-type(3) bu
 section.clouds article.edit-info>div:nth-of-type(5).price {
     flex-direction: column;
     margin-top: 60px;
-    width: 90%;
+    width: 100%;
     gap: 90px;
     display: none;
 }
