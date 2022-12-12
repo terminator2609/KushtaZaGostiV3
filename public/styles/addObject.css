@@ -204,6 +204,10 @@ main article.main-info>div:nth-of-type(3) button:nth-of-type(1) {
     font-size: 18px;
 }
 
+main article.main-info>div:nth-of-type(3) button:nth-of-type(1) i {
+    color: #312e2d;
+}
+
 
 main article.main-info>div:nth-of-type(3) button:nth-of-type(2) {
     margin-right: 20px;
@@ -300,6 +304,10 @@ main article.review>div:nth-of-type(3) button:nth-of-type(1) {
     border: none;
     color: #312e2d;
     font-size: 18px;
+}
+
+main article.review>div:nth-of-type(3) button:nth-of-type(1) i {
+    color: #312e2d;
 }
 
 main article.review>div:nth-of-type(3) button:nth-of-type(2) {
@@ -411,6 +419,10 @@ main article.price>div:nth-of-type(1) button:nth-of-type(1) {
     font-size: 18px;
 }
 
+main article.price>div:nth-of-type(1) button:nth-of-type(1) i {
+    color: #312e2d;
+}
+
 main article.price>div:nth-of-type(1) button:nth-of-type(2) {
     margin-right: 20px;
     background-color: #222224;
@@ -500,6 +512,10 @@ main article.social-media>div:nth-of-type(1) button:nth-of-type(1) {
     border: none;
     color: #312e2d;
     font-size: 18px;
+}
+
+main article.social-media>div:nth-of-type(1) button:nth-of-type(1) i {
+    color: #312e2d;
 }
 
 main article.social-media>div:nth-of-type(1) button:nth-of-type(2) {
@@ -599,6 +615,10 @@ main article.address>div:nth-of-type(3) button:nth-of-type(1) {
     font-size: 18px;
 }
 
+main article.address>div:nth-of-type(3) button:nth-of-type(1) i {
+    color: #312e2d;
+}
+
 main article.address>div:nth-of-type(3) button:nth-of-type(2) {
     margin-right: 20px;
     background-color: #222224;
@@ -668,6 +688,10 @@ main article.catalogues>div:nth-of-type(2) button:nth-of-type(1) {
     font-size: 18px;
 }
 
+main article.catalogues>div:nth-of-type(2) button:nth-of-type(1) i {
+    color: #ffffff;
+}
+
 
 main article.catalogues>div:nth-of-type(2) button:nth-of-type(2) {
     margin-right: 20px;
@@ -683,6 +707,14 @@ main article.catalogues>div:nth-of-type(2) button:nth-of-type(2) a {
     text-transform: uppercase;
     font-size: 12px;
 }
+
+main article.gallery {
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
 
 
 
