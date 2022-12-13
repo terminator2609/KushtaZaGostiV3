@@ -21,9 +21,9 @@ hostSection.style.display = "none"
 lineRoleGuest[0].style.display = "none"
 
 
-if (document.getElementById("h4-header")) {
-    document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 1.6}px`
-}
+// if (document.getElementById("h4-header")) {
+//     document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 3}px`
+// }
 
 
 // document.addEventListener("scroll", (e) => {
