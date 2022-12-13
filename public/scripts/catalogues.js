@@ -21,31 +21,10 @@ hostSection.style.display = "none"
 lineRoleGuest[0].style.display = "none"
 
 
-// if (document.getElementById("h4-header")) {
-//     document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 3}px`
-// }
+if (document.getElementById("h4-header")) {
+    document.getElementById("h4-header").style.fontSize = `${window.innerWidth / 2.5}px`
+}
 
-
-// document.addEventListener("scroll", (e) => {
-
-
-//     if (window.scrollY > 0) {
-//         document.getElementById("nav-index").style.backgroundColor = "white"
-//         document.getElementById("nav-index").style.transition = "0.8s"
-//         document.getElementsByClassName("fa-solid")[0].style.color = "#6F6F6F"
-//         document.getElementsByClassName("translateEN")[0].style.color = "#6F6F6F"
-//         document.getElementsByClassName("logo-nav-1")[0].style.display = "none"
-//         document.getElementsByClassName("logo-nav-2")[0].style.display = "flex"
-//         document.getElementsByClassName("logo-nav-2")[0].style.top = "-60%"
-//     } else {
-//         document.getElementById("nav-index").style.background = "none"
-//         document.getElementsByClassName("fa-solid")[0].style.color = "#DCDFDE"
-//         document.getElementsByClassName("translateEN")[0].style.color = "#DCDFDE"
-//         document.getElementsByClassName("logo-nav-1")[0].style.display = "flex"
-//         document.getElementsByClassName("logo-nav-2")[0].style.display = "none"
-//     }
-
-// })
 
 
 hostName[0].addEventListener("click", (e) => {
@@ -138,7 +117,11 @@ let nextAllObjectButton = document.getElementsByClassName("next-all-object")[0]
 let selectTitle = document.getElementsByClassName("select-title")[0]
 let counterSelected = 0
 nextAllObjectButton.style.display = "none"
-selectTitle.style.marginBottom = "15%"
+
+
+// document.addEventListener("scroll", (e) => {
+//     console.log(window.scrollY)
+// })
 
 for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
 
@@ -155,11 +138,9 @@ for (let i = 0; i < cataloguesSelectPhoto.length; i++) {
         }
 
         if (counterSelected > 0) {
-            nextAllObjectButton.style.display = "block"
-            selectTitle.style.marginBottom = "-45%"
+            nextAllObjectButton.style.display = "inline"
         } else {
             nextAllObjectButton.style.display = "none"
-            selectTitle.style.marginBottom = "15%"
         }
 
     })
