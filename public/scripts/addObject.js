@@ -148,3 +148,34 @@ for (let i = 0; i < checkedOptionP2.length; i++) {
     })
 }
 
+// let generalDiv = document.getElementsByClassName("general-div")[0]
+// let generalForm = document.getElementsByClassName("general-form")[0]
+
+// document.getElementById("general-img-input").addEventListener("change", (e) => {
+
+
+//     let file = document.getElementById("general-img-input").files[0]
+
+//     let generalImg = document.createElement("img")
+
+
+//     generalImg.className = "general-img"
+//     generalImg.file = file
+
+//     generalDiv.appendChild(generalImg)
+//     generalForm.appendChild(generalDiv)
+
+
+
+//     const reader = new FileReader()
+//     reader.onload = (e) => { 
+        
+//         generalImg.src = e.target.result; 
+//     };
+//     reader.readAsDataURL(file);
+
+    
+
+
+
+// })

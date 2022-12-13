@@ -713,8 +713,58 @@ main article.gallery {
     flex-direction: column;
     gap: 50px;
     width: 100%;
+    margin-top: 50px;
 }
 
+main article.gallery>div:nth-of-type(1) {
+    margin-left: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+main article.gallery>div:nth-of-type(1) h1 {
+    color: #35332e;
+    font-family: Montserrat;
+    font-size: 16px;
+    margin-bottom: 25%;
+}
+
+main article.gallery>div:nth-of-type(1) form {
+    width: 100%;
+}
+
+main article.gallery>div:nth-of-type(1) form p {
+    margin-top: 22%;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 14px;
+}
+
+main article.gallery>div:nth-of-type(1) div {
+    width: 100%;
+}
+
+main article.gallery>div:nth-of-type(1) form div {
+    width: 100%;
+    position: relative;
+}
+
+main article.gallery>div:nth-of-type(1) form div label {
+    background-color: rgb(49, 46, 45, 0.5);
+    padding: 25% 20% 20% 20%;
+    border-radius: 15px;
+}
+
+main article.gallery>div:nth-of-type(1) form div label i {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+main article.gallery>div:nth-of-type(1) form div input {
+    display: none;
+}
 
 
 
